@@ -102,31 +102,31 @@ td[c="n"] {
     background: #f935ce !important;
 }
 td[c="am"] {
-    background: #ff0d0d  !important;
+    background: #ff2626  !important;
 }
 td[c="aem"] {
-    background: darkorange !important;
+    background: #ff910c !important;
 }
 td[c="tm"] {
     background: #5272e4 !important;
 }
 td[c="ptm"] {
-    background: #41bbb7 !important;
+    background: #1ab373 !important;
 }
 td[c="m"] {
-    background: goldenrod !important;
+    background: #ecb720 !important;
 }
 td[c="h"] {
-    background: #2198b3 !important;
+    background: #279da9 !important;
 }
 td[c="ng"] {
-    background: deepskyblue !important;
+    background: #00bfff !important;
 }
 td[c="a"] {
-    background: darkorchid !important;
+    background: indigo !important;
 }
 td[c="l"] {
-    background: indigo !important;
+    background: darkorchid !important;
 }
 
 /* symbol */
