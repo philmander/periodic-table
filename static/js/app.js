@@ -50,7 +50,7 @@
     view.zoomTo = function (zoom) {
         nodes.zoom.setAttribute('z', zoom);
 
-        var symbolsToShow = [ 'H', 'Li', 'Na'];
+        var symbolsToShow = Object.keys(model.elements);
         var symbolsToFetch = symbolsToShow.reduce(function(toShow, symbol) {
              if(model.elements[symbol].zoomAvailable < zoom) {
                  toShow.push(symbol);
@@ -77,6 +77,7 @@
                 var inject = wrapper.firstChild;
                 inject.classList.add('out');
                 node.firstElementChild.appendChild(inject);
+                model.elements[data.symbol][fieldNames[i]] = inject;
             }
         }
 
@@ -93,7 +94,6 @@
 
     view.showFieldsForElement = function (symbol) {
 
-        var node = model.elements[symbol].node;
         var fields = [
             { cn: 'n',  z: 2 },
             { cn: 'am', z: 2 },
@@ -103,20 +103,20 @@
         ];
 
         setTimeout(function() {
-            var fieldNode, classList;
+            var fieldNode;
             for(i = 0; i < fields.length; i++) {
-                fieldNode = node.getElementsByClassName(fields[i].cn);
-                if(fieldNode[0]) {
+                fieldNode = model.elements[symbol][fields[i].cn];
+                if(fieldNode) {
                     if(fields[i].z <= model.zoom) {
-                        fieldNode[0].classList.add('in');
-                        fieldNode[0].classList.remove('out');
+                        fieldNode.classList.add('in');
+                        fieldNode.classList.remove('out');
                     } else {
-                        fieldNode[0].classList.add('out');
-                        fieldNode[0].classList.remove('in');
+                        fieldNode.classList.add('out');
+                        fieldNode.classList.remove('in');
                     }
                 }
             }
-        }, 200);
+        }, 100);
     };
 
     // controller ------------------------------------------------------------------------------------------------------
