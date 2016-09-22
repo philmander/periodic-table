@@ -1,0 +1,32 @@
+{
+  "name": "periodic-table",
+  "version": "1.0.0",
+  "description": "Periodic Table of Elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philmander/periodic-table.git"
+  },
+  "keywords": [
+    "periodic",
+    "table",
+    "elements"
+  ],
+  "author": "Phil Mander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philmander/periodic-table/issues"
+  },
+  "homepage": "https://github.com/philmander/periodic-table#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
+    "hbs": "^4.0.0",
+    "serve-favicon": "^2.3.0"
+  }
+}

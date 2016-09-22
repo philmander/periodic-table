@@ -1,0 +1,259 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl,
+dt, dd, blockquote, address, table, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-align: left;
+}
+sup, sub {
+    vertical-align: top;
+    position: relative;
+    top: -0.4em;
+}
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    background: #c1c1c1;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.zoom {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0px 0px 8px darkgray;
+    z-index: 1;
+}
+.zoom button {
+    display: block;
+    font-weight: bold;
+    width: 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+table.elements {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 1rem auto 1rem auto;
+    color: #585858;
+    background: #fff;
+    transition: width 1s;
+}
+div[z="1"] table.elements {
+    width: 1200px;
+}
+div[z="2"] table.elements {
+    width: 2100px;
+}
+div[z="3"] table.elements {
+    width: 5700px;
+}
+div[z="4"] table.elements {
+    width: 14000px;
+}
+table.elements > tbody > tr > td,
+table.elements > tbody > tr > th {
+    position: relative;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: normal;
+    vertical-align: top;
+    background: #f1f1f1;
+    transition: border-width 1s, height 1s;
+}
+/*table.elements > tbody > tr > */
+td > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    overflow: hidden;
+}
+[z="1"] table.elements > tbody > tr > td {
+    height: 65px;
+}
+[z="2"] table.elements > tbody > tr > td {
+    border-width: 3px;
+    height: 110px;
+}
+[z="3"] table.elements > tbody > tr > td {
+    border-width: 4px;
+    height: 292px;
+}
+[z="4"] table.elements > tbody > tr > td {
+    border-width: 6px;
+    padding: 6px;
+}
+table.elements > tbody > tr > th {
+    color: #585858;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 2em;
+}
+table.elements > tbody > tr > th:first-child {
+    width: 2rem
+}
+td[c="n"] {
+    background: #f935ce !important;
+}
+td[c="am"] {
+    background: #ff0d0d  !important;
+}
+td[c="aem"] {
+    background: darkorange !important;
+}
+td[c="tm"] {
+    background: #5272e4 !important;
+}
+td[c="ptm"] {
+    background: #41bbb7 !important;
+}
+td[c="m"] {
+    background: goldenrod !important;
+}
+td[c="h"] {
+    background: #2198b3 !important;
+}
+td[c="ng"] {
+    background: deepskyblue !important;
+}
+td[c="a"] {
+    background: darkorchid !important;
+}
+td[c="l"] {
+    background: indigo !important;
+}
+
+/* symbol */
+.s {
+    text-align: center;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    text-shadow: -1px -1px 0 #585858, 1px -1px 0 #585858, -1px 1px 0 #585858, 1px 1px 0 #585858;
+    letter-spacing: 1px;
+}
+[z="2"] .s {
+    font-size: 2.5rem;
+}
+[z="3"] .s {
+    font-size: 3.4rem;
+}
+[z="4"] .s {
+    font-size: 5rem;
+    margin-top: -2rem;
+}
+
+/* atomic number */
+.an {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+[z="3"] .an {
+    font-size: 1.6rem;
+}
+[z="4"] .an {
+    font-size: 2.4rem;
+}
+
+/* atomic mass */
+.am {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+[z="3"] .am {
+    font-size: 1rem;
+}
+[z="4"] .am {
+    font-size: 1.2rem;
+}
+
+/* name */
+.n {
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+[z="3"] .n {
+    font-size: 1.4rem;
+}
+[z="4"] .n {
+    font-size: 1.8rem;
+}
+
+.s, .an, .n, .am {
+    transition: font-size 1s;
+}
+
+table.details {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #585858;
+    margin-top: 1rem;
+}
+table.details tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+table.details th,
+table.details td {
+    padding: 8px;
+    vertical-align: bottom;
+    line-height: 1.2em;
+}
+table.details td {
+    text-align: right;
+}
+[z="4"] .details-wrap {
+    float: left;
+    width: 50%;
+    padding-right: 3px
+}
+.data-wrap + .details-wrap {
+    padding-left: 3px;
+    padding-right: 0;
+}
+
+.tabs-nav li {
+    padding: 6px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 1rem;
+}
+.tabs-nav li.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.tabs-nav a {
+    text-decoration: none;
+    color: #585858;
+}
+
+.tabs-content {
+    height: 400px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.wiki-pane {
+    padding: 8px;
+    background: #fff;
+}
+iframe {
+    width: 100%;
+    height: 368px;
+    border: none;
+}
+
+.out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.in {
+    opacity: 1;
+    transition: opacity 1s;
+}

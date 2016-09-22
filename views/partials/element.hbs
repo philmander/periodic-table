@@ -1,0 +1,42 @@
+<div>
+    {{#if (equal zoom 1)}}
+        <p class=an>{{element.atomicNumber}}</p>
+        <p class=s title={{element.name}}>{{element.symbol}}</p>
+
+    {{else if (equal zoom 2)}}
+
+        <p class=an>{{element.atomicNumber}}</p>
+        <p class=s>{{element.symbol}}</p>
+
+        {{> fields/name element=element }}
+
+        {{> fields/mass element=element }}
+
+    {{else if (equal zoom 3)}}
+
+        <p class=an>{{element.atomicNumber}}</p>
+        <p class=s>{{element.symbol}}</p>
+
+        {{> fields/name element=element }}
+
+        {{> fields/mass element=element }}
+
+        {{> fields/details element=element }}
+
+    {{else}}
+
+        <p class=an>{{element.atomicNumber}}</p>
+        <p class=s>{{element.symbol}}</p>
+
+        {{> fields/name element=element }}
+
+        {{> fields/mass element=element }}
+
+        {{> fields/details element=element }}
+
+        {{> fields/more_details element=element }}
+
+        {{> fields/resources element=element }}
+
+    {{/if}}
+</div>
