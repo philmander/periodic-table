@@ -19,7 +19,7 @@
                 <th>{{index}}</th>
                 {{#range 1 19}}
                     {{#with (getElementAtPosition ../index index)}}
-                        <td s={{this.symbol}} c={{toInitialism groupBlock}}>
+                        <td s={{symbol}} c={{toInitialism groupBlock}}>
                             {{> element element=this zoom=../../../zoom}}
                         </td>
                     {{else}}
@@ -34,8 +34,9 @@
                                 </div>
                             </td>
                         {{else if (isActinidesGroup ../index index)}}
-                            <td c=a><p class=an>89-103</p>
+                            <td c=a>
                                 <div>
+                                    <p class=an>89-103</p>
                                     <p class=s>**</p>
                                     {{#unless (equal ../../zoom 1)}}
                                         <p class=n>Actinides</p>
@@ -62,7 +63,7 @@
             <th rowspan=2>f</th>
             <th colspan=2>* Lanthanides</th>
             {{#each (lanthanides)}}
-                <td b={{block}} c={{toInitialism groupBlock}}>
+                <td s={{symbol}} c={{toInitialism groupBlock}}>
                     {{> element element=this zoom=../zoom}}
                 </td>
             {{/each}}
@@ -71,7 +72,7 @@
         <tr>
             <th colspan=2>** Actinides</th>
             {{#each (actinides)}}
-                <td b={{block}} c={{toInitialism groupBlock}}>
+                <td s={{symbol}} c={{toInitialism groupBlock}}>
                     {{> element element=this zoom=../zoom}}
                 </td>
             {{/each}}
