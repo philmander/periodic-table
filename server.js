@@ -1,7 +1,8 @@
 const
     express = require('express');
     bodyParser = require('body-parser'),
-    compression = require('compression'), 
+    minifyHTML = require('express-minify-html'),
+    compression = require('compression'),
         favicon = require('serve-favicon'),
     path = require('path'),
     fs = require('fs'),
@@ -50,7 +51,16 @@ app.disable('view cache');
 hbs.registerPartials(path.join(__dirname, PARTIAL_DIR));
 app.set('view engine', 'hbs');
 
-
+app.use(minifyHTML({
+    override:      true,
+    htmlMinifier: {
+        removeComments:            true,
+        collapseWhitespace:        true,
+        collapseBooleanAttributes: true,
+        removeAttributeQuotes:     true,
+        removeEmptyAttributes:     true
+    }
+}));
 app.use(compression());
 app.use(favicon('./favicon.ico'));
 app.use(bodyParser.json());
