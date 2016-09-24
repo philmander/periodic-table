@@ -2,81 +2,79 @@
 <title>Periodic Table</title>
 <link rel=stylesheet href="/static/css/main.css">
 <script async src=/static/js/app.js></script>
-<div z={{zoom}}>
+<!--<script async src=/static/js/dragscroll.js></script>-->
+<body z={{zoom}} class=dragscroll>
     <div class=zoom>
         <button type=button zoom value=1>+</button>
         <button type=button zoom value=-1>-</button>
     </div>
-
-    <table class=elements>
-        <tr>
-            {{#range 0 19}}
-                <th>{{#if index}}{{index}}{{/if}}</th>
-            {{/range}}
-        </tr>
-        {{#range 1 8}}
+    <div class="tables">
+        <table class=elements>
             <tr>
-                <th>{{index}}</th>
-                {{#range 1 19}}
-                    {{#with (getElementAtPosition ../index index)}}
-                        <td s={{symbol}} c={{toInitialism groupBlock}}>
-                            {{> element element=this zoom=../../../zoom}}
-                        </td>
-                    {{else}}
-                        {{#if (isLanthanidesGroup ../index index)}}
-                            <td c=l>
-                                <div>
-                                    <p class=an>57-71</p>
-                                    <p class=s>*</p>
-                                    {{#unless (equal ../../zoom 1)}}
-                                        <p class=n>Lanthanides</p>
-                                    {{/unless}}
-                                </div>
-                            </td>
-                        {{else if (isActinidesGroup ../index index)}}
-                            <td c=a>
-                                <div>
-                                    <p class=an>89-103</p>
-                                    <p class=s>**</p>
-                                    {{#unless (equal ../../zoom 1)}}
-                                        <p class=n>Actinides</p>
-                                    {{/unless}}
-                                </div>
-                            </td>
-                        {{else}}
-                            <td></td>
-                        {{/if}}
-                    {{/with}}
+                {{#range 0 19}}
+                    <th>{{#if index}}{{index}}{{/if}}</th>
                 {{/range}}
             </tr>
-        {{/range}}
-        <tr>
-            <th></th>
-            <th colspan=2>s</th>
-            <th colspan=10>d</th>
-            <th colspan=6>p</th>
-        </tr>
-    </table>
+            {{#range 1 8}}
+                <tr>
+                    <th>{{index}}</th>
+                    {{#range 1 19}}
+                        {{#with (getElementAtPosition ../index index)}}
+                            <td s={{symbol}} c={{toInitialism groupBlock}}>
+                                {{> element element=this zoom=../../../zoom}}
+                            </td>
+                        {{else}}
+                            {{#if (isLanthanidesGroup ../index index)}}
+                                <td c=l class=lanthinedes>
+                                    <div>
+                                        <p class=an>57-71</p>
+                                        <p class=s>*</p>
+                                        <p class=n>Lanthanides</p>
+                                    </div>
+                                </td>
+                            {{else if (isActinidesGroup ../index index)}}
+                                <td c=a class=actinides>
+                                    <div>
+                                        <p class=an>89-103</p>
+                                        <p class=s>**</p>
+                                        <p class=n>Actinides</p>
+                                    </div>
+                                </td>
+                            {{else}}
+                                <td></td>
+                            {{/if}}
+                        {{/with}}
+                    {{/range}}
+                </tr>
+            {{/range}}
+            <tr>
+                <th></th>
+                <th colspan=2>s</th>
+                <th colspan=10>d</th>
+                <th colspan=6>p</th>
+            </tr>
+        </table>
 
-    <table class="elements">
-        <tr>
-            <th rowspan=2>f</th>
-            <th colspan=2>* Lanthanides</th>
-            {{#each (lanthanides)}}
-                <td s={{symbol}} c={{toInitialism groupBlock}}>
-                    {{> element element=this zoom=../zoom}}
-                </td>
-            {{/each}}
-            <th></th>
-        </tr>
-        <tr>
-            <th colspan=2>** Actinides</th>
-            {{#each (actinides)}}
-                <td s={{symbol}} c={{toInitialism groupBlock}}>
-                    {{> element element=this zoom=../zoom}}
-                </td>
-            {{/each}}
-            <th></th>
-        </tr>
-    </table>
-</div>
+        <table class="elements">
+            <tr>
+                <th rowspan=2>f</th>
+                <th colspan=2>* Lanthanides</th>
+                {{#each (lanthanides)}}
+                    <td s={{symbol}} c={{toInitialism groupBlock}}>
+                        {{> element element=this zoom=../zoom}}
+                    </td>
+                {{/each}}
+                <th></th>
+            </tr>
+            <tr>
+                <th colspan=2>** Actinides</th>
+                {{#each (actinides)}}
+                    <td s={{symbol}} c={{toInitialism groupBlock}}>
+                        {{> element element=this zoom=../zoom}}
+                    </td>
+                {{/each}}
+                <th></th>
+            </tr>
+        </table>
+    </div>
+</body>
