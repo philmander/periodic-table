@@ -20,6 +20,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body {
+    overflow: auto;
+}
 
 .zoom {
     position: fixed;
@@ -27,6 +30,7 @@ html {
     right: 10px;
     box-shadow: 0px 0px 8px darkgray;
     z-index: 1;
+    overflow: hidden;
 }
 .zoom button {
     display: block;
@@ -36,24 +40,33 @@ html {
     font-size: 1.5rem;
 }
 
+.tables {
+    position: absolute;
+    transition: width 1s, transform 1s;
+    transform: translate(0, 0);
+    margin: 0 auto;
+}
+.tables.nt {
+    transition: none;
+}
 table.elements {
     border-collapse: collapse;
     table-layout: fixed;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem 0;
     color: #585858;
     background: #fff;
-    transition: width 1s;
+    width: 100%;
 }
-div[z="1"] table.elements {
+[z="1"] .tables {
     width: 1200px;
 }
-div[z="2"] table.elements {
-    width: 2100px;
+[z="2"] .tables {
+    width: 2200px;
 }
-div[z="3"] table.elements {
+[z="3"] .tables {
     width: 5700px;
 }
-div[z="4"] table.elements {
+[z="4"] .tables {
     width: 14000px;
 }
 table.elements > tbody > tr > td,
@@ -64,7 +77,7 @@ table.elements > tbody > tr > th {
     font-weight: normal;
     vertical-align: top;
     background: #f1f1f1;
-    transition: border-width 1s, height 1s;
+    transition: height 1s;
 }
 /*table.elements > tbody > tr > */
 td > div {
@@ -187,6 +200,12 @@ td[c="l"] {
     font-size: 1.8rem;
 }
 
+[z="1"] .actinides .n,
+[z="1"] .lanthinedes .n {
+    opacity: 0;
+}
+
+
 .s, .an, .n, .am {
     transition: font-size 1s;
 }
@@ -251,9 +270,9 @@ iframe {
 
 .out {
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 .in {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.3s
 }
