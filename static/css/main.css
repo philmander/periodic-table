@@ -124,6 +124,7 @@ table.elements > tbody > tr > th {
     vertical-align: middle;
     text-align: center;
     line-height: 2em;
+    cursor: pointer;
 }
 table.elements > tbody > tr > th:first-child {
     width: 2rem
@@ -286,10 +287,12 @@ iframe {
 }
 
 .out {
-    opacity: 0;
-
+    visibility: hidden;
 }
 .in {
-    opacity: 1;
-
+    visibility: visible;
 }
+.filtering td {
+    opacity: 0.4;
+}
+

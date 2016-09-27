@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <title>Periodic Table</title>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
 <link rel=stylesheet href="/static/css/main.css">
 <script async src=/static/js/app.js></script>
 <script async src=/static/js/dragscroll.js></script>
@@ -13,12 +14,12 @@
             <table class=elements>
                 <tr>
                     {{#range 0 19}}
-                        <th>{{#if index}}{{index}}{{/if}}</th>
+                        <th g>{{#if index}}{{index}}{{/if}}</th>
                     {{/range}}
                 </tr>
                 {{#range 1 8}}
                     <tr>
-                        <th>{{index}}</th>
+                        <th p>{{index}}</th>
                         {{#range 1 19}}
                             {{#with (getElementAtPosition ../index index)}}
                                 <td s={{symbol}} c={{toInitialism groupBlock}}>
@@ -50,16 +51,16 @@
                 {{/range}}
                 <tr>
                     <th></th>
-                    <th colspan=2>s</th>
-                    <th colspan=10>d</th>
-                    <th colspan=6>p</th>
+                    <th b colspan=2>s</th>
+                    <th b colspan=10>d</th>
+                    <th b colspan=6>p</th>
                 </tr>
             </table>
 
             <table class="elements">
                 <tr>
-                    <th rowspan=2>f</th>
-                    <th colspan=2>* Lanthanides</th>
+                    <th b rowspan=2>f</th>
+                    <th g=l colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}}>
                             {{> element element=this zoom=../zoom}}
@@ -68,7 +69,7 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <th colspan=2>** Actinides</th>
+                    <th g=a colspan=2>** Actinides</th>
                     {{#each (actinides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}}>
                             {{> element element=this zoom=../zoom}}
