@@ -13,9 +13,9 @@
 
     var i, scrolled;
 
-    var documentElement = document.documentElement;
+    var ZOOM_SCALES = [ 1, 2, 4.5 ];
 
-    var ZOOM_WIDTHS = [ -1, 1200, 2200, 5700, 14000 ];
+    var documentElement = document.documentElement;
 
     var nodes = {
         zoom: document.querySelector('[z]'),
@@ -44,10 +44,10 @@
         }
         return elements;
     }();
-    model.zoomWith = function(mod) {
+    model.zoomWith = function(mod, point) {
         if((mod < 0 && model.zoom > 1) || (mod > 0 && model.zoom < 4)) {
             model.zoom = model.zoom + mod;
-            view.zoomTo(model.zoom, mod);
+            view.zoomTo(mod, point);
         }
     };
     model.addFieldsForElement = function(data) {
@@ -59,65 +59,32 @@
     // view ------------------------------------------------------------------------------------------------------------
 
     var view = {};
-    view.zoomTo = function (zoom, dir) {
+    view.origin = null;
 
-        // var vc = {
-        //     x: document.documentElement.offsetWidth / 2,
-        //     y: document.documentElement.offsetHeight / 2
-        // };
-        //
-        // var tb = { x: nodes.tables.offsetLeft, y: nodes.tables.offsetTop };
-        //
-        // var tw1 = ZOOM_WIDTHS[zoom + ( dir * -1)];
-        // var tw2 = ZOOM_WIDTHS[zoom];
-        // var ratio = (vc.x - tb.x) / tw1;
-        // var left = (((tw2 * ratio)) - (tw1 * ratio)) ;
-        // setTimeout(function() {
-        //     window.scrollTo(left, 0);
-        // }, 1000);
+    //init
+    window.scrollTo(2100, 1088);
 
-        var v1 = {
-            w: document.documentElement.offsetWidth
+    view.zoomTo = function (dir, point) {
+        var $0 = nodes.tables;
+        view.origin = dir < 0 && view.origin ? view.origin : {
+            x: ((($0.getBoundingClientRect().left * -1) + point.x) / ($0.getBoundingClientRect().width)),
+            y: ((($0.getBoundingClientRect().top * -1) + point.y) / ($0.getBoundingClientRect().height))
         };
-        var t1 = {
-            w: ZOOM_WIDTHS[zoom + ( dir * -1)]
-        };
-        var t2 = {
-            w: ZOOM_WIDTHS[zoom]
-        };
-        var p1 = {
-            x: 127
-        };
-        var r = {
-            x: t2.w / t1.w
-        };
-        var v2 = {
-            w: v1.w * r.x
-        };
-        var pp1 = {
-            x: p1.x / v1.w
-        };
-        var p2 = {
-            x: v2.w * pp1.x
-        };
-        var offset = {
-            x: p2.x - p1.x
-        };
-        nodes.tables.style.transform = 'translate(' + (offset.x * -1) + 'px, 0)';
 
-        setTimeout(function() {
-            nodes.tables.classList.add('nt');
-            nodes.tables.style.transform = 'translate(0, 0)';
-            window.scrollTo(offset.x, 0);
-            nodes.tables.classList.remove('nt');
-        }, 1000);
+        nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
+        if(model.zoom > 1) {
+            var dx = (2100 + view.origin.x * $0.offsetWidth) - (window.pageXOffset + point.x);
+            var dy = (1088 + view.origin.y * $0.offsetHeight) - (window.pageYOffset + point.y);
+           window.scrollBy(dx, dy);
+        }
 
-        nodes.zoom.setAttribute('z', zoom);
-        view.panTo(zoom, dir);
-        history.replaceState(null, '', '?z=' + zoom);
+        nodes.zoom.setAttribute('z', model.zoom);
+        view.panTo(dir);
+        history.replaceState(null, '', '?z=' + model.zoom);
     };
 
-    view.panTo = function (zoom, dir) {
+    view.panTo = function (dir) {
+        var zoom = model.zoom;
         var symbolsToFetch = [],symbolsToShow = [];
         if(!dir || dir > 0) {
             symbolsToShow = Object.keys(model.elements).reduce(function(toShow, symbol) {
@@ -205,8 +172,19 @@
         document.onclick = function(ev) {
             var el = ev.target;
             if(el.matches('button[zoom]')) {
-                model.zoomWith(parseInt(el.value));
+                model.zoomWith(parseInt(el.value), {
+                    x: window.innerWidth / 2,
+                    y: window.innerHeight / 2
+                });
             }
+
+        };
+
+        nodes.tables.ondblclick = function(ev) {
+            model.zoomWith(1, {
+                x: ev.screenX,
+                y: ev.screenY
+            })
         };
 
         window.onscroll = function() {
@@ -215,11 +193,10 @@
 
         setInterval(function() {
             if(scrolled) {
-                //model.loadedArea.x = window.scrollX;
-                //model.loadedArea.y = window.scrollY;
                 scrolled = false;
                 if (model.zoom > 1) {
-                    view.panTo(model.zoom);
+                    view.origin = null;
+                    view.panTo();
                 }
             }
         }, 100);
@@ -242,22 +219,6 @@
     function inViewport (node) {
         var rect = node.getBoundingClientRect();
         return rect.bottom >= 0 && rect.right >= 0 && rect.top <= documentElement.clientHeight && rect.left <= documentElement.clientWidth;
-    }
-
-    var step = 10;
-    function scrollTo(to, duration) {
-        var element = document.body;
-        if (duration <= 0) return;
-        var difference = to - element.scrollLeft;
-        var perTick = difference / duration * step;
-
-        setTimeout(function() {
-            element.scrollLeft = element.scrollLeft + perTick;
-            if (element.scrollLeft === to) {
-                return;
-            }
-            scrollTo(to, duration - step);
-        }, step);
     }
 
 })(window, document);

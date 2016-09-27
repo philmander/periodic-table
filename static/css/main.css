@@ -21,7 +21,12 @@ html {
     box-sizing: inherit;
 }
 body {
-    overflow: auto;
+    overflow: hidden;
+}
+.wrap {
+    width: 5400px;
+    height: 2867px;
+    position: relative;
 }
 
 .zoom {
@@ -42,9 +47,12 @@ body {
 
 .tables {
     position: absolute;
-    transition: width 1s, transform 1s;
+    transition: width 1s, transform 1s ;
     transform: translate(0, 0);
-    margin: 0 auto;
+    transform-origin: 50% 50%;
+    width: 1200px;
+    left: 2100px;
+    top: 1088px;
 }
 .tables.nt {
     transition: none;
@@ -58,13 +66,13 @@ table.elements {
     width: 100%;
 }
 [z="1"] .tables {
-    width: 1200px;
+    transform: scale(1) translateZ(0);
 }
 [z="2"] .tables {
-    width: 2200px;
+    transform: scale(2) translateZ(0);;
 }
 [z="3"] .tables {
-    width: 5700px;
+    transform: scale(4.5) translateZ(0);
 }
 [z="4"] .tables {
     width: 14000px;
@@ -78,6 +86,7 @@ table.elements > tbody > tr > th {
     vertical-align: top;
     background: #f1f1f1;
     transition: height 1s;
+    background-clip: padding-box;
 }
 /*table.elements > tbody > tr > */
 td > div {
@@ -86,20 +95,28 @@ td > div {
     height: 100%;
     padding: 4px;
     overflow: hidden;
+    transform-origin: 0 0;
+}
+[z="2"] td > div {
+    transform: scale(0.5);
+    width: 200%;
+    height: 200%;
+}
+[z="3"] td > div {
+    transform: scale(0.2);
+    width: 500%;
+    height: 500%;
 }
 [z="1"] table.elements > tbody > tr > td {
     height: 65px;
 }
 [z="2"] table.elements > tbody > tr > td {
-    border-width: 3px;
-    height: 110px;
+    height: 55px;
 }
 [z="3"] table.elements > tbody > tr > td {
-    border-width: 4px;
-    height: 292px;
+    height: 59px;
 }
 [z="4"] table.elements > tbody > tr > td {
-    border-width: 6px;
     padding: 6px;
 }
 table.elements > tbody > tr > th {
@@ -207,7 +224,7 @@ td[c="l"] {
 
 
 .s, .an, .n, .am {
-    transition: font-size 1s;
+
 }
 
 table.details {
@@ -270,9 +287,9 @@ iframe {
 
 .out {
     opacity: 0;
-    transition: opacity 0.5s;
+
 }
 .in {
     opacity: 1;
-    transition: opacity 0.3s
+
 }
