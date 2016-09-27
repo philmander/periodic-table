@@ -11,11 +11,11 @@
 
     // model ------------------------------------------------------------------------------------------------------------
 
-    var i, scrolled;
-
-    var ZOOM_SCALES = [ 1, 2, 4.5 ];
+    var i, rule, scrolled;
 
     var documentElement = document.documentElement;
+
+    var filters = { PERIOD: 1, GROUP: 2, BLOCK: 3}
 
     var nodes = {
         zoom: document.querySelector('[z]'),
@@ -147,22 +147,58 @@
             { cn: 'md', z: 4 },
             { cn: 'r',  z: 4 }
         ];
-
-        setTimeout(function() {
-            var fieldNode;
-            for(i = 0; i < fields.length; i++) {
-                fieldNode = model.elements[symbol][fields[i].cn];
-                if(fieldNode) {
-                    if(fields[i].z <= model.zoom) {
-                        fieldNode.classList.add('in');
-                        fieldNode.classList.remove('out');
-                    } else {
-                        fieldNode.classList.add('out');
-                        fieldNode.classList.remove('in');
-                    }
+        var fieldNode;
+        for(i = 0; i < fields.length; i++) {
+            fieldNode = model.elements[symbol][fields[i].cn];
+            if(fieldNode) {
+                if(fields[i].z <= model.zoom) {
+                    fieldNode.classList.add('in');
+                    fieldNode.classList.remove('out');
+                } else {
+                    fieldNode.classList.add('out');
+                    fieldNode.classList.remove('in');
                 }
             }
-        }, 0);
+        }
+    };
+
+    var blockRanges = {s: [ 2, 3 ], d: [ 4, 13 ], p: [ 14, 19 ]};
+    view.applyFilter = function (type, value) {
+        var sheet = document.styleSheets[0];
+        view.filterRuleIndex = view.filterRuleIndex || sheet.rules.length;
+
+        if(model.filter === type + '_' + value) {
+            delete model.filter;
+            nodes.tables.classList.remove('filtering');
+            if(view.filterRuleIndex < sheet.rules.length) {
+                sheet.deleteRule(view.filterRuleIndex);
+            }
+            return;
+        }
+        model.filter = type + '_' + value;
+
+        nodes.tables.classList.add('filtering');
+        if(view.filterRuleIndex < sheet.rules.length) {
+            sheet.deleteRule(view.filterRuleIndex);
+        }
+
+        if(type === filters.GROUP) {
+            if(isNaN(parseInt(value))) {
+                rule = 'td[c="' + value + '"] { opacity: 1 !important }';
+            } else {
+                rule = '.elements:nth-child(1) tr > td:nth-child(' + (parseInt(value) + 1) + ') { opacity: 1 !important; }';
+            }
+        } else if(type === filters.PERIOD) {
+            rule = '.elements:nth-child(1) tr:nth-child(' + (parseInt(value) + 1) + ') > td { opacity: 1 !important; }'
+        } else {
+            if(value === 'f') {
+                rule = 'td[c="a"], td[c="l"] { opacity: 1 !important }';
+            } else {
+                rule = '.elements:nth-child(1) td:nth-child(n+' + blockRanges[value][0] + '):nth-child(-n+' + blockRanges[value][1] + '):not([c="a"]):not([c="l"]) { opacity: 1 !important }';
+            }
+        }
+
+        sheet.insertRule(rule, view.filterRuleIndex);
     };
 
     // controller ------------------------------------------------------------------------------------------------------
@@ -178,6 +214,15 @@
                 });
             }
 
+            if(el.tagName === 'TH') {
+                if(el.hasAttribute('g')) {
+                    view.applyFilter(filters.GROUP, el.getAttribute('g') || el.textContent);
+                } else if(el.hasAttribute('b')) {
+                    view.applyFilter(filters.BLOCK, el.textContent);
+                } else if(el.hasAttribute('p')) {
+                    view.applyFilter(filters.PERIOD, el.textContent)
+                }
+            }
         };
 
         nodes.tables.ondblclick = function(ev) {
@@ -185,6 +230,22 @@
                 x: ev.screenX,
                 y: ev.screenY
             })
+        };
+        doubleTap(nodes.tables);
+
+        var allowWheel = true;
+        nodes.tables.onwheel = function(ev) {
+            if(allowWheel) {
+                model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
+                    x: ev.screenX,
+                    y: ev.screenY
+                });
+                allowWheel = false;
+                setTimeout(function() {
+                    allowWheel = true;
+                }, 1000);
+            }
+
         };
 
         window.onscroll = function() {
@@ -220,5 +281,9 @@
         var rect = node.getBoundingClientRect();
         return rect.bottom >= 0 && rect.right >= 0 && rect.top <= documentElement.clientHeight && rect.left <= documentElement.clientWidth;
     }
+
+    //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
+    function doubleTap(d,h,e){if("ontouchstart"in d){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
+        a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
 
 })(window, document);
