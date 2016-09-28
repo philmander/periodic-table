@@ -6,11 +6,22 @@
             <li><a href=#other-{{element.symbol}}>Other resources</a></li>
         </ul>
         <div class=tabs-content>
-            <div id=wiki-{{element.symbol}} class="tabs-content-pane wiki-pane">
-                <!--<iframe src="https://en.wikipedia.org/wiki/Caesium?printable=yes" ></iframe>-->
-            </div>
             <div id=video-{{element.symbol}} class=tabs-content-pane>
-                <!-- ANY CONTENT HERE -->
+                <div class="video">
+                    {{#if element.resources.youtube}}
+                        <iframe width="560" height="315" src="{{element.resources.youtube}}" frameborder="0" allowfullscreen></iframe>
+                    {{else}}
+                        <p>No video available</p>
+                    {{/if}}
+                </div>
+            </div>
+            <div id=wiki-{{element.symbol}} class="tabs-content-pane wiki-pane">
+                {{#if element.resources.wiki}}
+                    <iframe src="{{element.resources.wiki}}"></iframe>
+                {{else}}
+                    <p>No wiki page available</p>
+                {{/if}}
+
             </div>
             <div id=other-{{element.symbol}} class=tabs-content-pane>
                 <!-- ANY CONTENT HERE -->

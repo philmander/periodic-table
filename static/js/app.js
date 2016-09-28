@@ -1,4 +1,4 @@
-(function(window, document) {
+(function(window, document, localStorage) {
 
     // model ------------------------------------------------------------------------------------------------------------
 
@@ -13,6 +13,11 @@
         FILTERING: 'filtering'
     };
 
+    var position = {
+        x: 14400,
+        y: 7500
+    };
+
     var nodes = {
         filters: document.querySelector('#f'),
         zoom: document.querySelector('[z]'),
@@ -25,7 +30,8 @@
     var model = {
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
         zoom: parseInt(nodes.zoom.getAttribute('z')),
-        temp: 298.15
+        temp: localStorage.temp ? parseInt(localStorage.temp) : 298.15,
+        tempUnit: localStorage.tempUnit || 'k'
     };
     model.init = function() {
 
@@ -73,26 +79,33 @@
 
     var view = {};
     view.origin = null;
-    window.scrollTo(14400, 7500 - 10);
     //init
     view.init = function() {
-        view.updateTempUnit();
+
+        window.scrollTo(position.x, position.y - 10);
+
+        nodes.tempUnit.value = model.tempUnit;
+        view.tempUnitChanged();
     };
 
-    view.updateTemp = function () {
-        var unit = nodes.tempUnit.value;
+    view.tempChanged = function () {
         var temp = parseInt(nodes.temp.value);
-        model.temp = unit == 'c' ? temp + 273.15 : (unit == 'f' ? (temp + 459.67) * 5/9 : temp);
+        if(isNaN(temp)) {
+            temp = model.temp
+        }
+        model.temp = model.tempUnit == 'c' ? temp + 273.15 : (model.tempUnit == 'f' ? (temp + 459.67) * 5/9 : temp);
 
         if(model.filter && model.filter.split('_')[0] == filters.STATE) {
-            view.applyFilter(filters.STATE, model.filter.split('_')[1]);
+            view.applyFilter(filters.STATE, model.filter.split('_')[1], true);
         }
+        localStorage.temp = model.temp;
     };
 
-    view.updateTempUnit = function() {
-        var unit = nodes.tempUnit.value;
-        var temp = unit == 'c' ? model.temp - 273.15 : (unit == 'f' ? model.temp * 9/5 - 459.67 : model.temp);
+    view.tempUnitChanged = function() {
+        model.tempUnit = nodes.tempUnit.value;
+        var temp = model.tempUnit == 'c' ? model.temp - 273.15 : (model.tempUnit == 'f' ? model.temp * 9/5 - 459.67 : model.temp);
         nodes.temp.value = Math.round(temp);
+        localStorage.tempUnit = model.tempUnit;
     };
 
     view.zoomTo = function (dir, point) {
@@ -106,8 +119,8 @@
 
         //correct scroll position for transform origin
         if(model.zoom > 1) {
-            var dx = (14400 + view.origin.x * $0.offsetWidth) - (window.pageXOffset + point.x);
-            var dy = (7500 + view.origin.y * $0.offsetHeight) - (window.pageYOffset + point.y);
+            var dx = (position.x + view.origin.x * $0.offsetWidth) - (window.pageXOffset + point.x);
+            var dy = (position.y + view.origin.y * $0.offsetHeight) - (window.pageYOffset + point.y);
            window.scrollBy(dx, dy);
         }
 
@@ -152,12 +165,14 @@
         function inject(data, fieldNames) {
             for(i = 0; i < fieldNames.length; i++) {
                 var node = model.elements[data.symbol].node;
-                var wrapper = document.createElement('div');
-                wrapper.innerHTML = data[fieldNames[i]];
-                var inject = wrapper.firstChild;
-                inject.classList.add('out');
-                node.firstElementChild.appendChild(inject);
-                model.elements[data.symbol][fieldNames[i]] = inject;
+                if(!node.querySelectorAll('.' + fieldNames[i]).length) {
+                    var wrapper = document.createElement('div');
+                    wrapper.innerHTML = data[fieldNames[i]];
+                    var inject = wrapper.firstChild;
+                    inject.classList.add('out');
+                    node.firstElementChild.appendChild(inject);
+                    model.elements[data.symbol][fieldNames[i]] = inject;
+                }
             }
         }
 
@@ -165,10 +180,10 @@
             inject(data, ['n', 'am']);
         }
         if(model.zoom == 3) {
-            inject(data, ['d']);
+            inject(data, ['n', 'am', 'd']);
         }
         if(model.zoom == 4) {
-            inject(data, ['md', 'r']);
+            inject(data, ['n', 'am', 'd', 'md', 'r']);
         }
     };
 
@@ -195,14 +210,16 @@
         }
     };
 
-    view.applyFilter = function(type, value) {
+    view.applyFilter = function(type, value, amend) {
 
-        (document.querySelector('input:checked') || {}).checked = false;
-
-        if(model.filter === type + '_' + value) {
-            delete model.filter;
-            nodes.tables.classList.remove('filtering');
-            return;
+        if(!amend) {
+            uncheckAll();
+            if(model.filter === type + '_' + value) {
+                delete model.filter;
+                nodes.tables.classList.remove('filtering');
+                setTimeout(uncheckAll, 0);
+                return;
+            }
         }
 
         model.filter = type + '_' + value;
@@ -289,8 +306,8 @@
                 for(i = 0; i < panes.length; i++) {
                     panes[i].style.display = panes[i] == target ? 'block' : 'none';
                 }
+                ev.preventDefault();
             }
-            ev.preventDefault();
          };
 
         //zoom events
@@ -300,7 +317,8 @@
                 y: ev.screenY
             })
         };
-        //doubleTap(nodes.tables);
+        doubleTap(nodes.tables);
+
         var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
@@ -318,10 +336,10 @@
 
         //temperature and state updates
         nodes.tempUnit.onchange = function() {
-            view.updateTempUnit();
+            view.tempUnitChanged();
         };
         nodes.temp.onchange = function() {
-            view.updateTemp();
+            view.tempChanged();
         };
 
         //scrolling
@@ -370,6 +388,12 @@
         return i;
     }
 
-    //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
+    function uncheckAll() {
+        (document.querySelector('input:checked') || {}).checked = false;
+    }
 
-})(window, document);
+    //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
+    function doubleTap(d,h,e){if("ontouchstart"in d){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
+        a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
+
+})(window, document, localStorage);

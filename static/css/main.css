@@ -23,9 +23,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body {
-    overflow: hidden;
-}
 .wrap {
     width: 30000px;
     height: 15000px;
@@ -40,6 +37,7 @@ body {
     box-shadow: -1px 0 12px #717171;
     z-index: 1;
     overflow: hidden;
+    background: #f5f5f5;
 }
 #z button {
     display: block;
@@ -221,7 +219,7 @@ td > div {
     height: 59px;
 }
 [z="4"] .elements > tbody > tr > td {
-    height: 65px;
+    height: 63px;
 }
 .elements > tbody > tr > th {
     color: #585858;
@@ -366,15 +364,17 @@ td > div {
     text-decoration: none;
     color: #585858;
 }
-
 .tabs-content {
     height: 400px;
     padding: 8px;
     background-color: rgba(255, 255, 255, 0.8);
+    overflow: auto;
+    color: #585858;
 }
 .wiki-pane {
     padding: 8px;
     background: #fff;
+    overflow: hidden;
 }
 iframe {
     width: 100%;
@@ -396,4 +396,17 @@ iframe {
 .filtered {
     opacity: 1 !important;
 }
-
+.video {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+.video iframe, .video object, .video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}

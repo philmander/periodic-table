@@ -1547,7 +1547,11 @@
     "boilingPoint": 3737,
     "density": 6.146,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1839
+    "yearDiscovered": 1839,
+    "resources" : {
+      "youtube" : "https://www.youtube.com/embed/Q21clW0s0B8",
+      "wiki" : "https://en.wikipedia.org/wiki/Lanthanum?printable=yes"
+    }
   },
   {
     "group": "l",
