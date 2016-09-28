@@ -8,23 +8,12 @@
  */
 
 
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        define(['exports'], factory);
-    } else if (typeof exports !== 'undefined') {
-        factory(exports);
-    } else {
-        factory((root.dragscroll = {}));
-    }
-}(this, function (exports) {
-    var _window = window;
-    var _document = document;
+(function (window, document) {
     var mousemove = 'mousemove';
     var mouseup = 'mouseup';
     var mousedown = 'mousedown';
-    var EventListener = 'EventListener';
-    var addEventListener = 'add'+EventListener;
-    var removeEventListener = 'remove'+EventListener;
+    var addEventListener = 'addEventListener';
+    var removeEventListener = 'removeEventListener';
 
     var dragged = [];
     var reset = function(i, el) {
@@ -32,19 +21,19 @@
             el = dragged[i++];
             el = el.container || el;
             el[removeEventListener](mousedown, el.md, 0);
-            _window[removeEventListener](mouseup, el.mu, 0);
-            _window[removeEventListener](mousemove, el.mm, 0);
+            window[removeEventListener](mouseup, el.mu, 0);
+            window[removeEventListener](mousemove, el.mm, 0);
         }
 
         // cloning into array since HTMLCollection is updated dynamically
-        dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
+        dragged = [].slice.call(document.getElementsByClassName('dragscroll'));
         for (i = 0; i < dragged.length;) {
             (function(el, lastClientX, lastClientY, pushed, scroller, cont){
                 (cont = el.container || el)[addEventListener](
                     mousedown,
                     cont.md = function(e) {
                         if (!el.hasAttribute('nochilddrag') ||
-                            _document.elementFromPoint(
+                            document.elementFromPoint(
                                 e.pageX, e.pageY
                             ) == cont
                         ) {
@@ -57,11 +46,11 @@
                     }, 0
                 );
 
-                _window[addEventListener](
+                window[addEventListener](
                     mouseup, cont.mu = function() {pushed = 0;}, 0
                 );
 
-                _window[addEventListener](
+                window[addEventListener](
                     mousemove,
                     cont.mm = function(e) {
                         if (pushed) {
@@ -74,14 +63,12 @@
                 );
             })(dragged[i++]);
         }
-    }
+    };
 
 
-    if (_document.readyState == 'complete') {
+    if (document.readyState == 'complete') {
         reset();
     } else {
-        _window[addEventListener]('load', reset, 0);
+        window[addEventListener]('load', reset, 0);
     }
-
-    exports.reset = reset;
-}));
+})(window, document);

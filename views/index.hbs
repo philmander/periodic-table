@@ -5,9 +5,42 @@
 <script async src=/static/js/app.js></script>
 <script async src=/static/js/dragscroll.js></script>
 <body z={{zoom}} class=dragscroll>
-    <div class=zoom>
+    <div id=z>
         <button type=button zoom value=1>+</button>
         <button type=button zoom value=-1>-</button>
+    </div>
+
+    <div id=f>
+        <span>Filters</span>
+        <div>
+            <fieldset id=fs>
+                <span>State @:</span>
+                <input type=number size=4 value=298 min=-460 max=10340 id=t size=4>
+                <select>
+                    <option value=k selected>K</option>
+                    <option value=c>°C</option>
+                    <option value=f>°F</option>
+                </select>
+                <label><input type=radio name=st value=g><i>✓</i> Gas</label>
+                <label><input type=radio name=st value=l><i>✓</i> Liquid</label>
+                <label><input type=radio name=st value=s><i>✓</i> Solid</label>
+            </fieldset>
+            <fieldset id="fc">
+                <span>Categories:</span>
+                <label><input type=radio name=c value="n,h,ng"><i>✓</i> Non-metals</label>
+                <label c=m><input type=radio name=c value=m><i>✓</i> Metalloids</label>
+                <label c=n><input type=radio name=c value=n><i>✓</i> Other non-metals</label>
+                <label c=h><input type=radio name=c value=h><i>✓</i> Halogens</label>
+                <label c=ng><input type=radio name=c  value=ng><i>✓</i> Noble gases</label>
+                <label><input type=radio name=c value="am,aem,l,a,tm,ptm"><i>✓</i>Metals</label>
+                <label c=am><input type=radio name=c value=am><i>✓</i> Alkali metals</label>
+                <label c=aem><input type=radio name=c value=aem><i>✓</i> Alkaline earth metals</label>
+                <label c=l><input type=radio name=c value=l><i>✓</i> Lanthanides</label>
+                <label c=a><input type=radio name=c value=a><i>✓</i> Actinides</label>
+                <label c=tm><input type=radio name=c value=tm><i>✓</i> Transition metals</label>
+                <label c=ptm><input type=radio name=c value=ptm><i>✓</i> Post-transition metals</label>
+            </fieldset>
+        </div>
     </div>
     <div class="wrap">
         <div class="tables">
@@ -22,7 +55,7 @@
                         <th p>{{index}}</th>
                         {{#range 1 19}}
                             {{#with (getElementAtPosition ../index index)}}
-                                <td s={{symbol}} c={{toInitialism groupBlock}}>
+                                <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}}>
                                     {{> element element=this zoom=../../../zoom}}
                                 </td>
                             {{else}}
@@ -62,7 +95,7 @@
                     <th b rowspan=2>f</th>
                     <th g=l colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
-                        <td s={{symbol}} c={{toInitialism groupBlock}}>
+                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}">
                             {{> element element=this zoom=../zoom}}
                         </td>
                     {{/each}}
@@ -71,7 +104,7 @@
                 <tr>
                     <th g=a colspan=2>** Actinides</th>
                     {{#each (actinides)}}
-                        <td s={{symbol}} c={{toInitialism groupBlock}}>
+                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}">
                             {{> element element=this zoom=../zoom}}
                         </td>
                     {{/each}}
