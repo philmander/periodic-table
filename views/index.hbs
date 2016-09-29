@@ -1,31 +1,47 @@
 <!DOCTYPE html>
-<title>Periodic Table</title>
-<meta name="viewport" content="width=device-width,user-scalable=no" />
-<link rel=stylesheet href="/static/css/main.css">
-<script async src=/static/js/app.js></script>
-<script async src=/static/js/dragscroll.js></script>
+<title>Zoomable Periodic Table of Elements</title>
+<meta name=viewport content="width=device-width,user-scalable=no">
+{{#if (isProduction)}}
+    <style>{{{@css}}}</style>
+    <script defer src=/static/build/app.min.js></script>
+{{else}}
+    <link rel=stylesheet href=/static/css/main.css>
+    <script defer src=/static/js/main.js></script>
+    <script defer src=/static/js/dragscroll.js></script>
+{{/if}}
+
 <body z={{zoom}} class=dragscroll>
     <div id=z>
-        <button type=button zoom value=1>+</button>
-        <button type=button zoom value=-1>-</button>
+        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
+        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
     </div>
 
+    <input type=checkbox id=toggle>
     <div id=f>
-        <span>Filters</span>
+        <label for=toggle>Filters</label>
         <div>
-            <fieldset id=fs>
-                <span>State @:</span>
-                <input type=number min=-460 max=10340 id=t>
+            <fieldset id=ft>
+                <label>State @ </label>
+                <input type=number min=-460 max=10340 id=temp>
                 <select>
                     <option value=k selected>K</option>
                     <option value=c>°C</option>
                     <option value=f>°F</option>
                 </select>
+            </fieldset>
+            <fieldset id=fs class=radios>
                 <label><input type=radio name=st value=g><i>✓</i> Gas</label>
                 <label><input type=radio name=st value=l><i>✓</i> Liquid</label>
                 <label><input type=radio name=st value=s><i>✓</i> Solid</label>
             </fieldset>
-            <fieldset id="fc">
+            <fieldset id="ff">
+                <label>Find  <input id=find placeholder="Mercury"></label>
+            </fieldset>
+            <fieldset id="fy">
+                <label>Year <input type=number min=1669 max={{year}} id=year></label>
+                <button type=button id=yearApply>Apply</button>
+            </fieldset>
+            <fieldset id="fc" class=radios>
                 <span>Categories:</span>
                 <label><input type=radio name=c value="n,h,ng"><i>✓</i> Non-metals</label>
                 <label c=m><input type=radio name=c value=m><i>✓</i> Metalloids</label>
@@ -42,8 +58,8 @@
             </fieldset>
         </div>
     </div>
-    <div class="wrap">
-        <div class="tables">
+    <div id="wrap">
+        <div id="tables">
             <table class=elements>
                 <tr>
                     {{#range 0 19}}
@@ -55,7 +71,7 @@
                         <th p>{{index}}</th>
                         {{#range 1 19}}
                             {{#with (getElementAtPosition ../index index)}}
-                                <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}}>
+                                <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}} y={{yearDiscovered}}>
                                     {{> element element=this zoom=../../../zoom}}
                                 </td>
                             {{else}}
@@ -95,7 +111,7 @@
                     <th b rowspan=2>f</th>
                     <th g=l colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
-                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}">
+                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}
                         </td>
                     {{/each}}
@@ -104,7 +120,7 @@
                 <tr>
                     <th g=a colspan=2>** Actinides</th>
                     {{#each (actinides)}}
-                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}">
+                        <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}
                         </td>
                     {{/each}}

@@ -2,7 +2,24 @@ const
     Handlebars = require('handlebars');
     esc = Handlebars.Utils.escapeExpression;
 
+const zoomLevels = {
+    MIN: 1,
+    MAX: 4
+};
+
 module.exports = {
+
+    isProduction: function(opts) {
+        return opts.data.env === 'production';
+    },
+
+    incrementZoom: function(zoom) {
+        return Math.min(zoom + 1, zoomLevels.MAX);
+    },
+
+    decrementZoom: function(zoom) {
+        return Math.max(zoom - 1, zoomLevels.MIN);
+    },
     
     range : function range(from, to, opts) {
         let i, out = ``;
@@ -12,22 +29,6 @@ module.exports = {
             });
         }
         return out;
-    },
-
-    isZoom1: function (opts) {
-
-    },
-
-    isZoom2: function (opts) {
-
-    },
-
-    isZoom3: function (opts) {
-
-    },
-
-    isZoom4: function (opts) {
-
     },
     
     getElementAtPosition: function(period, group, opts) {
@@ -84,6 +85,10 @@ module.exports = {
     formatIsotopes: function (isotopesArr, symbol) {
         const formatted = isotopesArr.map(mass => `<sup>${esc(mass)}</sup>${esc(symbol)}`).join(', ');
         return new Handlebars.SafeString(formatted);
+    },
+    
+    year: function () {
+        return new Date().getFullYear()
     }
 
 };

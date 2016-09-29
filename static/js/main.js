@@ -6,24 +6,33 @@
 
     var documentElement = document.documentElement;
 
-    var filters = { PERIOD: 'p', GROUP: 'g', BLOCK: 'b', CATEGORY: 'c', STATE: 's'}
+    var filters = { PERIOD: 'p', GROUP: 'g', BLOCK: 'b', CATEGORY: 'c', STATE: 's', YEAR: 'y', FIND: 'f'};
+
+    var titles = {
+        am: 'Relative atmoic mass',
+        an: 'Atomic number'
+    };
 
     var css = {
         FILTERED: 'filtered',
         FILTERING: 'filtering'
     };
 
-    var position = {
+    var initScroll = {
         x: 14400,
         y: 7500
     };
 
     var nodes = {
+        wrap: document.querySelector('#wrap'),
         filters: document.querySelector('#f'),
         zoom: document.querySelector('[z]'),
-        tables: document.querySelector('.tables'),
+        tables: document.querySelector('#tables'),
         elements: document.querySelectorAll('td[s]'),
-        temp: document.querySelector('#t')
+        temp: document.querySelector('#temp'),
+        find: document.querySelector('#find'),
+        year: document.querySelector('#year'),
+        yearApply: document.querySelector('#yearApply')
     };
     nodes.tempUnit = nodes.temp.nextElementSibling;
 
@@ -31,7 +40,8 @@
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
         zoom: parseInt(nodes.zoom.getAttribute('z')),
         temp: localStorage.temp ? parseInt(localStorage.temp) : 298.15,
-        tempUnit: localStorage.tempUnit || 'k'
+        tempUnit: localStorage.tempUnit || 'k',
+        year: localStorage.year || new Date().getFullYear()
     };
     model.init = function() {
 
@@ -41,14 +51,18 @@
             node = nodes.elements[i];
             var select = node.querySelector.bind(node);
             var cat = node.getAttribute('c');
+            var year = parseInt(node.getAttribute('y'));
             var isActinideOrLanthanide = cat == 'l' || cat == 'a';
             var nodeIndex = getElIndex(node);
-            var temps = node.getAttribute('t').split(',')
-            elements[node.getAttribute('s')] = {
+            var temps = node.getAttribute('t').split(',');
+            var el = elements[node.getAttribute('s')] = {
                 zoomAvailable: model.zoom,
                 node: node,
                 c: cat,
+                y: year,
+                s: select('.s'),
                 n: select('.n'),
+                an: select('.an'),
                 am: select('.am'),
                 d: select('.d'),
                 md: select('.md'),
@@ -59,6 +73,10 @@
                 mp: temps[0] || null,
                 bp: temps[1] || null
             };
+
+            //add title
+            addTitle(el, 'an');
+            addTitle(el, 'am');
         }
         model.elements = elements;
     };
@@ -81,11 +99,33 @@
     view.origin = null;
     //init
     view.init = function() {
+        var tables = nodes.tables;
 
-        window.scrollTo(position.x, position.y - 10);
+        //set up viewport
+        document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
+        nodes.wrap.style.width = '30000px';
+        nodes.wrap.style.height = '15000px';
+        tables.style.left = '14400px';
+        tables.style.top = '7500px';
+        tables.style.transformOrigin = '50% 50%';
 
+        //this centers the table if it is smaller than the viewport
+        var dims = {
+            width: rect(tables).width,
+            height: rect(tables).height
+        };
+        var scroll = {
+            x: window.innerWidth > dims.width ? initScroll.x - ((window.innerWidth - dims.width) / 2) : initScroll.x,
+            y: window.innerHeight > dims.height ? initScroll.y - ((window.innerHeight - dims.height) / 2) : initScroll.y,
+        };
+        window.scrollTo(scroll.x, scroll.y);
+
+        //initialize state and temperature
         nodes.tempUnit.value = model.tempUnit;
         view.tempUnitChanged();
+
+        //initialize year
+        nodes.year.value = model.year;
     };
 
     view.tempChanged = function () {
@@ -108,19 +148,31 @@
         localStorage.tempUnit = model.tempUnit;
     };
 
+    view.yearChanged = function() {
+        var year = parseInt(nodes.year.value);
+        view.applyFilter(filters.YEAR, isNaN(year) ? new Date().getFullYear() : year);
+        localStorage.year = isNaN(year) ? null : year;
+    };
+
+    view.findChanged = function() {
+        var value = nodes.find.value;
+        value = (value && value.toLowerCase().trim()) || '';
+        view.applyFilter(filters.FIND, value);
+    };
+
     view.zoomTo = function (dir, point) {
-        var $0 = nodes.tables;
+        var tables = nodes.tables;
         view.origin = dir < 0 && view.origin ? view.origin : {
-            x: ((($0.getBoundingClientRect().left * -1) + point.x) / ($0.getBoundingClientRect().width)),
-            y: ((($0.getBoundingClientRect().top * -1) + point.y) / ($0.getBoundingClientRect().height))
+            x: (((rect(tables).left * -1) + point.x) / (rect(tables).width)),
+            y: (((rect(tables).top * -1) + point.y) / (rect(tables).height))
         };
 
         nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
 
         //correct scroll position for transform origin
         if(model.zoom > 1) {
-            var dx = (position.x + view.origin.x * $0.offsetWidth) - (window.pageXOffset + point.x);
-            var dy = (position.y + view.origin.y * $0.offsetHeight) - (window.pageYOffset + point.y);
+            var dx = (initScroll.x + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
+            var dy = (initScroll.y + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
            window.scrollBy(dx, dy);
         }
 
@@ -170,6 +222,7 @@
                     wrapper.innerHTML = data[fieldNames[i]];
                     var inject = wrapper.firstChild;
                     inject.classList.add('out');
+                    addTitle(inject.firstChild, fieldNames[i]);
                     node.firstElementChild.appendChild(inject);
                     model.elements[data.symbol][fieldNames[i]] = inject;
                 }
@@ -214,9 +267,9 @@
 
         if(!amend) {
             uncheckAll();
-            if(model.filter === type + '_' + value) {
+            if(!value || model.filter == type + '_' + value) {
                 delete model.filter;
-                nodes.tables.classList.remove('filtering');
+                nodes.tables.classList.remove(css.FILTERING);
                 setTimeout(uncheckAll, 0);
                 return;
             }
@@ -228,18 +281,25 @@
         var match;
         var elements = model.elements;
         var symbols = Object.keys(elements);
-        value = value.split(',');
+        value = (value.split && value.split(',')) || [ value ];
         for(i = 0; i < symbols.length; i++) {
             var el = elements[symbols[i]];
             match = false;
             for(j = 0; j < value.length && !match; j++) {
-                match = type != filters.STATE ?
-                    //simple filter match
-                    el[type] == value[j] :
-                    //figure out state at current temperature
+                match = (
+                    type == filters.STATE &&
                     (value[j] == 'g' &&  el.bp && el.bp < model.temp ) ||
                     (value[j] == 'l' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
-                    (value[j] == 's' && el.mp && el.mp > model.temp);
+                    (value[j] == 's' && el.mp && el.mp > model.temp)
+                ) || (
+                    type == filters.YEAR && (isNaN(el.y) || el.y <= value[j])
+                ) || (
+                    type == filters.FIND &&
+                    (el.s.textContent.toLowerCase().indexOf(value[j]) === 0 ||
+                     el.s.getAttribute('title').toLowerCase().indexOf(value[j]) === 0)
+                ) || (
+                    el[type] == value[j]
+                );
 
                 match ? (el.node.classList.add(css.FILTERED)) : el.node.classList.remove(css.FILTERED);
             }
@@ -261,11 +321,12 @@
             var el = ev.target;
 
             //zoom buttons
-            if(el.hasAttribute('zoom')) {
-                model.zoomWith(parseInt(el.value), {
+            if(el.tagName == 'A' && el.parentNode.id == 'z') {
+                model.zoomWith(parseInt(el.getAttribute('value')), {
                     x: window.innerWidth / 2,
                     y: window.innerHeight / 2
                 });
+                ev.preventDefault();
             }
 
             //table headers, toggling group, period and block filtering
@@ -287,11 +348,6 @@
             //filter by state
             else if(el.tagName == 'LABEL' && el.parentNode.id == 'fs') {
                 view.applyFilter(filters.STATE, el.firstChild.value);
-            }
-
-            //open and close the filter panel
-            else if((el.tagName == 'SPAN' && el.parentNode == nodes.filters) || el == nodes.filters) {
-                nodes.filters.classList.toggle('open');
             }
 
             //resources tabs
@@ -319,7 +375,7 @@
         };
         doubleTap(nodes.tables);
 
-        var allowWheel = true;
+        var allowWheel = false//true;
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
                 model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
@@ -335,12 +391,19 @@
         };
 
         //temperature and state updates
-        nodes.tempUnit.onchange = function() {
-            view.tempUnitChanged();
+        nodes.tempUnit.onchange = view.tempUnitChanged;
+        nodes.temp.onchange = view.tempChanged;
+
+        //year
+        nodes.yearApply.onclick = view.yearChanged;
+
+        //find
+        nodes.find.onkeyup = function(ev) {
+            if(ev.keyCode != 16) {
+                view.findChanged()
+            }
         };
-        nodes.temp.onchange = function() {
-            view.tempChanged();
-        };
+
 
         //scrolling
         window.onscroll = function() {
@@ -388,12 +451,22 @@
         return i;
     }
 
+    function rect(node) {
+        return node.getBoundingClientRect();
+    }
+
     function uncheckAll() {
-        (document.querySelector('input:checked') || {}).checked = false;
+        (document.querySelector('#f input:checked') || {}).checked = false;
+    }
+
+    function addTitle(node, key) {
+        if(node[key]) {
+            node[key].setAttribute('title', titles[key]);
+        }
     }
 
     //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
     function doubleTap(d,h,e){if("ontouchstart"in d){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
         a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
 
-})(window, document, localStorage);
+})(window, document, window.localStorage);

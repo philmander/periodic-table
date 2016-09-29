@@ -19,13 +19,12 @@ html {
     font-size: 14px;
     line-height: 1.2em;
     background: #c1c1c1;
+    color: #585858;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 .wrap {
-    width: 30000px;
-    height: 15000px;
     position: relative;
 }
 
@@ -39,32 +38,31 @@ html {
     overflow: hidden;
     background: #f5f5f5;
 }
-#z button {
+#z a {
     display: block;
     font-weight: bold;
     width: 28px;
+    height: 28px;
+    line-height: 28px;
     font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #585858;
+}
+#z a:hover {
+    background: #d6d6d6;
+}
+#z a:active {
+    color: #585858;
+}
+#z i {
+    display: none;
 }
 /* Filters -----------------------------------------------------------------------------------------------------------*/
 
-#f button {
-    display: block;
-    font-weight: bold;
-    width: 28px;
-    font-size: 1.5rem;
-}
 #open {
     font-weight: bold;
     font-size: 0.8rem;
-}
-#open span:nth-child(2) {
-    display: none;
-}
-#open.open span:first-child {
-    display: none;
-}
-#open.open span:nth-child(2) {
-    display: inline;
 }
 #f {
     position: fixed;
@@ -78,11 +76,14 @@ html {
     overflow: hidden;
     transition: width 0.5s;
 }
-#f.open {
+#toggle {
+    display: none;
+}
+#toggle:checked + #f {
     width: 215px;
     transition: width 0.5s;
 }
-#f > span {
+#f > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -104,21 +105,20 @@ html {
 }
 fieldset {
     border: 0;
-    margin: 8px 0;
-    color: #6c6c6c;
+    margin-top: 8px;
 }
 fieldset span {
     display: inline-block;
     padding-bottom: 6px;
 }
-label {
+.radios label {
     display: block;
     padding: 4px;
     cursor: pointer;
     background: #717171;
     color: #fff;
 }
-label input[type="radio"] {
+.radios label input[type="radio"] {
     display: none;
 }
 input + i {
@@ -127,32 +127,22 @@ input + i {
 input:checked + i {
     visibility: visible;
 }
-button {
-    display: block;
-    cursor: pointer;
-}
-#fs label:nth-child(4) {
+#fs label:nth-child(1) {
     background: #b9c0f3;
 }
-#fs label:nth-child(5) {
+#fs label:nth-child(2) {
     background: #757FF3;
 }
-#fs label:nth-child(6) {
+#fs label:nth-child(3) {
     background: #2e3af3;
 }
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
-.tables {
+#tables {
     position: absolute;
-    transition: width 1s, transform 1s ;
-    transform: translate(0, 0);
-    transform-origin: 50% 50%;
+    transition: transform 1s ;
+    transform-origin: 0 0;
     width: 1200px;
-    left: 14400px;
-    top: 7500px;
-}
-.tables.nt {
-    transition: none;
 }
 .elements {
     border-collapse: collapse;
@@ -161,17 +151,18 @@ button {
     color: #585858;
     background: #fff;
     width: 100%;
+    box-shadow: 0 0 6px #717171;
 }
-[z="1"] .tables {
+[z="1"] #tables {
     transform: scale(1) translateZ(0);
 }
-[z="2"] .tables {
+[z="2"] #tables {
     transform: scale(2) translateZ(0);;
 }
-[z="3"] .tables {
-    transform: scale(4.5) translateZ(0);
+[z="3"] #tables {
+    transform: scale(5) translateZ(0);
 }
-[z="4"] .tables {
+[z="4"] #tables {
     transform: scale(12) translateZ(0);
 }
 .elements > tbody > tr > td,
@@ -185,7 +176,6 @@ button {
     transition: height 1s;
     background-clip: padding-box;
 }
-/*table.elements > tbody > tr > */
 td > div {
     position: absolute;
     width: 100%;
@@ -206,8 +196,8 @@ td > div {
 }
 [z="4"] td > div {
     transform: scale(0.083);
-    width: 1210%;
-    height: 1210%
+    width: 1200%;
+    height: 1200%
 }
 [z="1"] .elements > tbody > tr > td {
     height: 65px;

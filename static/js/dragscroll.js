@@ -1,13 +1,4 @@
-
-/**
- * @fileoverview dragscroll - scroll area by dragging
- * @version 0.0.6
- *
- * @license MIT, see http://github.com/asvd/intence
- * @copyright 2015 asvd <heliosframework@gmail.com>
- */
-
-
+//https://github.com/asvd/dragscroll
 (function (window, document) {
     var mousemove = 'mousemove';
     var mouseup = 'mouseup';
@@ -64,7 +55,6 @@
             })(dragged[i++]);
         }
     };
-
 
     if (document.readyState == 'complete') {
         reset();

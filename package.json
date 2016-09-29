@@ -26,8 +26,15 @@
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "express-minify-html": "^0.6.0",
+    "google-closure-compiler-js": "^20160916.0.0",
     "handlebars": "^4.0.5",
     "hbs": "^4.0.0",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "vinyl": "^1.2.0"
   }
 }

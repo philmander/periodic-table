@@ -3,7 +3,7 @@ const
     bodyParser = require('body-parser'),
     minifyHTML = require('express-minify-html'),
     compression = require('compression'),
-        favicon = require('serve-favicon'),
+    favicon = require('serve-favicon'),
     path = require('path'),
     fs = require('fs'),
     hbs = require('hbs'),
@@ -12,6 +12,7 @@ const
 
 hbs.handlebars = handlebars;
 
+//default ot production
 const elementList = require('./data/elements.json');
 
 const PARTIAL_DIR = 'views/partials';
@@ -46,10 +47,12 @@ for(let element of elementList) {
 //init express
 const app = express();
 app.locals.elements = elementList;
+app.locals.env = app.get('env');
+app.locals.css = fs.readFileSync(path.join(__dirname, 'static/build/main.css'), 'utf8');
 hbs.localsAsTemplateData(app);
-app.disable('view cache');
 hbs.registerPartials(path.join(__dirname, PARTIAL_DIR));
 app.set('view engine', 'hbs');
+app.set('json spaces', 0);
 
 app.use(minifyHTML({
     override:      true,
