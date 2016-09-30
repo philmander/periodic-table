@@ -8,7 +8,9 @@
         </ul>
         <div class=tabs-content>
             <div id=history-{{element.symbol}} class="tabs-content-pane active">
-                <p>Discovered by {{element.discoveredBy}}</p>
+                {{#if element.discoveredBy}}
+                    <p>Discovered by {{element.discoveredBy}}</p>
+                {{/if}}
                 <p>{{element.info}}</p>
                 <p><small>Information courtesy of <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a></small></p>
             </div>
