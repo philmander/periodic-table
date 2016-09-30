@@ -27,7 +27,14 @@
     "boilingPoint": 20,
     "density": 0.0000899,
     "groupBlock": "nonmetal",
-    "yearDiscovered": 1766
+    "yearDiscovered": 1766,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/6rdmpx39PRk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -56,7 +63,14 @@
     "boilingPoint": 4,
     "density": 0.0001785,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1868
+    "yearDiscovered": 1868,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/a8FJEiI5e6Q"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -85,7 +99,14 @@
     "boilingPoint": 1615,
     "density": 0.535,
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1817
+    "yearDiscovered": 1817,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/LfS10ArXTBA"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -114,7 +135,14 @@
     "boilingPoint": 2743,
     "density": 1.848,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": 1798
+    "yearDiscovered": 1798,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/qy8JyQShZRA"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -141,7 +169,14 @@
     "boilingPoint": 4273,
     "density": 2.46,
     "groupBlock": "metalloid",
-    "yearDiscovered": 1807
+    "yearDiscovered": 1807,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/JzqdHkpXuy4"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -168,7 +203,14 @@
     "boilingPoint": 4300,
     "density": 2.26,
     "groupBlock": "nonmetal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/QuW4_bRHbUk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -195,7 +237,14 @@
     "boilingPoint": 77,
     "density": 0.001251,
     "groupBlock": "nonmetal",
-    "yearDiscovered": 1772
+    "yearDiscovered": 1772,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/zmvJ54kRpjg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -222,7 +271,14 @@
     "boilingPoint": 90,
     "density": 0.001429,
     "groupBlock": "nonmetal",
-    "yearDiscovered": 1774
+    "yearDiscovered": 1774,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/WuG5WTId-IY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -249,7 +305,14 @@
     "boilingPoint": 85,
     "density": 0.001696,
     "groupBlock": "halogen",
-    "yearDiscovered": 1670
+    "yearDiscovered": 1670,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/vtWp45Eewtw"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -276,7 +339,14 @@
     "boilingPoint": 27,
     "density": 0.0009,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1898
+    "yearDiscovered": 1898,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/wzv0pb7mzaw"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -303,7 +373,14 @@
     "boilingPoint": 1156,
     "density": 0.968,
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1807
+    "yearDiscovered": 1807,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/7IT2I3LtlNE"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -330,7 +407,14 @@
     "boilingPoint": 1363,
     "density": 1.738,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": 1808
+    "yearDiscovered": 1808,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/FKkWdizutxI"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -357,7 +441,14 @@
     "boilingPoint": 2792,
     "density": 2.7,
     "groupBlock": "post transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/4AhZ8503WPs"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -384,7 +475,14 @@
     "boilingPoint": 3173,
     "density": 2.33,
     "groupBlock": "metalloid",
-    "yearDiscovered": 1854
+    "yearDiscovered": 1854,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/a2aWO5cL410"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -411,7 +509,14 @@
     "boilingPoint": 554,
     "density": 1.823,
     "groupBlock": "nonmetal",
-    "yearDiscovered": 1669
+    "yearDiscovered": 1669,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/LSYLUat03A4"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -438,7 +543,14 @@
     "boilingPoint": 718,
     "density": 1.96,
     "groupBlock": "nonmetal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/mGMR72X8V-U"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -465,7 +577,14 @@
     "boilingPoint": 239,
     "density": 0.003214,
     "groupBlock": "halogen",
-    "yearDiscovered": 1774
+    "yearDiscovered": 1774,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/BXCfBl4rmh0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -492,7 +611,14 @@
     "boilingPoint": 87,
     "density": 0.001784,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1894
+    "yearDiscovered": 1894,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/nrHVOFG2V-c"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -519,7 +645,14 @@
     "boilingPoint": 1032,
     "density": 0.856,
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1807
+    "yearDiscovered": 1807,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/pPdevJTGAYY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -546,7 +679,14 @@
     "boilingPoint": 1757,
     "density": 1.55,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/V9fuY8_ffFg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 3,
@@ -573,7 +713,14 @@
     "boilingPoint": 3103,
     "density": 2.985,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1876
+    "yearDiscovered": 1876,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/KkKv5ilmRjY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 4,
@@ -600,7 +747,14 @@
     "boilingPoint": 3560,
     "density": 4.507,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1791
+    "yearDiscovered": 1791,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/MpFTQYynrc4"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 5,
@@ -627,7 +781,14 @@
     "boilingPoint": 3680,
     "density": 6.11,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/MbCmaQzrZoc"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 6,
@@ -654,7 +815,14 @@
     "boilingPoint": 2944,
     "density": 7.14,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/lzRb4zmGvNU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 7,
@@ -681,7 +849,14 @@
     "boilingPoint": 2334,
     "density": 7.47,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1774
+    "yearDiscovered": 1774,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/uTVtBuY9Q-0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 8,
@@ -708,7 +883,14 @@
     "boilingPoint": 3134,
     "density": 7.874,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/euQUgp5AY-Y"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 9,
@@ -735,7 +917,14 @@
     "boilingPoint": 3200,
     "density": 8.9,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/V6ljxByu9ng"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 10,
@@ -762,7 +951,14 @@
     "boilingPoint": 3186,
     "density": 8.908,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1751
+    "yearDiscovered": 1751,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/t4kRHoj0W1Y"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 11,
@@ -789,7 +985,14 @@
     "boilingPoint": 3200,
     "density": 8.92,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/kop1sWzTK-I"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 12,
@@ -816,7 +1019,14 @@
     "boilingPoint": 1180,
     "density": 7.14,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1746
+    "yearDiscovered": 1746,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/99wPiMb-k0o"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -843,7 +1053,14 @@
     "boilingPoint": 2477,
     "density": 5.904,
     "groupBlock": "post transition metal",
-    "yearDiscovered": 1875
+    "yearDiscovered": 1875,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/N6ccRvKKwZQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -870,7 +1087,14 @@
     "boilingPoint": 3093,
     "density": 5.323,
     "groupBlock": "metalloid",
-    "yearDiscovered": 1886
+    "yearDiscovered": 1886,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/osrKWVknkgs"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -897,7 +1121,14 @@
     "boilingPoint": 887,
     "density": 5.727,
     "groupBlock": "metalloid",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/a2AbKwAvyos"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -924,7 +1155,14 @@
     "boilingPoint": 958,
     "density": 4.819,
     "groupBlock": "nonmetal",
-    "yearDiscovered": 1817
+    "yearDiscovered": 1817,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/IHrUtKjcAFE"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -951,7 +1189,14 @@
     "boilingPoint": 332,
     "density": 3.12,
     "groupBlock": "halogen",
-    "yearDiscovered": 1826
+    "yearDiscovered": 1826,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Slt3_5upuSs"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -978,7 +1223,14 @@
     "boilingPoint": 120,
     "density": 0.00375,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1898
+    "yearDiscovered": 1898,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/il4OOY7Zseg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -1005,7 +1257,14 @@
     "boilingPoint": 961,
     "density": 1.532,
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1861
+    "yearDiscovered": 1861,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/0XLGopBovoI"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -1032,7 +1291,14 @@
     "boilingPoint": 1655,
     "density": 2.63,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": 1790
+    "yearDiscovered": 1790,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/d5ztPGrsgNQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 3,
@@ -1059,7 +1325,14 @@
     "boilingPoint": 3618,
     "density": 4.472,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1794
+    "yearDiscovered": 1794,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/tTXjnQlAHAQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 4,
@@ -1086,7 +1359,14 @@
     "boilingPoint": 4682,
     "density": 6.511,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1789
+    "yearDiscovered": 1789,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/gNJE2MPktvg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 5,
@@ -1113,7 +1393,14 @@
     "boilingPoint": 5017,
     "density": 8.57,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1801
+    "yearDiscovered": 1801,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/2ciPAsVTq6c"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 6,
@@ -1140,7 +1427,14 @@
     "boilingPoint": 4912,
     "density": 10.28,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1778
+    "yearDiscovered": 1778,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/2ciPAsVTq6c"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 7,
@@ -1169,7 +1463,14 @@
     "boilingPoint": 4538,
     "density": 11.5,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1937
+    "yearDiscovered": 1937,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/0QBlrGva5YQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 8,
@@ -1196,7 +1497,14 @@
     "boilingPoint": 4423,
     "density": 12.37,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1827
+    "yearDiscovered": 1827,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/wl5ZYb0hDTc"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 9,
@@ -1223,7 +1531,14 @@
     "boilingPoint": 3968,
     "density": 12.45,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/PPSO5798k2I"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 10,
@@ -1250,7 +1565,14 @@
     "boilingPoint": 3236,
     "density": 12.023,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/4ALTGeqmNFM"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 11,
@@ -1277,7 +1599,14 @@
     "boilingPoint": 2435,
     "density": 10.49,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/pPd5qAb4J50"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 12,
@@ -1304,7 +1633,14 @@
     "boilingPoint": 1040,
     "density": 8.65,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1817
+    "yearDiscovered": 1817,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/boRius1DYdQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -1331,7 +1667,14 @@
     "boilingPoint": 2345,
     "density": 7.31,
     "groupBlock": "post transition metal",
-    "yearDiscovered": 1863
+    "yearDiscovered": 1863,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/4opHafNmgCw"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -1358,7 +1701,14 @@
     "boilingPoint": 2875,
     "density": 7.31,
     "groupBlock": "post transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/qEwCPJOP0Mg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -1385,7 +1735,14 @@
     "boilingPoint": 1860,
     "density": 6.697,
     "groupBlock": "metalloid",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/kcc6qNT3BoU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -1412,7 +1769,14 @@
     "boilingPoint": 1261,
     "density": 6.24,
     "groupBlock": "metalloid",
-    "yearDiscovered": 1782
+    "yearDiscovered": 1782,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/5ChFbVu4Mpk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -1439,7 +1803,14 @@
     "boilingPoint": 457,
     "density": 4.94,
     "groupBlock": "halogen",
-    "yearDiscovered": 1811
+    "yearDiscovered": 1811,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/JUBsJLRSM64"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -1466,7 +1837,14 @@
     "boilingPoint": 165,
     "density": 0.0059,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1898
+    "yearDiscovered": 1898,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Ejoct_6pQ74"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -1493,7 +1871,14 @@
     "boilingPoint": 944,
     "density": 1.879,
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1860
+    "yearDiscovered": 1860,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/5aD6HwUE2c0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -1520,7 +1905,14 @@
     "boilingPoint": 2143,
     "density": 3.51,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": 1808
+    "yearDiscovered": 1808,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/9srJdQU3NOo"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1548,10 +1940,13 @@
     "density": 6.146,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1839,
-    "resources" : {
-      "youtube" : "https://www.youtube.com/embed/Q21clW0s0B8",
-      "wiki" : "https://en.wikipedia.org/wiki/Lanthanum?printable=yes"
-    }
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Q21clW0s0B8"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/Lanthanum"
+    }]
   },
   {
     "group": "l",
@@ -1578,7 +1973,14 @@
     "boilingPoint": 3633,
     "density": 6.689,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/frD3126ry8o"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1605,7 +2007,14 @@
     "boilingPoint": 3563,
     "density": 6.64,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1885
+    "yearDiscovered": 1885,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/IL06CzXF3ns"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1632,7 +2041,14 @@
     "boilingPoint": 3373,
     "density": 7.01,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1885
+    "yearDiscovered": 1885,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/PBbl-3_R3mk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1661,7 +2077,14 @@
     "boilingPoint": 3273,
     "density": 7.264,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1947
+    "yearDiscovered": 1947,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/px52fxITTrw"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1688,7 +2111,14 @@
     "boilingPoint": 2076,
     "density": 7.353,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1853
+    "yearDiscovered": 1853,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/LpTkBg8HpvY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1715,7 +2145,14 @@
     "boilingPoint": 1800,
     "density": 5.244,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1901
+    "yearDiscovered": 1901,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/88YOmg_FUVo"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1742,7 +2179,14 @@
     "boilingPoint": 3523,
     "density": 7.901,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1880
+    "yearDiscovered": 1880,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/uUo7pY38fGY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1769,7 +2213,14 @@
     "boilingPoint": 3503,
     "density": 8.219,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1843
+    "yearDiscovered": 1843,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/On5LjH9TQxY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1796,7 +2247,14 @@
     "boilingPoint": 2840,
     "density": 8.551,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1886
+    "yearDiscovered": 1886,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/hFfR_qOSa-8"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1823,7 +2281,14 @@
     "boilingPoint": 2973,
     "density": 8.795,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1878
+    "yearDiscovered": 1878,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/HQahtzCU0BU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1850,7 +2315,14 @@
     "boilingPoint": 3141,
     "density": 9.066,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1842
+    "yearDiscovered": 1842,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/E-DY_RT4fJ4"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1877,7 +2349,14 @@
     "boilingPoint": 2223,
     "density": 9.321,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1879
+    "yearDiscovered": 1879,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/CQFDIZfMPVQ"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1904,7 +2383,14 @@
     "boilingPoint": 1469,
     "density": 6.57,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1878
+    "yearDiscovered": 1878,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Rp7-yNvOV4I"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "l",
@@ -1931,7 +2417,14 @@
     "boilingPoint": 3675,
     "density": 9.841,
     "groupBlock": "lanthanoid",
-    "yearDiscovered": 1907
+    "yearDiscovered": 1907,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/a5T1xXoR8XI"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 4,
@@ -1958,7 +2451,14 @@
     "boilingPoint": 4876,
     "density": 13.31,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1923
+    "yearDiscovered": 1923,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/egw79BA_0PA"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 5,
@@ -1985,7 +2485,14 @@
     "boilingPoint": 5731,
     "density": 16.65,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1802
+    "yearDiscovered": 1802,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/51xFP1Yn3g0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 6,
@@ -2012,7 +2519,14 @@
     "boilingPoint": 5828,
     "density": 19.25,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1783
+    "yearDiscovered": 1783,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/_PccntqMOoI"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 7,
@@ -2039,7 +2553,14 @@
     "boilingPoint": 5869,
     "density": 21.02,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1925
+    "yearDiscovered": 1925,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/VRccwkEmOYg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 8,
@@ -2066,7 +2587,14 @@
     "boilingPoint": 5285,
     "density": 22.61,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/AdX-T2Vv68Y"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 9,
@@ -2093,7 +2621,14 @@
     "boilingPoint": 4701,
     "density": 22.65,
     "groupBlock": "transition metal",
-    "yearDiscovered": 1803
+    "yearDiscovered": 1803,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/cuovE4OQi2g"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 10,
@@ -2120,7 +2655,14 @@
     "boilingPoint": 4098,
     "density": 21.09,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/byzaoji_9kk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 11,
@@ -2147,7 +2689,14 @@
     "boilingPoint": 3129,
     "density": 19.3,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/vWDKv1Dw5_Q"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 12,
@@ -2174,7 +2723,14 @@
     "boilingPoint": 630,
     "density": 13.534,
     "groupBlock": "transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/oL0M_6bfzkU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -2201,7 +2757,14 @@
     "boilingPoint": 1746,
     "density": 11.85,
     "groupBlock": "post transition metal",
-    "yearDiscovered": 1861
+    "yearDiscovered": 1861,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/bK6nnyibhdk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -2228,7 +2791,14 @@
     "boilingPoint": 2022,
     "density": 11.34,
     "groupBlock": "post transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/2ERfPN5JLX8"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -2255,7 +2825,14 @@
     "boilingPoint": 1837,
     "density": 9.78,
     "groupBlock": "post transition metal",
-    "yearDiscovered": "Ancient"
+    "yearDiscovered": "Ancient",
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/vyIo-c7VmIM"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -2284,7 +2861,14 @@
     "boilingPoint": 1235,
     "density": 9.196,
     "groupBlock": "metalloid",
-    "yearDiscovered": 1898
+    "yearDiscovered": 1898,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/bbr5yWwsI1o"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -2313,7 +2897,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "halogen",
-    "yearDiscovered": 1940
+    "yearDiscovered": 1940,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/sSL7EwdlLlE"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -2342,7 +2933,14 @@
     "boilingPoint": 211,
     "density": 0.00973,
     "groupBlock": "noble gas",
-    "yearDiscovered": 1900
+    "yearDiscovered": 1900,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/mTuC_LrEfbU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 1,
@@ -2371,7 +2969,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "alkali metal",
-    "yearDiscovered": 1939
+    "yearDiscovered": 1939,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/PyFLvSg6ZDw"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 2,
@@ -2400,7 +3005,14 @@
     "boilingPoint": 2010,
     "density": 5,
     "groupBlock": "alkaline earth metal",
-    "yearDiscovered": 1898
+    "yearDiscovered": 1898,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/5_I6vj-lXNM"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2429,7 +3041,14 @@
     "boilingPoint": 3473,
     "density": 10.07,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1899
+    "yearDiscovered": 1899,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/0BlpjWBYW0k"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2456,7 +3075,14 @@
     "boilingPoint": 5093,
     "density": 11.724,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1828
+    "yearDiscovered": 1828,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/2yZGcr0mpw0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2483,7 +3109,14 @@
     "boilingPoint": 4273,
     "density": 15.37,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1913
+    "yearDiscovered": 1913,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/bsIMMa7iEKU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2510,7 +3143,14 @@
     "boilingPoint": 4200,
     "density": 19.05,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1789
+    "yearDiscovered": 1789,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/B8vVZTvJNGk"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2539,7 +3179,14 @@
     "boilingPoint": 4273,
     "density": 20.45,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1940
+    "yearDiscovered": 1940,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/1D75B0_URbE"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2568,7 +3215,14 @@
     "boilingPoint": 3503,
     "density": 19.816,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1940
+    "yearDiscovered": 1940,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/XLufmakbiU0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2597,7 +3251,14 @@
     "boilingPoint": 2284,
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1944
+    "yearDiscovered": 1944,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/CC-L-CITg3k"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2626,7 +3287,14 @@
     "boilingPoint": 3383,
     "density": 13.51,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1944
+    "yearDiscovered": 1944,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/sZobqPFNcwg"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2655,7 +3323,14 @@
     "boilingPoint": "",
     "density": 14.78,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1949
+    "yearDiscovered": 1949,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/imXT9QwRzks"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2684,7 +3359,14 @@
     "boilingPoint": "",
     "density": 15.1,
     "groupBlock": "actinoid",
-    "yearDiscovered": 1950
+    "yearDiscovered": 1950,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/eG6HyPrTccI"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2713,7 +3395,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1952
+    "yearDiscovered": 1952,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/-G_4nJLNXA0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2742,7 +3431,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1952
+    "yearDiscovered": 1952,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/SQhI52sqanA"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2771,7 +3467,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1955
+    "yearDiscovered": 1955,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/0JlshAo8DuE"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2800,7 +3503,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1957
+    "yearDiscovered": 1957,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/t_ZpauMxapY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": "a",
@@ -2829,7 +3539,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "actinoid",
-    "yearDiscovered": 1961
+    "yearDiscovered": 1961,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/_zBsnnJOkyA"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 4,
@@ -2858,7 +3575,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1969
+    "yearDiscovered": 1969,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/dOj9ZjKnJcY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 5,
@@ -2887,7 +3611,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1967
+    "yearDiscovered": 1967,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/eeczRrDoL_M"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 6,
@@ -2916,7 +3647,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1974
+    "yearDiscovered": 1974,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/UWq0djr790E"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 7,
@@ -2945,7 +3683,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1976
+    "yearDiscovered": 1976,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/okJnQIjELY4"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 8,
@@ -2974,7 +3719,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1984
+    "yearDiscovered": 1984,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/u4GEVxbLego"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 9,
@@ -3003,7 +3755,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1982
+    "yearDiscovered": 1982,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/N8VR7Qscq4k"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 10,
@@ -3032,7 +3791,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1994
+    "yearDiscovered": 1994,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/lhvMqva3-7M"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 11,
@@ -3061,7 +3827,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1994
+    "yearDiscovered": 1994,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/MTq1hzhCF0g"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 12,
@@ -3090,7 +3863,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "transition metal",
-    "yearDiscovered": 1996
+    "yearDiscovered": 1996,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/QHcbQfcwegY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 13,
@@ -3119,7 +3899,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "post transition metal",
-    "yearDiscovered": 2003
+    "yearDiscovered": 2003,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Ac7iFepG2CY"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 14,
@@ -3148,7 +3935,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "post transition metal",
-    "yearDiscovered": 1998
+    "yearDiscovered": 1998,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/5L-NNFPiRog"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 15,
@@ -3177,7 +3971,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "post transition metal",
-    "yearDiscovered": 2003
+    "yearDiscovered": 2003,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/gCt5WK2OVp0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 16,
@@ -3206,7 +4007,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "post transition metal",
-    "yearDiscovered": 2000
+    "yearDiscovered": 2000,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/WdbF4L_ruyM"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 17,
@@ -3235,7 +4043,14 @@
     "boilingPoint": "",
     "density": "",
     "groupBlock": "halogen",
-    "yearDiscovered": 2010
+    "yearDiscovered": 2010,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/5kVyOd-F5q0"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   },
   {
     "group": 18,
@@ -3264,6 +4079,13 @@
     "boilingPoint": "N/A",
     "density": "",
     "groupBlock": "noble gas",
-    "yearDiscovered": 2002
+    "yearDiscovered": 2002,
+    "resources" : [{
+      "name" : "youtube",
+      "url" : "https://www.youtube.com/embed/Stxor9L00BU"
+    }, {
+      "name" : "wikipedia",
+      "url" : "https://en.wikipedia.org/wiki/"
+    }]
   }
 ]
