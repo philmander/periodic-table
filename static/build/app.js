@@ -452,7 +452,7 @@
         };
         doubleTap(nodes.tables);
 
-        var allowWheel = false//true;
+        var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
                 model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
@@ -464,7 +464,32 @@
                     allowWheel = true;
                 }, 1000);
             }
+        };
 
+        //pinch to zoom
+        var t1;
+        var start;
+        var midpoint;
+        document.ontouchstart = function(ev) {
+            if(ev.touches.length == 2) {
+                t1 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
+                var t2 = {x: ev.touches[1].clientX, y: ev.touches[1].clientY };
+                start = Math.sqrt(Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2));
+                midpoint = { x: ((t1.x + t2.x) / 2), y: ((t2.y + t2.y) / 2) };
+                ev.preventDefault();
+            }
+        };
+        document.ontouchend = function(ev) {
+            if(t1 && ev.touches.length) {
+                var t2 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
+                var end = Math.sqrt(Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2));
+                model.zoomWith(end - start > 0 ? 1 : -1, {
+                    x: midpoint.x,
+                    y: midpoint.y
+                });
+                t1 = null;
+                ev.preventDefault();
+            }
         };
 
         //temperature and state updates

@@ -388,7 +388,7 @@
         };
         doubleTap(nodes.tables);
 
-        var allowWheel = false//true;
+        var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
                 model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
