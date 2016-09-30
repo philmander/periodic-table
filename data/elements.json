@@ -28,13 +28,20 @@
     "density": 0.0000899,
     "groupBlock": "nonmetal",
     "yearDiscovered": 1766,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/6rdmpx39PRk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/6rdmpx39PRk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hydrogen"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/1/hydrogen"
+      }
+    ]
   },
   {
     "group": 18,
@@ -64,13 +71,20 @@
     "density": 0.0001785,
     "groupBlock": "noble gas",
     "yearDiscovered": 1868,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/a8FJEiI5e6Q"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/a8FJEiI5e6Q"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Helium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/2/helium"
+      }
+    ]
   },
   {
     "group": 1,
@@ -100,13 +114,20 @@
     "density": 0.535,
     "groupBlock": "alkali metal",
     "yearDiscovered": 1817,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/LfS10ArXTBA"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/LfS10ArXTBA"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lithium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/3/lithium"
+      }
+    ]
   },
   {
     "group": 2,
@@ -136,20 +157,29 @@
     "density": 1.848,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": 1798,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/qy8JyQShZRA"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/qy8JyQShZRA"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Beryllium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/4/beryllium"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 2,
     "block": "p",
     "discoveredBy": "Louis-Josef Gay-Lussac and Louis-Jacques Thénard in Paris, France, and Humphry Davy in London, UK ",
-    "keyIsotopes": [ 11 ],
+    "keyIsotopes": [
+      11
+    ],
     "atomicNumber": 5,
     "symbol": "B",
     "name": "Boron",
@@ -170,20 +200,31 @@
     "density": 2.46,
     "groupBlock": "metalloid",
     "yearDiscovered": 1807,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/JzqdHkpXuy4"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/JzqdHkpXuy4"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Boron"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/5/boron"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 2,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 12, 13, 14 ],
+    "keyIsotopes": [
+      12,
+      13,
+      14
+    ],
     "atomicNumber": 6,
     "symbol": "C",
     "name": "Carbon",
@@ -204,20 +245,29 @@
     "density": 2.26,
     "groupBlock": "nonmetal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/QuW4_bRHbUk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/QuW4_bRHbUk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Carbon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/6/carbon"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 2,
     "block": "p",
     "discoveredBy": "Daniel Rutherford",
-    "keyIsotopes": [ 14 ],
+    "keyIsotopes": [
+      14
+    ],
     "atomicNumber": 7,
     "symbol": "N",
     "name": "Nitrogen",
@@ -238,20 +288,29 @@
     "density": 0.001251,
     "groupBlock": "nonmetal",
     "yearDiscovered": 1772,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/zmvJ54kRpjg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/zmvJ54kRpjg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nitrogen"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/7/nitrogen"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 2,
     "block": "p",
     "discoveredBy": "Joseph Priestley in Wiltshire, England and independently by Carl Wilhelm Scheele in Uppsala, Sweden",
-    "keyIsotopes": [ 16 ],
+    "keyIsotopes": [
+      16
+    ],
     "atomicNumber": 8,
     "symbol": "O",
     "name": "Oxygen",
@@ -272,20 +331,29 @@
     "density": 0.001429,
     "groupBlock": "nonmetal",
     "yearDiscovered": 1774,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/WuG5WTId-IY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/WuG5WTId-IY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Oxygen"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/8/oxygen"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 2,
     "block": "p",
     "discoveredBy": "Henri Moissan",
-    "keyIsotopes": [ 19 ],
+    "keyIsotopes": [
+      19
+    ],
     "atomicNumber": 9,
     "symbol": "F",
     "name": "Fluorine",
@@ -306,20 +374,29 @@
     "density": 0.001696,
     "groupBlock": "halogen",
     "yearDiscovered": 1670,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/vtWp45Eewtw"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/vtWp45Eewtw"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fluorine"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/9/fluorine"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 2,
     "block": "p",
     "discoveredBy": "Sir William Ramsay and Morris Travers",
-    "keyIsotopes": [ 20 ],
+    "keyIsotopes": [
+      20
+    ],
     "atomicNumber": 10,
     "symbol": "Ne",
     "name": "Neon",
@@ -340,20 +417,29 @@
     "density": 0.0009,
     "groupBlock": "noble gas",
     "yearDiscovered": 1898,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/wzv0pb7mzaw"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/wzv0pb7mzaw"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Neon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/10/neon"
+      }
+    ]
   },
   {
     "group": 1,
     "period": 3,
     "block": " s",
     "discoveredBy": "Humphry Davy ",
-    "keyIsotopes": [ 23 ],
+    "keyIsotopes": [
+      23
+    ],
     "atomicNumber": 11,
     "symbol": "Na",
     "name": "Sodium",
@@ -374,20 +460,33 @@
     "density": 0.968,
     "groupBlock": "alkali metal",
     "yearDiscovered": 1807,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/7IT2I3LtlNE"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/7IT2I3LtlNE"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sodium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/11/sodium"
+      },
+      {
+        "name" : "Nile Red",
+        "value" : "https://www.youtube.com/watch?v=LMlXhJevCV0"
+      }
+    ]
   },
   {
     "group": 2,
     "period": 3,
     "block": "s",
     "discoveredBy": "Joseph Black ",
-    "keyIsotopes": [ 24 ],
+    "keyIsotopes": [
+      24
+    ],
     "atomicNumber": 12,
     "symbol": "Mg",
     "name": "Magnesium",
@@ -408,20 +507,29 @@
     "density": 1.738,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": 1808,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/FKkWdizutxI"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/FKkWdizutxI"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Magnesium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/12/magnesium"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 3,
     "block": "p",
     "discoveredBy": "Hans Oersted",
-    "keyIsotopes": [ 27 ],
+    "keyIsotopes": [
+      27
+    ],
     "atomicNumber": 13,
     "symbol": "Al",
     "name": "Aluminium",
@@ -442,20 +550,30 @@
     "density": 2.7,
     "groupBlock": "post transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/4AhZ8503WPs"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/4AhZ8503WPs"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Aluminium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/13/aluminium"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 3,
     "block": "p",
     "discoveredBy": "Jöns Jacob Berzelius ",
-    "keyIsotopes": [ 28, 30],
+    "keyIsotopes": [
+      28,
+      30
+    ],
     "atomicNumber": 14,
     "symbol": "Si",
     "name": "Silicon",
@@ -476,20 +594,29 @@
     "density": 2.33,
     "groupBlock": "metalloid",
     "yearDiscovered": 1854,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/a2aWO5cL410"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/a2aWO5cL410"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Silicon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/14/silicon"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 3,
     "block": "p",
     "discoveredBy": "Hennig Brandt ",
-    "keyIsotopes": [ 31 ],
+    "keyIsotopes": [
+      31
+    ],
     "atomicNumber": 15,
     "symbol": "P",
     "name": "Phosphorus",
@@ -510,20 +637,32 @@
     "density": 1.823,
     "groupBlock": "nonmetal",
     "yearDiscovered": 1669,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/LSYLUat03A4"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/LSYLUat03A4"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Phosphorus"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/15/phosphorus"
+      }, {
+        "name" : "Nile Red",
+        "value" : "https://www.youtube.com/watch?v=LMlXhJevCV0"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 3,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 32],
+    "keyIsotopes": [
+      32
+    ],
     "atomicNumber": 16,
     "symbol": "S",
     "name": "Sulfur",
@@ -544,20 +683,30 @@
     "density": 1.96,
     "groupBlock": "nonmetal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/mGMR72X8V-U"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/mGMR72X8V-U"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sulfur"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/16/sulfur"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 3,
     "block": "p",
     "discoveredBy": "Carl Wilhelm Scheele",
-    "keyIsotopes": [ 35, 37],
+    "keyIsotopes": [
+      35,
+      37
+    ],
     "atomicNumber": 17,
     "symbol": "Cl",
     "name": "Chlorine",
@@ -578,20 +727,29 @@
     "density": 0.003214,
     "groupBlock": "halogen",
     "yearDiscovered": 1774,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/BXCfBl4rmh0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/BXCfBl4rmh0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chlorine"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/17/chlorine"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 3,
     "block": "p",
     "discoveredBy": "Lord Rayleigh and Sir William Ramsay",
-    "keyIsotopes": [ 40 ],
+    "keyIsotopes": [
+      40
+    ],
     "atomicNumber": 18,
     "symbol": "Ar",
     "name": "Argon",
@@ -612,20 +770,29 @@
     "density": 0.001784,
     "groupBlock": "noble gas",
     "yearDiscovered": 1894,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/nrHVOFG2V-c"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/nrHVOFG2V-c"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Argon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/18/argon"
+      }
+    ]
   },
   {
     "group": 1,
     "period": 4,
     "block": "s",
     "discoveredBy": "Humphry Davy",
-    "keyIsotopes": [ 39 ],
+    "keyIsotopes": [
+      39
+    ],
     "atomicNumber": 19,
     "symbol": "K",
     "name": "Potassium",
@@ -646,20 +813,29 @@
     "density": 0.856,
     "groupBlock": "alkali metal",
     "yearDiscovered": 1807,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/pPdevJTGAYY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/pPdevJTGAYY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Potassium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/19/potassium"
+      }
+    ]
   },
   {
     "group": 2,
     "period": 4,
     "block": "s",
     "discoveredBy": "Humphry Davy",
-    "keyIsotopes": [ 40 ],
+    "keyIsotopes": [
+      40
+    ],
     "atomicNumber": 20,
     "symbol": "Ca",
     "name": "Calcium",
@@ -680,20 +856,29 @@
     "density": 1.55,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/V9fuY8_ffFg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/V9fuY8_ffFg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Calcium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/20/calcium"
+      }
+    ]
   },
   {
     "group": 3,
     "period": 4,
     "block": "d",
     "discoveredBy": "Lars Frederik Nilson",
-    "keyIsotopes": [ 45 ],
+    "keyIsotopes": [
+      45
+    ],
     "atomicNumber": 21,
     "symbol": "Sc",
     "name": "Scandium",
@@ -714,20 +899,29 @@
     "density": 2.985,
     "groupBlock": "transition metal",
     "yearDiscovered": 1876,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/KkKv5ilmRjY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/KkKv5ilmRjY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Scandium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/21/scandium"
+      }
+    ]
   },
   {
     "group": 4,
     "period": 4,
     "block": "d",
     "discoveredBy": "William Gregor",
-    "keyIsotopes": [ 48 ],
+    "keyIsotopes": [
+      48
+    ],
     "atomicNumber": 22,
     "symbol": "Ti",
     "name": "Titanium",
@@ -748,20 +942,29 @@
     "density": 4.507,
     "groupBlock": "transition metal",
     "yearDiscovered": 1791,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/MpFTQYynrc4"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/MpFTQYynrc4"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Titanium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/22/titanium"
+      }
+    ]
   },
   {
     "group": 5,
     "period": 4,
     "block": "d",
     "discoveredBy": "Andrés Manuel del Rio",
-    "keyIsotopes": [ 51 ],
+    "keyIsotopes": [
+      51
+    ],
     "atomicNumber": 23,
     "symbol": "V",
     "name": "Vanadium",
@@ -782,20 +985,29 @@
     "density": 6.11,
     "groupBlock": "transition metal",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/MbCmaQzrZoc"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/MbCmaQzrZoc"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vanadium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/23/vanadium"
+      }
+    ]
   },
   {
     "group": 6,
     "period": 4,
     "block": "d",
     "discoveredBy": "Nicholas Louis Vauquelin ",
-    "keyIsotopes": [ 52 ],
+    "keyIsotopes": [
+      52
+    ],
     "atomicNumber": 24,
     "symbol": "Cr",
     "name": "Chromium",
@@ -816,20 +1028,29 @@
     "density": 7.14,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/lzRb4zmGvNU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/lzRb4zmGvNU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Chromium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/24/chromium"
+      }
+    ]
   },
   {
     "group": 7,
     "period": 4,
     "block": "d",
     "discoveredBy": "Johan Gottlieb Gahn",
-    "keyIsotopes": [ 55 ],
+    "keyIsotopes": [
+      55
+    ],
     "atomicNumber": 25,
     "symbol": "Mn",
     "name": "Manganese",
@@ -850,20 +1071,29 @@
     "density": 7.47,
     "groupBlock": "transition metal",
     "yearDiscovered": 1774,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/uTVtBuY9Q-0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/uTVtBuY9Q-0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Manganese"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/25/manganese"
+      }
+    ]
   },
   {
     "group": 8,
     "period": 4,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 56 ],
+    "keyIsotopes": [
+      56
+    ],
     "atomicNumber": 26,
     "symbol": "Fe",
     "name": "Iron",
@@ -884,20 +1114,29 @@
     "density": 7.874,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/euQUgp5AY-Y"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/euQUgp5AY-Y"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Iron"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/26/iron"
+      }
+    ]
   },
   {
     "group": 9,
     "period": 4,
     "block": "d",
     "discoveredBy": "Georg Brandt",
-    "keyIsotopes": [ 59 ],
+    "keyIsotopes": [
+      59
+    ],
     "atomicNumber": 27,
     "symbol": "Co",
     "name": "Cobalt",
@@ -918,20 +1157,29 @@
     "density": 8.9,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/V6ljxByu9ng"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/V6ljxByu9ng"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cobalt"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/27/cobalt"
+      }
+    ]
   },
   {
     "group": 10,
     "period": 4,
     "block": "d",
     "discoveredBy": "Axel Fredrik Cronstedt",
-    "keyIsotopes": [ 58 ],
+    "keyIsotopes": [
+      58
+    ],
     "atomicNumber": 28,
     "symbol": "Ni",
     "name": "Nickel",
@@ -952,20 +1200,29 @@
     "density": 8.908,
     "groupBlock": "transition metal",
     "yearDiscovered": 1751,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/t4kRHoj0W1Y"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/t4kRHoj0W1Y"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nickel"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/28/nickel"
+      }
+    ]
   },
   {
     "group": 11,
     "period": 4,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 63 ],
+    "keyIsotopes": [
+      63
+    ],
     "atomicNumber": 29,
     "symbol": "Cu",
     "name": "Copper",
@@ -986,20 +1243,29 @@
     "density": 8.92,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/kop1sWzTK-I"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/kop1sWzTK-I"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Copper"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/29/copper"
+      }
+    ]
   },
   {
     "group": 12,
     "period": 4,
     "block": "d",
     "discoveredBy": "Andreas Marggraf",
-    "keyIsotopes": [ 64 ],
+    "keyIsotopes": [
+      64
+    ],
     "atomicNumber": 30,
     "symbol": "Zn",
     "name": "Zinc",
@@ -1020,20 +1286,29 @@
     "density": 7.14,
     "groupBlock": "transition metal",
     "yearDiscovered": 1746,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/99wPiMb-k0o"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/99wPiMb-k0o"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Zinc"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/30/zinc"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 4,
     "block": "p",
     "discoveredBy": "Paul-Émile Lecoq de Boisbaudran ",
-    "keyIsotopes": [ 69],
+    "keyIsotopes": [
+      69
+    ],
     "atomicNumber": 31,
     "symbol": "Ga",
     "name": "Gallium",
@@ -1054,20 +1329,30 @@
     "density": 5.904,
     "groupBlock": "post transition metal",
     "yearDiscovered": 1875,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/N6ccRvKKwZQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/N6ccRvKKwZQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gallium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/31/gallium"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 4,
     "block": "p",
     "discoveredBy": "Clemens Winkler",
-    "keyIsotopes": [ 73, 74],
+    "keyIsotopes": [
+      73,
+      74
+    ],
     "atomicNumber": 32,
     "symbol": "Ge",
     "name": "Germanium",
@@ -1088,20 +1373,29 @@
     "density": 5.323,
     "groupBlock": "metalloid",
     "yearDiscovered": 1886,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/osrKWVknkgs"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/osrKWVknkgs"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Germanium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/32/germanium"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 4,
     "block": "p",
     "discoveredBy": "Albertus Magnus",
-    "keyIsotopes": [ 75 ],
+    "keyIsotopes": [
+      75
+    ],
     "atomicNumber": 33,
     "symbol": "As",
     "name": "Arsenic",
@@ -1122,20 +1416,29 @@
     "density": 5.727,
     "groupBlock": "metalloid",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/a2AbKwAvyos"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/a2AbKwAvyos"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Arsenic"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/33/arsenic"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 4,
     "block": "p",
     "discoveredBy": "Jöns Jacob Berzelius",
-    "keyIsotopes": [ 80 ],
+    "keyIsotopes": [
+      80
+    ],
     "atomicNumber": 34,
     "symbol": "Se",
     "name": "Selenium",
@@ -1156,20 +1459,29 @@
     "density": 4.819,
     "groupBlock": "nonmetal",
     "yearDiscovered": 1817,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/IHrUtKjcAFE"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/IHrUtKjcAFE"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Selenium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/34/selenium"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 4,
     "block": "p",
     "discoveredBy": "Antoine-Jérôme Balard in Montpellier, France and Carl Löwig in Heidelberg, Germany",
-    "keyIsotopes": [ 79 ],
+    "keyIsotopes": [
+      79
+    ],
     "atomicNumber": 35,
     "symbol": "Br",
     "name": "Bromine",
@@ -1190,20 +1502,33 @@
     "density": 3.12,
     "groupBlock": "halogen",
     "yearDiscovered": 1826,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Slt3_5upuSs"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Slt3_5upuSs"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bromine"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/35/bromine"
+      },
+      {
+        "name" : "Nile Red",
+        "value" : "https://www.youtube.com/watch?v=nuW_VbKdvMI"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 4,
     "block": "p",
     "discoveredBy": "Sir William Ramsay and Morris Travers",
-    "keyIsotopes": [ 84 ],
+    "keyIsotopes": [
+      84
+    ],
     "atomicNumber": 36,
     "symbol": "Kr",
     "name": "Krypton",
@@ -1224,20 +1549,30 @@
     "density": 0.00375,
     "groupBlock": "noble gas",
     "yearDiscovered": 1898,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/il4OOY7Zseg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/il4OOY7Zseg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Krypton"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/36/krypton"
+      }
+    ]
   },
   {
     "group": 1,
     "period": 5,
     "block": "s",
     "discoveredBy": "Gustav Kirchhoff and Robert Bunsen",
-    "keyIsotopes": [ 85, 87 ],
+    "keyIsotopes": [
+      85,
+      87
+    ],
     "atomicNumber": 37,
     "symbol": "Rb",
     "name": "Rubidium",
@@ -1258,20 +1593,31 @@
     "density": 1.532,
     "groupBlock": "alkali metal",
     "yearDiscovered": 1861,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/0XLGopBovoI"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/0XLGopBovoI"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rubidium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/37/rubidium"
+      }
+    ]
   },
   {
     "group": 2,
     "period": 5,
     "block": "s",
     "discoveredBy": "Adair Crawford",
-    "keyIsotopes": [ 86, 87, 88 ],
+    "keyIsotopes": [
+      86,
+      87,
+      88
+    ],
     "atomicNumber": 38,
     "symbol": "Sr",
     "name": "Strontium",
@@ -1292,20 +1638,29 @@
     "density": 2.63,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": 1790,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/d5ztPGrsgNQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/d5ztPGrsgNQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Strontium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/38/strontium"
+      }
+    ]
   },
   {
     "group": 3,
     "period": 5,
     "block": "d",
     "discoveredBy": "Johan Gadolin ",
-    "keyIsotopes": [ 89 ],
+    "keyIsotopes": [
+      89
+    ],
     "atomicNumber": 39,
     "symbol": "Y",
     "name": "Yttrium",
@@ -1326,20 +1681,31 @@
     "density": 4.472,
     "groupBlock": "transition metal",
     "yearDiscovered": 1794,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/tTXjnQlAHAQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/tTXjnQlAHAQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Yttrium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/39/yttrium"
+      }
+    ]
   },
   {
     "group": 4,
     "period": 5,
     "block": "d",
     "discoveredBy": "Martin Heinrich Klaproth ",
-    "keyIsotopes": [ 90, 92, 94 ],
+    "keyIsotopes": [
+      90,
+      92,
+      94
+    ],
     "atomicNumber": 40,
     "symbol": "Zr",
     "name": "Zirconium",
@@ -1360,20 +1726,29 @@
     "density": 6.511,
     "groupBlock": "transition metal",
     "yearDiscovered": 1789,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/gNJE2MPktvg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/gNJE2MPktvg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Zirconium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/40/zirconium"
+      }
+    ]
   },
   {
     "group": 5,
     "period": 5,
     "block": "d",
     "discoveredBy": "Charles Hatchett",
-    "keyIsotopes": [ 93 ],
+    "keyIsotopes": [
+      93
+    ],
     "atomicNumber": 41,
     "symbol": "Nb",
     "name": "Niobium",
@@ -1394,20 +1769,31 @@
     "density": 8.57,
     "groupBlock": "transition metal",
     "yearDiscovered": 1801,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/2ciPAsVTq6c"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/2ciPAsVTq6c"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Niobium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/41/niobium"
+      }
+    ]
   },
   {
     "group": 6,
     "period": 5,
     "block": "d",
     "discoveredBy": "Peter Jacob Hjelm",
-    "keyIsotopes": [ 95, 96, 98],
+    "keyIsotopes": [
+      95,
+      96,
+      98
+    ],
     "atomicNumber": 42,
     "symbol": "Mo",
     "name": "Molybdenum",
@@ -1428,13 +1814,20 @@
     "density": 10.28,
     "groupBlock": "transition metal",
     "yearDiscovered": 1778,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/2ciPAsVTq6c"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/2ciPAsVTq6c"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Molybdenum"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/42/molybdenum"
+      }
+    ]
   },
   {
     "group": 7,
@@ -1464,20 +1857,31 @@
     "density": 11.5,
     "groupBlock": "transition metal",
     "yearDiscovered": 1937,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/0QBlrGva5YQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/0QBlrGva5YQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Technetium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/43/technetium"
+      }
+    ]
   },
   {
     "group": 8,
     "period": 5,
     "block": "d",
     "discoveredBy": "Karl Karlovich Klaus",
-    "keyIsotopes": [ 101, 102, 104 ],
+    "keyIsotopes": [
+      101,
+      102,
+      104
+    ],
     "atomicNumber": 44,
     "symbol": "Ru",
     "name": "Ruthenium",
@@ -1498,20 +1902,29 @@
     "density": 12.37,
     "groupBlock": "transition metal",
     "yearDiscovered": 1827,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/wl5ZYb0hDTc"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/wl5ZYb0hDTc"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ruthenium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/44/ruthenium"
+      }
+    ]
   },
   {
     "group": 9,
     "period": 5,
     "block": "d",
     "discoveredBy": "William Hyde Wollaston",
-    "keyIsotopes": [ 103 ],
+    "keyIsotopes": [
+      103
+    ],
     "atomicNumber": 45,
     "symbol": "Rh",
     "name": "Rhodium",
@@ -1532,20 +1945,29 @@
     "density": 12.45,
     "groupBlock": "transition metal",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/PPSO5798k2I"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/PPSO5798k2I"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rhodium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/45/rhodium"
+      }
+    ]
   },
   {
     "group": 10,
     "period": 5,
     "block": "d",
     "discoveredBy": "William Hyde Wollaston",
-    "keyIsotopes": [ 106 ],
+    "keyIsotopes": [
+      106
+    ],
     "atomicNumber": 46,
     "symbol": "Pd",
     "name": "Palladium",
@@ -1566,20 +1988,29 @@
     "density": 12.023,
     "groupBlock": "transition metal",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/4ALTGeqmNFM"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/4ALTGeqmNFM"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Palladium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/46/palladium"
+      }
+    ]
   },
   {
     "group": 11,
     "period": 5,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 107],
+    "keyIsotopes": [
+      107
+    ],
     "atomicNumber": 47,
     "symbol": "Ag",
     "name": "Silver",
@@ -1600,20 +2031,29 @@
     "density": 10.49,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/pPd5qAb4J50"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/pPd5qAb4J50"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Silver"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/47/silver"
+      }
+    ]
   },
   {
     "group": 12,
     "period": 5,
     "block": "d",
     "discoveredBy": "Friedrich Stromeyer",
-    "keyIsotopes": [ 114 ],
+    "keyIsotopes": [
+      114
+    ],
     "atomicNumber": 48,
     "symbol": "Cd",
     "name": "Cadmium",
@@ -1634,20 +2074,29 @@
     "density": 8.65,
     "groupBlock": "transition metal",
     "yearDiscovered": 1817,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/boRius1DYdQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/boRius1DYdQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cadmium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/48/cadmium"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 5,
     "block": "p",
     "discoveredBy": "Ferdinand Reich and Hieronymous Richter",
-    "keyIsotopes": [ 115 ],
+    "keyIsotopes": [
+      115
+    ],
     "atomicNumber": 49,
     "symbol": "In",
     "name": "Indium",
@@ -1668,20 +2117,29 @@
     "density": 7.31,
     "groupBlock": "post transition metal",
     "yearDiscovered": 1863,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/4opHafNmgCw"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/4opHafNmgCw"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Indium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/49/indium"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 5,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 120 ],
+    "keyIsotopes": [
+      120
+    ],
     "atomicNumber": 50,
     "symbol": "Sn",
     "name": "Tin",
@@ -1702,20 +2160,29 @@
     "density": 7.31,
     "groupBlock": "post transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/qEwCPJOP0Mg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/qEwCPJOP0Mg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tin"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/50/tin"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 5,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 121 ],
+    "keyIsotopes": [
+      121
+    ],
     "atomicNumber": 51,
     "symbol": "Sb",
     "name": "Antimony",
@@ -1736,20 +2203,29 @@
     "density": 6.697,
     "groupBlock": "metalloid",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/kcc6qNT3BoU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/kcc6qNT3BoU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Antimony"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/51/antimony"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 5,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 130 ],
+    "keyIsotopes": [
+      130
+    ],
     "atomicNumber": 52,
     "symbol": "Te",
     "name": "Tellurium",
@@ -1770,20 +2246,29 @@
     "density": 6.24,
     "groupBlock": "metalloid",
     "yearDiscovered": 1782,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/5ChFbVu4Mpk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/5ChFbVu4Mpk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tellurium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/52/tellurium"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 5,
     "block": "p",
     "discoveredBy": "Bernard Courtois",
-    "keyIsotopes": [ 127],
+    "keyIsotopes": [
+      127
+    ],
     "atomicNumber": 53,
     "symbol": "I",
     "name": "Iodine",
@@ -1804,20 +2289,29 @@
     "density": 4.94,
     "groupBlock": "halogen",
     "yearDiscovered": 1811,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/JUBsJLRSM64"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/JUBsJLRSM64"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Iodine"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/53/iodine"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 5,
     "block": "p",
     "discoveredBy": "Sir William Ramsay and Morris Travers ",
-    "keyIsotopes": [ 132 ],
+    "keyIsotopes": [
+      132
+    ],
     "atomicNumber": 54,
     "symbol": "Xe",
     "name": "Xenon",
@@ -1838,20 +2332,29 @@
     "density": 0.0059,
     "groupBlock": "noble gas",
     "yearDiscovered": 1898,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Ejoct_6pQ74"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Ejoct_6pQ74"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Xenon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/54/xenon"
+      }
+    ]
   },
   {
     "group": 1,
     "period": 6,
     "block": "s",
     "discoveredBy": "Gustav Kirchhoff and Robert Bunsen",
-    "keyIsotopes": [ 133 ],
+    "keyIsotopes": [
+      133
+    ],
     "atomicNumber": 55,
     "symbol": "Cs",
     "name": "Caesium",
@@ -1872,20 +2375,29 @@
     "density": 1.879,
     "groupBlock": "alkali metal",
     "yearDiscovered": 1860,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/5aD6HwUE2c0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/5aD6HwUE2c0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Caesium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/55/caesium"
+      }
+    ]
   },
   {
     "group": 2,
     "period": 6,
     "block": "s",
     "discoveredBy": "Humphry Davy",
-    "keyIsotopes": [ 138 ],
+    "keyIsotopes": [
+      138
+    ],
     "atomicNumber": 56,
     "symbol": "Ba",
     "name": "Barium",
@@ -1906,20 +2418,29 @@
     "density": 3.51,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": 1808,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/9srJdQU3NOo"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/9srJdQU3NOo"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Barium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/56/barium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "d",
     "discoveredBy": "Carl Gustav Mosander",
-    "keyIsotopes": [ 139 ],
+    "keyIsotopes": [
+      139
+    ],
     "atomicNumber": 57,
     "symbol": "La",
     "name": "Lanthanum",
@@ -1940,13 +2461,20 @@
     "density": 6.146,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1839,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Q21clW0s0B8"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/Lanthanum"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Q21clW0s0B8"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lanthanum"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/57/lanthanum"
+      }
+    ]
   },
   {
     "group": "l",
@@ -1974,20 +2502,29 @@
     "density": 6.689,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/frD3126ry8o"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/frD3126ry8o"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cerium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/58/cerium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Carl Auer von Welsbach",
-    "keyIsotopes": [ 141 ],
+    "keyIsotopes": [
+      141
+    ],
     "atomicNumber": 59,
     "symbol": "Pr",
     "name": "Praseodymium",
@@ -2008,20 +2545,29 @@
     "density": 6.64,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1885,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/IL06CzXF3ns"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/IL06CzXF3ns"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Praseodymium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/59/praseodymium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Carl Auer von Welsbach ",
-    "keyIsotopes": [ 142 ],
+    "keyIsotopes": [
+      142
+    ],
     "atomicNumber": 60,
     "symbol": "Nd",
     "name": "Neodymium",
@@ -2042,20 +2588,30 @@
     "density": 7.01,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1885,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/PBbl-3_R3mk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/PBbl-3_R3mk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Neodymium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/60/neodymium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Jacob .A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell",
-    "keyIsotopes": [ 145, 147 ],
+    "keyIsotopes": [
+      145,
+      147
+    ],
     "atomicNumber": 61,
     "symbol": "Pm",
     "name": "Promethium",
@@ -2078,20 +2634,29 @@
     "density": 7.264,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1947,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/px52fxITTrw"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/px52fxITTrw"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Promethium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/61/promethium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Paul-Émile Lecoq de Boisbaudran",
-    "keyIsotopes": [ 152 ],
+    "keyIsotopes": [
+      152
+    ],
     "atomicNumber": 62,
     "symbol": "Sm",
     "name": "Samarium",
@@ -2112,20 +2677,29 @@
     "density": 7.353,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1853,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/LpTkBg8HpvY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/LpTkBg8HpvY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Samarium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/62/samarium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Eugène-Anatole Demarçay",
-    "keyIsotopes": [ 153 ],
+    "keyIsotopes": [
+      153
+    ],
     "atomicNumber": 63,
     "symbol": "Eu",
     "name": "Europium",
@@ -2146,20 +2720,29 @@
     "density": 5.244,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1901,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/88YOmg_FUVo"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/88YOmg_FUVo"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Europium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/63/europium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Jean Charles Galissard de Marignac",
-    "keyIsotopes": [ 158 ],
+    "keyIsotopes": [
+      158
+    ],
     "atomicNumber": 64,
     "symbol": "Gd",
     "name": "Gadolinium",
@@ -2180,20 +2763,29 @@
     "density": 7.901,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1880,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/uUo7pY38fGY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/uUo7pY38fGY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gadolinium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/64/gadolinium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Carl Gustav Mosander",
-    "keyIsotopes": [ 159 ],
+    "keyIsotopes": [
+      159
+    ],
     "atomicNumber": 65,
     "symbol": "Tb",
     "name": "Terbium",
@@ -2214,20 +2806,29 @@
     "density": 8.219,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1843,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/On5LjH9TQxY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/On5LjH9TQxY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Terbium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/65/terbium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Paul-Émile Lecoq de Boisbaudran",
-    "keyIsotopes": [ 164 ],
+    "keyIsotopes": [
+      164
+    ],
     "atomicNumber": 66,
     "symbol": "Dy",
     "name": "Dysprosium",
@@ -2248,20 +2849,29 @@
     "density": 8.551,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1886,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/hFfR_qOSa-8"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/hFfR_qOSa-8"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dysprosium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/66/dysprosium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Per Teodor Cleve at Uppsala, Sweden and independently by Marc Delafontaine and Louis Soret in Geneva, Switzerland",
-    "keyIsotopes": [ 165 ],
+    "keyIsotopes": [
+      165
+    ],
     "atomicNumber": 67,
     "symbol": "Ho",
     "name": "Holmium",
@@ -2282,20 +2892,29 @@
     "density": 8.795,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1878,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/HQahtzCU0BU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/HQahtzCU0BU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Holmium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/67/holmium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Carl Gustav Mosander ",
-    "keyIsotopes": [ 166 ],
+    "keyIsotopes": [
+      166
+    ],
     "atomicNumber": 68,
     "symbol": "Er",
     "name": "Erbium",
@@ -2316,20 +2935,29 @@
     "density": 9.066,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1842,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/E-DY_RT4fJ4"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/E-DY_RT4fJ4"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Erbium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/68/erbium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Per Teodor Cleve",
-    "keyIsotopes": [ 169 ],
+    "keyIsotopes": [
+      169
+    ],
     "atomicNumber": 69,
     "symbol": "Tm",
     "name": "Thulium",
@@ -2350,20 +2978,31 @@
     "density": 9.321,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1879,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/CQFDIZfMPVQ"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/CQFDIZfMPVQ"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Thulium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/69/thulium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Jean Charles Galissard de Marignac",
-    "keyIsotopes": [ 172, 173, 174 ],
+    "keyIsotopes": [
+      172,
+      173,
+      174
+    ],
     "atomicNumber": 70,
     "symbol": "Yb",
     "name": "Ytterbium",
@@ -2384,20 +3023,29 @@
     "density": 6.57,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1878,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Rp7-yNvOV4I"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Rp7-yNvOV4I"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ytterbium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/70/ytterbium"
+      }
+    ]
   },
   {
     "group": "l",
     "period": 6,
     "block": "f",
     "discoveredBy": "Georges Urbain in Paris, France and independently by Charles James in New Hampshire, USA",
-    "keyIsotopes": [ 175 ],
+    "keyIsotopes": [
+      175
+    ],
     "atomicNumber": 71,
     "symbol": "Lu",
     "name": "Lutetium",
@@ -2418,20 +3066,31 @@
     "density": 9.841,
     "groupBlock": "lanthanoid",
     "yearDiscovered": 1907,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/a5T1xXoR8XI"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/a5T1xXoR8XI"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lutetium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/71/lutetium"
+      }
+    ]
   },
   {
     "group": 4,
     "period": 6,
     "block": "d",
     "discoveredBy": "George Charles de Hevesy and Dirk Coster",
-    "keyIsotopes": [ 177, 178, 180 ],
+    "keyIsotopes": [
+      177,
+      178,
+      180
+    ],
     "atomicNumber": 72,
     "symbol": "Hf",
     "name": "Hafnium",
@@ -2452,20 +3111,30 @@
     "density": 13.31,
     "groupBlock": "transition metal",
     "yearDiscovered": 1923,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/egw79BA_0PA"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/egw79BA_0PA"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hafnium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/72/hafnium"
+      }
+    ]
   },
   {
     "group": 5,
     "period": 6,
     "block": "d",
     "discoveredBy": "Anders Gustav Ekeberg ",
-    "keyIsotopes": [ 180, 181 ],
+    "keyIsotopes": [
+      180,
+      181
+    ],
     "atomicNumber": 73,
     "symbol": "Ta",
     "name": "Tantalum",
@@ -2486,20 +3155,31 @@
     "density": 16.65,
     "groupBlock": "transition metal",
     "yearDiscovered": 1802,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/51xFP1Yn3g0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/51xFP1Yn3g0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tantalum"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/73/tantalum"
+      }
+    ]
   },
   {
     "group": 6,
     "period": 6,
     "block": "d",
     "discoveredBy": "Juan and Fausto Elhuyar",
-    "keyIsotopes": [ 182, 184, 186 ],
+    "keyIsotopes": [
+      182,
+      184,
+      186
+    ],
     "atomicNumber": 74,
     "symbol": "W",
     "name": "Tungsten",
@@ -2520,20 +3200,29 @@
     "density": 19.25,
     "groupBlock": "transition metal",
     "yearDiscovered": 1783,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/_PccntqMOoI"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/_PccntqMOoI"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tungsten"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/74/tungsten"
+      }
+    ]
   },
   {
     "group": 7,
     "period": 6,
     "block": "d",
     "discoveredBy": "Walter Noddack, Ida Tacke and Otto Berg ",
-    "keyIsotopes": [ 187],
+    "keyIsotopes": [
+      187
+    ],
     "atomicNumber": 75,
     "symbol": "Re",
     "name": "Rhenium",
@@ -2554,20 +3243,29 @@
     "density": 21.02,
     "groupBlock": "transition metal",
     "yearDiscovered": 1925,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/VRccwkEmOYg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/VRccwkEmOYg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rhenium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/75/rhenium"
+      }
+    ]
   },
   {
     "group": 8,
     "period": 6,
     "block": "d",
     "discoveredBy": "Smithson Tennant",
-    "keyIsotopes": [ 192 ],
+    "keyIsotopes": [
+      192
+    ],
     "atomicNumber": 76,
     "symbol": "Os",
     "name": "Osmium",
@@ -2588,20 +3286,29 @@
     "density": 22.61,
     "groupBlock": "transition metal",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/AdX-T2Vv68Y"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/AdX-T2Vv68Y"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Osmium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/76/osmium"
+      }
+    ]
   },
   {
     "group": 9,
     "period": 6,
     "block": "d",
     "discoveredBy": "Smithson Tennant",
-    "keyIsotopes": [ 193],
+    "keyIsotopes": [
+      193
+    ],
     "atomicNumber": 77,
     "symbol": "Ir",
     "name": "Iridium",
@@ -2622,20 +3329,29 @@
     "density": 22.65,
     "groupBlock": "transition metal",
     "yearDiscovered": 1803,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/cuovE4OQi2g"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/cuovE4OQi2g"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Iridium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/77/iridium"
+      }
+    ]
   },
   {
     "group": 10,
     "period": 6,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 195 ],
+    "keyIsotopes": [
+      195
+    ],
     "atomicNumber": 78,
     "symbol": "Pt",
     "name": "Platinum",
@@ -2656,20 +3372,29 @@
     "density": 21.09,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/byzaoji_9kk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/byzaoji_9kk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Platinum"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/78/platinum"
+      }
+    ]
   },
   {
     "group": 11,
     "period": 6,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 197 ],
+    "keyIsotopes": [
+      197
+    ],
     "atomicNumber": 79,
     "symbol": "Au",
     "name": "Gold",
@@ -2690,20 +3415,29 @@
     "density": 19.3,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/vWDKv1Dw5_Q"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/vWDKv1Dw5_Q"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gold"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/79/gold"
+      }
+    ]
   },
   {
     "group": 12,
     "period": 6,
     "block": "d",
     "discoveredBy": "",
-    "keyIsotopes": [ 202 ],
+    "keyIsotopes": [
+      202
+    ],
     "atomicNumber": 80,
     "symbol": "Hg",
     "name": "Mercury",
@@ -2724,20 +3458,29 @@
     "density": 13.534,
     "groupBlock": "transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/oL0M_6bfzkU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/oL0M_6bfzkU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mercury"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/80/mercury"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 6,
     "block": "p",
     "discoveredBy": "William Crookes ",
-    "keyIsotopes": [ 205 ],
+    "keyIsotopes": [
+      205
+    ],
     "atomicNumber": 81,
     "symbol": "Tl",
     "name": "Thallium",
@@ -2758,20 +3501,29 @@
     "density": 11.85,
     "groupBlock": "post transition metal",
     "yearDiscovered": 1861,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/bK6nnyibhdk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/bK6nnyibhdk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Thallium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/81/thallium"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 6,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 208 ],
+    "keyIsotopes": [
+      208
+    ],
     "atomicNumber": 82,
     "symbol": "Pb",
     "name": "Lead",
@@ -2792,20 +3544,29 @@
     "density": 11.34,
     "groupBlock": "post transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/2ERfPN5JLX8"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/2ERfPN5JLX8"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lead"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/82/lead"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 6,
     "block": "p",
     "discoveredBy": "",
-    "keyIsotopes": [ 209 ],
+    "keyIsotopes": [
+      209
+    ],
     "atomicNumber": 83,
     "symbol": "Bi",
     "name": "Bismuth",
@@ -2826,20 +3587,30 @@
     "density": 9.78,
     "groupBlock": "post transition metal",
     "yearDiscovered": "Ancient",
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/vyIo-c7VmIM"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/vyIo-c7VmIM"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bismuth"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/83/bismuth"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 6,
     "block": "p",
     "discoveredBy": "Marie Curie",
-    "keyIsotopes": [ 209, 210 ],
+    "keyIsotopes": [
+      209,
+      210
+    ],
     "atomicNumber": 84,
     "symbol": "Po",
     "name": "Polonium",
@@ -2862,20 +3633,29 @@
     "density": 9.196,
     "groupBlock": "metalloid",
     "yearDiscovered": 1898,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/bbr5yWwsI1o"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/bbr5yWwsI1o"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Polonium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/84/polonium"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 6,
     "block": "p",
     "discoveredBy": "Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segrè",
-    "keyIsotopes": [ 210],
+    "keyIsotopes": [
+      210
+    ],
     "atomicNumber": 85,
     "symbol": "At",
     "name": "Astatine",
@@ -2898,20 +3678,31 @@
     "density": "",
     "groupBlock": "halogen",
     "yearDiscovered": 1940,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/sSL7EwdlLlE"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/sSL7EwdlLlE"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Astatine"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/85/astatine"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 6,
     "block": "p",
     "discoveredBy": "Friedrich Ernst Dorn ",
-    "keyIsotopes": [ 211, 220, 222 ],
+    "keyIsotopes": [
+      211,
+      220,
+      222
+    ],
     "atomicNumber": 86,
     "symbol": "Rn",
     "name": "Radon",
@@ -2934,20 +3725,29 @@
     "density": 0.00973,
     "groupBlock": "noble gas",
     "yearDiscovered": 1900,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/mTuC_LrEfbU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/mTuC_LrEfbU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Radon"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/86/radon"
+      }
+    ]
   },
   {
     "group": 1,
     "period": 7,
     "block": "s",
     "discoveredBy": "Marguerite Perey ",
-    "keyIsotopes": [ 223 ],
+    "keyIsotopes": [
+      223
+    ],
     "atomicNumber": 87,
     "symbol": "Fr",
     "name": "Francium",
@@ -2970,20 +3770,29 @@
     "density": "",
     "groupBlock": "alkali metal",
     "yearDiscovered": 1939,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/PyFLvSg6ZDw"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/PyFLvSg6ZDw"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Francium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/87/francium"
+      }
+    ]
   },
   {
     "group": 2,
     "period": 7,
     "block": "s",
     "discoveredBy": "Pierre and Marie Curie ",
-    "keyIsotopes": [ 226 ],
+    "keyIsotopes": [
+      226
+    ],
     "atomicNumber": 88,
     "symbol": "Ra",
     "name": "Radium",
@@ -3006,20 +3815,29 @@
     "density": 5,
     "groupBlock": "alkaline earth metal",
     "yearDiscovered": 1898,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/5_I6vj-lXNM"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/5_I6vj-lXNM"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Radium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/88/radium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "d",
     "discoveredBy": "Andrew Debierne",
-    "keyIsotopes": [ 227 ],
+    "keyIsotopes": [
+      227
+    ],
     "atomicNumber": 89,
     "symbol": "Ac",
     "name": "Actinium",
@@ -3042,20 +3860,30 @@
     "density": 10.07,
     "groupBlock": "actinoid",
     "yearDiscovered": 1899,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/0BlpjWBYW0k"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/0BlpjWBYW0k"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Actinium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/89/actinium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Jöns Jacob Berzelius ",
-    "keyIsotopes": [ 230, 232 ],
+    "keyIsotopes": [
+      230,
+      232
+    ],
     "atomicNumber": 90,
     "symbol": "Th",
     "name": "Thorium",
@@ -3076,20 +3904,29 @@
     "density": 11.724,
     "groupBlock": "actinoid",
     "yearDiscovered": 1828,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/2yZGcr0mpw0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/2yZGcr0mpw0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Thorium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/90/thorium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Kasimir Fajans and Otto Göhring",
-    "keyIsotopes": [ 231 ],
+    "keyIsotopes": [
+      231
+    ],
     "atomicNumber": 91,
     "symbol": "Pa",
     "name": "Protactinium",
@@ -3110,20 +3947,31 @@
     "density": 15.37,
     "groupBlock": "actinoid",
     "yearDiscovered": 1913,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/bsIMMa7iEKU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/bsIMMa7iEKU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Protactinium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/91/protactinium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Martin Heinrich Klaproth",
-    "keyIsotopes": [ 234, 235, 238 ],
+    "keyIsotopes": [
+      234,
+      235,
+      238
+    ],
     "atomicNumber": 92,
     "symbol": "U",
     "name": "Uranium",
@@ -3144,20 +3992,29 @@
     "density": 19.05,
     "groupBlock": "actinoid",
     "yearDiscovered": 1789,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/B8vVZTvJNGk"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/B8vVZTvJNGk"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Uranium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/92/uranium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Edwin McMillan and Philip Abelson",
-    "keyIsotopes": [ 237 ],
+    "keyIsotopes": [
+      237
+    ],
     "atomicNumber": 93,
     "symbol": "Np",
     "name": "Neptunium",
@@ -3180,20 +4037,31 @@
     "density": 20.45,
     "groupBlock": "actinoid",
     "yearDiscovered": 1940,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/1D75B0_URbE"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/1D75B0_URbE"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Neptunium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/93/neptunium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Glenn Seaborg and colleagues",
-    "keyIsotopes": [ 238, 239, 240],
+    "keyIsotopes": [
+      238,
+      239,
+      240
+    ],
     "atomicNumber": 94,
     "symbol": "Pu",
     "name": "Plutonium",
@@ -3216,20 +4084,30 @@
     "density": 19.816,
     "groupBlock": "actinoid",
     "yearDiscovered": 1940,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/XLufmakbiU0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/XLufmakbiU0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Plutonium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/94/plutonium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Glenn Seaborg and colleagues",
-    "keyIsotopes": [ 241, 243 ],
+    "keyIsotopes": [
+      241,
+      243
+    ],
     "atomicNumber": 95,
     "symbol": "Am",
     "name": "Americium",
@@ -3252,20 +4130,30 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1944,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/CC-L-CITg3k"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/CC-L-CITg3k"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Americium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/95/americium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Glenn Seaborg and colleagues ",
-    "keyIsotopes": [ 243, 248],
+    "keyIsotopes": [
+      243,
+      248
+    ],
     "atomicNumber": 96,
     "symbol": "Cm",
     "name": "Curium",
@@ -3288,20 +4176,30 @@
     "density": 13.51,
     "groupBlock": "actinoid",
     "yearDiscovered": 1944,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/sZobqPFNcwg"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/sZobqPFNcwg"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Curium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/96/curium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Stanley Thompson, Albert Ghiorso, and Glenn Seaborg",
-    "keyIsotopes": [ 247, 249],
+    "keyIsotopes": [
+      247,
+      249
+    ],
     "atomicNumber": 97,
     "symbol": "Bk",
     "name": "Berkelium",
@@ -3324,20 +4222,30 @@
     "density": 14.78,
     "groupBlock": "actinoid",
     "yearDiscovered": 1949,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/imXT9QwRzks"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/imXT9QwRzks"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Berkelium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/97/berkelium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Stanley Thompson, Kenneth Street, Jr., Albert Ghiorso, and Glenn Seaborg",
-    "keyIsotopes": [ 249, 252 ],
+    "keyIsotopes": [
+      249,
+      252
+    ],
     "atomicNumber": 98,
     "symbol": "Cf",
     "name": "Californium",
@@ -3360,20 +4268,29 @@
     "density": 15.1,
     "groupBlock": "actinoid",
     "yearDiscovered": 1950,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/eG6HyPrTccI"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/eG6HyPrTccI"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Californium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/98/californium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Albert Ghiorso and colleagues ",
-    "keyIsotopes": [ 252],
+    "keyIsotopes": [
+      252
+    ],
     "atomicNumber": 99,
     "symbol": "Es",
     "name": "Einsteinium",
@@ -3396,20 +4313,29 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1952,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/-G_4nJLNXA0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/-G_4nJLNXA0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Einsteinium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/99/einsteinium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Albert Ghiorso and colleagues ",
-    "keyIsotopes": [ 257 ],
+    "keyIsotopes": [
+      257
+    ],
     "atomicNumber": 100,
     "symbol": "Fm",
     "name": "Fermium",
@@ -3432,20 +4358,30 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1952,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/SQhI52sqanA"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/SQhI52sqanA"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Fermium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/100/fermium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Albert Ghiorso and colleagues",
-    "keyIsotopes": [ 258, 260 ],
+    "keyIsotopes": [
+      258,
+      260
+    ],
     "atomicNumber": 101,
     "symbol": "Md",
     "name": "Mendelevium",
@@ -3468,20 +4404,29 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1955,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/0JlshAo8DuE"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/0JlshAo8DuE"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mendelevium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/101/mendelevium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Georgy Flerov and colleagues and at Dubna, near Moscow, Russia, and independently by Albert Ghiorso and colleagues at Berkeley, California, USA",
-    "keyIsotopes": [ 259 ],
+    "keyIsotopes": [
+      259
+    ],
     "atomicNumber": 102,
     "symbol": "No",
     "name": "Nobelium",
@@ -3504,20 +4449,29 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1957,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/t_ZpauMxapY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/t_ZpauMxapY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Nobelium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/102/nobelium"
+      }
+    ]
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
     "discoveredBy": "Georgy Flerov and colleagues and at Dubna, near Moscow, Russia, and independently by Albert Ghiorso and colleagues at Berkeley, California, USA",
-    "keyIsotopes": [ 262 ],
+    "keyIsotopes": [
+      262
+    ],
     "atomicNumber": 103,
     "symbol": "Lr",
     "name": "Lawrencium",
@@ -3540,20 +4494,29 @@
     "density": "",
     "groupBlock": "actinoid",
     "yearDiscovered": 1961,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/_zBsnnJOkyA"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/_zBsnnJOkyA"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lawrencium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/103/lawrencium"
+      }
+    ]
   },
   {
     "group": 4,
     "period": 7,
     "block": "d",
     "discoveredBy": "Georgy Flerov and colleagues and at Dubna, near Moscow, Russia, and independently by Albert Ghiorso and colleagues at Berkeley, California, USA",
-    "keyIsotopes": [ 265 ],
+    "keyIsotopes": [
+      265
+    ],
     "atomicNumber": 104,
     "symbol": "Rf",
     "name": "Rutherfordium",
@@ -3576,20 +4539,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1969,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/dOj9ZjKnJcY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/dOj9ZjKnJcY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rutherfordium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/104/rutherfordium"
+      }
+    ]
   },
   {
     "group": 5,
     "period": 7,
     "block": "d",
     "discoveredBy": "Scientists at both Berkeley, California, USA, and Dubna, near Moscow, Russia",
-    "keyIsotopes": [ 268 ],
+    "keyIsotopes": [
+      268
+    ],
     "atomicNumber": 105,
     "symbol": "Db",
     "name": "Dubnium",
@@ -3612,20 +4584,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1967,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/eeczRrDoL_M"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/eeczRrDoL_M"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dubnium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/105/dubnium"
+      }
+    ]
   },
   {
     "group": 6,
     "period": 7,
     "block": "d",
     "discoveredBy": "Albert Ghiorso and colleagues ",
-    "keyIsotopes": [ 271 ],
+    "keyIsotopes": [
+      271
+    ],
     "atomicNumber": 106,
     "symbol": "Sg",
     "name": "Seaborgium",
@@ -3648,20 +4629,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1974,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/UWq0djr790E"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/UWq0djr790E"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Seaborgium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/106/seaborgium"
+      }
+    ]
   },
   {
     "group": 7,
     "period": 7,
     "block": "d",
     "discoveredBy": "Peter Armbruster, Gottfried Münzenberg and colleagues",
-    "keyIsotopes": [ 272 ],
+    "keyIsotopes": [
+      272
+    ],
     "atomicNumber": 107,
     "symbol": "Bh",
     "name": "Bohrium",
@@ -3684,20 +4674,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1976,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/okJnQIjELY4"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/okJnQIjELY4"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bohrium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/107/bohrium"
+      }
+    ]
   },
   {
     "group": 8,
     "period": 7,
     "block": "d",
     "discoveredBy": "Peter Armbruster, Gottfried Münzenberg",
-    "keyIsotopes": [ 270 ],
+    "keyIsotopes": [
+      270
+    ],
     "atomicNumber": 108,
     "symbol": "Hs",
     "name": "Hassium",
@@ -3720,20 +4719,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1984,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/u4GEVxbLego"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/u4GEVxbLego"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Hassium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/108/hassium"
+      }
+    ]
   },
   {
     "group": 9,
     "period": 7,
     "block": "d",
     "discoveredBy": "Peter Armbruster, Gottfried Münzenberg and colleagues",
-    "keyIsotopes": [ 276 ],
+    "keyIsotopes": [
+      276
+    ],
     "atomicNumber": 109,
     "symbol": "Mt",
     "name": "Meitnerium",
@@ -3756,20 +4764,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1982,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/N8VR7Qscq4k"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/N8VR7Qscq4k"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Meitnerium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/109/meitnerium"
+      }
+    ]
   },
   {
     "group": 10,
     "period": 7,
     "block": "d",
     "discoveredBy": "Sigurd Hofmann, Peter Armbruster and Gottfried Münzenberg",
-    "keyIsotopes": [ 281 ],
+    "keyIsotopes": [
+      281
+    ],
     "atomicNumber": 110,
     "symbol": "Ds",
     "name": "Darmstadtium",
@@ -3792,20 +4809,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1994,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/lhvMqva3-7M"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/lhvMqva3-7M"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Darmstadtium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/110/darmstadtium"
+      }
+    ]
   },
   {
     "group": 11,
     "period": 7,
     "block": "d",
     "discoveredBy": "Peter Armbruster and Gottfried Münzenberg ",
-    "keyIsotopes": [ 280 ],
+    "keyIsotopes": [
+      280
+    ],
     "atomicNumber": 111,
     "symbol": "Rg",
     "name": "Roentgenium",
@@ -3828,20 +4854,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1994,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/MTq1hzhCF0g"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/MTq1hzhCF0g"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Roentgenium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/111/roentgenium"
+      }
+    ]
   },
   {
     "group": 12,
     "period": 7,
     "block": "d",
     "discoveredBy": "Sigurd Hofmann and colleagues",
-    "keyIsotopes": [ 285 ],
+    "keyIsotopes": [
+      285
+    ],
     "atomicNumber": 112,
     "symbol": "Cn",
     "name": "Copernicium",
@@ -3864,20 +4899,29 @@
     "density": "",
     "groupBlock": "transition metal",
     "yearDiscovered": 1996,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/QHcbQfcwegY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/QHcbQfcwegY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Copernicium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/112/copernicium"
+      }
+    ]
   },
   {
     "group": 13,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from RIKEN (The Institute of Physical and Chemical Research) in Japan ",
-    "keyIsotopes": [ 284 ],
+    "keyIsotopes": [
+      284
+    ],
     "atomicNumber": 113,
     "symbol": "Uut",
     "name": "Ununtrium",
@@ -3900,20 +4944,29 @@
     "density": "",
     "groupBlock": "post transition metal",
     "yearDiscovered": 2003,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Ac7iFepG2CY"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Ac7iFepG2CY"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ununtrium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/113/ununtrium"
+      }
+    ]
   },
   {
     "group": 14,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from the Joint Institute for Nuclear Research in Dubna, Russia and the Lawrence Livermore National Laboratory, California, USA",
-    "keyIsotopes": [ 289 ],
+    "keyIsotopes": [
+      289
+    ],
     "atomicNumber": 114,
     "symbol": "Fl",
     "name": "Flerovium",
@@ -3936,20 +4989,29 @@
     "density": "",
     "groupBlock": "post transition metal",
     "yearDiscovered": 1998,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/5L-NNFPiRog"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/5L-NNFPiRog"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Flerovium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/114/flerovium"
+      }
+    ]
   },
   {
     "group": 15,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from the Joint Institute for Nuclear Research in Dubna, Russia, the Lawrence Livermore National Laboratory in California, USA, and Oak Ridge National Laboratory in Tennessee, USA",
-    "keyIsotopes": [ 288 ],
+    "keyIsotopes": [
+      288
+    ],
     "atomicNumber": 115,
     "symbol": "Uup",
     "name": "Ununpentium",
@@ -3972,20 +5034,29 @@
     "density": "",
     "groupBlock": "post transition metal",
     "yearDiscovered": 2003,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/gCt5WK2OVp0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/gCt5WK2OVp0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ununpentium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/115/ununpentium"
+      }
+    ]
   },
   {
     "group": 16,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from the Joint Institute for Nuclear Research in Dubna, Russia and the Lawrence Livermore National Laboratory, California, USA",
-    "keyIsotopes": [ 293 ],
+    "keyIsotopes": [
+      293
+    ],
     "atomicNumber": 116,
     "symbol": "Lv",
     "name": "Livermorium",
@@ -4008,20 +5079,29 @@
     "density": "",
     "groupBlock": "post transition metal",
     "yearDiscovered": 2000,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/WdbF4L_ruyM"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/WdbF4L_ruyM"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Livermorium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/116/livermorium"
+      }
+    ]
   },
   {
     "group": 17,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from the Joint Institute for Nuclear Research in Dubna, Russia, the Lawrence Livermore National Laboratory in California, USA, and Oak Ridge National Laboratory in Tennessee, USA",
-    "keyIsotopes": [ 292 ],
+    "keyIsotopes": [
+      292
+    ],
     "atomicNumber": 117,
     "symbol": "Uus",
     "name": "Ununseptium",
@@ -4044,20 +5124,29 @@
     "density": "",
     "groupBlock": "halogen",
     "yearDiscovered": 2010,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/5kVyOd-F5q0"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/5kVyOd-F5q0"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ununseptium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/117/ununseptium"
+      }
+    ]
   },
   {
     "group": 18,
     "period": 7,
     "block": "p",
     "discoveredBy": "Scientists from the Joint Institute for Nuclear Research in Dubna, Russia, and the Lawrence Livermore National Laboratory in California, USA",
-    "keyIsotopes": [ 294 ],
+    "keyIsotopes": [
+      294
+    ],
     "atomicNumber": 118,
     "symbol": "Uuo",
     "name": "Ununoctium",
@@ -4080,12 +5169,19 @@
     "density": "",
     "groupBlock": "noble gas",
     "yearDiscovered": 2002,
-    "resources" : [{
-      "name" : "youtube",
-      "url" : "https://www.youtube.com/embed/Stxor9L00BU"
-    }, {
-      "name" : "wikipedia",
-      "url" : "https://en.wikipedia.org/wiki/"
-    }]
+    "resources": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/embed/Stxor9L00BU"
+      },
+      {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ununoctium"
+      },
+      {
+        "name": "Royal Society of Chemistry",
+        "url": "http://www.rsc.org/periodic-table/element/118/ununoctium"
+      }
+    ]
   }
 ]
