@@ -10,7 +10,7 @@
     <script defer src=/static/js/dragscroll.js></script>
 {{/if}}
 
-<body z={{zoom}} class=dragscroll>
+<body z={{zoom}}>
     <div id=z>
         <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
         <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
@@ -30,9 +30,9 @@
                 </select>
             </fieldset>
             <fieldset id=fs class=radios>
-                <label><input type=radio name=st value=g><i>✓</i> Gas</label>
-                <label><input type=radio name=st value=l><i>✓</i> Liquid</label>
-                <label><input type=radio name=st value=s><i>✓</i> Solid</label>
+                <label><input type=radio name=st value=G><i>✓</i> Gas</label>
+                <label><input type=radio name=st value=L><i>✓</i> Liquid</label>
+                <label><input type=radio name=st value=S><i>✓</i> Solid</label>
             </fieldset>
             <fieldset id="ff">
                 <label>Find  <input id=find placeholder="Mercury"></label>

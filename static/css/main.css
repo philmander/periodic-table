@@ -18,7 +18,7 @@ html {
     font-family: sans-serif;
     font-size: 14px;
     line-height: 1.2em;
-    background: #c1c1c1;
+    background: #737373;
     color: #585858;
 }
 *, *:before, *:after {
@@ -70,6 +70,7 @@ html {
     right: 10px;
     bottom: 10px;
     width: 28px;
+    display: none;
     z-index: 2;
     background: #f5f5f5;
     box-shadow: 0 -1px 12px #717171;
@@ -136,6 +137,12 @@ input:checked + i {
 #fs label:nth-child(3) {
     background: #2e3af3;
 }
+input[type="number"] {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    margin-right: 2px;
+}
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
 #tables {
@@ -143,6 +150,7 @@ input:checked + i {
     transition: transform 1s ;
     transform-origin: 0 0;
     width: 1200px;
+    backface-visibility: hidden;
 }
 .elements {
     border-collapse: collapse;
@@ -174,7 +182,7 @@ input:checked + i {
     vertical-align: top;
     background: #f1f1f1;
     transition: height 1s;
-    background-clip: padding-box;
+    background-clip: padding-box !important;
 }
 td > div {
     position: absolute;
@@ -183,19 +191,21 @@ td > div {
     padding: 4px;
     overflow: hidden;
     transform-origin: 0 0;
+    filter: blur(0);
+    backface-visibility: hidden;
 }
 [z="2"] td > div {
-    transform: scale(0.5);
+    transform: scale(0.5) translateZ(0);
     width: 200%;
     height: 200%;
 }
 [z="3"] td > div {
-    transform: scale(0.2);
+    transform: scale(0.2) translateZ(0);
     width: 500%;
     height: 500%;
 }
 [z="4"] td > div {
-    transform: scale(0.083);
+    transform: scale(0.083) translateZ(0);
     width: 1200%;
     height: 1200%
 }
@@ -315,7 +325,7 @@ td > div {
 .details {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     color: #585858;
     margin-top: 1rem;
 }
@@ -327,6 +337,7 @@ td > div {
     padding: 8px;
     vertical-align: bottom;
     line-height: 1.2em;
+    font-size: 0.9rem;
 }
 .details td {
     text-align: right;
@@ -344,11 +355,11 @@ td > div {
 .tabs-nav li {
     padding: 6px;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
     margin-top: 1rem;
 }
 .tabs-nav li.active {
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 .tabs-nav a {
     text-decoration: none;
@@ -357,7 +368,7 @@ td > div {
 .tabs-content {
     height: 400px;
     padding: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     overflow: auto;
     color: #585858;
 }

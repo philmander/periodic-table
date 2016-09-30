@@ -17,7 +17,7 @@
         }
 
         // cloning into array since HTMLCollection is updated dynamically
-        dragged = [].slice.call(document.getElementsByClassName('dragscroll'));
+        dragged = [ document.documentElement, document.body ];
         for (i = 0; i < dragged.length;) {
             (function(el, lastClientX, lastClientY, pushed, scroller, cont){
                 (cont = el.container || el)[addEventListener](
