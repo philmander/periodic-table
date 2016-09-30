@@ -1,8 +1,9 @@
 const
     gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
-    compiler = require('google-closure-compiler-js').gulp(),
-    concat = require('gulp-concat');
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    rename = require('gulp-rename');
 
 gulp.task('scripts', function() {
     return gulp.src('./static/js/*.js')
@@ -18,10 +19,8 @@ gulp.task('build-css', function() {
 
 gulp.task('build-js', [ 'scripts' ], function() {
     return gulp.src('static/build/app.js')
-        .pipe(compiler({
-            compilationLevel: 'SIMPLE',
-            jsOutputFile: 'app.min.js',  // outputs single file
-        }))
+        .pipe(uglify())
+        .pipe(rename('app.min.js'))
         .pipe(gulp.dest('./static/build'));
 });
 
