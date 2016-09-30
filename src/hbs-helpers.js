@@ -88,7 +88,15 @@ module.exports = {
     },
     
     year: function () {
-        return new Date().getFullYear()
+        return new Date().getFullYear();
+    },
+
+    resource: function(element, name) {
+        return element.resources.find(resource => resource.name.toLowerCase() === name.toLowerCase()).url;
+    },
+
+    otherResources: function(element) {
+        return element.resources.filter(resource => resource.name !== 'Wikipedia' && resource.name !== 'Youtube');
     }
 
 };

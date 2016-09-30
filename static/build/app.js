@@ -428,7 +428,17 @@
                 var panes = target.parentNode.children;
                 for(i = 0; i < panes.length; i++) {
                     panes[i].style.display = panes[i] == target ? 'block' : 'none';
+                    var div = target.querySelector('.iframe');
+                    if(div) {
+                        var iframe = document.createElement('iframe');
+                        for(j = 0; j < div.attributes.length; j++) {
+                            iframe.setAttribute(div.attributes[j].name, div.attributes[j].value);
+                        }
+                        div.parentNode.appendChild(iframe);
+                        div.parentNode.removeChild(div);
+                    }
                 }
+
                 ev.preventDefault();
             }
          };
@@ -436,8 +446,8 @@
         //zoom events
         nodes.tables.ondblclick = function(ev) {
             model.zoomWith(1, {
-                x: ev.screenX,
-                y: ev.screenY
+                x: ev.clientX,
+                y: ev.clientY
             })
         };
         doubleTap(nodes.tables);
@@ -446,8 +456,8 @@
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
                 model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
-                    x: ev.screenX,
-                    y: ev.screenY
+                    x: ev.clientX,
+                    y: ev.clientY
                 });
                 allowWheel = false;
                 setTimeout(function() {

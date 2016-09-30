@@ -1,30 +1,35 @@
 <div>
     <div class=r tabs>
         <ul class=tabs-nav>
-            <li class=active><a href=#video-{{element.symbol}}>Video</a></li>
+            <li class=active><a href=#history-{{element.symbol}}>History</a></li>
+            <li><a href=#video-{{element.symbol}}>Video</a></li>
             <li><a href=#wiki-{{element.symbol}}>Wikipedia</a></li>
             <li><a href=#other-{{element.symbol}}>Other resources</a></li>
         </ul>
         <div class=tabs-content>
+            <div id=history-{{element.symbol}} class="tabs-content-pane active">
+                <p>Discovered by {{element.discoveredBy}}</p>
+                <p>{{element.info}}</p>
+                <p><small>Information courtesy of <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a></small></p>
+            </div>
             <div id=video-{{element.symbol}} class=tabs-content-pane>
-                <div class="video">
-                    {{#if element.resources.youtube}}
-                        <iframe width="560" height="315" src="{{element.resources.youtube}}" frameborder="0" allowfullscreen></iframe>
-                    {{else}}
-                        <p>No video available</p>
-                    {{/if}}
+                <div class=video>
+                    <div class=iframe width=560 height=315 src="{{resource element "Youtube"}}" frameborder=0 allowfullscreen>
+                        <p><a href={{resource element "Youtube"}} target=_blank>Video for {{element.name}}</p>
+                    </div>
                 </div>
             </div>
             <div id=wiki-{{element.symbol}} class="tabs-content-pane wiki-pane">
-                {{#if element.resources.wiki}}
-                    <iframe src="{{element.resources.wiki}}"></iframe>
-                {{else}}
-                    <p>No wiki page available</p>
-                {{/if}}
-
+                <div class=iframe src="{{resource element "Wikipedia"}}?printable=yes">
+                    <p><a href={{resource element "Wikipedia"}} target=_blank>Wikipedia entry for {{element.name}}</p>
+                </div>
             </div>
             <div id=other-{{element.symbol}} class=tabs-content-pane>
-                <!-- ANY CONTENT HERE -->
+                <ul>
+                    {{#each (otherResources element)}}
+                        <li><a href="{{url}}">{{name}}</a></li>
+                    {{/each}}
+                </ul>
             </div>
         </div>
     </div>

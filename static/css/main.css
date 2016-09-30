@@ -372,6 +372,20 @@ td > div {
     overflow: auto;
     color: #585858;
 }
+.tabs-content-pane {
+    display: none;
+}
+.tabs-content-pane.active {
+    display: block;
+}
+.tabs-content-pane p {
+    margin-top: 1em;
+    line-height: 1.5;
+}
+.tabs-content-pane ul {
+    margin-top: 1em;
+    list-style: disc inside;
+}
 .wiki-pane {
     padding: 8px;
     background: #fff;
