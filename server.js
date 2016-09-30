@@ -1,6 +1,5 @@
 const
     express = require('express');
-    bodyParser = require('body-parser'),
     minifyHTML = require('express-minify-html'),
     compression = require('compression'),
     favicon = require('serve-favicon'),
@@ -68,7 +67,6 @@ app.use(minifyHTML({
 }));
 app.use(compression());
 app.use(favicon('./favicon.ico'));
-app.use(bodyParser.json());
 
 app.use('/static', express.static('static', { maxAge: 1000 * 60 * 60 * 24}));
 
@@ -126,9 +124,10 @@ app.use(function(err, req, res) {
     }
 });
 
-var port = 3000;
-var server = app.listen(port, function() {
-    console.log(`Server listening on ${port}`)
+const port = 3000;
+const server = app.listen(port, () => {
+    var production = process.env.NODE_ENV === 'production';
+    console.log(`Periodic table server is listening on port ${port} in ${production ? 'production' : 'development' } mode.`)
 }).on('error', function(err) {
     if(err.code === 'EADDRINUSE') {
         console.error('Cannot start server. Something is already running on port %s.', port);

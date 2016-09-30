@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/philmander/periodic-table#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "express-minify-html": "^0.6.0",
