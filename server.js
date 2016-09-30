@@ -48,11 +48,13 @@ for(let element of elementList) {
 const app = express();
 app.locals.elements = elementList;
 app.locals.env = app.get('env');
+app.locals.version = require('./package.json').version;
 app.locals.css = fs.readFileSync(path.join(__dirname, 'static/build/main.css'), 'utf8');
 hbs.localsAsTemplateData(app);
 hbs.registerPartials(path.join(__dirname, PARTIAL_DIR));
 app.set('view engine', 'hbs');
 app.set('json spaces', 0);
+app.set('x-powered-by', false)
 
 app.use(minifyHTML({
     override:      true,
@@ -68,7 +70,7 @@ app.use(compression());
 app.use(favicon('./favicon.ico'));
 app.use(bodyParser.json());
 
-app.use('/static', express.static('static'));
+app.use('/static', express.static('static', { maxAge: 1000 * 60 * 60 * 24}));
 
 function getZoom(req) {
     const zoom = parseInt(req.query.z);
