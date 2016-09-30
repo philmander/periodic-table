@@ -171,7 +171,7 @@ input[type="number"] {
     transform: scale(5) translateZ(0);
 }
 [z="4"] #tables {
-    transform: scale(12) translateZ(0);
+    transform: scale(10) translateZ(0);
 }
 .elements > tbody > tr > td,
 .elements > tbody > tr > th {
@@ -189,9 +189,7 @@ td > div {
     width: 100%;
     height: 100%;
     padding: 4px;
-    overflow: hidden;
     transform-origin: 0 0;
-    filter: blur(0);
     backface-visibility: hidden;
 }
 [z="2"] td > div {
@@ -205,9 +203,9 @@ td > div {
     height: 500%;
 }
 [z="4"] td > div {
-    transform: scale(0.083) translateZ(0);
-    width: 1200%;
-    height: 1200%
+    transform: scale(0.1) translateZ(0);
+    width: 1000%;
+    height: 1000%
 }
 [z="1"] .elements > tbody > tr > td {
     height: 65px;
@@ -219,7 +217,7 @@ td > div {
     height: 59px;
 }
 [z="4"] .elements > tbody > tr > td {
-    height: 63px;
+    height: 75px;
 }
 .elements > tbody > tr > th {
     color: #585858;
