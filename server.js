@@ -124,7 +124,7 @@ app.use(function(err, req, res) {
     }
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
     var production = process.env.NODE_ENV === 'production';
     console.log(`Periodic table server is listening on port ${port} in ${production ? 'production' : 'development' } mode.`)
