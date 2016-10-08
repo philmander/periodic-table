@@ -75,7 +75,8 @@
         <div id="tables">
             <table class=elements>
                 <tr>
-                    {{#range 0 19}}
+                    <th></th>
+                    {{#range 1 19}}
                         <th g>{{#if index}}{{index}}{{/if}}</th>
                     {{/range}}
                 </tr>
@@ -113,15 +114,15 @@
                 {{/range}}
                 <tr>
                     <th></th>
-                    <th b colspan=2>s</th>
-                    <th b colspan=10>d</th>
-                    <th b colspan=6>p</th>
+                    <th b colspan=2>S</th>
+                    <th b colspan=10>D</th>
+                    <th b colspan=6>P</th>
                 </tr>
             </table>
 
             <table class="elements">
                 <tr>
-                    <th b rowspan=2>f</th>
+                    <th b rowspan=2>F</th>
                     <th g=l colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>

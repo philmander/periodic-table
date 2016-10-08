@@ -142,6 +142,18 @@
             header.style.display = 'block';
         }
 
+        //add header titles
+        var highlightText = ' (click to toggle highlight)';
+        function addCellHeaderTitle(title) {
+            var cellHeaders = document.querySelectorAll('th[' + title.charAt(0).toLowerCase() + ']');
+            for(i = 0; i < cellHeaders.length; i++) {
+                cellHeaders[i].setAttribute('title', title + ' ' + cellHeaders[i].textContent.replace(/\*+\s/, '') + highlightText);
+            }
+        }
+        addCellHeaderTitle('Group');
+        addCellHeaderTitle('Period');
+        addCellHeaderTitle('Block');
+
         //initialize state and temperature
         nodes.tempUnit.value = model.tempUnit;
         view.tempUnitChanged();
