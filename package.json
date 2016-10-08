@@ -1,6 +1,6 @@
 {
   "name": "periodic-table",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Periodic Table of Elements",
   "main": "index.js",
   "scripts": {
