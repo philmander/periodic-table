@@ -380,13 +380,13 @@
          };
 
         //zoom events
+        doubleTap(nodes.tables);
         nodes.tables.ondblclick = function(ev) {
             model.zoomWith(1, {
                 x: ev.clientX,
                 y: ev.clientY
             })
         };
-        doubleTap(nodes.tables);
 
         var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
@@ -504,7 +504,7 @@
     }
 
     //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
-    function doubleTap(d,h,e){if("ontouchstart"in d){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
+    function doubleTap(d,h,e){if(d.ondblclick === undefined){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
         a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
 
 })(window, document, window.localStorage);
