@@ -367,10 +367,10 @@
                     var div = target.querySelector('.iframe');
                     if(div) {
                         var iframe = document.createElement('iframe');
+                        div.parentNode.appendChild(iframe);
                         for(j = 0; j < div.attributes.length; j++) {
                             iframe.setAttribute(div.attributes[j].name, div.attributes[j].value);
                         }
-                        div.parentNode.appendChild(iframe);
                         div.parentNode.removeChild(div);
                     }
                 }
