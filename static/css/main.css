@@ -8,6 +8,9 @@ dt, dd, blockquote, address, table, tbody, tr, td, th, fieldset, i {
     font-style: normal;
     text-align: left;
 }
+button {
+    cursor: pointer;
+}
 sup, sub {
     vertical-align: top;
     position: relative;
@@ -26,6 +29,43 @@ html {
 }
 .wrap {
     position: relative;
+}
+
+
+/* Accessibility -----------------------------------------------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 3;
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 0 12px #717171;
+    overflow: auto;
+}
+header button {
+    display: block;
+    margin: 1rem auto;
+    width: 100px;
+    font-size: 1.2rem;
+}
+h1 {
+    font-size: 2rem;
+    line-height: 2;
+    text-align: center;
+}
+h2 {
+    display: none;
+}
+kbd {
+    display: inline-block;
+    border-radius: 4px;
+    background: #eaeaea;
+    padding: 2px;
+    margin: 2px;
 }
 
 /* Zoom --------------------------------------------------------------------------------------------------------------*/
@@ -165,7 +205,7 @@ input[type="number"] {
     transform: scale(1) translateZ(0);
 }
 [z="2"] #tables {
-    transform: scale(2) translateZ(0);;
+    transform: scale(2) translateZ(0);
 }
 [z="3"] #tables {
     transform: scale(5) translateZ(0);
@@ -380,7 +420,7 @@ td > div {
     margin-top: 1em;
     line-height: 1.5;
 }
-.tabs-content-pane ul {
+ul.bullets {
     margin-top: 1em;
     list-style: disc inside;
 }

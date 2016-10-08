@@ -11,7 +11,8 @@ const
 
 hbs.handlebars = handlebars;
 
-//default ot production
+const inProduction = process.env.NODE_ENV === 'production';
+
 const elementList = require('./data/elements.json');
 
 const PARTIAL_DIR = 'views/partials';
@@ -68,7 +69,8 @@ app.use(minifyHTML({
 app.use(compression());
 app.use(favicon('./favicon.ico'));
 
-app.use('/static', express.static('static', { maxAge: 1000 * 60 * 60 * 24}));
+const cacheOpts = inProduction ? { maxAge: 1000 * 60 * 60 * 24} : {};
+app.use('/static', express.static('static', cacheOpts));
 
 function getZoom(req) {
     const zoom = parseInt(req.query.z);
@@ -126,8 +128,7 @@ app.use(function(err, req, res) {
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-    var production = process.env.NODE_ENV === 'production';
-    console.log(`Periodic table server is listening on port ${port} in ${production ? 'production' : 'development' } mode.`)
+    console.log(`Periodic table server is listening on port ${port} in ${inProduction ? 'production' : 'development' } mode.`)
 }).on('error', function(err) {
     if(err.code === 'EADDRINUSE') {
         console.error('Cannot start server. Something is already running on port %s.', port);

@@ -5,60 +5,73 @@
     <style>{{{@css}}}</style>
     <script defer src="/static/build/app.min.js?v={{@version}}"></script>
 {{else}}
-    <link rel=stylesheet href="/static/css/main.css?v={{random}}">
-    <script defer src="/static/js/main.js?v={{random}}"></script>
-    <script defer src="/static/js/dragscroll.js?v={{random}}"></script>
+    <link rel=stylesheet href="/static/css/main.css">
+    <script defer src="/static/js/main.js"></script>
+    <script defer src="/static/js/dragscroll.js"></script>
 {{/if}}
 
 <body z={{zoom}}>
-    <div id=z>
-        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
-        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
-    </div>
+    <header>
+        <h1>Zoomable Periodic Table</h1>
+        <ul class=bullets>
+            <li>Press <kbd>+</kbd>, double click/tap or pinch-in to zoom in</li>
+            <li>Press <kbd>−</kbd> or pinch-put to zoom out</li>
+            <li>Drag the screen to move the table around</li>
+        </ul>
+    </header>
 
-    <input type=checkbox id=toggle>
-    <div id=f>
-        <label for=toggle>Filters</label>
-        <div>
-            <fieldset id=ft>
-                <label>State @ </label>
-                <input type=number min=-460 max=10340 id=temp>
-                <select>
-                    <option value=k selected>K</option>
-                    <option value=c>°C</option>
-                    <option value=f>°F</option>
-                </select>
-            </fieldset>
-            <fieldset id=fs class=radios>
-                <label><input type=radio name=st value=G><i>✓</i> Gas</label>
-                <label><input type=radio name=st value=L><i>✓</i> Liquid</label>
-                <label><input type=radio name=st value=S><i>✓</i> Solid</label>
-            </fieldset>
-            <fieldset id="ff">
-                <label>Find  <input id=find placeholder="Antimony"></label>
-            </fieldset>
-            <fieldset id="fy">
-                <label>Year <input type=number min=1669 max={{year}} id=year></label>
-                <button type=button id=yearApply>Apply</button>
-            </fieldset>
-            <fieldset id="fc" class=radios>
-                <span>Categories:</span>
-                <label><input type=radio name=c value="n,h,ng"><i>✓</i> Non-metals</label>
-                <label c=m><input type=radio name=c value=m><i>✓</i> Metalloids</label>
-                <label c=n><input type=radio name=c value=n><i>✓</i> Other non-metals</label>
-                <label c=h><input type=radio name=c value=h><i>✓</i> Halogens</label>
-                <label c=ng><input type=radio name=c  value=ng><i>✓</i> Noble gases</label>
-                <label><input type=radio name=c value="am,aem,l,a,tm,ptm"><i>✓</i>Metals</label>
-                <label c=am><input type=radio name=c value=am><i>✓</i> Alkali metals</label>
-                <label c=aem><input type=radio name=c value=aem><i>✓</i> Alkaline earth metals</label>
-                <label c=l><input type=radio name=c value=l><i>✓</i> Lanthanides</label>
-                <label c=a><input type=radio name=c value=a><i>✓</i> Actinides</label>
-                <label c=tm><input type=radio name=c value=tm><i>✓</i> Transition metals</label>
-                <label c=ptm><input type=radio name=c value=ptm><i>✓</i> Post-transition metals</label>
-            </fieldset>
+    <aside>
+        <h2>Controls</h2>
+        <div id=z>
+            <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
+            <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
         </div>
-    </div>
-    <div id="wrap">
+
+        <input type=checkbox id=toggle>
+        <div id=f>
+            <label for=toggle>Filters</label>
+            <div>
+                <fieldset id=ft>
+                    <label>State @ </label>
+                    <input type=number min=-460 max=10340 id=temp>
+                    <select>
+                        <option value=k selected>K</option>
+                        <option value=c>°C</option>
+                        <option value=f>°F</option>
+                    </select>
+                </fieldset>
+                <fieldset id=fs class=radios>
+                    <label><input type=radio name=st value=G><i>✓</i> Gas</label>
+                    <label><input type=radio name=st value=L><i>✓</i> Liquid</label>
+                    <label><input type=radio name=st value=S><i>✓</i> Solid</label>
+                </fieldset>
+                <fieldset id="ff">
+                    <label>Find  <input id=find placeholder="Antimony"></label>
+                </fieldset>
+                <fieldset id="fy">
+                    <label>Year <input type=number min=1669 max={{year}} id=year></label>
+                    <button type=button id=yearApply>Apply</button>
+                </fieldset>
+                <fieldset id="fc" class=radios>
+                    <span>Categories:</span>
+                    <label><input type=radio name=c value="n,h,ng"><i>✓</i> Non-metals</label>
+                    <label c=m><input type=radio name=c value=m><i>✓</i> Metalloids</label>
+                    <label c=n><input type=radio name=c value=n><i>✓</i> Other non-metals</label>
+                    <label c=h><input type=radio name=c value=h><i>✓</i> Halogens</label>
+                    <label c=ng><input type=radio name=c  value=ng><i>✓</i> Noble gases</label>
+                    <label><input type=radio name=c value="am,aem,l,a,tm,ptm"><i>✓</i>Metals</label>
+                    <label c=am><input type=radio name=c value=am><i>✓</i> Alkali metals</label>
+                    <label c=aem><input type=radio name=c value=aem><i>✓</i> Alkaline earth metals</label>
+                    <label c=l><input type=radio name=c value=l><i>✓</i> Lanthanides</label>
+                    <label c=a><input type=radio name=c value=a><i>✓</i> Actinides</label>
+                    <label c=tm><input type=radio name=c value=tm><i>✓</i> Transition metals</label>
+                    <label c=ptm><input type=radio name=c value=ptm><i>✓</i> Post-transition metals</label>
+                </fieldset>
+            </div>
+        </div>
+    </aside>
+    <main id="wrap">
+        <h2>Periodic Table</h2>
         <div id="tables">
             <table class=elements>
                 <tr>
@@ -128,5 +141,5 @@
                 </tr>
             </table>
         </div>
-    </div>
+    </main>
 </body>

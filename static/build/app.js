@@ -88,6 +88,7 @@
     };
 
     var nodes = {
+        header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
         filters: document.querySelector('#f'),
         zoom: document.querySelector('[z]'),
@@ -164,6 +165,8 @@
     //init
     view.init = function() {
         var tables = nodes.tables;
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
 
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
@@ -182,10 +185,26 @@
             height: rect(tables).height
         };
         var scroll = {
-            x: window.innerWidth > dims.width ? initScroll.x - ((window.innerWidth - dims.width) / 2) : initScroll.x,
-            y: window.innerHeight > dims.height ? initScroll.y - ((window.innerHeight - dims.height) / 2) : initScroll.y,
+            x: windowWidth> dims.width ? initScroll.x - ((windowWidth- dims.width) / 2) : initScroll.x,
+            y: windowHeight> dims.height ? initScroll.y - ((windowHeight - dims.height) / 2) : initScroll.y,
         };
         window.scrollTo(scroll.x, scroll.y);
+
+        //show welcome message
+        if(!localStorage.skip) {
+            var header = nodes.header;
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = "OK";
+            header.appendChild(button);
+
+            button.onclick = function() {
+                header.style.display = 'none';
+                localStorage.skip = 'y';
+            };
+
+            header.style.display = 'block';
+        }
 
         //initialize state and temperature
         nodes.tempUnit.value = model.tempUnit;
@@ -289,9 +308,9 @@
                     wrapper.innerHTML = data[fieldNames[i]];
                     var inject = wrapper.firstChild;
                     inject.classList.add('out');
-                    addTitle(inject.firstChild, fieldNames[i]);
                     node.firstElementChild.appendChild(inject);
                     model.elements[data.symbol][fieldNames[i]] = inject;
+                    addTitle(model.elements[data.symbol], fieldNames[i]);
                 }
             }
         }
@@ -431,10 +450,10 @@
                     var div = target.querySelector('.iframe');
                     if(div) {
                         var iframe = document.createElement('iframe');
+                        div.parentNode.appendChild(iframe);
                         for(j = 0; j < div.attributes.length; j++) {
                             iframe.setAttribute(div.attributes[j].name, div.attributes[j].value);
                         }
-                        div.parentNode.appendChild(iframe);
                         div.parentNode.removeChild(div);
                     }
                 }
@@ -444,13 +463,13 @@
          };
 
         //zoom events
+        doubleTap(nodes.tables);
         nodes.tables.ondblclick = function(ev) {
             model.zoomWith(1, {
                 x: ev.clientX,
                 y: ev.clientY
             })
         };
-        doubleTap(nodes.tables);
 
         var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
@@ -474,7 +493,7 @@
             if(ev.touches.length == 2) {
                 t1 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
                 var t2 = {x: ev.touches[1].clientX, y: ev.touches[1].clientY };
-                start = Math.sqrt(Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2));
+                start = (Math.abs(t2.x - t1.x) ^ 2) + (Math.abs(t2.y - t1.y) ^ 2);
                 midpoint = { x: ((t1.x + t2.x) / 2), y: ((t2.y + t2.y) / 2) };
                 ev.preventDefault();
             }
@@ -482,7 +501,7 @@
         document.ontouchend = function(ev) {
             if(t1 && ev.touches.length) {
                 var t2 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
-                var end = Math.sqrt(Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2));
+                var end = (Math.abs(t2.x - t1.x) ^ 2) + (Math.abs(t2.y - t1.y) ^ 2);
                 model.zoomWith(end - start > 0 ? 1 : -1, {
                     x: midpoint.x,
                     y: midpoint.y
@@ -561,14 +580,14 @@
         (document.querySelector('#f input:checked') || {}).checked = false;
     }
 
-    function addTitle(node, key) {
-        if(node[key]) {
-            node[key].setAttribute('title', titles[key]);
+    function addTitle(element, key) {
+        if(element[key] && titles[key]) {
+            element[key].setAttribute('title', titles[key]);
         }
     }
 
     //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
-    function doubleTap(d,h,e){if("ontouchstart"in d){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
+    function doubleTap(d,h,e){if(d.ondblclick === undefined){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
         a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
 
 })(window, document, window.localStorage);

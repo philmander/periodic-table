@@ -24,6 +24,7 @@
     };
 
     var nodes = {
+        header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
         filters: document.querySelector('#f'),
         zoom: document.querySelector('[z]'),
@@ -100,6 +101,8 @@
     //init
     view.init = function() {
         var tables = nodes.tables;
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
 
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
@@ -118,10 +121,26 @@
             height: rect(tables).height
         };
         var scroll = {
-            x: window.innerWidth > dims.width ? initScroll.x - ((window.innerWidth - dims.width) / 2) : initScroll.x,
-            y: window.innerHeight > dims.height ? initScroll.y - ((window.innerHeight - dims.height) / 2) : initScroll.y,
+            x: windowWidth> dims.width ? initScroll.x - ((windowWidth- dims.width) / 2) : initScroll.x,
+            y: windowHeight> dims.height ? initScroll.y - ((windowHeight - dims.height) / 2) : initScroll.y,
         };
         window.scrollTo(scroll.x, scroll.y);
+
+        //show welcome message
+        if(!localStorage.skip) {
+            var header = nodes.header;
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.textContent = "OK";
+            header.appendChild(button);
+
+            button.onclick = function() {
+                header.style.display = 'none';
+                localStorage.skip = 'y';
+            };
+
+            header.style.display = 'block';
+        }
 
         //initialize state and temperature
         nodes.tempUnit.value = model.tempUnit;
@@ -225,9 +244,9 @@
                     wrapper.innerHTML = data[fieldNames[i]];
                     var inject = wrapper.firstChild;
                     inject.classList.add('out');
-                    addTitle(inject.firstChild, fieldNames[i]);
                     node.firstElementChild.appendChild(inject);
                     model.elements[data.symbol][fieldNames[i]] = inject;
+                    addTitle(model.elements[data.symbol], fieldNames[i]);
                 }
             }
         }
@@ -497,9 +516,9 @@
         (document.querySelector('#f input:checked') || {}).checked = false;
     }
 
-    function addTitle(node, key) {
-        if(node[key]) {
-            node[key].setAttribute('title', titles[key]);
+    function addTitle(element, key) {
+        if(element[key] && titles[key]) {
+            element[key].setAttribute('title', titles[key]);
         }
     }
 
