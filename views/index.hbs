@@ -5,9 +5,9 @@
     <style>{{{@css}}}</style>
     <script defer src="/static/build/app.min.js?v={{@version}}"></script>
 {{else}}
-    <link rel=stylesheet href=/static/css/main.css>
-    <script defer src=/static/js/main.js></script>
-    <script defer src=/static/js/dragscroll.js></script>
+    <link rel=stylesheet href="/static/css/main.css?v={{random}}">
+    <script defer src="/static/js/main.js?v={{random}}"></script>
+    <script defer src="/static/js/dragscroll.js?v={{random}}"></script>
 {{/if}}
 
 <body z={{zoom}}>

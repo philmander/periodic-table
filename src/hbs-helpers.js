@@ -13,6 +13,10 @@ module.exports = {
         return opts.data.env === 'production';
     },
 
+    random: function() {
+        return Math.floor(Math.random() * (999 - 100 + 1)) + 100;
+    },
+
     incrementZoom: function(zoom) {
         return Math.min(zoom + 1, zoomLevels.MAX);
     },
