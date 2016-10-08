@@ -1,5 +1,5 @@
 const
-    express = require('express');
+    express = require('express'),
     minifyHTML = require('express-minify-html'),
     compression = require('compression'),
     favicon = require('serve-favicon'),
