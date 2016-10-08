@@ -183,6 +183,9 @@ input[type="number"] {
     text-align: right;
     margin-right: 2px;
 }
+#ff input {
+    width: 120px;
+}
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
 #tables {
