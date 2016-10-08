@@ -116,13 +116,15 @@ kbd {
     box-shadow: 0 -1px 12px #717171;
     overflow: hidden;
     transition: width 0.5s;
+    opacity: 0.9;
 }
 #toggle {
     display: none;
 }
 #toggle:checked + #f {
-    width: 215px;
+    width: 230px;
     transition: width 0.5s;
+    opacity: 1;
 }
 #f > label {
     position: absolute;
