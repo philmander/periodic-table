@@ -422,7 +422,7 @@
         var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
             if(allowWheel) {
-                model.zoomWith(ev.deltaY > 0 ? 1 : -1, {
+                model.zoomWith(ev.deltaY > 0 ? -1 : 1, {
                     x: ev.clientX,
                     y: ev.clientY
                 });
