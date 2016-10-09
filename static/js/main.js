@@ -426,6 +426,7 @@
                     x: ev.clientX,
                     y: ev.clientY
                 });
+                ev.preventDefault();
                 allowWheel = false;
                 setTimeout(function() {
                     allowWheel = true;
