@@ -1,5 +1,7 @@
+'use strict';
+
 const
-    Handlebars = require('handlebars');
+    Handlebars = require('handlebars'),
     esc = Handlebars.Utils.escapeExpression;
 
 const zoomLevels = {
@@ -40,7 +42,8 @@ module.exports = {
         return word.split(/\s+/).map(word => word.charAt(0)).join('');
     },
 
-    equal: function(...values) {
+    equal: function() {
+        const values = [].slice.call(arguments);
         //remove options
         values.pop();
         var result = values.every(value => value === values[0]);

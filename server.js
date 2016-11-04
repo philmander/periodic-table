@@ -1,3 +1,5 @@
+'use strict';
+
 const
     express = require('express'),
     minifyHTML = require('express-minify-html'),
