@@ -11,15 +11,6 @@
 {{/if}}
 
 <body z={{zoom}}>
-    <header>
-        <h1>Zoomable Periodic Table</h1>
-        <ul class=bullets>
-            <li>Press <kbd>+</kbd>, double click/tap or pinch-in to zoom in</li>
-            <li>Press <kbd>−</kbd> or pinch-out to zoom out</li>
-            <li>Drag the screen to move the table around</li>
-        </ul>
-    </header>
-
     <aside>
         <h2>Controls</h2>
         <div id=z>
@@ -41,9 +32,14 @@
                     </select>
                 </fieldset>
                 <fieldset id=fs class=radios>
-                    <label><input type=radio name=st value=G><i>✓</i> Gas</label>
-                    <label><input type=radio name=st value=L><i>✓</i> Liquid</label>
-                    <label><input type=radio name=st value=S><i>✓</i> Solid</label>
+                    <input id=st1 type=radio name=st value=G>
+                    <label for=st1><i>✓</i> Gas</label>
+
+                    <input id=st2 type=radio name=st value=L>
+                    <label for=st2><i>✓</i> Liquid</label>
+
+                    <input id=st3 type=radio name=st value=S>
+                    <label for=st3><i>✓</i> Solid</label>
                 </fieldset>
                 <fieldset id="ff">
                     <label>Find  <input id=find placeholder="Antimony"></label>
@@ -54,18 +50,42 @@
                 </fieldset>
                 <fieldset id="fc" class=radios>
                     <span>Categories:</span>
-                    <label><input type=radio name=c value="n,h,ng"><i>✓</i> Non-metals</label>
-                    <label c=m><input type=radio name=c value=m><i>✓</i> Metalloids</label>
-                    <label c=n><input type=radio name=c value=n><i>✓</i> Other non-metals</label>
-                    <label c=h><input type=radio name=c value=h><i>✓</i> Halogens</label>
-                    <label c=ng><input type=radio name=c  value=ng><i>✓</i> Noble gases</label>
-                    <label><input type=radio name=c value="am,aem,l,a,tm,ptm"><i>✓</i>Metals</label>
-                    <label c=am><input type=radio name=c value=am><i>✓</i> Alkali metals</label>
-                    <label c=aem><input type=radio name=c value=aem><i>✓</i> Alkaline earth metals</label>
-                    <label c=l><input type=radio name=c value=l><i>✓</i> Lanthanides</label>
-                    <label c=a><input type=radio name=c value=a><i>✓</i> Actinides</label>
-                    <label c=tm><input type=radio name=c value=tm><i>✓</i> Transition metals</label>
-                    <label c=ptm><input type=radio name=c value=ptm><i>✓</i> Post-transition metals</label>
+
+                    <input type=radio name=c id=c1 value="n,h,ng">
+                    <label for=c1><i>✓</i> Non-metals</label>
+
+                    <input type=radio name=c id=c2 value=m>
+                    <label for=c2 c=m><i>✓</i> Metalloids</label>
+
+                    <input type=radio name=c id=c3 value=n>
+                    <label for=c3 c=n><i>✓</i> Other non-metals</label>
+
+                    <input type=radio name=c id=c4 value=h>
+                    <label for=c4 c=h><i>✓</i> Halogens</label>
+
+                    <input type=radio name=c id=c5 value=ng>
+                    <label for=c5 c=ng><i>✓</i> Noble gases</label>
+
+                    <input type=radio name=c id=c6 value="am,aem,l,a,tm,ptm">
+                    <label for=c6><i>✓</i> Metals</label>
+
+                    <input type=radio name=c id=c7 value=am>
+                    <label for=c7 c=am><i>✓</i> Alkali metals</label>
+
+                    <input type=radio name=c id=c8 value=aem>
+                    <label for=c8 c=aem><i>✓</i> Alkaline earth metals</label>
+
+                    <input type=radio name=c id=c9 value=l>
+                    <label for=c9 c=l><i>✓</i> Lanthanides</label>
+
+                    <input type=radio name=c id=c10 value=a>
+                    <label for=c10 c=a><i>✓</i> Actinides</label>
+
+                    <input type=radio name=c id=c11 value=tm>
+                    <label for=c11 c=tm><i>✓</i> Transition metals</label>
+
+                    <input type=radio name=c id=c12 value=ptm>
+                    <label for=c12 c=ptm><i>✓</i> Post-transition metals</label>
                 </fieldset>
             </div>
         </div>

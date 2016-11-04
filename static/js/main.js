@@ -126,22 +126,6 @@
         };
         window.scrollTo(scroll.x, scroll.y);
 
-        //show welcome message
-        if(!localStorage.skip) {
-            var header = nodes.header;
-            var button = document.createElement('button');
-            button.type = 'button';
-            button.textContent = "OK";
-            header.appendChild(button);
-
-            button.onclick = function() {
-                header.style.display = 'none';
-                localStorage.skip = 'y';
-            };
-
-            header.style.display = 'block';
-        }
-
         //add header titles
         var highlightText = ' (click to toggle highlight)';
         function addCellHeaderTitle(title) {
@@ -297,10 +281,9 @@
         }
     };
 
-    view.applyFilter = function(type, value, amend) {
+    view.applyFilter = function(type, value, ammend) {
 
-        if(!amend) {
-            uncheckAll();
+        if(!ammend) {
             if(!value || model.filter == type + '_' + value) {
                 delete model.filter;
                 nodes.tables.classList.remove(css.FILTERING);
@@ -374,16 +357,6 @@
                 }
             }
 
-            //filter by category
-            else if(el.tagName == 'LABEL' && el.parentNode.id == 'fc') {
-                view.applyFilter(filters.CATEGORY, el.firstChild.value);
-            }
-
-            //filter by state
-            else if(el.tagName == 'LABEL' && el.parentNode.id == 'fs') {
-                view.applyFilter(filters.STATE, el.firstChild.value);
-            }
-
             //resources tabs
             else if(el.tagName == 'A' && el.parentNode.parentNode.classList.contains('tabs-nav')) {
                 var tabs =  el.parentNode.parentNode.children;
@@ -409,6 +382,23 @@
                 ev.preventDefault();
             }
          };
+
+        document.onchange = function(ev) {
+
+            var el = ev.target;
+
+            //filter by category
+            if(el.tagName == 'INPUT' && el.parentNode.id == 'fc') {
+                uncheckAll(el.id);
+                view.applyFilter(filters.CATEGORY, el.value);
+            }
+
+            //filter by state
+            else if(el.tagName == 'INPUT' && el.parentNode.id == 'fs') {
+                uncheckAll(el.id);
+                view.applyFilter(filters.STATE, el.value);
+            }
+        };
 
         //zoom events
         doubleTap(nodes.tables);
@@ -474,7 +464,6 @@
             }
         };
 
-
         //scrolling
         window.onscroll = function() {
             scrolled = true;
@@ -488,6 +477,12 @@
                 }
             }
         }, 100);
+        //prevent space scrolling
+        window.onkeydown = function(ev) {
+            if(ev.keyCode == 32 && ev.target == document.body) {
+                ev.preventDefault();
+            }
+        };
     };
 
     function init() {
@@ -525,8 +520,8 @@
         return node.getBoundingClientRect();
     }
 
-    function uncheckAll() {
-        (document.querySelector('#f input:checked') || {}).checked = false;
+    function uncheckAll(except) {
+        (document.querySelector('#f input:checked:not(#'+ except +')') || {}).checked = false;
     }
 
     function addTitle(element, key) {

@@ -30,35 +30,9 @@ html {
 .wrap {
     position: relative;
 }
-
-
-/* Accessibility -----------------------------------------------------------------------------------------------------*/
-header {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 3;
-    background: #fff;
-    border-radius: 6px;
-    padding: 1.5rem;
-    box-shadow: 0 0 12px #717171;
-    overflow: auto;
-}
-header button {
-    display: block;
-    margin: 1rem auto;
-    width: 100px;
-    font-size: 1.2rem;
-}
-h1 {
-    font-size: 2rem;
-    line-height: 2;
-    text-align: center;
-}
 h2 {
-    display: none;
+    position: absolute;
+    left: -99999px;
 }
 kbd {
     display: inline-block;
@@ -89,7 +63,8 @@ kbd {
     text-decoration: none;
     color: #585858;
 }
-#z a:hover {
+#z a:hover,
+#z a:focus {
     background: #d6d6d6;
 }
 #z a:active {
@@ -119,12 +94,28 @@ kbd {
     opacity: 0.9;
 }
 #toggle {
+    position: fixed;
+    right: 20px;
+    top: 82px;
+}
+#toggle + #f > div {
     display: none;
+}
+#toggle:focus + #f {
+    outline: 2px solid Highlight;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+    #toggle:focus + #f {
+        outline: 2px auto -webkit-focus-ring-color;
+    }
 }
 #toggle:checked + #f {
     width: 230px;
     transition: width 0.5s;
     opacity: 1;
+}
+#toggle:checked + #f > div {
+    display: block;
 }
 #f > label {
     position: absolute;
@@ -161,22 +152,37 @@ fieldset span {
     background: #717171;
     color: #fff;
 }
-.radios label input[type="radio"] {
-    display: none;
+.radios input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -100px;
 }
-input + i {
+.radios input + label {
+    margin: 0 2px;
+}
+.radios input:focus + label {
+    outline: 2px solid Highlight;
+}
+@media (-webkit-min-device-pixel-ratio:0) {
+    .radios input:focus {
+        outline: 2px auto -webkit-focus-ring-color;
+    }
+}
+
+input + label > i {
     visibility: hidden;
 }
-input:checked + i {
+input:checked + label > i {
     visibility: visible;
 }
-#fs label:nth-child(1) {
+
+#fs label:nth-child(2) {
     background: #b9c0f3;
 }
-#fs label:nth-child(2) {
+#fs label:nth-child(4) {
     background: #757FF3;
 }
-#fs label:nth-child(3) {
+#fs label:nth-child(6) {
     background: #2e3af3;
 }
 input[type="number"] {
