@@ -528,7 +528,6 @@
             }
         };
 
-
         //scrolling
         window.onscroll = function() {
             scrolled = true;
@@ -542,6 +541,12 @@
                 }
             }
         }, 100);
+        //prevent space scrolling
+        window.onkeydown = function(ev) {
+            if(ev.keyCode == 32 && ev.target == document.body) {
+                ev.preventDefault();
+            }
+        };
     };
 
     function init() {
