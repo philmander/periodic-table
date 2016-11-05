@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Zoomable Periodic Table</title>
+<title>Periodic Table Map</title>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 {{#if (isProduction)}}
     <style>{{{@css}}}</style>
@@ -10,19 +10,19 @@
     <script defer src="/static/js/dragscroll.js"></script>
 {{/if}}
 
-<body z={{zoom}}>
+<body zoom={{zoom}}>
     <aside>
         <h2>Controls</h2>
-        <div id=z>
+        <div id=zoom>
             <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
             <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
         </div>
 
-        <input type=checkbox id=toggle>
-        <div id=f>
-            <label for=toggle>Filters</label>
+        <input type=checkbox id=toggle-filters>
+        <div id=filters>
+            <label for=toggle-filters>Filters</label>
             <div>
-                <fieldset id=ft>
+                <fieldset id=filter-temp>
                     <label>State @ </label>
                     <input type=number min=-460 max=10340 id=temp>
                     <select>
@@ -31,61 +31,61 @@
                         <option value=f>°F</option>
                     </select>
                 </fieldset>
-                <fieldset id=fs class=radios>
-                    <input id=st1 type=radio name=st value=G>
-                    <label for=st1><i>✓</i> Gas</label>
+                <fieldset id=filter-state class=radios>
+                    <input id=input-state-gas type=radio name=state value=gas>
+                    <label for=input-state-gas><i>✓</i> Gas</label>
 
-                    <input id=st2 type=radio name=st value=L>
-                    <label for=st2><i>✓</i> Liquid</label>
+                    <input id=input-state-liquid type=radio name=state value=liquid>
+                    <label for=input-state-liquid><i>✓</i> Liquid</label>
 
-                    <input id=st3 type=radio name=st value=S>
-                    <label for=st3><i>✓</i> Solid</label>
+                    <input id=input-state-solid type=radio name=state value=solid>
+                    <label for=input-state-solid><i>✓</i> Solid</label>
                 </fieldset>
-                <fieldset id="ff">
+                <fieldset id="filter-find">
                     <label>Find  <input id=find placeholder="Antimony"></label>
                 </fieldset>
-                <fieldset id="fy">
+                <fieldset id="filter-year">
                     <label>Year <input type=number min=1669 max={{year}} id=year></label>
-                    <button type=button id=yearApply>Apply</button>
+                    <button type=button id=year-apply>Apply</button>
                 </fieldset>
-                <fieldset id="fc" class=radios>
+                <fieldset id="filter-category" class=radios>
                     <span>Categories:</span>
 
-                    <input type=radio name=c id=c1 value="n,h,ng">
-                    <label for=c1><i>✓</i> Non-metals</label>
+                    <input type=radio name=category id=input-cat-nonmetals value="n,h,ng">
+                    <label for=input-cat-nonmetals><i>✓</i> Non-metals</label>
 
-                    <input type=radio name=c id=c2 value=m>
-                    <label for=c2 c=m><i>✓</i> Metalloids</label>
+                    <input type=radio name=category id=filter-cat-metalloids value=m>
+                    <label for=filter-cat-metalloids c=m><i>✓</i> Metalloids</label>
 
-                    <input type=radio name=c id=c3 value=n>
-                    <label for=c3 c=n><i>✓</i> Other non-metals</label>
+                    <input type=radio name=category id=filter-cat-n value=n>
+                    <label for=filter-cat-n c=n><i>✓</i> Other non-metals</label>
 
-                    <input type=radio name=c id=c4 value=h>
-                    <label for=c4 c=h><i>✓</i> Halogens</label>
+                    <input type=radio name=category id=filter-cat-h value=h>
+                    <label for=filter-cat-h c=h><i>✓</i> Halogens</label>
 
-                    <input type=radio name=c id=c5 value=ng>
-                    <label for=c5 c=ng><i>✓</i> Noble gases</label>
+                    <input type=radio name=category id=filter-cat-ng value=ng>
+                    <label for=filter-cat-ng c=ng><i>✓</i> Noble gases</label>
 
-                    <input type=radio name=c id=c6 value="am,aem,l,a,tm,ptm">
-                    <label for=c6><i>✓</i> Metals</label>
+                    <input type=radio name=category id=filter-cat-metals value="am,aem,l,a,tm,ptm">
+                    <label for=filter-cat-metals><i>✓</i> Metals</label>
 
-                    <input type=radio name=c id=c7 value=am>
-                    <label for=c7 c=am><i>✓</i> Alkali metals</label>
+                    <input type=radio name=category id=filter-cat-am value=am>
+                    <label for=filter-cat-am c=am><i>✓</i> Alkali metals</label>
 
-                    <input type=radio name=c id=c8 value=aem>
-                    <label for=c8 c=aem><i>✓</i> Alkaline earth metals</label>
+                    <input type=radio name=category id=filter-cat-aem value=aem>
+                    <label for=filter-cat-aem c=aem><i>✓</i> Alkaline earth metals</label>
 
-                    <input type=radio name=c id=c9 value=l>
-                    <label for=c9 c=l><i>✓</i> Lanthanides</label>
+                    <input type=radio name=category id=filter-cat-l value=l>
+                    <label for=filter-cat-l c=l><i>✓</i> Lanthanides</label>
 
-                    <input type=radio name=c id=c10 value=a>
-                    <label for=c10 c=a><i>✓</i> Actinides</label>
+                    <input type=radio name=category id=filter-cat-a value=a>
+                    <label for=filter-cat-a c=a><i>✓</i> Actinides</label>
 
-                    <input type=radio name=c id=c11 value=tm>
-                    <label for=c11 c=tm><i>✓</i> Transition metals</label>
+                    <input type=radio name=category id=filter-cat-tm value=tm>
+                    <label for=filter-cat-tm c=tm><i>✓</i> Transition metals</label>
 
-                    <input type=radio name=c id=c12 value=ptm>
-                    <label for=c12 c=ptm><i>✓</i> Post-transition metals</label>
+                    <input type=radio name=category id=filter-cat-ptm value=ptm>
+                    <label for=filter-cat-ptm c=ptm><i>✓</i> Post-transition metals</label>
                 </fieldset>
             </div>
         </div>
@@ -97,12 +97,12 @@
                 <tr>
                     <th></th>
                     {{#range 1 19}}
-                        <th g>{{#if index}}{{index}}{{/if}}</th>
+                        <th group>{{#if index}}{{index}}{{/if}}</th>
                     {{/range}}
                 </tr>
                 {{#range 1 8}}
                     <tr>
-                        <th p>{{index}}</th>
+                        <th period>{{index}}</th>
                         {{#range 1 19}}
                             {{#with (getElementAtPosition ../index index)}}
                                 <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}} y={{yearDiscovered}}>
@@ -134,16 +134,16 @@
                 {{/range}}
                 <tr>
                     <th></th>
-                    <th b colspan=2>s</th>
-                    <th b colspan=10>d</th>
-                    <th b colspan=6>p</th>
+                    <th block colspan=2>s</th>
+                    <th block colspan=10>d</th>
+                    <th block colspan=6>p</th>
                 </tr>
             </table>
 
             <table class="elements">
                 <tr>
-                    <th b rowspan=2>f</th>
-                    <th g=l colspan=2>* Lanthanides</th>
+                    <th block rowspan=2>f</th>
+                    <th group=l colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}
@@ -152,7 +152,7 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <th g=a colspan=2>** Actinides</th>
+                    <th group=a colspan=2>** Actinides</th>
                     {{#each (actinides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}

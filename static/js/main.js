@@ -1,7 +1,5 @@
 (function(window, document, localStorage) {
 
-    // model ------------------------------------------------------------------------------------------------------------
-
     var i, j, scrolled;
 
     var documentElement = document.documentElement;
@@ -26,20 +24,20 @@
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
-        filters: document.querySelector('#f'),
-        zoom: document.querySelector('[z]'),
+        filters: document.querySelector('#filters'),
+        zoom: document.querySelector('[zoom]'),
         tables: document.querySelector('#tables'),
         elements: document.querySelectorAll('td[s]'),
         temp: document.querySelector('#temp'),
         find: document.querySelector('#find'),
         year: document.querySelector('#year'),
-        yearApply: document.querySelector('#yearApply')
+        yearApply: document.querySelector('#year-apply')
     };
     nodes.tempUnit = nodes.temp.nextElementSibling;
 
     var model = {
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
-        zoom: parseInt(nodes.zoom.getAttribute('z')),
+        zoom: parseInt(nodes.zoom.getAttribute('zoom')),
         temp: localStorage.temp ? parseInt(localStorage.temp) : 298.15,
         tempUnit: localStorage.tempUnit || 'k',
         year: localStorage.year || new Date().getFullYear()
@@ -194,7 +192,7 @@
            window.scrollBy(dx, dy);
         }
 
-        nodes.zoom.setAttribute('z', model.zoom);
+        nodes.zoom.setAttribute('zoom', model.zoom);
         view.panTo(dir);
         history.replaceState(null, '', '?z=' + model.zoom);
     };
@@ -260,17 +258,17 @@
 
     view.updateVisibility = function (symbol) {
         var fields = [
-            { cn: 'n',  z: 2 },
-            { cn: 'am', z: 2 },
-            { cn: 'd',  z: 3 },
-            { cn: 'md', z: 4 },
-            { cn: 'r',  z: 4 }
+            { field: 'n',  zoom: 2 },
+            { field: 'am', zoom: 2 },
+            { field: 'd',  zoom: 3 },
+            { field: 'md', zoom: 4 },
+            { field: 'r', zoom: 4 }
         ];
         var fieldNode;
         for(i = 0; i < fields.length; i++) {
-            fieldNode = model.elements[symbol][fields[i].cn];
+            fieldNode = model.elements[symbol][fields[i].field];
             if(fieldNode) {
-                if(fields[i].z <= model.zoom) {
+                if(fields[i].zoom <= model.zoom) {
                     fieldNode.classList.add('in');
                     fieldNode.classList.remove('out');
                 } else {
@@ -305,9 +303,9 @@
             for(j = 0; j < value.length && !match; j++) {
                 match = (
                     type == filters.STATE &&
-                    (value[j] == 'G' &&  el.bp && el.bp < model.temp ) ||
-                    (value[j] == 'L' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
-                    (value[j] == 'S' && el.mp && el.mp > model.temp)
+                    (value[j] == 'gas' &&  el.bp && el.bp < model.temp ) ||
+                    (value[j] == 'liquid' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
+                    (value[j] == 'solid' && el.mp && el.mp > model.temp)
                 ) || (
                     type == filters.YEAR && (isNaN(el.y) || el.y <= value[j])
                 ) || (
@@ -338,7 +336,7 @@
             var el = ev.target;
 
             //zoom buttons
-            if(el.tagName == 'A' && el.parentNode.id == 'z') {
+            if(el.tagName == 'A' && el.parentNode.id == 'zoom') {
                 model.zoomWith(parseInt(el.getAttribute('value')), {
                     x: window.innerWidth / 2,
                     y: window.innerHeight / 2
@@ -348,11 +346,11 @@
 
             //table headers, toggling group, period and block filtering
             else if(el.tagName == 'TH') {
-                if(el.hasAttribute('g')) {
-                    view.applyFilter(filters.GROUP, el.getAttribute('g') || el.textContent);
-                } else if(el.hasAttribute('b')) {
+                if(el.hasAttribute('group')) {
+                    view.applyFilter(filters.GROUP, el.getAttribute('group') || el.textContent);
+                } else if(el.hasAttribute('block')) {
                     view.applyFilter(filters.BLOCK, el.textContent);
-                } else if(el.hasAttribute('p')) {
+                } else if(el.hasAttribute('period')) {
                     view.applyFilter(filters.PERIOD, el.textContent)
                 }
             }
@@ -388,13 +386,13 @@
             var el = ev.target;
 
             //filter by category
-            if(el.tagName == 'INPUT' && el.parentNode.id == 'fc') {
+            if(el.tagName == 'INPUT' && el.parentNode.id == 'filter-category') {
                 uncheckAll(el.id);
                 view.applyFilter(filters.CATEGORY, el.value);
             }
 
             //filter by state
-            else if(el.tagName == 'INPUT' && el.parentNode.id == 'fs') {
+            else if(el.tagName == 'INPUT' && el.parentNode.id == 'filter-state') {
                 uncheckAll(el.id);
                 view.applyFilter(filters.STATE, el.value);
             }

@@ -1,12 +1,10 @@
 <div>
     {{#if (equal zoom 1)}}
-        <p class=an>{{element.atomicNumber}}</p>
-        <p class=s title={{element.name}}>{{element.symbol}}</p>
+        {{> fields/base element=element }}
 
     {{else if (equal zoom 2)}}
 
-        <p class=an>{{element.atomicNumber}}</p>
-        <p class=s>{{element.symbol}}</p>
+        {{> fields/base element=element }}
 
         {{> fields/name element=element }}
 
@@ -14,8 +12,7 @@
 
     {{else if (equal zoom 3)}}
 
-        <p class=an>{{element.atomicNumber}}</p>
-        <p class=s>{{element.symbol}}</p>
+        {{> fields/base element=element }}
 
         {{> fields/name element=element }}
 
@@ -25,8 +22,7 @@
 
     {{else}}
 
-        <p class=an>{{element.atomicNumber}}</p>
-        <p class=s>{{element.symbol}}</p>
+        {{> fields/base element=element }}
 
         {{> fields/name element=element }}
 
