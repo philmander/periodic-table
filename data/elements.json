@@ -45,7 +45,7 @@
     "images" : [
       {
         "file" : "h.jpg",
-        "description" : "Vial of glowing ultra pure hydrogen, H<sub>2</sub>",
+        "description" : "Vial of glowing ultra pure hydrogen, H<sub>2</sub>.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Images of Elements",
@@ -100,7 +100,7 @@
     "images" : [
       {
         "file" : "he.jpg",
-        "description" : "Vial of glowing ultra pure Helium",
+        "description" : "Vial of glowing ultra pure Helium.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Images of Elements",
@@ -155,7 +155,7 @@
     "images" : [
       {
         "file" : "li.jpg",
-        "description" : "Lithium metal pieces. 99.9%",
+        "description" : "Lithium metal pieces. 99.9%.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Dennis \"S.K\"",
@@ -262,7 +262,7 @@
     "images" : [
       {
         "file" : "b.jpg",
-        "description" : "Polycrystalline chunks of rhombohedral β-boron, net 25.5 grams",
+        "description" : "Polycrystalline chunks of rhombohedral β-boron, net 25.5 grams.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "James L Marshall",
@@ -319,7 +319,7 @@
     "images" : [
       {
         "file" : "c.jpg",
-        "description" : "Diamond and graphite shown side by side",
+        "description" : "Diamond and graphite shown side by side.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
           "name" : "Robert Lavinsky",
@@ -429,7 +429,7 @@
     "images" : [
       {
         "file" : "o.jpg",
-        "description" : " Spectrum = gas discharge tube filled with oxygen O2. Used with 1,8kV, 18mA, 35kHz. ≈8\" length",
+        "description" : " Spectrum = gas discharge tube filled with oxygen O2. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "fal",
         "attribution": {
           "name" : "Alchemist-hp",
@@ -484,7 +484,7 @@
     "images" : [
       {
         "file" : "f.jpg",
-        "description" : "A tube with liquid fluorine in a cryogenic bath",
+        "description" : "A tube with liquid fluorine in a cryogenic bath.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
           "name" : "Prof B. G. Mueller",
@@ -598,7 +598,7 @@
     "images" : [
       {
         "file" : "na.jpg",
-        "description" : "Sodium metal pieces. 99.5%",
+        "description" : "Sodium metal pieces. 99.5%.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
           "name" : "Dennis \"S.K\"",
@@ -653,7 +653,7 @@
     "images" : [
       {
         "file" : "mg.jpg",
-        "description" : "Magnesium crystal",
+        "description" : "Magnesium crystal.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Images of Elements",
@@ -708,7 +708,7 @@
     "images" : [
       {
         "file" : "al.jpg",
-        "description" : "Chunk of aluminium, 2.6 grams, 1 x 2 cm",
+        "description" : "Chunk of aluminium, 2.6 grams, 1 x 2 cm.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Images of Elements",
@@ -820,7 +820,7 @@
     "images" : [
       {
         "file" : "p.jog",
-        "description" : "Red phosphorus as powder",
+        "description" : "Red phosphorus as powder.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/phosphorus.php" }
       }
@@ -872,7 +872,7 @@
     "images" : [
       {
         "file" : "s.jpg",
-        "description" : " A sample of sulfur",
+        "description" : " A sample of sulfur.",
         "license" : "pd",
         "attribution": {
           "name" : "Ben Mills",
@@ -928,7 +928,7 @@
     "images" : [
       {
         "file" : "cl.jpg",
-        "description" : "Chlorine gas in an ampule",
+        "description" : "Chlorine gas in an ampule.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
           "name": "W. Oelen",
@@ -1035,7 +1035,7 @@
     "images" : [
       {
         "file" : "k.jpg",
-        "description" : "Potassium metal pieces. 99.9%",
+        "description" : "Potassium metal pieces. 99.9%.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Dennis \"S.K\"",
@@ -1090,7 +1090,7 @@
     "images" : [
       {
         "file" : "ca.jpg",
-        "description" : "Pure calcium in a protective argon atmosphere",
+        "description" : "Pure calcium in a protective argon atmosphere.",
         "license" : "pd",
         "attribution": { "name" : "Matthias Zepper", "url" : "https://commons.wikimedia.org/wiki/File:Calcium_unter_Argon_Schutzgasatmosph%C3%A4re.jpg" }
       }
@@ -1246,7 +1246,7 @@
     "images" : [
       {
         "file" : "v.jpg",
-        "description" : "2.3 grams pure vanadium pieces with a colored oxide layer. Size of the largest piece in cm: 0.7 x 0.7",
+        "description" : "2.3 grams pure vanadium pieces with a colored oxide layer. Size of the largest piece in cm: 0.7 x 0.7.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/vanadium.php" }
       }
@@ -1298,7 +1298,7 @@
     "images" : [
       {
         "file" : "cr.jpg",
-        "description" : " High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm3 chromium cube for comparison",
+        "description" : " High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm3 chromium cube for comparison.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Chromium_crystals_and_1cm3_cube.jpg" }
       }
@@ -1350,7 +1350,7 @@
     "images" : [
       {
         "file" : "mn.jpg",
-        "description" : "Manganese",
+        "description" : "Manganese.",
         "license" : "cc-by-sa.3.0.jpg",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Mangan_1-crop.jpg" }
       }
@@ -1402,7 +1402,7 @@
     "images" : [
       {
         "file" : "fe.jpg",
-        "description" : "Iron meteorite",
+        "description" : "Iron meteorite.",
         "license" : "?",
         "attribution": { "name" : "Pics About Space", "url" : "http://pics-about-space.com/iron-asteroids?p=1#img425247776858823364" }
       }
@@ -1454,7 +1454,7 @@
     "images" : [
       {
         "file" : "co.jpg",
-        "description" : "3 gram piece of cobalt",
+        "description" : "3 gram piece of cobalt.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cobalt.php" }
       }
@@ -1506,7 +1506,7 @@
     "images" : [
       {
         "file" : "ni.jpg",
-        "description" : "A piece of Ni about 3 cm in size",
+        "description" : "A piece of Ni about 3 cm in size.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Materialscientist", "url" : "https://en.wikipedia.org/wiki/Nickel#/media/File:Nickel_chunk.jpg" }
       }
@@ -1662,7 +1662,7 @@
     "images" : [
       {
         "file" : "ga.jpg",
-        "description" : "Crystals of 99.999% gallium",
+        "description" : "Crystals of 99.999% gallium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Foobar", "url" : "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg" }
       }
@@ -1715,7 +1715,7 @@
     "images" : [
       {
         "file" : "ge.jog",
-        "description" : "Ultra pure chunk of polycrystalline germanium, 12 grams. Original size in cm: 2 x 3",
+        "description" : "Ultra pure chunk of polycrystalline germanium, 12 grams. Original size in cm: 2 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/germanium.php" }
       }
@@ -1767,7 +1767,7 @@
     "images" : [
       {
         "file" : "as.jpg",
-        "description" : "Arsenic",
+        "description" : "Arsenic.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Arsen_1a.jpg" }
       }
@@ -1819,7 +1819,7 @@
     "images" : [
       {
         "file" : "se.jpg",
-        "description" : "Black, amorphous selenium, 3 - 4 grams. Original size in cm: 2",
+        "description" : "Black, amorphous selenium, 3 - 4 grams. Original size in cm: 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/selenium.php" }
       }
@@ -1875,7 +1875,7 @@
     "images" : [
       {
         "file" : "br.jpg",
-        "description" : "Bromine in a vial",
+        "description" : "Bromine in a vial.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/bromine.php" }
       }
@@ -1980,7 +1980,7 @@
     "images" : [
       {
         "file" : "rb.jpg",
-        "description" : "Rubidium metal ampoule 99.99%+",
+        "description" : "Rubidium metal ampoule 99.99%+.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Dennis \"S.K\"",
@@ -2037,7 +2037,7 @@
     "images" : [
       {
         "file" : "sr.jpg",
-        "description" : "Strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm",
+        "description" : "Strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm.",
         "license" : "cc-by-nc.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Strontium_destilled_crystals.jpg" }
       }
@@ -2089,7 +2089,7 @@
     "images" : [
       {
         "file" : "y.jpg",
-        "description" : "Ultra pure yttrium crystal. Original size in cm: 2 x 3",
+        "description" : "Ultra pure yttrium crystal. Original size in cm: 2 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/yttrium-2.jpg" }
       }
@@ -2195,7 +2195,7 @@
     "images" : [
       {
         "file" : "nb.jpg",
-        "description" : "Niobium bead, slightly oxidized. Original size in cm: 0.6 x 0.6",
+        "description" : "Niobium bead, slightly oxidized. Original size in cm: 0.6 x 0.6.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/niobium.php" }
       }
@@ -2249,7 +2249,7 @@
     "images" : [
       {
         "file" : "mo.jpg",
-        "description" : "Pure molybdenum crystal, about 20 grams. Original size in cm: 1.5 x 3",
+        "description" : "Pure molybdenum crystal, about 20 grams. Original size in cm: 1.5 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/molybdenum.php" }
       }
@@ -2301,7 +2301,7 @@
     "images" : [
       {
         "file" : "tc.jog",
-        "description" : "A piece of technetium",
+        "description" : "A piece of technetium.",
         "license" : "pd",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/technetium.php" }
       }
@@ -2407,7 +2407,7 @@
     "images" : [
       {
         "file" : "rh.jpg",
-        "description" : "Pure rhodium bead, 1 gram. Original size in cm: 0.5",
+        "description" : "Pure rhodium bead, 1 gram. Original size in cm: 0.5.",
         "license" : "",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhodium.php" }
       }
@@ -2459,7 +2459,7 @@
     "images" : [
       {
         "file" : "pd.jpg",
-        "description" : "Palladium crystal, about 1 gram. Original size in cm: 0.5 x 1",
+        "description" : "Palladium crystal, about 1 gram. Original size in cm: 0.5 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/palladium-2.jpg" }
       }
@@ -2563,7 +2563,7 @@
     "images" : [
       {
         "file" : "cd.jpg",
-        "description" : "Pure cadmium",
+        "description" : "Pure cadmium.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cadmium.php" }
       }
@@ -2615,7 +2615,7 @@
     "images" : [
       {
         "file" : "in.jpg",
-        "description" : "Ductile indium wire with a thickness of about 3mm",
+        "description" : "Ductile indium wire with a thickness of about 3mm.",
         "license" : "cc-by-sa.jpg",
         "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Indium_wire.jpg" }
       }
@@ -2667,7 +2667,7 @@
     "images" : [
       {
         "file" : "sn.jpg",
-        "description" : "Blob of tin. 3 x 3 cm",
+        "description" : "Blob of tin. 3 x 3 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tin.php" }
       }
@@ -2771,7 +2771,7 @@
     "images" : [
       {
         "file" : "te.jpg",
-        "description" : "Metallic tellerium. 3.5cm diameter",
+        "description" : "Metallic tellerium. 3.5cm diameter.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tellurium.php" }
       }
@@ -2823,7 +2823,7 @@
     "images" : [
       {
         "file" : "i.jpg",
-        "description" : "Iodine",
+        "description" : "Iodine.",
         "license" : "?",
         "attribution": { "name" : "IOCHEM Corporation", "url" : "http://www.iochem.net/Iodine/Iodine.html" }
       }
@@ -2927,7 +2927,7 @@
     "images" : [
       {
         "file" : "cs.jpg",
-        "description" : "Caesium metal ampoule 99.99%+",
+        "description" : "Caesium metal ampoule 99.99%+.",
         "license" : "cc-by.3.0",
         "attribution": {
           "name" : "Dennis \"S.K\"",
@@ -3034,7 +3034,7 @@
   "images" : [
     {
       "file" : "la.jpg",
-      "description" : "1.5 grams pure lanthanum. Original size in cm: 1 x 1",
+      "description" : "1.5 grams pure lanthanum. Original size in cm: 1 x 1.",
       "license" : "cc-by.jpg",
       "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lanthanum-2.jpg" }
     }
@@ -3084,7 +3084,7 @@
     "images" : [
       {
         "file" : "ce.jpg",
-        "description" : "Cerium under argon, 1.5 grams. Original size in cm: 1 x 1",
+        "description" : "Cerium under argon, 1.5 grams. Original size in cm: 1 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cerium.php" }
       }
@@ -3136,7 +3136,7 @@
     "images" : [
       {
         "file" : "pr.jpg",
-        "description" : "Praseodymium pieces under argon, 1.5 grams. Original size in cm: 0.5 - 1",
+        "description" : "Praseodymium pieces under argon, 1.5 grams. Original size in cm: 0.5 - 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/praseodymium.php" }
       }
@@ -3188,7 +3188,7 @@
     "images" : [
       {
         "file" : "nd.jpg",
-        "description" : "Neodymium under argon, 5 grams. Original length of the large piece in cm: 1",
+        "description" : "Neodymium under argon, 5 grams. Original length of the large piece in cm: 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/neodymium.php" }
       }
@@ -3288,7 +3288,7 @@
     "images" : [
       {
         "file" : "sm.jpg",
-        "description" : "Sublimated samarium, 2 grams. Original size in cm: 0.8 x 1.5",
+        "description" : "Sublimated samarium, 2 grams. Original size in cm: 0.8 x 1.5.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/samarium.php" }
       }
@@ -3340,7 +3340,7 @@
     "images" : [
       {
         "file" : "eu.jpg",
-        "description" : "Weakly oxidized europium, hence slightly yellowish. 1.5 grams, large piece 0.6 x 1.6 cm",
+        "description" : "Weakly oxidized europium, hence slightly yellowish. 1.5 grams, large piece 0.6 x 1.6 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/europium.php" }
       }
@@ -3392,7 +3392,7 @@
     "images" : [
       {
         "file" : "gd.jpg",
-        "description" : "Ultra pure amorphous gadolinium, 12 grams. Original size in cm: 1.5 x 2",
+        "description" : "Ultra pure amorphous gadolinium, 12 grams. Original size in cm: 1.5 x 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/gadolinium.php" }
       }
@@ -3444,7 +3444,7 @@
     "images" : [
       {
         "file" : "tb.jpg",
-        "description" : "Chunk of terbium",
+        "description" : "Chunk of terbium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Terbium-croprotated.jpg" }
       }
@@ -3496,7 +3496,7 @@
     "images" : [
       {
         "file" : "dy.jpg",
-        "description" : "Dysprosium dendrites. Original size in cm: 2 x 2",
+        "description" : "Dysprosium dendrites. Original size in cm: 2 x 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/dysprosium.php" }
       }
@@ -3548,7 +3548,7 @@
     "images" : [
       {
         "file" : "ho.jpg",
-        "description" : "Holmium, 17 grams. Original size in cm: 1.5 x 2.5",
+        "description" : "Holmium, 17 grams. Original size in cm: 1.5 x 2.5.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/holmium.php" }
       }
@@ -3600,7 +3600,7 @@
     "images" : [
       {
         "file" : "er.jpg",
-        "description" : "Chunk of erbium",
+        "description" : "Chunk of erbium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Erbium-crop.jpg" }
       }
@@ -3652,7 +3652,7 @@
     "images" : [
       {
         "file" : "tm.jpg",
-        "description" : "Thulium, sublimed-dendritic, high purity 99.99 % Tm/TREM. ",
+        "description" : "Thulium, sublimed-dendritic, high purity 99.99 % Tm/TREM.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Thulium_sublimed_dendritic_and_1cm3_cube.jpg" }
       }
@@ -3758,7 +3758,7 @@
     "images" : [
       {
         "file" : "lu.jpg",
-        "description" : "Piece of lutetium, 3 grams. Original size in cm: 1 x 1",
+        "description" : "Piece of lutetium, 3 grams. Original size in cm: 1 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lutetium.php" }
       }
@@ -3812,7 +3812,7 @@
     "images" : [
       {
         "file" : "hf.jpg",
-        "description" : "Hafnium turnings, >99.9% pure, used for evaporating onto glass as HfO2 to create multi-layer dielectric thin film optics in conjucntion with silica layers",
+        "description" : "Hafnium turnings, >99.9% pure, used for evaporating onto glass as HfO2 to create multi-layer dielectric thin film optics in conjucntion with silica layers.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Deglr6328", "url" : "https://commons.wikimedia.org/wiki/File:Hafnium_bits.jpg" }
       }
@@ -3919,7 +3919,7 @@
     "images" : [
       {
         "file" : "w.jpg",
-        "description" : "Tungsten rod with oxidized surface, 80 grams. Original size in cm: 1.3 x 3",
+        "description" : "Tungsten rod with oxidized surface, 80 grams. Original size in cm: 1.3 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tungsten.php" }
       }
@@ -3971,7 +3971,7 @@
     "images" : [
       {
         "file" : "rh.jpg",
-        "description" : "Small rhenium bead",
+        "description" : "Small rhenium bead.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhenium.php" }
       }
@@ -4023,7 +4023,7 @@
     "images" : [
       {
         "file" : "os.jpg",
-        "description" : "Cluster of osmium crystals grown by chemical vapor transport",
+        "description" : "Cluster of osmium crystals grown by chemical vapor transport.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "", "url" : "https://commons.wikimedia.org/wiki/File:Osmium_cluster.jpg" }
       }
@@ -4075,7 +4075,7 @@
     "images" : [
       {
         "file" : "ir.jpg",
-        "description" : "Pieces of pure iridium",
+        "description" : "Pieces of pure iridium.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/iridium.php" }
       }
@@ -4127,7 +4127,7 @@
     "images" : [
       {
         "file" : "pt.jpg",
-        "description" : "Two platinum crystals, each 1 cm big, together about 1 gram",
+        "description" : "Two platinum crystals, each 1 cm big, together about 1 gram.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/platinum.php" }
       }
@@ -4179,7 +4179,7 @@
     "images" : [
       {
         "file" : "au.jpg",
-        "description" : "5g gold bar",
+        "description" : "5g gold bar.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/gold.php" }
       }
@@ -4231,7 +4231,7 @@
     "images" : [
       {
         "file" : "hg.jpg",
-        "description" : "Mercury",
+        "description" : "Mercury.",
         "license" : "?",
         "attribution": { "name" : "Britannica Online for Kids. Web", "url" : "http://kids.britannica.com/comptons/art-187093" }
       }
@@ -4387,7 +4387,7 @@
     "images" : [
       {
         "file" : "bi.jpg",
-        "description" : "Bismuth crystal",
+        "description" : "Bismuth crystal.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Bismuth_crystal_macro.jpg" }
       }
@@ -4439,14 +4439,7 @@
         "url": "http://www.rsc.org/periodic-table/element/84/polonium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Polonium was the first element discovered by Marie Sklodowska Curie in 1898, while seeking the cause of radioactivity of pitchblende from Joachimsthal, Bohemia. It required several tonnes of pitchblende to produce very small amounts of polonium."
   },
   {
@@ -4493,14 +4486,7 @@
         "url": "http://www.rsc.org/periodic-table/element/85/astatine"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Astatine was synthesized in 1940 by Dale Corson and others at the University of California, USA, by bombarding bismuth (209Bi) with ?-particles."
   },
   {
@@ -4596,14 +4582,7 @@
         "url": "http://www.rsc.org/periodic-table/element/87/francium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Francium was discovered in 1939 by Marguerite Perey of the Curie Institute in Paris, (France) but its existence was predicted by Mendeleev during the 1870's. Since its properties should track those of caesium rather closely, he called it eka-caesium."
   },
   {
@@ -4650,14 +4629,7 @@
         "url": "http://www.rsc.org/periodic-table/element/88/radium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Radium was discovered in 1898 by Marie and Pierre Curie in pitchblende (or uraninite) from North Bohemia. The element was isolated in 1911 by Mme. Curie and Debierne by the electrolysis of a solution of pure radium chloride, employing a mercury cathode. On distillation in an atmosphere of hydrogen this amalgam yielded the pure metal."
   },
   {
@@ -4757,14 +4729,7 @@
         "url": "http://www.rsc.org/periodic-table/element/90/thorium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Thorium was discovered by Berzelius in 1828 in a mineral given to him by the Reverend Has Morten Thrane Esmark."
   },
   {
@@ -4809,14 +4774,7 @@
         "url": "http://www.rsc.org/periodic-table/element/91/protactinium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Protactinium is found in pitchblende and ores form Zaire and is one of the rarest and most expensive naturally occurring elements. Protactinium was identified by Fajans and G?hring in 1913 who named the new element brevium (\"brief\")."
   },
   {
@@ -4866,7 +4824,7 @@
     "images" : [
       {
         "file" : "u.jpg",
-        "description" : "Depleted uranium 238",
+        "description" : "Depleted uranium 238.",
         "license" : "pd",
         "attribution": { "name" : "", "url" : "" }
       }
@@ -4920,7 +4878,7 @@
     "images" : [
       {
         "file" : "np.jpg",
-        "description" : "Neptunium 237 sphere (6 kg)",
+        "description" : "Neptunium 237 sphere (6 kg).",
         "license" : "pd",
         "attribution": { "name" : "", "url" : "" }
       }
@@ -5083,7 +5041,7 @@
         "url": "http://www.rsc.org/periodic-table/element/96/curium"
       }
     ],
-    "images" : []
+    "images" : [],
     "info": "Curium was identified by Seaborg and others in 1944 as a result of helium ion bombardment of the plutonium isotope 239Pu. Three years later visible amounts of the hydroxide were isolated by Werner and Perlman. In 1951, the same workers prepared curium in its elemental form for the first time."
   },
   {
@@ -5243,7 +5201,7 @@
     "images" : [
       {
         "file" : "es.jpg",
-        "description" : " Quartz vial (9 mm diameter) containing ~300 micrograms of Es-253 solid. The illumination produced is a result of the intense radiation from Es-253, which alpha decays (6.6 MeV, 1000 watts/g) with a half-life of 20.5 days. ",
+        "description" : " Quartz vial (9 mm diameter) containing ~300 micrograms of Es-253 solid. The illumination produced is a result of the intense radiation from Es-253, which alpha decays (6.6 MeV, 1000 watts/g) with a half-life of 20.5 days.",
         "license" : "pd",
         "attribution": { "name" : "US Department of Energy.", "url" : "https://commons.wikimedia.org/wiki/File:Einsteinium.jpg" }
       }
@@ -5294,14 +5252,7 @@
         "url": "http://www.rsc.org/periodic-table/element/100/fermium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Fermium was identified by Ghiorso and coworkers (Berkeley, California, USA) in 1952 in the radioactive debris from a thermonuclear explosion in the Pacific. Somewhat remarkably, the fermium isotope discovered was made through the combination of 238U with 17 neutrons. Today, many isotopes are known spanning the mass range 243-258."
   },
   {
@@ -5349,14 +5300,7 @@
         "url": "http://www.rsc.org/periodic-table/element/101/mendelevium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [  ],
     "info": "Mendelevium, the ninth transuranium element of the actinide series to be discovered, was first identified by Seaborg and others in 1955 as a product of the bombardment of the einsteinium isotope 253Es with helium ions. The isotope produced was 256Md, which has a half-life of about 11/4 hours."
   },
   {
@@ -5403,14 +5347,7 @@
         "url": "http://www.rsc.org/periodic-table/element/102/nobelium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "A team working in Stockholm reported in 1957 an isotope whose atomic number is 102. They made this isotope by bombardment of 244Cm with 13C ions. They named the element nobelium after Alfred Nobel."
   },
   {
@@ -5457,14 +5394,7 @@
         "url": "http://www.rsc.org/periodic-table/element/103/lawrencium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Element 103, lawrencium, was discovered in 1961 by Ghiorso and others in Berkeley, California, USA, who bombarded a californium target with boron ions. They obtained perhaps two micrograms. Several lawrencium isotopes including those with masses 253, 254, 255, 256, 257, 258, 259, and 260 are known now."
   },
   {
@@ -5511,14 +5441,7 @@
         "url": "http://www.rsc.org/periodic-table/element/104/rutherfordium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "In 1969 an American group at Berkeley (California) in the USA reported isotopes of Element 104. Their experiments involved reaction high energy collisions between 249Cf and 12C. The group also indicated that they were unable to reproduce the earlier Russian synthesis from1964. The American group proposed for the new element the name Rutherfordiu"
   },
   {
@@ -5565,14 +5488,7 @@
         "url": "http://www.rsc.org/periodic-table/element/105/dubnium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "In 1967, Flerov reported element 105 after experiments at the Joint Research Institute in Russia involving reactions between 243Am ions with 22Ne ions. In 1970, Ghiorso and others announced their synthesis of dubnium at Berkeley (California) in the USA. This method involved the collsion of 249Cf ions with 15N ions."
   },
   {
@@ -5619,14 +5535,7 @@
         "url": "http://www.rsc.org/periodic-table/element/106/seaborgium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Transuranium elements such as seaborgium can be created artificially in particle accelerators. Isotopes of seaborgium have short half-lives of less than a second. The first report of element 106 came in 1974 from the Soviet Joint Institute for Nuclear Research and these were followed later by others from Berkeley in California, USA."
   },
   {
@@ -5673,14 +5582,7 @@
         "url": "http://www.rsc.org/periodic-table/element/107/bohrium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Scientists from the USSR reported their production of an isotope of bohrium in 1976 and this work was substantiated by German workers later."
   },
   {
@@ -5727,14 +5629,7 @@
         "url": "http://www.rsc.org/periodic-table/element/108/hassium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Hassium was discovered by Peter Armbruster, Gottfried Münzenber and their co-workers. at 1984 in Gesellschaft für Schwerionenforschung (GSI) in Darmstadt, Germany.The origin of the name is the Latin word \"Hassias\" meaning \"Hess\", the German state."
   },
   {
@@ -5781,14 +5676,7 @@
         "url": "http://www.rsc.org/periodic-table/element/109/meitnerium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [  ],
     "info": "In August 1982 the first atom of the element meitnerium with atomic number 109 was detected at the Gesellschaft für Schwerionenforschung (GSI) in Darmstadt, Germany. The isotope of element 109 which was discovered has an atomic mass number of 266 (that is, 266 times heavier than hydrogen)"
   },
   {
@@ -5835,14 +5723,7 @@
         "url": "http://www.rsc.org/periodic-table/element/110/darmstadtium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "In 1994 the first atom of element 110, darmstadtium, was detected at the Gesellschaft für Schwerionenforschung (GSI) in Darmstadt, Germany. The isotope discovered has an atomic number of 269 (that is, 269 times heavier than hydrogen)."
   },
   {
@@ -5889,14 +5770,7 @@
         "url": "http://www.rsc.org/periodic-table/element/111/roentgenium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Element 111, roentgenium, was discovered towards the end of 1994 at the GSI in Darmstadt, Germany. Three atoms of an isotope 272Uuu were produced in reactions between 209Bi targets and 64Ni projectiles. To achieve this, the nickel atoms were accelerated to high energies by the heavy ion accelerator UNILAC at GSI and directed onto a lead target."
   },
   {
@@ -5943,14 +5817,7 @@
         "url": "http://www.rsc.org/periodic-table/element/112/copernicium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Element 112 (provisionally named copernicium, Cn) was discovered on 9th February 1996 at 22:37 at the GSI in Darmstadt, Germany. The identified isotope currently is the heaviest atom ever produced by man and has an atomic mass of 277, that is, 277 times heavier than hydrogen."
   },
   {
@@ -5997,14 +5864,7 @@
         "url": "http://www.rsc.org/periodic-table/element/113/ununtrium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [  ],
     "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115"
   },
   {
@@ -6051,14 +5911,7 @@
         "url": "http://www.rsc.org/periodic-table/element/114/flerovium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ]
+    "images" : []
   },
   {
     "group": 15,
@@ -6104,14 +5957,7 @@
         "url": "http://www.rsc.org/periodic-table/element/115/ununpentium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115"
   },
   {
@@ -6158,14 +6004,7 @@
         "url": "http://www.rsc.org/periodic-table/element/116/livermorium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ]
+    "images" : []
   },
   {
     "group": 17,
@@ -6211,14 +6050,7 @@
         "url": "http://www.rsc.org/periodic-table/element/117/ununseptium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Claims for the formation of element 117 (ununseptium, Uus) were first publsihed in April 2010."
   },
   {
@@ -6265,14 +6097,7 @@
         "url": "http://www.rsc.org/periodic-table/element/118/ununoctium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Experiments conducted at Dubna in Russia at the Flerov Laboratory of Nuclear Reactions (by workers from the Joint Institute for Nuclear Research in Russia and the Lawrence Livermore National Laboratory in the USA) indicate that element 118 (ununoctium, Uuo) was produced. Not too much though, one atom in the spring of 2002 and two more in 2005."
   }
 ]
