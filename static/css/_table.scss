@@ -1,0 +1,324 @@
+/* Titles ------------------------------------------------------------------------------------------------------------*/
+h1 {
+  position: absolute;
+  top: 47px;
+  z-index: 3;
+  left: 247px;
+  line-height: 65px;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 2.1rem;
+  letter-spacing: 47px;
+  color: #999999;
+  transition: line-height 1s;
+}
+[zoom="1"] h1 {
+  line-height: 65px;
+}
+[zoom="2"] h1 {
+  line-height: 55px;
+}
+[zoom="3"] h1 {
+  line-height: 59px;
+}
+[zoom="4"] h1 {
+  line-height: 75px;
+}
+
+/* Tables ------------------------------------------------------------------------------------------------------------*/
+#tables {
+  position: absolute;
+  transition: transform 1s ;
+  transform-origin: 0 0;
+  width: 1200px;
+  backface-visibility: hidden;
+}
+.elements {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 1rem 0;
+  color: $text-color;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 6px #717171;
+}
+[zoom="1"] #tables {
+  transform: scale($zoom-1-scale) translateZ(0);
+}
+[zoom="2"] #tables {
+  transform: scale($zoom-2-scale) translateZ(0);
+}
+[zoom="3"] #tables {
+  transform: scale($zoom-3-scale) translateZ(0);
+}
+[zoom="4"] #tables {
+  transform: scale($zoom-4-scale) translateZ(0);
+}
+.elements > tbody > tr > td,
+.elements > tbody > tr > th {
+  position: relative;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: normal;
+  vertical-align: top;
+  background: #f1f1f1;
+  transition: height 1s;
+  background-clip: padding-box !important;
+}
+td > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+}
+[zoom="2"] td > div {
+  transform: scale(1 / $zoom-2-scale) translateZ(0);
+  width: 100% * $zoom-2-scale;
+  height: 100% * $zoom-2-scale;
+}
+[zoom="3"] td > div {
+  transform: scale(1 / $zoom-3-scale) translateZ(0);
+  width: 100% * $zoom-3-scale;
+  height: 100% * $zoom-3-scale;
+}
+[zoom="4"] td > div {
+  transform: scale(1 / $zoom-4-scale) translateZ(0);
+  width: 100% * $zoom-4-scale;
+  height: 100% * $zoom-4-scale;
+}
+[zoom="1"] .elements > tbody > tr > td {
+  height: 65px;
+}
+[zoom="2"] .elements > tbody > tr > td {
+  height: 55px;
+}
+[zoom="3"] .elements > tbody > tr > td {
+  height: 59px;
+}
+[zoom="4"] .elements > tbody > tr > td {
+  height: 75px;
+}
+.elements > tbody > tr > th {
+  color: $text-color;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2em;
+  cursor: pointer;
+}
+.elements > tbody > tr > th:first-child {
+  width: 2rem
+}
+
+[c="n"] {
+  background: #f935ce !important;
+}
+[c="am"] {
+  background: #ff2626  !important;
+}
+[c="aem"] {
+  background: #ff910c !important;
+}
+[c="tm"] {
+  background: #5272e4 !important;
+}
+[c="ptm"] {
+  background: #1ab373 !important;
+}
+[c="m"] {
+  background: #ecb720 !important;
+}
+[c="h"] {
+  background: #279da9 !important;
+}
+[c="ng"] {
+  background: #00bfff !important;
+}
+[c="a"] {
+  background: indigo !important;
+}
+[c="l"] {
+  background: darkorchid !important;
+}
+
+/* Cell contents -----------------------------------------------------------------------------------------------------*/
+.s {
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  text-shadow: -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color, 1px 1px 0 $text-color;
+  letter-spacing: 1px;
+}
+[zoom="2"] .s {
+  font-size: 2.5rem;
+}
+[zoom="3"] .s, [zoom="4"] .s {
+  font-size: 3.4rem;
+}
+
+/* atomic number */
+.an {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+[zoom="3"] .an,[zoom="4"] .an {
+  font-size: 1.6rem;
+}
+
+/* atomic mass */
+.am {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+[zoom="3"] .am {
+  font-size: 1rem;
+}
+[zoom="4"] .am {
+  font-size: 1rem;
+}
+
+/* name */
+.n {
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+[zoom="3"] .n {
+  font-size: 1.4rem;
+}
+[zoom="4"] .n {
+  font-size: 1.4rem;
+}
+
+[zoom="1"] .actinides .n,
+[zoom="1"] .lanthinedes .n {
+  visibility: hidden;
+}
+.s, .an, .n, .am {
+
+}
+
+.details {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fdfdfd;
+  color: $text-color;
+  margin-top: 1rem;
+}
+.details tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.details th,
+.details td {
+  padding: 8px;
+  vertical-align: bottom;
+  line-height: 1.2em;
+  font-size: 0.9rem;
+}
+.details td {
+  text-align: right;
+}
+[zoom="4"] .details-wrap {
+  float: left;
+  width: 50%;
+  padding-right: 3px
+}
+.data-wrap + .details-wrap {
+  padding-left: 3px;
+  padding-right: 0;
+}
+
+.tabs-nav li {
+  padding: 6px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 1rem;
+}
+.tabs-nav li.active {
+  background: #fdfdfd;
+}
+.tabs-nav a {
+  display: block;
+  text-decoration: none;
+  color: $text-color;
+  padding: 0 12px;
+}
+.tabs-content {
+  height: 400px;
+  padding: 8px;
+  background: #fdfdfd;
+  overflow: auto;
+  color: $text-color
+}
+.tabs-content-pane {
+  display: none;
+}
+.tabs-content-pane.active {
+  display: block;
+}
+.tabs-content-pane p {
+  margin-top: 1em;
+  line-height: 1.5;
+}
+ul.bullets {
+  margin-top: 1em;
+  list-style: disc inside;
+}
+.wiki-pane {
+  padding: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+iframe {
+  width: 100%;
+  height: 368px;
+  border: none;
+}
+
+/* Util --------------------------------------------------------------------------------------------------------------*/
+
+.out {
+  visibility: hidden;
+}
+.in {
+  visibility: visible;
+}
+.filtering .elements > tbody > tr > td {
+  opacity: 0.3;
+}
+.filtered {
+  opacity: 1 !important;
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe, .video object, .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  text-align: center;
+  background: #F0F0F0;
+  padding: 5px;
+}
+figure img {
+  box-shadow: 0 0 5px #BABABA;
+}
+figcaption p {
+  text-align: inherit;
+}
+figcaption p:first-child {
+  margin-top: 0;
+}

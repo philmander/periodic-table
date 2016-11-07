@@ -1,0 +1,14 @@
+.wrap {
+  position: relative;
+}
+h2 {
+  position: absolute;
+  left: -99999px;
+}
+kbd {
+  display: inline-block;
+  border-radius: 4px;
+  background: #eaeaea;
+  padding: 2px;
+  margin: 2px;
+}

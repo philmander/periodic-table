@@ -1,6 +1,7 @@
 const
     gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
+    sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename');
@@ -12,7 +13,9 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('build-css', function() {
-    return gulp.src('static/css/main.css')
+    return gulp.src('static/css/main.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(rename('main.css'))
         .pipe(cleanCSS())
         .pipe(gulp.dest('./static/build'));
 });

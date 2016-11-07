@@ -1,0 +1,1 @@
+node-sass static/css/main.scss -o static/css -w
