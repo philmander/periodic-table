@@ -100,8 +100,12 @@ module.exports = {
 
     otherResources: function(element) {
         return element.resources.filter(resource => resource.name !== 'Wikipedia' && resource.name !== 'Youtube');
+    },
+    
+    getLicense: function (licenseId, opts) {
+        const licenses = opts.data.licenses;
+        return licenses ? licenses.find(license => license.id === licenseId) : {};
     }
-
 };
 
 

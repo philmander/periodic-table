@@ -16,11 +16,12 @@ hbs.handlebars = handlebars;
 const inProduction = process.env.NODE_ENV === 'production';
 
 const elementList = require('./data/elements.json');
+const licenses = require('./data/licenses.json');
 
 const PARTIAL_DIR = 'views/partials';
 
 for(let helper in helpers) {
-    handlebars.registerHelper(helper, helpers[helper]);
+    hbs.registerHelper(helper, helpers[helper]);
 }
 
 function getTemplate(name) {
@@ -36,12 +37,18 @@ const fieldTemplates = {
     resources: getTemplate('resources')
 };
 
-//populate a cache of compile partial templates for dynamic responses
+//populate a cache of compiled partial templates for dynamic responses
 const elementHtmlFields = {};
 for(let element of elementList) {
     const fields = {};
     for(let fieldName of Object.keys(fieldTemplates)) {
-        fields[fieldName] = fieldTemplates[fieldName]({ element: element });
+        fields[fieldName] = fieldTemplates[fieldName]({
+            element: element
+        }, {
+            data: {
+                licenses: licenses
+            }
+        });
     }
     elementHtmlFields[element.symbol] = fields
 }
@@ -49,6 +56,7 @@ for(let element of elementList) {
 //init express
 const app = express();
 app.locals.elements = elementList;
+app.locals.licenses = licenses;
 app.locals.env = app.get('env');
 app.locals.version = require('./package.json').version;
 app.locals.css = fs.readFileSync(path.join(__dirname, 'static/build/main.css'), 'utf8');
@@ -56,7 +64,7 @@ hbs.localsAsTemplateData(app);
 hbs.registerPartials(path.join(__dirname, PARTIAL_DIR));
 app.set('view engine', 'hbs');
 app.set('json spaces', 0);
-app.set('x-powered-by', false)
+app.set('x-powered-by', false);
 
 app.use(minifyHTML({
     override:      true,
@@ -73,6 +81,7 @@ app.use(favicon('./favicon.ico'));
 
 const cacheOpts = inProduction ? { maxAge: 1000 * 60 * 60 * 24} : {};
 app.use('/static', express.static('static', cacheOpts));
+app.use('/images', express.static('data/images', cacheOpts));
 
 function getZoom(req) {
     const zoom = parseInt(req.query.z);

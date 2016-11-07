@@ -1,18 +1,31 @@
 <div>
     <div class=r tabs>
         <ul class=tabs-nav>
-            <li class=active><a href=#history-{{element.symbol}}>History</a></li>
+            <li class=active><a href=#history-{{element.symbol}}>Info</a></li>
             <li><a href=#video-{{element.symbol}}>Video</a></li>
             <li><a href=#wiki-{{element.symbol}}>Wikipedia</a></li>
-            <li><a href=#other-{{element.symbol}}>Other resources</a></li>
+            <li><a href=#other-{{element.symbol}}>More resources</a></li>
         </ul>
         <div class=tabs-content>
             <div id=history-{{element.symbol}} class="tabs-content-pane active">
-                {{#if element.discoveredBy}}
-                    <p>Discovered by {{element.discoveredBy}}</p>
+                {{#if element.images.length}}
+                    <figure class="image">
+                        <img src="/images/{{element.images.0.file}}" width="auto" height="200" alt="Image of {{element.name}}">
+                        <figcaption>
+                            <p class="attr"><small>
+                                By <a href="{{element.images.0.attribution.url}}">{{element.images.0.attribution.name}}</a>
+                                {{#if (equal element.images.0.license 'pd')}}
+                                    [ Public Domain ]
+                                {{else if element.images.0.license}}
+                                    [ {{#with (getLicense element.images.0.license)}}<a href="{{url}}" target="_blank">{{shortName}}</a>{{/with}} ]
+                                {{/if}}
+                            </small></p>
+                            <p>{{element.images.0.description}}</p>
+                        </figcaption>
+                    </figure>
                 {{/if}}
                 <p>{{element.info}}</p>
-                <p><small>Information courtesy of <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a></small></p>
+                {{!--<p><small>Information courtesy of <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a></small></p>--}}
             </div>
             <div id=video-{{element.symbol}} class=tabs-content-pane>
                 <div class=video>

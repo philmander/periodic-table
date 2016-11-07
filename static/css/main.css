@@ -1,7 +1,7 @@
 /* Reset -------------------------------------------------------------------------------------------------------------*/
 
 html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl,
-dt, dd, blockquote, address, table, tbody, tr, td, th, fieldset, i {
+dt, dd, blockquote, address, table, tbody, tr, td, th, fieldset, i, figure {
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -502,4 +502,17 @@ iframe {
     left:0;
     width:100%;
     height:100%;
+}
+
+figure {
+    text-align: center;
+    background: #F0F0F0;
+    padding: 5px;
+    border: 1px solid #E4E4E4;
+}
+figcaption p {
+    text-align: inherit;
+}
+figcaption p:first-child {
+    margin-top: 0;
 }
