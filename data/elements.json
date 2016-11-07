@@ -931,8 +931,9 @@
         "description" : "Chlorine gas in an ampule",
         "license" : "cc-by-sa.3.0",
         "attribution": {
-          "name" : "W. Oelen",
-          "url" : "https://commons.wikimedia.org/wiki/File:Chlorine_ampoule.jpg"
+          "name": "W. Oelen",
+          "url": "https://commons.wikimedia.org/wiki/File:Chlorine_ampoule.jpg"
+        }
       }
     ],
     "info": "Chlorine was discovered in 1774 by K. W. Scheele, who thought it was a compound of oxygen; it was named and identified as an element by Sir Humphry Davy in 1810.Chlorine is a greenish-yellow poisonous gas with a disagreeable, suffocating odor; it is about two and one-half times as dense as air"
@@ -1140,10 +1141,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "sc",
+        "description" : "Scandium, sublimed-dendritic, high purity 99.998 % Sc/TREM. As well as an argon arc remelted 1 cm3 scandium cube for comparison.",
+        "license" : "cc-by-nc-nd.3.0",
+        "attribution": { "name" : "Alchemist-3.0", "url" : "https://commons.wikimedia.org/wiki/File:Scandium_sublimed_dendritic_and_1cm3_cube.jpg" }
       }
     ],
     "info": "Scandium was discovered by Lars Frederick Nilson in the minerals euxenite and gadolinite, which had not yet been found anywhere except in Scandinavia. He was actually looking for rare earth metals. By processing 10 kg of euxenite and other residues of rare-earth minerals, he was able to prepare about 2 g of scandium oxide of high purity."
@@ -1192,10 +1193,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ti.jpg",
+        "description" : "Titanium crystal made with the van Arkel-de Boer process. 87 grams, original size in cm: 2.5 x 4.",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/titanium.php" }
       }
     ],
     "info": "Titanium was discovered by the Reverend William Gregor in 1791, who was interested in minerals. He recognized the presence of a new element, now known as titanium, in menachanite, a mineral named after Menaccan in Cornwall (England). Several years later, the element was rediscovered in the ore rutile by a German chemist, Klaproth."
@@ -1244,10 +1245,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "v.jpg",
+        "description" : "2.3 grams pure vanadium pieces with a colored oxide layer. Size of the largest piece in cm: 0.7 x 0.7",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/vanadium.php" }
       }
     ],
     "info": "The discovery of vanadium happened \"twice.\" The discovery of vanadium was claimed first by Andres Manuel del Rio (a Spanish mineralogist) at Mexico City in 1803. Iin 1831, Nils Gabriel Sefström  was working with some iron ores and was able to isolate a new oxide. This lead to the element being named in honour of the Germanic tribes' goddess Vanadis"
@@ -1296,10 +1297,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "cr.jpg",
+        "description" : " High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm3 chromium cube for comparison",
+        "license" : "cc-by-nc-nd.3.0",
+        "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Chromium_crystals_and_1cm3_cube.jpg" }
       }
     ],
     "info": "In the mid 18th century analysis of Siberian \"red lead\" (PbCrO4, crocoite) from Siberia showed that it contained quite a lot of lead, but also a further material. This was eventually identified as chromium oxide. Chromium oxide was discovered in 1797 by Louis-Nicholas Vauquelin, who prepared the metal itself in the following year."
@@ -1348,10 +1349,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "mn.jpg",
+        "description" : "Manganese",
+        "license" : "cc-by-sa.3.0.jpg",
+        "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Mangan_1-crop.jpg" }
       }
     ],
     "info": "Manganese metal was isolated by Gahn in 1774. He reduced the dioxide (MnO2, as the mineral pyrolusite) with charcoal (essentially carbon) by heating and the result was a sample of the metal manganese."
@@ -1400,10 +1401,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "fe.jpg",
+        "description" : "Iron meteorite",
+        "license" : "?",
+        "attribution": { "name" : "Pics About Space", "url" : "http://pics-about-space.com/iron-asteroids?p=1#img425247776858823364" }
       }
     ],
     "info": "Iron is an abundant element in the universe; it is found in many stars, including the sun. Iron is the fourth most abundant element in the earth's crust, of which it constitutes about 5% by weight, and is believed to be the major component of the earth's core."
@@ -1452,10 +1453,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "co.jpg",
+        "description" : "3 gram piece of cobalt",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cobalt.php" }
       }
     ],
     "info": "Minerals containing cobalt were of value to the early civilisations of Egypt and Mesopotamia for colouring glass deep blue.Cobalt was announced to be an element by Georg Brandt about 1739 (or possibly 1735). He had been trying to demonstrate that the blue colour of glass was because of a new element, cobalt"
@@ -1504,10 +1505,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ni.jpg",
+        "description" : "A piece of Ni about 3 cm in size",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Materialscientist", "url" : "https://en.wikipedia.org/wiki/Nickel#/media/File:Nickel_chunk.jpg" }
       }
     ],
     "info": "Nickel was discovered in 1751 by A. F. Cronstedt in kupfernickel (niccolite), a copper-colored nickel arsenide mineral. Nickel is present in most meteorites. It is also found in trace amounts in plants and animals."
@@ -1556,10 +1557,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "cu.jpg",
+        "description" : "Macro of native copper about 1 ½ inches (4 cm) in size.",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Jonathan Zander", "url" : "https://commons.wikimedia.org/wiki/File:NatCopper.jpg" }
       }
     ],
     "info": "Copper and some of its alloys have been used by humanity since the Bronze Age. One of the first metals known to humans, free copper was probably mined in the Tigris-Euphrates valley as long ago as the 5th cent. B.C. Cyprus, from which the metal's name originally comes, was the primary source of copper in the ancient world."
@@ -1608,10 +1609,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "zn.jpg",
+        "description" : "Zinc, purity 99.995 %, left: a crystaline fragment of an ingot, right: sublimed-dendritic, and a 1 cm3 zinc cube for comparison.",
+        "license" : "cc-by-nc-nd.3.0",
+        "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Zinc_fragment_sublimed_and_1cm3_cube.jpg" }
       }
     ],
     "info": "The element was probably named by the alchemist Paracelsus after the German word Zinke. German chemist Andreas Sigismund Marggraf is normally given credit for discovering pure metallic zinc in 1746. Work by Luigi Galvani and Alessandro Volta uncovered the electrochemical properties of zinc by 1800"
@@ -1660,10 +1661,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ga.jpg",
+        "description" : "Crystals of 99.999% gallium",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Foobar", "url" : "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg" }
       }
     ],
     "info": "Gallium was an element whose existence was predicted by Mendeleev in 1871. He predicted that the then unknown element gallium should resemble aluminium in its properties. Gallium was discovered spectroscopically by Paul-Emile Lecoq de Boisbaudran in 1875, who in the same year obtained the free metal by electrolysis of a solution of the hydroxide"
@@ -1713,10 +1714,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ge.jog",
+        "description" : "Ultra pure chunk of polycrystalline germanium, 12 grams. Original size in cm: 2 x 3",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/germanium.php" }
       }
     ],
     "info": "Germanium was an element whose existence was predicted by Mendeleev . He predicted that the then unknown element germanium should resemble silicon in its properties. His predictions for the properties of germanium are remarkably close to the reality. Germanium was discovered in a mineral called argyrodite by Clemens Alexander Winkler in 1886."
@@ -1765,10 +1766,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "as.jpg",
+        "description" : "Arsenic",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Tomihahndorf", "url" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Arsen_1a.jpg" }
       }
     ],
     "info": "Arsenic compounds were mined by the early Chinese, Greek and Egyptian civilisations. No doubt they discovered its toxic properties early on.It is believed that Albertus Magnus obtained the element in 1250 A.D. who obtained it by heating soap together with orpiment (arsenic trisulphide, As2S3)."
@@ -1817,10 +1818,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "se.jpg",
+        "description" : "Black, amorphous selenium, 3 - 4 grams. Original size in cm: 2",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/selenium.php" }
       }
     ],
     "info": "Selenium (Gr. Selen, moon) was discovered by Jöns Jacob Berzelius in 1817. He reported that tellurium was present in sulphuric acid from a Swedish factory, but in the following year decided that the impurity was not tellurium but another closely related element that he subsequently identified as selenium."
@@ -1873,10 +1874,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "br.jpg",
+        "description" : "Bromine in a vial",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/bromine.php" }
       }
     ],
     "info": "Bromine was not prepared in quantity until 1860 but compounds of bromine were of some considerable importance well before it was recognised as an element. Long ago an excretion from a particular kind of mussel was used to make a purple dye called \"Tyrian purple.\" It is now known that a key compound in this process is an organobromine compund."
@@ -2035,10 +2036,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "sr.jpg",
+        "description" : "Strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm",
+        "license" : "cc-by-nc.3.0",
+        "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Strontium_destilled_crystals.jpg" }
       }
     ],
     "info": "Adair Crawford in 1790 recognized a new mineral (strontianite) in samples of witherite (barium carbonate, BaCO3) from Scotland. It was some time before it was recognized that strontianite contained a new element. The element itself was not isolated for a number of years after this when strontium metal was isolated by Davy by electrolysis."
@@ -2087,10 +2088,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "y.jpg",
+        "description" : "Ultra pure yttrium crystal. Original size in cm: 2 x 3",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/yttrium-2.jpg" }
       }
     ],
     "info": "Yttria (yttrium oxide, Y2O3), was discovered by Johann Gadolin in 1794 in a mineral called gadolinite from Ytterby, a town in Finland. Friedrich Wohler obtained the impure element in 1828 by reduction of the anhydrous chloride (YCl3) with potassium."
@@ -2141,10 +2142,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "zr.jpg",
+        "description" : "Purest zirconium 99.97%, two samples of crystal bar showing different surface textures, made by crystal bar process, as well as a highly pure (99,95 % = 3N5) 1 cm3 zirconium cube for comparison. The metal piece-photo was taken on a white glass plate.",
+        "license" : "cc-by-nc-nd.3.0",
+        "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Zirconium_crystal_bar_and_1cm3_cube.jpg" }
       }
     ],
     "info": "The name zircon probably originated from the arabic \"zargun,\" which describes the colour of the gemstone now known as zircon. Zirconium was discovered by Martin Heinrich Klaproth at 1789 in Berlin, Germany. The minerals jargon, hyacinth, and jacinth also contain zircon and these have been known since biblical times and are mentioned in the bible."
@@ -2193,10 +2194,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "nb.jpg",
+        "description" : "Niobium bead, slightly oxidized. Original size in cm: 0.6 x 0.6",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/niobium.php" }
       }
     ],
     "info": "Niobium was discovered in 1801 by Charles Hatchett in an ore called columbite. He was not able to isolate the free element. There was then considerable confusion concerning the distinction between niobium and tantalum as they are so closely related. This confusion was resolved by Heinrich Rose, who named niobium."
@@ -2247,10 +2248,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "mo.jpg",
+        "description" : "Pure molybdenum crystal, about 20 grams. Original size in cm: 1.5 x 3",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/molybdenum.php" }
       }
     ],
     "info": "Molybdenum was recognized as a distinct element in 1778 by K. W. Scheele; its ore had earlier been confused with lead ore, hence its name. The element was isolated by P. J. Hjelm in 1782. Molybdenum do not occur uncombined in nature. It is widely but sparingly distributed throughout the world"
@@ -2299,10 +2300,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "tc.jog",
+        "description" : "A piece of technetium",
+        "license" : "pd",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/technetium.php" }
       }
     ],
     "info": "Technetium was predicted on the basis of the periodic table by Mendeleev. The element was actually discovered by C. Perrier and Emilio Gino Segre in Italy in 1937. It was found in a sample of molybdenum bombarded by deuterons. Technetium was the first element to be produced artificially and all its isotopes are radioactive"
@@ -2353,10 +2354,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ru.jpg",
+        "description" : "One half of a high-purity (99.99%), electron-beam-remelted ruthenium bar. Size ca. 40 × 15 × 10 mm, weight ca. 44 g.",
+        "license" : "cc-by-nc-nd.jpg",
+        "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Ruthenium_a_half_bar.jpg" }
       }
     ],
     "info": "Ruthenium was discovered in 1827 in an impure form by G. W. Osann in residues of crude platinum ores from the Ural Mts. of Russia. Pure ruthenium was first prepared by K. K. Klaus in 1845; he showed that Osann's sample contained at least one other metal."
@@ -2405,10 +2406,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
+        "file" : "rh.jpg",
+        "description" : "Pure rhodium bead, 1 gram. Original size in cm: 0.5",
         "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhodium.php" }
       }
     ],
     "info": "William Hyde Wollaston discovered rhodium in 1803 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum & Palladium. The left material was a red material containing rhodium chloride salt from which rhodium metal was obtained by reduction with hydrogen gas."
@@ -2457,10 +2458,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "pd.jpg",
+        "description" : "Palladium crystal, about 1 gram. Original size in cm: 0.5 x 1",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/palladium-2.jpg" }
       }
     ],
     "info": "William Hyde Wollaston discovered palladium in 1803-4 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum .Palladium was then removed as palladium cyanide by treatment with mercuric cyanide. The metal was produced from this cyanide by heating."
@@ -2509,10 +2510,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ag.jpg",
+        "description" : "Pieces of silver, 3 grams, the biggest piece is 1 cm long.",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/silver.php" }
       }
     ],
     "info": "Silver has been known since ancient times. It is mentioned in Genesis. Slag dumps in Asia Minor and on islands in the Aegean Sea indicate that man learned to separate silver from lead as early as 3000 B.C."
@@ -2561,10 +2562,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "cd.jpg",
+        "description" : "Pure cadmium",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cadmium.php" }
       }
     ],
     "info": "Cadmium was discovered by Friedrich Stromeyer in 1817 from an impurity in some samples of zinc carbonate. He noted that these particular samples changed colour on heating, which pure zinc carbonate does not. He was persistent to follow this observation through and he eventually isolated some cadmium metal by roasting and reduction of the sulphide."
@@ -2613,10 +2614,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "in.jpg",
+        "description" : "Ductile indium wire with a thickness of about 3mm",
+        "license" : "cc-by-sa.jpg",
+        "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Indium_wire.jpg" }
       }
     ],
     "info": "Indium was discovered by Ferdinand Reich and Theodore Richter, who later isolated the metal. It was found and spectroscopically identified as a minor component in zincores. Until 1924, a gram or so constituted the world's supply of this element in isolated form. In fact, it is probably about as abundant as silver."
@@ -2665,10 +2666,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "sn.jpg",
+        "description" : "Blob of tin. 3 x 3 cm",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tin.php" }
       }
     ],
     "info": "Tin was known to the ancients and is mentioned in the Old Testament. Early metal workers found it too soft for most purposes but mixed with copper it gives the alloy bronze, of Bronze Age fame."
@@ -2717,10 +2718,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "sb.jpg",
+        "description" : "Antimony crystal, 2 grams, 1 cm.",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/antimony.php" }
       }
     ],
     "info": "Antimony was recognized in compounds by the ancients and was known as a metal at the beginning of the 17th century and possibly much earlier. It seems not to be clear who first recognised antimony as an element but the French chemist Nicolas Lémery conducted much of the earlier studies on antimony chemistry."
@@ -2769,10 +2770,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "te.jpg",
+        "description" : "Metallic tellerium. 3.5cm diameter",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tellurium.php" }
       }
     ],
     "info": "Tellurium was discovered in gold ores by Franz Joseph Muller von Reichenstein, the chief inspector of mines in Trannsylvania in 1782. However tellurium was named by M. Klaproth, who isolated it in 1798, after he continued Muller von Reichenstein's work."
@@ -2821,10 +2822,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "i.jpg",
+        "description" : "Iodine",
+        "license" : "?",
+        "attribution": { "name" : "IOCHEM Corporation", "url" : "http://www.iochem.net/Iodine/Iodine.html" }
       }
     ],
     "info": "Iodine was discovered by Barnard Courtois in 1811. He isolated iodine from treating seaweed ash with sulphuric acid (H2SO4) while recovering sodium and potassium compounds."
@@ -2980,10 +2981,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ba.jpg",
+        "description" : "Pure barium in protective argon gas atmosphere.",
+        "license" : "pd",
+        "attribution": { "name" : "Matthias Zepper", "url" : "https://commons.wikimedia.org/wiki/File:Barium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg" }
       }
     ],
     "info": "Barium metal was first isolated in 1808 by Sir Humphry Davy by electrolysis. Its principal ore is barite (barium sulfate); it also occurs in the mineral witherite (barium carbonate). The pure metal is obtained by the electrolysis of fused barium salts or, industrially, by the reduction of barium oxide with aluminum"
@@ -3030,14 +3031,14 @@
         "url": "http://www.rsc.org/periodic-table/element/57/lanthanum"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+  "images" : [
+    {
+      "file" : "la.jpg",
+      "description" : "1.5 grams pure lanthanum. Original size in cm: 1 x 1",
+      "license" : "cc-by.jpg",
+      "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lanthanum-2.jpg" }
+    }
+  ],
     "info": "Carl Gustav Mosander recognized the element lanthanum in impure cerium nitrate in 1839. His extraction resulted in the oxide lanthana (La2O3). A number of other lanthanides (rare-earths) were later discovered by identification of the impurities in yttrium and cerium compounds."
   },
   {
@@ -3082,10 +3083,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ce.jpg",
+        "description" : "Cerium under argon, 1.5 grams. Original size in cm: 1 x 1",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cerium.php" }
       }
     ],
     "info": "Cerium was discovered in 1803 by Jöns Jacob Berzelius and Wilhelm Hisinger and independently by Martin Klaproth. It was isolated from a mineral from an iron mine at Bastn°s"
@@ -3134,10 +3135,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "pr.jpg",
+        "description" : "Praseodymium pieces under argon, 1.5 grams. Original size in cm: 0.5 - 1",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/praseodymium.php" }
       }
     ],
     "info": "In 1885, Carl Auer von Welsbach separated an \"earth\" called didymia obtained from the mineral samarskite into two earths, praseodymia and neodymia, which gave salts of different colours. The separation required the repeated fractionation of ammonium didymium nitrate."
@@ -3186,10 +3187,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "nd.jpg",
+        "description" : "Neodymium under argon, 5 grams. Original length of the large piece in cm: 1",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/neodymium.php" }
       }
     ],
     "info": "In 1885 von Welsbach separated didymium, an extract of cerite, into two new elemental components, neodymia and praseodymia, by repeated fractionation of ammonium didymium nitrate. While the free metal is a component of misch metal, (a pyrophoric alloy for lighter flints), the element was not isolated in relatively pure form until 1925."
@@ -3239,14 +3240,7 @@
         "url": "http://www.rsc.org/periodic-table/element/61/promethium"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [ ],
     "info": "Marinsky, Glendenin, and Coryell \",\"Earlt claims to the discovery of promethium date back to 1924 but these appear have been substantiated. A group at Ohio State University claimed element 61 in experiments involving its synthesis in a cyclotron. Marinsky, Glendenin, and Coryell at Tennessee made the first chemical identification of promethium by use of ion-exchange chromatography"
   },
   {
@@ -3817,10 +3811,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "hf.jpg",
+        "description" : "Hafnium turnings, >99.9% pure, used for evaporating onto glass as HfO2 to create multi-layer dielectric thin film optics in conjucntion with silica layers",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Deglr6328", "url" : "https://commons.wikimedia.org/wiki/File:Hafnium_bits.jpg" }
       }
     ],
     "info": "Hafnium was thought to be present in various zirconium minerals many years prior to its discovery, in 1923, which was credited to Dirk Coster and George Charles von Hevesey. It was finally identified in zircon from Norway, by means of X-ray spectroscopic analysis. It was named in honour of the city in which the discovery was made."
@@ -3870,10 +3864,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ta.jpg",
+        "description" : "Single piece of tantalum, each about 1 cm in size. ",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tantalum.php" }
       }
     ],
     "info": "Niobium was discovered in by Anders Ekeberg, but many chemists thought niobium and tantalum were the same. Some felt that perhaps tantalum was an allotrope of niobium. Later, Rose, in 1844, and Marignac, in 1866, showed that niobic and tantalic acids were two different acids.The first relatively pure tantalum was produced by von Bolton in 1907."
@@ -3924,10 +3918,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "w.jpg",
+        "description" : "Tungsten rod with oxidized surface, 80 grams. Original size in cm: 1.3 x 3",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tungsten.php" }
       }
     ],
     "info": "Tungsten used to be known as wolfram (from wolframite, said to be named from wolf rahm or spumi lupi, because the ore interfered with the smelting of tin and was supposed to devour the tin). The de Elhuyar brothers found an acid in wolframite in 1783 that they succeeded in reducing to the elemental metal with charcoal."
@@ -3976,10 +3970,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "rh.jpg",
+        "description" : "Small rhenium bead",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhenium.php" }
       }
     ],
     "info": "Discovery of rhenium is generally attributed to Walter Noddack, Ida Tacke-Noddack, and Otto Berg, who announced in 1925 they had detected the element in platinum ores and columbite."
@@ -4028,10 +4022,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "os.jpg",
+        "description" : "Cluster of osmium crystals grown by chemical vapor transport",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "", "url" : "https://commons.wikimedia.org/wiki/File:Osmium_cluster.jpg" }
       }
     ],
     "info": "Osmium was discovered in 1803 by Smithson Tennant in the dark coloured residue left when crude platinum is dissolved by aqua regia (a mixture of hydrochloric and nitric acid). This dark residue contains both osmium (named after osme meaning odour) and iridium."
@@ -4080,10 +4074,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "ir.jpg",
+        "description" : "Pieces of pure iridium",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/iridium.php" }
       }
     ],
     "info": "Osmium was discovered in 1803 by Smithson Tennant in the dark coloured residue left when crude platinum is dissolved by aqua regia (a mixture of hydrochloric and nitric acid). This dark residue contains both osmium and iridium (named after the Latin word iris meaning rainbow because of the colourful nature of iridium compounds)."
@@ -4132,10 +4126,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "pt.jpg",
+        "description" : "Two platinum crystals, each 1 cm big, together about 1 gram",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/platinum.php" }
       }
     ],
     "info": "The metal was used by pre-Columbian Indians but platinum was \"rediscovered\" in South America by Ulloa in 1735 and by Wood in 1741. In 1822 plenty of platinum was discovered in the Ural Mountains in Russia."
@@ -4184,10 +4178,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "au.jpg",
+        "description" : "5g gold bar",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/gold.php" }
       }
     ],
     "info": "Gold has been known from prehistoric times and was possibly the first metal used by humans. It was valued for ornaments and magical efficacy was attributed to it. In the Middle Ages alchemists sought to transmute baser metals into gold. The quest for gold stimulated European explorations and conquests, and its discovery has led to many a gold rush."
@@ -4236,10 +4230,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "hg.jpg",
+        "description" : "Mercury",
+        "license" : "?",
+        "attribution": { "name" : "Britannica Online for Kids. Web", "url" : "http://kids.britannica.com/comptons/art-187093" }
       }
     ],
     "info": "Mercury was known to ancient Chinese and Hindus before 2000 BC and was found in tubes in Egyptian tombs dated from 1500 BC It was used to forma amalgams of other metals around 500 BC. The Greeks used mercury in ointments and the Romans used it, unfortunately for those using it, in cosmetics."
@@ -4288,10 +4282,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "tl.jpg",
+        "description" : "Pieces of very pure thallium in glass ampoule under argon.",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "W. Oelen", "url" : "https://commons.wikimedia.org/wiki/File:Thallium_pieces_in_ampoule.jpg" }
       }
     ],
     "info": "Thallium was discovered spectroscopically in 1861 by Crookes. The element was named after the green spectral line, which identified the element (Greek \"thallos\", green twig). They had been expecting to isolate tellurium after removing selenium from the byproducts from a commercial sulphuric acid factory but instead found the new element thallium."
@@ -4340,10 +4334,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "pb.jpg",
+        "description" : "Two pieces of lead, 11 grams, 1 x 1.5 cm each.",
+        "license" : "cc-by.3.0",
+        "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lead.php" }
       }
     ],
     "info": "Lead has been known for ages and is mentioned in Exodus. Alchemists believed lead to be the oldest metal and associated it with the planet Saturn. They spent a lot of time trying to \"transmute\" lead into gold."
@@ -4392,10 +4386,10 @@
     ],
     "images" : [
       {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
+        "file" : "bi.jpg",
+        "description" : "Bismuth crystal",
+        "license" : "cc-by-sa.3.0",
+        "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Bismuth_crystal_macro.jpg" }
       }
     ],
     "info": "In early times bismuth was confused with tin and lead. So although bismuth had been discussed many times before, Claude Geoffroy the Younger showed it to be distinct from lead in 1753."
@@ -4555,14 +4549,7 @@
         "url": "http://www.rsc.org/periodic-table/element/86/radon"
       }
     ],
-    "images" : [
-      {
-        "file" : "",
-        "description" : "",
-        "license" : "",
-        "attribution": { "name" : "", "url" : "" }
-      }
-    ],
+    "images" : [],
     "info": "Radon was discovered in 1900 by Friedrich Ernst Dorn, who called it niton. It is essentially inert. It has been called radon since 1923, before which it was called niton."
   },
   {
