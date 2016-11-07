@@ -44,7 +44,7 @@
     ],
     "images" : [
       {
-        "file" : "h.jpg",
+        "file" : "h-190.jpg",
         "description" : "Vial of glowing ultra pure hydrogen, H<sub>2</sub>.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -99,7 +99,7 @@
     ],
     "images" : [
       {
-        "file" : "he.jpg",
+        "file" : "he-190.jpg",
         "description" : "Vial of glowing ultra pure Helium.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -154,7 +154,7 @@
     ],
     "images" : [
       {
-        "file" : "li.jpg",
+        "file" : "li-190.jpg",
         "description" : "Lithium metal pieces. 99.9%.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -209,7 +209,7 @@
     ],
     "images" : [
       {
-        "file" : "be.jpg",
+        "file" : "be-190.jpg",
         "description" : "Pure beryllium bead, 2.5 grams.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/beryllium.php" }
@@ -261,7 +261,7 @@
     ],
     "images" : [
       {
-        "file" : "b.jpg",
+        "file" : "b-190.jpg",
         "description" : "Polycrystalline chunks of rhombohedral β-boron, net 25.5 grams.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -318,7 +318,7 @@
     ],
     "images" : [
       {
-        "file" : "c.jpg",
+        "file" : "c-190.jpg",
         "description" : "Diamond and graphite shown side by side.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
@@ -373,7 +373,7 @@
     ],
     "images" : [
       {
-        "file" : "n.jpg",
+        "file" : "n-190.jpg",
         "description" : "Spectrum = gas discharge tube filled with nitrogen N2. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -428,7 +428,7 @@
     ],
     "images" : [
       {
-        "file" : "o.jpg",
+        "file" : "o-190.jpg",
         "description" : " Spectrum = gas discharge tube filled with oxygen O2. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "fal",
         "attribution": {
@@ -483,7 +483,7 @@
     ],
     "images" : [
       {
-        "file" : "f.jpg",
+        "file" : "f-190.jpg",
         "description" : "A tube with liquid fluorine in a cryogenic bath.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
@@ -538,7 +538,7 @@
     ],
     "images" : [
       {
-        "file" : "ne.jpg",
+        "file" : "ne-190.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: neon Ne. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": {
@@ -597,7 +597,7 @@
     ],
     "images" : [
       {
-        "file" : "na.jpg",
+        "file" : "na-190.jpg",
         "description" : "Sodium metal pieces. 99.5%.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
@@ -652,7 +652,7 @@
     ],
     "images" : [
       {
-        "file" : "mg.jpg",
+        "file" : "mg-190.jpg",
         "description" : "Magnesium crystal.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -707,7 +707,7 @@
     ],
     "images" : [
       {
-        "file" : "al.jpg",
+        "file" : "al-190.jpg",
         "description" : "Chunk of aluminium, 2.6 grams, 1 x 2 cm.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -763,7 +763,7 @@
     ],
     "images" : [
       {
-        "file" : "si.jpg",
+        "file" : "si-190.jpg",
         "description" : "Close up photo of a piece of purified silicon.",
         "license" : "pd",
         "attribution": { "name" : "Enricoros", "url" : "https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg" }
@@ -819,7 +819,7 @@
     ],
     "images" : [
       {
-        "file" : "p.jpg",
+        "file" : "p-190.jpg",
         "description" : "Red phosphorus as powder.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/phosphorus.php" }
@@ -871,7 +871,7 @@
     ],
     "images" : [
       {
-        "file" : "s.jpg",
+        "file" : "s-190.jpg",
         "description" : "A sample of sulfur.",
         "license" : "pd",
         "attribution": {
@@ -927,7 +927,7 @@
     ],
     "images" : [
       {
-        "file" : "cl.jpg",
+        "file" : "cl-190.jpg",
         "description" : "Chlorine gas in an ampule.",
         "license" : "cc-by-sa.3.0",
         "attribution": {
@@ -982,7 +982,7 @@
     ],
     "images" : [
       {
-        "file" : "ar.jpg",
+        "file" : "ar-190.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: argon Ar. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Argon_discharge_tube.jpg" }
@@ -1034,7 +1034,7 @@
     ],
     "images" : [
       {
-        "file" : "k.jpg",
+        "file" : "k-190.jpg",
         "description" : "Potassium metal pieces. 99.9%.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -1089,7 +1089,7 @@
     ],
     "images" : [
       {
-        "file" : "ca.jpg",
+        "file" : "ca-190.jpg",
         "description" : "Pure calcium in a protective argon atmosphere.",
         "license" : "pd",
         "attribution": { "name" : "Matthias Zepper", "url" : "https://commons.wikimedia.org/wiki/File:Calcium_unter_Argon_Schutzgasatmosph%C3%A4re.jpg" }
@@ -1141,7 +1141,7 @@
     ],
     "images" : [
       {
-        "file" : "sc.jpg",
+        "file" : "sc-190.jpg",
         "description" : "Scandium, sublimed-dendritic, high purity 99.998 % Sc/TREM. As well as an argon arc remelted 1 cm3 scandium cube for comparison.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-3.0", "url" : "https://commons.wikimedia.org/wiki/File:Scandium_sublimed_dendritic_and_1cm3_cube.jpg" }
@@ -1193,7 +1193,7 @@
     ],
     "images" : [
       {
-        "file" : "ti.jpg",
+        "file" : "ti-190.jpg",
         "description" : "Titanium crystal made with the van Arkel-de Boer process. 87 grams, original size in cm: 2.5 x 4.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/titanium.php" }
@@ -1245,7 +1245,7 @@
     ],
     "images" : [
       {
-        "file" : "v.jpg",
+        "file" : "v-190.jpg",
         "description" : "2.3 grams pure vanadium pieces with a colored oxide layer. Size of the largest piece in cm: 0.7 x 0.7.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/vanadium.php" }
@@ -1297,7 +1297,7 @@
     ],
     "images" : [
       {
-        "file" : "cr.jpg",
+        "file" : "cr-190.jpg",
         "description" : " High purity (99.999 % = 5N) chromium crystals, produced by chemical transport reaction through decomposition of chromium iodides, as well as a high purity (99,95 % = 3N5) 1 cm3 chromium cube for comparison.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Chromium_crystals_and_1cm3_cube.jpg" }
@@ -1349,7 +1349,7 @@
     ],
     "images" : [
       {
-        "file" : "mn.jpg",
+        "file" : "mn-190.jpg",
         "description" : "Manganese.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Mangan_1-crop.jpg" }
@@ -1401,7 +1401,7 @@
     ],
     "images" : [
       {
-        "file" : "fe.jpg",
+        "file" : "fe-190.jpg",
         "description" : "Iron meteorite.",
         "license" : null,
         "attribution": { "name" : "Pics About Space", "url" : "http://pics-about-space.com/iron-asteroids?p=1#img425247776858823364" }
@@ -1453,7 +1453,7 @@
     ],
     "images" : [
       {
-        "file" : "co.jpg",
+        "file" : "co-190.jpg",
         "description" : "3 gram piece of cobalt.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cobalt.php" }
@@ -1505,7 +1505,7 @@
     ],
     "images" : [
       {
-        "file" : "ni.jpg",
+        "file" : "ni-190.jpg",
         "description" : "A piece of Ni about 3 cm in size.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Materialscientist", "url" : "https://en.wikipedia.org/wiki/Nickel#/media/File:Nickel_chunk.jpg" }
@@ -1557,7 +1557,7 @@
     ],
     "images" : [
       {
-        "file" : "cu.jpg",
+        "file" : "cu-190.jpg",
         "description" : "Macro of native copper about 1 ½ inches (4 cm) in size.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Jonathan Zander", "url" : "https://commons.wikimedia.org/wiki/File:NatCopper.jpg" }
@@ -1609,7 +1609,7 @@
     ],
     "images" : [
       {
-        "file" : "zn.jpg",
+        "file" : "zn-190.jpg",
         "description" : "Zinc, purity 99.995 %, left: a crystaline fragment of an ingot, right: sublimed-dendritic, and a 1 cm3 zinc cube for comparison.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Zinc_fragment_sublimed_and_1cm3_cube.jpg" }
@@ -1661,7 +1661,7 @@
     ],
     "images" : [
       {
-        "file" : "ga.jpg",
+        "file" : "ga-190.jpg",
         "description" : "Crystals of 99.999% gallium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Foobar", "url" : "https://commons.wikimedia.org/wiki/File:Gallium_crystals.jpg" }
@@ -1714,7 +1714,7 @@
     ],
     "images" : [
       {
-        "file" : "ge.jpg",
+        "file" : "ge-190.jpg",
         "description" : "Ultra pure chunk of polycrystalline germanium, 12 grams. Original size in cm: 2 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/germanium.php" }
@@ -1766,7 +1766,7 @@
     ],
     "images" : [
       {
-        "file" : "as.jpg",
+        "file" : "as-190.jpg",
         "description" : "Arsenic.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://upload.wikimedia.org/wikipedia/commons/7/7b/Arsen_1a.jpg" }
@@ -1818,7 +1818,7 @@
     ],
     "images" : [
       {
-        "file" : "se.jpg",
+        "file" : "se-190.jpg",
         "description" : "Black, amorphous selenium, 3 - 4 grams. Original size in cm: 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/selenium.php" }
@@ -1874,7 +1874,7 @@
     ],
     "images" : [
       {
-        "file" : "br.jpg",
+        "file" : "br-190.jpg",
         "description" : "Bromine in a vial.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/bromine.php" }
@@ -1926,7 +1926,7 @@
     ],
     "images" : [
       {
-        "file" : "kr.jpg",
+        "file" : "kr-190.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: krypton Kr. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Krypton_discharge_tube.jpg" }
@@ -1979,7 +1979,7 @@
     ],
     "images" : [
       {
-        "file" : "rb.jpg",
+        "file" : "rb-190.jpg",
         "description" : "Rubidium metal ampoule 99.99%+.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -2036,7 +2036,7 @@
     ],
     "images" : [
       {
-        "file" : "sr.jpg",
+        "file" : "sr-190.jpg",
         "description" : "Strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Strontium_destilled_crystals.jpg" }
@@ -2088,7 +2088,7 @@
     ],
     "images" : [
       {
-        "file" : "y.jpg",
+        "file" : "y-190.jpg",
         "description" : "Ultra pure yttrium crystal. Original size in cm: 2 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/yttrium-2.jpg" }
@@ -2142,7 +2142,7 @@
     ],
     "images" : [
       {
-        "file" : "zr.jpg",
+        "file" : "zr-190.jpg",
         "description" : "Purest zirconium 99.97%, two samples of crystal bar showing different surface textures, made by crystal bar process, as well as a highly pure (99,95 % = 3N5) 1 cm3 zirconium cube for comparison. The metal piece-photo was taken on a white glass plate.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Zirconium_crystal_bar_and_1cm3_cube.jpg" }
@@ -2194,7 +2194,7 @@
     ],
     "images" : [
       {
-        "file" : "nb.jpg",
+        "file" : "nb-190.jpg",
         "description" : "Niobium bead, slightly oxidized. Original size in cm: 0.6 x 0.6.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/niobium.php" }
@@ -2248,7 +2248,7 @@
     ],
     "images" : [
       {
-        "file" : "mo.jpg",
+        "file" : "mo-190.jpg",
         "description" : "Pure molybdenum crystal, about 20 grams. Original size in cm: 1.5 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/molybdenum.php" }
@@ -2300,7 +2300,7 @@
     ],
     "images" : [
       {
-        "file" : "tc.jpg",
+        "file" : "tc-190.jpg",
         "description" : "A piece of technetium.",
         "license" : "pd",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/technetium.php" }
@@ -2354,7 +2354,7 @@
     ],
     "images" : [
       {
-        "file" : "ru.jpg",
+        "file" : "ru-190.jpg",
         "description" : "One half of a high-purity (99.99%), electron-beam-remelted ruthenium bar. Size ca. 40 × 15 × 10 mm, weight ca. 44 g.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Ruthenium_a_half_bar.jpg" }
@@ -2406,7 +2406,7 @@
     ],
     "images" : [
       {
-        "file" : "rh.jpg",
+        "file" : "rh-190.jpg",
         "description" : "Pure rhodium bead, 1 gram. Original size in cm: 0.5.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhodium.php" }
@@ -2458,7 +2458,7 @@
     ],
     "images" : [
       {
-        "file" : "pd.jpg",
+        "file" : "pd-190.jpg",
         "description" : "Palladium crystal, about 1 gram. Original size in cm: 0.5 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/palladium-2.jpg" }
@@ -2510,7 +2510,7 @@
     ],
     "images" : [
       {
-        "file" : "ag.jpg",
+        "file" : "ag-190.jpg",
         "description" : "Pieces of silver, 3 grams, the biggest piece is 1 cm long.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/silver.php" }
@@ -2562,7 +2562,7 @@
     ],
     "images" : [
       {
-        "file" : "cd.jpg",
+        "file" : "cd-190.jpg",
         "description" : "Pure cadmium.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cadmium.php" }
@@ -2614,7 +2614,7 @@
     ],
     "images" : [
       {
-        "file" : "in.jpg",
+        "file" : "in-190.jpg",
         "description" : "Ductile indium wire with a thickness of about 3mm.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Indium_wire.jpg" }
@@ -2666,7 +2666,7 @@
     ],
     "images" : [
       {
-        "file" : "sn.jpg",
+        "file" : "sn-190.jpg",
         "description" : "Blob of tin. 3 x 3 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tin.php" }
@@ -2718,7 +2718,7 @@
     ],
     "images" : [
       {
-        "file" : "sb.jpg",
+        "file" : "sb-190.jpg",
         "description" : "Antimony crystal, 2 grams, 1 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/antimony.php" }
@@ -2770,7 +2770,7 @@
     ],
     "images" : [
       {
-        "file" : "te.jpg",
+        "file" : "te-190.jpg",
         "description" : "Metallic tellerium. 3.5cm diameter.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tellurium.php" }
@@ -2822,7 +2822,7 @@
     ],
     "images" : [
       {
-        "file" : "i.jpg",
+        "file" : "i-190.jpg",
         "description" : "Iodine.",
         "license" : null,
         "attribution": { "name" : "IOCHEM Corporation", "url" : "http://www.iochem.net/Iodine/Iodine.html" }
@@ -2874,7 +2874,7 @@
     ],
     "images" : [
       {
-        "file" : "xe.jpg",
+        "file" : "xe-190.jpg",
         "description" : " Spectrum = gas discharge tube: the noble gas: xenon Xe. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Xenon_discharge_tube.jpg" }
@@ -2926,7 +2926,7 @@
     ],
     "images" : [
       {
-        "file" : "cs.jpg",
+        "file" : "cs-190.jpg",
         "description" : "Caesium metal ampoule 99.99%+.",
         "license" : "cc-by.3.0",
         "attribution": {
@@ -2981,7 +2981,7 @@
     ],
     "images" : [
       {
-        "file" : "ba.jpg",
+        "file" : "ba-190.jpg",
         "description" : "Pure barium in protective argon gas atmosphere.",
         "license" : "pd",
         "attribution": { "name" : "Matthias Zepper", "url" : "https://commons.wikimedia.org/wiki/File:Barium_unter_Argon_Schutzgas_Atmosph%C3%A4re.jpg" }
@@ -3033,7 +3033,7 @@
     ],
   "images" : [
     {
-      "file" : "la.jpg",
+      "file" : "la-190.jpg",
       "description" : "1.5 grams pure lanthanum. Original size in cm: 1 x 1.",
       "license" : "cc-by.3.0",
       "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lanthanum-2.jpg" }
@@ -3083,7 +3083,7 @@
     ],
     "images" : [
       {
-        "file" : "ce.jpg",
+        "file" : "ce-190.jpg",
         "description" : "Cerium under argon, 1.5 grams. Original size in cm: 1 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/cerium.php" }
@@ -3135,7 +3135,7 @@
     ],
     "images" : [
       {
-        "file" : "pr.jpg",
+        "file" : "pr-190.jpg",
         "description" : "Praseodymium pieces under argon, 1.5 grams. Original size in cm: 0.5 - 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/praseodymium.php" }
@@ -3187,7 +3187,7 @@
     ],
     "images" : [
       {
-        "file" : "nd.jpg",
+        "file" : "nd-190.jpg",
         "description" : "Neodymium under argon, 5 grams. Original length of the large piece in cm: 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/neodymium.php" }
@@ -3287,7 +3287,7 @@
     ],
     "images" : [
       {
-        "file" : "sm.jpg",
+        "file" : "sm-190.jpg",
         "description" : "Sublimated samarium, 2 grams. Original size in cm: 0.8 x 1.5.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/samarium.php" }
@@ -3339,7 +3339,7 @@
     ],
     "images" : [
       {
-        "file" : "eu.jpg",
+        "file" : "eu-190.jpg",
         "description" : "Weakly oxidized europium, hence slightly yellowish. 1.5 grams, large piece 0.6 x 1.6 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/europium.php" }
@@ -3391,7 +3391,7 @@
     ],
     "images" : [
       {
-        "file" : "gd.jpg",
+        "file" : "gd-190.jpg",
         "description" : "Ultra pure amorphous gadolinium, 12 grams. Original size in cm: 1.5 x 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/gadolinium.php" }
@@ -3443,7 +3443,7 @@
     ],
     "images" : [
       {
-        "file" : "tb.jpg",
+        "file" : "tb-190.jpg",
         "description" : "Chunk of terbium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Terbium-croprotated.jpg" }
@@ -3495,7 +3495,7 @@
     ],
     "images" : [
       {
-        "file" : "dy.jpg",
+        "file" : "dy-190.jpg",
         "description" : "Dysprosium dendrites. Original size in cm: 2 x 2.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/dysprosium.php" }
@@ -3547,7 +3547,7 @@
     ],
     "images" : [
       {
-        "file" : "ho.jpg",
+        "file" : "ho-190.jpg",
         "description" : "Holmium, 17 grams. Original size in cm: 1.5 x 2.5.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/holmium.php" }
@@ -3599,7 +3599,7 @@
     ],
     "images" : [
       {
-        "file" : "er.jpg",
+        "file" : "er-190.jpg",
         "description" : "Chunk of erbium.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Erbium-crop.jpg" }
@@ -3651,7 +3651,7 @@
     ],
     "images" : [
       {
-        "file" : "tm.jpg",
+        "file" : "tm-190.jpg",
         "description" : "Thulium, sublimed-dendritic, high purity 99.99 % Tm/TREM.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Thulium_sublimed_dendritic_and_1cm3_cube.jpg" }
@@ -3705,7 +3705,7 @@
     ],
     "images" : [
       {
-        "file" : "yb.jpg",
+        "file" : "yb-190.jpg",
         "description" : "Ytterbium, 0.5 x 1 cm.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/ytterbium.php" }
@@ -3757,7 +3757,7 @@
     ],
     "images" : [
       {
-        "file" : "lu.jpg",
+        "file" : "lu-190.jpg",
         "description" : "Piece of lutetium, 3 grams. Original size in cm: 1 x 1.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lutetium.php" }
@@ -3811,7 +3811,7 @@
     ],
     "images" : [
       {
-        "file" : "hf.jpg",
+        "file" : "hf-190.jpg",
         "description" : "Hafnium turnings, >99.9% pure, used for evaporating onto glass as HfO2 to create multi-layer dielectric thin film optics in conjucntion with silica layers.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Deglr6328", "url" : "https://commons.wikimedia.org/wiki/File:Hafnium_bits.jpg" }
@@ -3864,7 +3864,7 @@
     ],
     "images" : [
       {
-        "file" : "ta.jpg",
+        "file" : "ta-190.jpg",
         "description" : "Single piece of tantalum, each about 1 cm in size. ",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tantalum.php" }
@@ -3918,7 +3918,7 @@
     ],
     "images" : [
       {
-        "file" : "w.jpg",
+        "file" : "w-190.jpg",
         "description" : "Tungsten rod with oxidized surface, 80 grams. Original size in cm: 1.3 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/tungsten.php" }
@@ -3970,7 +3970,7 @@
     ],
     "images" : [
       {
-        "file" : "rh.jpg",
+        "file" : "rh-190.jpg",
         "description" : "Small rhenium bead.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhenium.php" }
@@ -4022,7 +4022,7 @@
     ],
     "images" : [
       {
-        "file" : "os.jpg",
+        "file" : "os-190.jpg",
         "description" : "Cluster of osmium crystals grown by chemical vapor transport.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "", "url" : "https://commons.wikimedia.org/wiki/File:Osmium_cluster.jpg" }
@@ -4074,7 +4074,7 @@
     ],
     "images" : [
       {
-        "file" : "ir.jpg",
+        "file" : "ir-190.jpg",
         "description" : "Pieces of pure iridium.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/iridium.php" }
@@ -4126,7 +4126,7 @@
     ],
     "images" : [
       {
-        "file" : "pt.jpg",
+        "file" : "pt-190.jpg",
         "description" : "Two platinum crystals, each 1 cm big, together about 1 gram.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/platinum.php" }
@@ -4178,7 +4178,7 @@
     ],
     "images" : [
       {
-        "file" : "au.jpg",
+        "file" : "au-190.jpg",
         "description" : "5g gold bar.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/gold.php" }
@@ -4230,7 +4230,7 @@
     ],
     "images" : [
       {
-        "file" : "hg.jpg",
+        "file" : "hg-190.jpg",
         "description" : "Mercury.",
         "license" : null,
         "attribution": { "name" : "Britannica Online for Kids. Web", "url" : "http://kids.britannica.com/comptons/art-187093" }
@@ -4282,7 +4282,7 @@
     ],
     "images" : [
       {
-        "file" : "tl.jpg",
+        "file" : "tl-190.jpg",
         "description" : "Pieces of very pure thallium in glass ampoule under argon.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "W. Oelen", "url" : "https://commons.wikimedia.org/wiki/File:Thallium_pieces_in_ampoule.jpg" }
@@ -4334,7 +4334,7 @@
     ],
     "images" : [
       {
-        "file" : "pb.jpg",
+        "file" : "pb-190.jpg",
         "description" : "Two pieces of lead, 11 grams, 1 x 1.5 cm each.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lead.php" }
@@ -4386,7 +4386,7 @@
     ],
     "images" : [
       {
-        "file" : "bi.jpg",
+        "file" : "bi-190.jpg",
         "description" : "Bismuth crystal.",
         "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Bismuth_crystal_macro.jpg" }
@@ -4678,7 +4678,7 @@
     ],
     "images" : [
       {
-        "file" : "ac.jpg",
+        "file" : "ac-190.jpg",
         "description" : "Actinium-225 samples held in two v-vials.",
         "license" : null,
         "attribution": { "name" : "US Department of Energy", "url" : "http://science.energy.gov/np/highlights/2012/np-2012-07-a/" }
@@ -4823,7 +4823,7 @@
     ],
     "images" : [
       {
-        "file" : "u.jpg",
+        "file" : "u-190.jpg",
         "description" : "Depleted uranium 238.",
         "license" : "pd",
         "attribution": { "name" : "", "url" : "" }
@@ -4877,7 +4877,7 @@
     ],
     "images" : [
       {
-        "file" : "np.jpg",
+        "file" : "np-190.jpg",
         "description" : "Neptunium 237 sphere (6 kg).",
         "license" : "pd",
         "attribution": { "name" : "", "url" : "" }
@@ -4933,7 +4933,7 @@
     ],
     "images" : [
       {
-        "file" : "pu.jpg",
+        "file" : "pu-190.jpg",
         "description" : "Plutonium, a silvery, very heavy and hard metal.",
         "license" : "pd",
         "attribution": { "name" : "U.S. Department of Energy,", "url" : "" }
@@ -4988,7 +4988,7 @@
     ],
     "images" : [
       {
-        "file" : "am.jpg",
+        "file" : "am-190.jpg",
         "description" : "A small disc of Am-241 under the microscope.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Bionerd", "url" : "https://commons.wikimedia.org/wiki/File:Americium_microscope.jpg" }
@@ -5091,7 +5091,7 @@
     ],
     "images" : [
       {
-        "file" : "bk.jpg",
+        "file" : "bk-190.jpg",
         "description" : " It took 250 days to make enough berkelium, shown here (in dissolved state), to synthesize element 117.",
         "license" : "pd",
         "attribution": { "name" : "ORNL, Department of Energy", "url" : "https://commons.wikimedia.org/wiki/File:Berkelium.jpg" }
@@ -5146,7 +5146,7 @@
     ],
     "images" : [
       {
-        "file" : "cf.jpg",
+        "file" : "cf-190.jpg",
         "description" : "A very small disc of californium.",
         "license" : "pd",
         "attribution": { "name" : "United States Department of Energy", "url" : "https://commons.wikimedia.org/wiki/File:Californium.jpg" }
@@ -5200,7 +5200,7 @@
     ],
     "images" : [
       {
-        "file" : "es.jpg",
+        "file" : "es-190.jpg",
         "description" : " Quartz vial (9 mm diameter) containing ~300 micrograms of Es-253 solid. The illumination produced is a result of the intense radiation from Es-253, which alpha decays (6.6 MeV, 1000 watts/g) with a half-life of 20.5 days.",
         "license" : "pd",
         "attribution": { "name" : "US Department of Energy.", "url" : "https://commons.wikimedia.org/wiki/File:Einsteinium.jpg" }
