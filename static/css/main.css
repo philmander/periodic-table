@@ -22,7 +22,7 @@ html {
     font-size: 14px;
     line-height: 1.2em;
     background: #737373;
-    color: #585858;
+    color: #393939
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -70,7 +70,7 @@ kbd {
     background: #d6d6d6;
 }
 #zoom a:active {
-    color: #585858;
+    color: #393939
 }
 #zoom i {
     display: none;
@@ -236,7 +236,7 @@ h1 {
     border-collapse: collapse;
     table-layout: fixed;
     margin: 1rem 0;
-    color: #585858;
+    color: #393939;
     background: #fff;
     width: 100%;
     box-shadow: 0 0 6px #717171;
@@ -300,7 +300,7 @@ td > div {
     height: 75px;
 }
 .elements > tbody > tr > th {
-    color: #585858;
+    color: #393939;
     vertical-align: middle;
     text-align: center;
     font-weight: bold;
@@ -347,7 +347,7 @@ td > div {
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.2;
-    text-shadow: -1px -1px 0 #585858, 1px -1px 0 #585858, -1px 1px 0 #585858, 1px 1px 0 #585858;
+    text-shadow: -1px -1px 0 #393939, 1px -1px 0 #393939, -1px 1px 0 #393939, 1px 1px 0 #393939;
     letter-spacing: 1px;
 }
 [zoom="2"] .s {
@@ -403,8 +403,8 @@ td > div {
 .details {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.8);
-    color: #585858;
+    background: #fdfdfd;
+    color: #393939;
     margin-top: 1rem;
 }
 .details tr {
@@ -433,22 +433,22 @@ td > div {
 .tabs-nav li {
     padding: 6px;
     display: inline-block;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
     margin-top: 1rem;
 }
 .tabs-nav li.active {
-    background: rgba(255, 255, 255, 0.8);
+    background: #fdfdfd;
 }
 .tabs-nav a {
     text-decoration: none;
-    color: #585858;
+    color: #393939
 }
 .tabs-content {
     height: 400px;
     padding: 8px;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fdfdfd;
     overflow: auto;
-    color: #585858;
+    color: #393939
 }
 .tabs-content-pane {
     display: none;
