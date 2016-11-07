@@ -540,7 +540,7 @@
       {
         "file" : "ne.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: neon Ne. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
-        "license" : "cc-by-nc.3.0",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": {
           "name" : "Alchemist-hp",
           "url" : "https://en.wikipedia.org/wiki/Oxygen#/media/File:Oxygen_discharge_tube.jpg"
@@ -766,7 +766,7 @@
         "file" : "si.jpg",
         "description" : "Close up photo of a piece of purified silicon.",
         "license" : "pd",
-        "attribution": { "name" : "", "url" : "https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg" }
+        "attribution": { "name" : "Enricoros", "url" : "https://commons.wikimedia.org/wiki/File:SiliconCroda.jpg" }
       }
     ],
     "info": "Jöns Jacob Berzelius is generally credited with the discovery of silicon in 1824. Deville prepared crystalline silicon in 1854, a second allotropic form of the element."
@@ -819,7 +819,7 @@
     ],
     "images" : [
       {
-        "file" : "p.jog",
+        "file" : "p.jpg",
         "description" : "Red phosphorus as powder.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/phosphorus.php" }
@@ -872,7 +872,7 @@
     "images" : [
       {
         "file" : "s.jpg",
-        "description" : " A sample of sulfur.",
+        "description" : "A sample of sulfur.",
         "license" : "pd",
         "attribution": {
           "name" : "Ben Mills",
@@ -984,7 +984,7 @@
       {
         "file" : "ar.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: argon Ar. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
-        "license" : "cc-by-nc.3.0",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Argon_discharge_tube.jpg" }
       }
     ],
@@ -1141,7 +1141,7 @@
     ],
     "images" : [
       {
-        "file" : "sc",
+        "file" : "sc.jpg",
         "description" : "Scandium, sublimed-dendritic, high purity 99.998 % Sc/TREM. As well as an argon arc remelted 1 cm3 scandium cube for comparison.",
         "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-3.0", "url" : "https://commons.wikimedia.org/wiki/File:Scandium_sublimed_dendritic_and_1cm3_cube.jpg" }
@@ -1351,7 +1351,7 @@
       {
         "file" : "mn.jpg",
         "description" : "Manganese.",
-        "license" : "cc-by-sa.3.0.jpg",
+        "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Tomihahndorf", "url" : "https://commons.wikimedia.org/wiki/File:Mangan_1-crop.jpg" }
       }
     ],
@@ -1403,7 +1403,7 @@
       {
         "file" : "fe.jpg",
         "description" : "Iron meteorite.",
-        "license" : "?",
+        "license" : null,
         "attribution": { "name" : "Pics About Space", "url" : "http://pics-about-space.com/iron-asteroids?p=1#img425247776858823364" }
       }
     ],
@@ -1714,7 +1714,7 @@
     ],
     "images" : [
       {
-        "file" : "ge.jog",
+        "file" : "ge.jpg",
         "description" : "Ultra pure chunk of polycrystalline germanium, 12 grams. Original size in cm: 2 x 3.",
         "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/germanium.php" }
@@ -1928,7 +1928,7 @@
       {
         "file" : "kr.jpg",
         "description" : "Spectrum = gas discharge tube: the noble gas: krypton Kr. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
-        "license" : "cc-by-nc.3.0",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Krypton_discharge_tube.jpg" }
       }
     ],
@@ -2038,7 +2038,7 @@
       {
         "file" : "sr.jpg",
         "description" : "Strontium as synthetic crystals, sealed under argon in a glass ampoule, purity (99.95 %). Size of the image ca. 3cm * 4,7cm.",
-        "license" : "cc-by-nc.3.0",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Strontium_destilled_crystals.jpg" }
       }
     ],
@@ -2300,7 +2300,7 @@
     ],
     "images" : [
       {
-        "file" : "tc.jog",
+        "file" : "tc.jpg",
         "description" : "A piece of technetium.",
         "license" : "pd",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/technetium.php" }
@@ -2356,7 +2356,7 @@
       {
         "file" : "ru.jpg",
         "description" : "One half of a high-purity (99.99%), electron-beam-remelted ruthenium bar. Size ca. 40 × 15 × 10 mm, weight ca. 44 g.",
-        "license" : "cc-by-nc-nd.jpg",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Ruthenium_a_half_bar.jpg" }
       }
     ],
@@ -2408,7 +2408,7 @@
       {
         "file" : "rh.jpg",
         "description" : "Pure rhodium bead, 1 gram. Original size in cm: 0.5.",
-        "license" : "",
+        "license" : "cc-by.3.0",
         "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/rhodium.php" }
       }
     ],
@@ -2616,7 +2616,7 @@
       {
         "file" : "in.jpg",
         "description" : "Ductile indium wire with a thickness of about 3mm.",
-        "license" : "cc-by-sa.jpg",
+        "license" : "cc-by-sa.3.0",
         "attribution": { "name" : "Dschwen", "url" : "https://commons.wikimedia.org/wiki/File:Indium_wire.jpg" }
       }
     ],
@@ -2824,7 +2824,7 @@
       {
         "file" : "i.jpg",
         "description" : "Iodine.",
-        "license" : "?",
+        "license" : null,
         "attribution": { "name" : "IOCHEM Corporation", "url" : "http://www.iochem.net/Iodine/Iodine.html" }
       }
     ],
@@ -2876,7 +2876,7 @@
       {
         "file" : "xe.jpg",
         "description" : " Spectrum = gas discharge tube: the noble gas: xenon Xe. Used with 1,8kV, 18mA, 35kHz. ≈8\" length.",
-        "license" : "cc-by-nc.3.0",
+        "license" : "cc-by-nc-nd.3.0",
         "attribution": { "name" : "Alchemist-hp", "url" : "https://commons.wikimedia.org/wiki/File:Xenon_discharge_tube.jpg" }
       }
     ],
@@ -3035,7 +3035,7 @@
     {
       "file" : "la.jpg",
       "description" : "1.5 grams pure lanthanum. Original size in cm: 1 x 1.",
-      "license" : "cc-by.jpg",
+      "license" : "cc-by.3.0",
       "attribution": { "name" : "Images of Elements", "url" : "http://images-of-elements.com/lanthanum-2.jpg" }
     }
   ],
@@ -4232,7 +4232,7 @@
       {
         "file" : "hg.jpg",
         "description" : "Mercury.",
-        "license" : "?",
+        "license" : null,
         "attribution": { "name" : "Britannica Online for Kids. Web", "url" : "http://kids.britannica.com/comptons/art-187093" }
       }
     ],
@@ -4680,7 +4680,7 @@
       {
         "file" : "ac.jpg",
         "description" : "Actinium-225 samples held in two v-vials.",
-        "license" : "?",
+        "license" : null,
         "attribution": { "name" : "US Department of Energy", "url" : "http://science.energy.gov/np/highlights/2012/np-2012-07-a/" }
       }
     ],

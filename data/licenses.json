@@ -1,23 +1,32 @@
 [
   {
     "id" : "cc-by.3.0",
+    "shortName" : "CC BY 3.0",
     "name" : "Creative Commons Attribution 3.0 Unported License",
     "url" : "http://creativecommons.org/licenses/by/3.0/"
   }, {
     "id" : "cc-by-sa.3.0",
+    "shortName" : "CC BY SA 3.0",
     "name" : "Creative Commons Attribution-ShareAlike 3.0 Unported",
     "url" : "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
   }, {
     "id" : "fal",
+    "shortName" : "FAL",
     "name" : "Free Art License",
     "url" : "http://artlibre.org/licence/lal/en/"
   }, {
     "id" : "cc-by-nc-nd.3.0",
+    "shortName" : "CC BY NC ND 3.0",
     "name" : "Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported",
     "url" : "https://creativecommons.org/licenses/by-nc-nd/3.0/"
   },
   {
     "id" : "pd",
+    "shortName" : "Public Domain",
     "name" : "Public Domain"
+  },
+  {
+    "id" : "?",
+    "shortName" : "Unknown license"
   }
 ]
