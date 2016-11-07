@@ -4,13 +4,13 @@
             <li class=active><a href=#history-{{element.symbol}}>Info</a></li>
             <li><a href=#video-{{element.symbol}}>Video</a></li>
             <li><a href=#wiki-{{element.symbol}}>Wikipedia</a></li>
-            <li><a href=#other-{{element.symbol}}>More resources</a></li>
+            <li><a href=#other-{{element.symbol}}>More</a></li>
         </ul>
         <div class=tabs-content>
             <div id=history-{{element.symbol}} class="tabs-content-pane active">
                 {{#if element.images.length}}
                     <figure class="image">
-                        <img src="/images/{{element.images.0.file}}" width="auto" height="200" alt="Image of {{element.name}}">
+                        <img src="/images/{{element.images.0.file}}" width="auto" height="190" alt="Image of {{element.name}}">
                         <figcaption>
                             <p class="attr"><small>
                                 By <a href="{{element.images.0.attribution.url}}">{{element.images.0.attribution.name}}</a>
