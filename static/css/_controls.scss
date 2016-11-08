@@ -29,6 +29,21 @@
 #zoom i {
   display: none;
 }
+
+[zoom="0"] #zoom-out {
+  color: lighten($text-color, 50);
+}
+[zoom="4"] #zoom-in {
+  color: lighten($text-color, 50);
+}
+[zoom="0"] #zoom-out:focus,
+[zoom="0"] #zoom-out:hover {
+  background: #f5f5f5;
+}
+[zoom="4"] #zoom-in:focus,
+[zoom="4"] #zoom-in:hover {
+  background: #f5f5f5;
+}
 /* Filters -----------------------------------------------------------------------------------------------------------*/
 
 #open {

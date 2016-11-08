@@ -30,6 +30,7 @@
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
+        toggleFilters: document.querySelector('#toggle-filters'),
         filters: document.querySelector('#filters'),
         zoom: document.querySelector('[zoom]'),
         tables: document.querySelector('#tables'),
@@ -90,6 +91,10 @@
             model.zoom = model.zoom + mod;
             view.zoomTo(mod, point);
         }
+    };
+    model.zoomTo = function(to, point) {
+        var mod = to - model.zoom;
+        model.zoomWith(mod, point)
     };
     model.addFieldsForElement = function(data) {
         var el = model.elements[data.symbol];
@@ -192,9 +197,13 @@
         var resourcesRule = cssRulesArray.filter(function(rule) {
             return rule.selectorText === '[zoom="4"] .r';
         })[0];
-        detailsRule.style.width = detailsWidth;
-        resourcesRule.style.width = detailsWidth;
-
+        
+        if(detailsRule && resourcesRule) {
+            detailsRule.style.width = detailsWidth;
+            resourcesRule.style.width = detailsWidth;            
+        } else {
+            console.warn('Could not find rules to update for fit-to-screen');
+        }
     };
 
     view.tempChanged = function () {
@@ -303,9 +312,9 @@
         }
     };
 
-    view.applyFilter = function(type, value, ammend) {
+    view.applyFilter = function(type, value, amend) {
 
-        if(!ammend) {
+        if(!amend) {
             if(!value || model.filter === type + '_' + value) {
                 delete model.filter;
                 nodes.tables.classList.remove(css.FILTERING);
@@ -337,7 +346,7 @@
                     (el.s.textContent.toLowerCase().indexOf(value[j]) === 0 ||
                      el.s.getAttribute('title').toLowerCase().indexOf(value[j]) === 0)
                 ) || (
-                    el[type] === value[j]
+                    el[type] == value[j]
                 );
 
                 if(match) {
@@ -509,6 +518,42 @@
                 ev.preventDefault();
             }
         };
+        window.onkeypress = function(ev) {
+
+            function getCenterPoint() {
+                return {
+                    x: window.innerWidth / 2,
+                    y: window.innerHeight / 2
+                };
+            }
+
+            if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
+                model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 45) { //-
+                model.zoomWith(-1, getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 61) { //=
+                model.zoomWith(1, getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 102) { //f
+                if(nodes.toggleFilters.checked) {
+                    nodes.toggleFilters.checked = false;
+                } else {
+                    nodes.toggleFilters.checked = true;
+                    nodes.temp.focus();
+                }
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 104) { //h
+                view.init();
+                model.zoomTo(1, getCenterPoint());
+                ev.preventDefault();
+            }
+        }
     };
 
     function init() {

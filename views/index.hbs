@@ -13,13 +13,13 @@
 <body zoom={{zoom}}>
     <aside>
         <div id=zoom>
-            <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in">+<i> Zoom in</i></a>
-            <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out">−<i> Zoom Out</i></a>
+            <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
+            <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out (-)" id=zoom-out>−<i> Zoom out</i></a>
         </div>
 
         <input type=checkbox id=toggle-filters>
         <div id=filters>
-            <label for=toggle-filters>Filters</label>
+            <label for=toggle-filters title="Toggle filters (f)">Filters</label>
             <div>
                 <fieldset id=filter-temp>
                     <label>State @ </label>

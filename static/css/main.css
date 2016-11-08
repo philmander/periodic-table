@@ -69,6 +69,20 @@ kbd {
 #zoom i {
   display: none; }
 
+[zoom="0"] #zoom-out {
+  color: #b9b9b9; }
+
+[zoom="4"] #zoom-in {
+  color: #b9b9b9; }
+
+[zoom="0"] #zoom-out:focus,
+[zoom="0"] #zoom-out:hover {
+  background: #f5f5f5; }
+
+[zoom="4"] #zoom-in:focus,
+[zoom="4"] #zoom-in:hover {
+  background: #f5f5f5; }
+
 /* Filters -----------------------------------------------------------------------------------------------------------*/
 #open {
   font-weight: bold;
