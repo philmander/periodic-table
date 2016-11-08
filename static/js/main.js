@@ -514,12 +514,13 @@
         }, 100);
         //prevent space scrolling
         window.onkeydown = function(ev) {
-            if(ev.keyCode === 32 && ev.target === document.body) {
+            if(ev.keyCode === 32) {
                 ev.preventDefault();
             }
         };
         window.onkeypress = function(ev) {
 
+            var el = ev.target;
             function getCenterPoint() {
                 return {
                     x: window.innerWidth / 2,
@@ -552,6 +553,11 @@
                 view.init();
                 model.zoomTo(1, getCenterPoint());
                 ev.preventDefault();
+            }
+            if(ev.keyCode === 13 && el.tagName === 'TH') {
+                var clickEvent = document.createEvent('Events');
+                clickEvent.initEvent('click', true, false);
+                el.dispatchEvent(clickEvent);
             }
         }
     };

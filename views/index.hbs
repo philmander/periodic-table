@@ -98,12 +98,12 @@
                 <tr>
                     <th></th>
                     {{#range 1 19}}
-                        <th group>{{#if index}}{{index}}{{/if}}</th>
+                        <th group tabindex=0>{{#if index}}{{index}}{{/if}}</th>
                     {{/range}}
                 </tr>
                 {{#range 1 8}}
                     <tr>
-                        <th period>{{index}}</th>
+                        <th period tabindex=0>{{index}}</th>
                         {{#range 1 19}}
                             {{#with (getElementAtPosition ../index index)}}
                                 <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}} y={{yearDiscovered}}>
@@ -135,16 +135,16 @@
                 {{/range}}
                 <tr>
                     <th></th>
-                    <th block colspan=2>s</th>
-                    <th block colspan=10>d</th>
-                    <th block colspan=6>p</th>
+                    <th block tabindex=0 colspan=2>s</th>
+                    <th block tabindex=0 colspan=10>d</th>
+                    <th block tabindex=0 colspan=6>p</th>
                 </tr>
             </table>
 
             <table class="elements">
                 <tr>
-                    <th block rowspan=2>f</th>
-                    <th group=l colspan=2>* Lanthanides</th>
+                    <th block tabindex=0 rowspan=2>f</th>
+                    <th group=l tabindex=0 colspan=2>* Lanthanides</th>
                     {{#each (lanthanides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}
@@ -153,7 +153,7 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <th group=a colspan=2>** Actinides</th>
+                    <th group=a tabindex=0 colspan=2>** Actinides</th>
                     {{#each (actinides)}}
                         <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}" y={{yearDiscovered}}>
                             {{> element element=this zoom=../zoom}}
