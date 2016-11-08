@@ -309,19 +309,21 @@ td > div {
 }
 
 .tabs-nav li {
-  padding: 6px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.6);
   margin-top: 1rem;
 }
-.tabs-nav li.active {
+.tabs-nav li.active a {
   background: #fdfdfd;
 }
 .tabs-nav a {
   display: block;
   text-decoration: none;
   color: $text-color;
-  padding: 0 12px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.tabs-nav a:focus {
+  background: rgba(255, 255, 255, 0.8);
 }
 .tabs-content {
   height: 400px;
