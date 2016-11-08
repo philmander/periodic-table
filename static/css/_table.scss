@@ -22,7 +22,7 @@ h1 {
   line-height: 55px;
 }
 [zoom="3"] h1 {
-  line-height: 57px;
+  line-height: 58px;
 }
 [zoom="4"] h1 {
   line-height: 74px;
@@ -113,7 +113,7 @@ td > div {
   height: 55px;
 }
 [zoom="3"] .elements > tbody > tr > td {
-  height: 57px;
+  height: 58px;
 }
 [zoom="4"] .elements > tbody > tr > td {
   height: 74px;
@@ -200,9 +200,11 @@ td > div {
 [zoom="2"] .an {
   font-size: 1.2rem;
 }
-[zoom="3"] .an,
-[zoom="4"] .an {
+[zoom="3"] .an {
   font-size: 1.6rem;
+}
+[zoom="4"] .an {
+  font-size: 1.8rem;
 }
 
 /* atomic mass */
@@ -216,10 +218,10 @@ td > div {
   visibility: hidden;
 }
 [zoom="3"] .am {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 [zoom="4"] .am {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* name */
