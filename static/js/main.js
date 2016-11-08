@@ -549,7 +549,7 @@
                 }
                 ev.preventDefault();
             }
-            if(ev.keyCode === 104) { //h
+            if(ev.keyCode === 114) { //r
                 view.init();
                 model.zoomTo(1, getCenterPoint());
                 ev.preventDefault();

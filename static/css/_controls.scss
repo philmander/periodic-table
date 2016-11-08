@@ -44,6 +44,88 @@
 [zoom="4"] #zoom-in:hover {
   background: #f5f5f5;
 }
+
+
+/* Help -----------------------------------------------------------------------------------------------------------*/
+
+#toggle-help {
+  position: fixed;
+  visibility: hidden;
+}
+#toggle-help:checked + #help {
+  opacity: 1;
+  z-index: 2;
+}
+#help-link {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  z-index: 2;
+  background: #f5f5f5;
+  box-shadow: 0 -1px 12px #717171;
+  overflow: hidden;
+  text-align: center;
+  line-height: 28px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#help {
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  right: 48px;
+  width: 400px;
+  background: #f5f5f5;
+  box-shadow: 0 -1px 12px #717171;
+  z-index: -1;
+  padding: 1rem;
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  @media (max-width: 500px) {
+    width: auto;
+    left: 10px;
+  }
+
+  p,
+  dl {
+    margin-top: 1em;
+    line-height: 1.5;
+    @include clearfix();
+  }
+
+  dt {
+    float: left;
+    clear: left;
+    padding: 2px;
+    line-height: 1.5;
+    min-width: 130px;
+  }
+  dd {
+    float: left;
+    line-height: 1.5;
+    padding: 2px;
+  }
+  hr {
+    margin: 1em auto;
+    clear: both;
+  }
+
+  kbd {
+    display: inline-block;
+    border-radius: 4px;
+    background: #eaeaea;
+    padding: 2px;
+    line-height: 1;
+    border: 1px solid darken(#eaeaea, 10%);
+  }
+}
+
 /* Filters -----------------------------------------------------------------------------------------------------------*/
 
 #open {
@@ -54,7 +136,7 @@
   position: fixed;
   top: 82px;
   right: 10px;
-  bottom: 10px;
+  bottom: 49px;
   width: 28px;
   display: none;
   z-index: 2;
@@ -66,8 +148,7 @@
 }
 #toggle-filters {
   position: fixed;
-  right: 20px;
-  top: 82px;
+  visibility: hidden;
 }
 #toggle-filters + #filters > div {
   display: none;
