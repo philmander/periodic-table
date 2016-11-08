@@ -1,10 +1,20 @@
 <div>
-    {{#if (equal zoom 1)}}
-        {{> fields/base element=element }}
+
+    {{#if (equal zoom 0)}}
+
+        {{> fields/symbol element=element}}
+
+    {{else if (equal zoom 1)}}
+
+        {{> fields/symbol element=element}}
+
+        {{> fields/number element=element}}
 
     {{else if (equal zoom 2)}}
 
-        {{> fields/base element=element }}
+        {{> fields/symbol element=element}}
+
+        {{> fields/number element=element}}
 
         {{> fields/name element=element }}
 
@@ -12,7 +22,9 @@
 
     {{else if (equal zoom 3)}}
 
-        {{> fields/base element=element }}
+        {{> fields/symbol element=element}}
+
+        {{> fields/number element=element}}
 
         {{> fields/name element=element }}
 
@@ -22,7 +34,9 @@
 
     {{else}}
 
-        {{> fields/base element=element }}
+        {{> fields/symbol element=element}}
+
+        {{> fields/number element=element}}
 
         {{> fields/name element=element }}
 

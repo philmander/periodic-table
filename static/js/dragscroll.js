@@ -42,7 +42,6 @@
                 window.addEventListener('mousemove', container.mm = function(ev) {
                     if (pushed) {
                         scroller = el.scroller || el;
-                        console.log(scroller.scrollLeft);
 
                         var newLeft = scroller.scrollLeft - ((lastClientX * -1) + (ev.clientX));
                         var newTop = scroller.scrollTop - ((lastClientY * -1) + ( ev.clientY));

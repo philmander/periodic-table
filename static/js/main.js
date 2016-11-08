@@ -22,11 +22,6 @@
         FILTERING: 'filtering'
     };
 
-    var initScroll = {
-        x: 14400,
-        y: 7500
-    };
-
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
@@ -86,7 +81,7 @@
         model.elements = elements;
     };
     model.zoomWith = function(mod, point) {
-        if((mod < 0 && model.zoom > 1) || (mod > 0 && model.zoom < 4)) {
+        if((mod < 0 && model.zoom > 0) || (mod > 0 && model.zoom < 4)) {
             model.zoom = model.zoom + mod;
             view.zoomTo(mod, point);
         }
@@ -104,31 +99,55 @@
     view.origin = null;
     //init
     view.init = function() {
+
         var tables = nodes.tables;
         var windowWidth = window.innerWidth;
         var windowHeight = window.innerHeight;
 
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
-        nodes.wrap.style.width = '30000px';
-        nodes.wrap.style.height = '15000px';
-        tables.style.left = '14400px';
-        tables.style.top = '7500px';
+
+        var tableSize = {
+            width: rect(tables).width,
+            height: rect(tables).height,
+            offsetWidth: tables.offsetWidth,
+            offsetHeight: tables.offsetHeight
+        };
+        var wrapSize = {
+            width: 30000,
+            height: 15000
+        };
+        var initPosition = {
+            left: (wrapSize.width - tableSize.width) / 2,
+            top: (wrapSize.height - tableSize.height) / 2
+        };
+        var initScroll = (view.initScroll = {
+            left: (wrapSize.width - tableSize.width) / 2,
+            top: (wrapSize.height - tableSize.height) / 2
+        });
+
+        nodes.wrap.style.width = wrapSize.width + 'px';
+        nodes.wrap.style.height = wrapSize.height + 'px';
+
+        tables.style.left = initPosition.left + 'px';
+        tables.style.top = initPosition.top + 'px';
         tables.style.transformOrigin = '50% 50%';
 
         //enable filters
         nodes.filters.style.display = 'block';
 
         //this centers the table if it is smaller than the viewport
-        var dims = {
-            width: rect(tables).width,
-            height: rect(tables).height
-        };
+
         var scroll = {
-            x: windowWidth> dims.width ? initScroll.x - ((windowWidth- dims.width) / 2) : initScroll.x,
-            y: windowHeight> dims.height ? initScroll.y - ((windowHeight - dims.height) / 2) : initScroll.y,
+            left: windowWidth > tableSize.width ?
+                initScroll.left - ((windowWidth - tableSize.width) / 2) :
+                initPosition.left,
+
+            top: windowHeight > tableSize.height ?
+                initScroll.top - ((windowHeight - tableSize.height) / 2) : initPosition.top
         };
-        window.scrollTo(scroll.x, scroll.y);
+        window.scrollTo(scroll.left, scroll.top);
+        //window.scrollTo(initScroll.x, initScroll.y);
 
         //add header titles
         var highlightText = ' (click to toggle highlight)';
@@ -192,11 +211,9 @@
         nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
 
         //correct scroll position for transform origin
-        if(model.zoom > 1) {
-            var dx = (initScroll.x + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
-            var dy = (initScroll.y + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
-           window.scrollBy(dx, dy);
-        }
+        var dx = (view.initScroll.left + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
+        var dy = (view.initScroll.top + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
+        window.scrollBy(dx, dy);
 
         nodes.zoom.setAttribute('zoom', model.zoom);
         view.panTo(dir);
@@ -221,17 +238,11 @@
                 }
                 return toShow;
             }, []);
-        } else {
-            symbolsToShow = Object.keys(model.elements);
         }
-
         if(symbolsToFetch.length) {
             fetch('/fields?z=' + zoom + '&s=' + encodeURIComponent(JSON.stringify(symbolsToFetch)), function (data) {
                 data.forEach(model.addFieldsForElement);
-                symbolsToShow.forEach(view.updateVisibility);
             });
-        } else {
-            symbolsToShow.forEach(view.updateVisibility);
         }
     };
 
@@ -243,7 +254,6 @@
                     var wrapper = document.createElement('div');
                     wrapper.innerHTML = data[fieldNames[i]];
                     var inject = wrapper.firstChild;
-                    inject.classList.add('out');
                     node.firstElementChild.appendChild(inject);
                     model.elements[data.symbol][fieldNames[i]] = inject;
                     addTitle(model.elements[data.symbol], fieldNames[i]);
@@ -251,6 +261,9 @@
             }
         }
 
+        if(model.zoom === 1) {
+            inject(data, ['an' ]);
+        }
         if(model.zoom === 2) {
             inject(data, ['n', 'am']);
         }
@@ -259,29 +272,6 @@
         }
         if(model.zoom === 4) {
             inject(data, ['n', 'am', 'd', 'md', 'r']);
-        }
-    };
-
-    view.updateVisibility = function (symbol) {
-        var fields = [
-            { field: 'n',  zoom: 2 },
-            { field: 'am', zoom: 2 },
-            { field: 'd',  zoom: 3 },
-            { field: 'md', zoom: 4 },
-            { field: 'r', zoom: 4 }
-        ];
-        var fieldNode;
-        for(i = 0; i < fields.length; i++) {
-            fieldNode = model.elements[symbol][fields[i].field];
-            if(fieldNode) {
-                if(fields[i].zoom <= model.zoom) {
-                    fieldNode.classList.add('in');
-                    fieldNode.classList.remove('out');
-                } else {
-                    fieldNode.classList.add('out');
-                    fieldNode.classList.remove('in');
-                }
-            }
         }
     };
 

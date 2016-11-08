@@ -30,6 +30,8 @@ function getTemplate(name) {
 }
 
 const fieldTemplates = {
+    number: getTemplate('number'),
+    symbol: getTemplate('symbol'),
     name: getTemplate('name'),
     mass: getTemplate('mass'),
     details: getTemplate('details'),
@@ -123,6 +125,8 @@ app.get('/fields', (req, res, next) => {
             case 2:
                 datum.n = fields.name;
                 datum.am = fields.mass;
+            case 1: 
+                datum.an = fields.number;
         }
         return datum;
     });
