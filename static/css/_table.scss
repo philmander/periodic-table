@@ -22,10 +22,13 @@ h1 {
   line-height: 55px;
 }
 [zoom="3"] h1 {
-  line-height: 59px;
+  line-height: 57px;
 }
 [zoom="4"] h1 {
-  line-height: 75px;
+  line-height: 74px;
+  @media #{$compact} {
+    line-height: 87px;
+  }
 }
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
@@ -110,10 +113,13 @@ td > div {
   height: 55px;
 }
 [zoom="3"] .elements > tbody > tr > td {
-  height: 59px;
+  height: 57px;
 }
 [zoom="4"] .elements > tbody > tr > td {
-  height: 75px;
+  height: 74px;
+  @media #{$compact} {
+    height: 87px;
+  }
 }
 .elements > tbody > tr > th {
   color: $text-color;
@@ -255,6 +261,13 @@ td > div {
   visibility: hidden;
 }
 
+[zoom="4"] .r {
+  margin: 0 auto;
+}
+[zoom="4"] .details {
+  margin-left: auto;
+  margin-right: auto;
+}
 .details {
   width: 100%;
   border-collapse: collapse;
@@ -262,6 +275,12 @@ td > div {
   color: $text-color;
   margin-top: 1rem;
 }
+@media #{$compact} {
+  .md > .details {
+    margin-top: 0;
+  }
+}
+
 .details tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -276,9 +295,11 @@ td > div {
   text-align: right;
 }
 [zoom="4"] .details-wrap {
-  float: left;
-  width: 50%;
-  padding-right: 3px
+  @media #{$desktop} {
+    float: left;
+    width: 50%;
+    padding-right: 3px
+  }
 }
 .data-wrap + .details-wrap {
   padding-left: 3px;

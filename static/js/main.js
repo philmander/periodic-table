@@ -2,6 +2,11 @@
 
     var i, j, scrolled;
 
+    var responsiveBreakpoints = {
+        COMPACT: 690
+    };
+
+
     var documentElement = document.documentElement;
 
     var filters = { PERIOD: 'p', GROUP: 'g', BLOCK: 'b', CATEGORY: 'c', STATE: 's', YEAR: 'y', FIND: 'f'};
@@ -149,6 +154,9 @@
         window.scrollTo(scroll.left, scroll.top);
         //window.scrollTo(initScroll.x, initScroll.y);
 
+        view.fitToScreen();
+        window.addEventListener('resize', view.fitToScreen);
+
         //add header titles
         var highlightText = ' (click to toggle highlight)';
         function addCellHeaderTitle(title) {
@@ -167,6 +175,26 @@
 
         //initialize year
         nodes.year.value = model.year;
+    };
+
+    view.fitToScreen = function() {
+        var windowWidth = window.innerWidth;
+        var detailsWidth =
+            windowWidth < responsiveBreakpoints.COMPACT ?
+            (((window.innerWidth - 50) / (nodes.tables.querySelector('td').offsetWidth * 10)) * 100) + '%' :
+                '100%';
+
+        var cssRules = document.styleSheets[0].cssRules;
+        var cssRulesArray = Array.prototype.slice.call(cssRules);
+        var detailsRule = cssRulesArray.filter(function(rule) {
+            return rule.selectorText === '[zoom="4"] .details';
+        })[0];
+        var resourcesRule = cssRulesArray.filter(function(rule) {
+            return rule.selectorText === '[zoom="4"] .r';
+        })[0];
+        detailsRule.style.width = detailsWidth;
+        resourcesRule.style.width = detailsWidth;
+
     };
 
     view.tempChanged = function () {
