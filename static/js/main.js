@@ -559,7 +559,11 @@
                 clickEvent.initEvent('click', true, false);
                 el.dispatchEvent(clickEvent);
             }
-        }
+        };
+
+        window.onorientationchange = function() {
+            view.init();
+        };
     };
 
     function init() {
