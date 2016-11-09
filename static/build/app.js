@@ -95,6 +95,7 @@
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
+        toggleHelp: document.querySelector('#toggle-help'),
         toggleFilters: document.querySelector('#toggle-filters'),
         filters: document.querySelector('#filters'),
         zoom: document.querySelector('[zoom]'),
@@ -437,12 +438,16 @@
         document.onclick = function(ev) {
             var el = ev.target;
 
+            //center button
+            if(el.id === 'center') {
+                view.init();
+                model.zoomTo(1, getCenterPoint());
+                ev.preventDefault();
+            }
+
             //zoom buttons
-            if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
-                model.zoomWith(parseInt(el.getAttribute('value')), {
-                    x: window.innerWidth / 2,
-                    y: window.innerHeight / 2
-                });
+            else if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
+                model.zoomWith(parseInt(el.getAttribute('value')), getCenterPoint());
                 ev.preventDefault();
             }
 
@@ -480,6 +485,11 @@
                 }
 
                 ev.preventDefault();
+            }
+
+            //close help
+            else if(el.id === 'close-help') {
+                nodes.toggleHelp.checked = false;
             }
          };
 
@@ -541,7 +551,6 @@
             if(t1 && ev.touches.length) {
                 var t2 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
                 var end = Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2);
-                console.log(end - start)
                 model.zoomWith(end - start > 0 ? 1 : -1, {
                     x: midpoint.x,
                     y: midpoint.y
@@ -587,12 +596,6 @@
         window.onkeypress = function(ev) {
 
             var el = ev.target;
-            function getCenterPoint() {
-                return {
-                    x: window.innerWidth / 2,
-                    y: window.innerHeight / 2
-                };
-            }
 
             if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
                 model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());
@@ -682,6 +685,13 @@
         if(element[key] && titles[key]) {
             element[key].setAttribute('title', titles[key]);
         }
+    }
+
+    function getCenterPoint() {
+        return {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2
+        };
     }
 
     /* jshint ignore:start */

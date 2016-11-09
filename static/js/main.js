@@ -30,6 +30,7 @@
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
+        toggleHelp: document.querySelector('#toggle-help'),
         toggleFilters: document.querySelector('#toggle-filters'),
         filters: document.querySelector('#filters'),
         zoom: document.querySelector('[zoom]'),
@@ -372,12 +373,16 @@
         document.onclick = function(ev) {
             var el = ev.target;
 
+            //center button
+            if(el.id === 'center') {
+                view.init();
+                model.zoomTo(1, getCenterPoint());
+                ev.preventDefault();
+            }
+
             //zoom buttons
-            if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
-                model.zoomWith(parseInt(el.getAttribute('value')), {
-                    x: window.innerWidth / 2,
-                    y: window.innerHeight / 2
-                });
+            else if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
+                model.zoomWith(parseInt(el.getAttribute('value')), getCenterPoint());
                 ev.preventDefault();
             }
 
@@ -415,6 +420,11 @@
                 }
 
                 ev.preventDefault();
+            }
+
+            //close help
+            else if(el.id === 'close-help') {
+                nodes.toggleHelp.checked = false;
             }
          };
 
@@ -521,12 +531,6 @@
         window.onkeypress = function(ev) {
 
             var el = ev.target;
-            function getCenterPoint() {
-                return {
-                    x: window.innerWidth / 2,
-                    y: window.innerHeight / 2
-                };
-            }
 
             if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
                 model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());
@@ -616,6 +620,13 @@
         if(element[key] && titles[key]) {
             element[key].setAttribute('title', titles[key]);
         }
+    }
+
+    function getCenterPoint() {
+        return {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2
+        };
     }
 
     /* jshint ignore:start */

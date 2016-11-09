@@ -36,9 +36,10 @@
 
 </script>
 <aside>
-    <label id="help-link" for="toggle-help" title="Show/hide help">?</label>
+    <label id=help-link for=toggle-help title="About Periodic Table Map">?</label>
     <input type=checkbox id=toggle-help>
-    <div id="help">
+    <div id=help>
+        <button type=button id=close-help title="Close help">×</button>
         <h2>About Periodic Table Map</h2>
         <p><b>Periodic Table Map</b> is an interactive way to explore the chemical elements.
             Use the controls on the right to zoom in/out and drag to move around.</p>
@@ -138,11 +139,12 @@
         <hr>
 
         <p>
-            <small>Elements descriptions are taken from <a
-                    href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a>
+            <small>Elements descriptions are taken from <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a>
             </small>
         </p>
     </div>
+
+    <button id="center" title="Re-center (r)" type="button">Re-center</button>
 
     <div id=zoom>
         <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
