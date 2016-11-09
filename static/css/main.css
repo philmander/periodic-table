@@ -603,6 +603,9 @@ iframe {
   height: 368px;
   border: none; }
 
+.tabs-content li {
+  margin-top: 1em; }
+
 /* Util --------------------------------------------------------------------------------------------------------------*/
 .filtering .elements > tbody > tr > td {
   opacity: 0.3; }

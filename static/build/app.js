@@ -1,57 +1,58 @@
 //https://github.com/asvd/dragscroll
 (function (window, document) {
-    var mousemove = 'mousemove';
-    var mouseup = 'mouseup';
-    var mousedown = 'mousedown';
-    var addEventListener = 'addEventListener';
-    var removeEventListener = 'removeEventListener';
 
     var dragged = [];
-    var reset = function(i, el) {
-        for (i = 0; i < dragged.length;) {
+    var reset = function() {
+        var i = 0, el;
+
+        //var tables = document.querySelector('#tables');
+
+        while (i < dragged.length) {
             el = dragged[i++];
             el = el.container || el;
-            el[removeEventListener](mousedown, el.md, 0);
-            window[removeEventListener](mouseup, el.mu, 0);
-            window[removeEventListener](mousemove, el.mm, 0);
+            el.removeEventListener('mousedown', el.md);
+            window.removeEventListener('mouseup', el.mu);
+            window.removeEventListener('mousemove', el.mm);
         }
 
         // cloning into array since HTMLCollection is updated dynamically
         dragged = [ document.documentElement, document.body ];
         for (i = 0; i < dragged.length;) {
-            (function(el, lastClientX, lastClientY, pushed, scroller, cont){
-                (cont = el.container || el)[addEventListener](
-                    mousedown,
-                    cont.md = function(e) {
-                        if (!el.hasAttribute('nochilddrag') ||
-                            document.elementFromPoint(
-                                e.pageX, e.pageY
-                            ) == cont
-                        ) {
-                            pushed = 1;
-                            lastClientX = e.clientX;
-                            lastClientY = e.clientY;
+            (function(el) {
+                var lastClientX, lastClientY, pushed, scroller;
+                var container = el.container || el;
+                
+                //mouse down
+                container.addEventListener('mousedown', container.md = function(ev) {
+                    if (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container) {
+                        pushed = 1;
+                        lastClientX = ev.clientX;
+                        lastClientY = ev.clientY;
 
-                            e.preventDefault();
-                        }
-                    }, 0
-                );
+                        ev.preventDefault();
+                    }
+                });
 
-                window[addEventListener](
-                    mouseup, cont.mu = function() {pushed = 0;}, 0
-                );
+                //mouse up
+                window.addEventListener('mouseup', container.mu = function() {
+                    pushed = 0;
+                });
 
-                window[addEventListener](
-                    mousemove,
-                    cont.mm = function(e) {
-                        if (pushed) {
-                            (scroller = el.scroller||el).scrollLeft -=
-                                (- lastClientX + (lastClientX=e.clientX));
-                            scroller.scrollTop -=
-                                (- lastClientY + (lastClientY=e.clientY));
-                        }
-                    }, 0
-                );
+                //mouse move
+                window.addEventListener('mousemove', container.mm = function(ev) {
+                    if (pushed) {
+                        scroller = el.scroller || el;
+
+                        var newLeft = scroller.scrollLeft - ((lastClientX * -1) + (ev.clientX));
+                        var newTop = scroller.scrollTop - ((lastClientY * -1) + ( ev.clientY));
+
+                        scroller.scrollLeft = newLeft;
+                        lastClientX = ev.clientX;
+
+                        scroller.scrollTop = newTop;
+                        lastClientY = ev.clientY;
+                    }
+                });
             })(dragged[i++]);
         }
     };
@@ -59,18 +60,27 @@
     if (document.readyState == 'complete') {
         reset();
     } else {
-        window[addEventListener]('load', reset, 0);
+        window.addEventListener('load', reset, 0);
     }
 })(window, document);
 (function(window, document, localStorage) {
 
-    // model ------------------------------------------------------------------------------------------------------------
-
     var i, j, scrolled;
+
+    var responsiveBreakpoints = {
+        COMPACT: 690
+    };
+
 
     var documentElement = document.documentElement;
 
     var filters = { PERIOD: 'p', GROUP: 'g', BLOCK: 'b', CATEGORY: 'c', STATE: 's', YEAR: 'y', FIND: 'f'};
+
+    var units = {
+        C: 'c',
+        F: 'f',
+        K: 'k'
+    };
 
     var titles = {
         am: 'Relative atmoic mass',
@@ -82,28 +92,24 @@
         FILTERING: 'filtering'
     };
 
-    var initScroll = {
-        x: 14400,
-        y: 7500
-    };
-
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
-        filters: document.querySelector('#f'),
-        zoom: document.querySelector('[z]'),
+        toggleFilters: document.querySelector('#toggle-filters'),
+        filters: document.querySelector('#filters'),
+        zoom: document.querySelector('[zoom]'),
         tables: document.querySelector('#tables'),
         elements: document.querySelectorAll('td[s]'),
         temp: document.querySelector('#temp'),
         find: document.querySelector('#find'),
         year: document.querySelector('#year'),
-        yearApply: document.querySelector('#yearApply')
+        yearApply: document.querySelector('#year-apply')
     };
     nodes.tempUnit = nodes.temp.nextElementSibling;
 
     var model = {
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
-        zoom: parseInt(nodes.zoom.getAttribute('z')),
+        zoom: parseInt(nodes.zoom.getAttribute('zoom')),
         temp: localStorage.temp ? parseInt(localStorage.temp) : 298.15,
         tempUnit: localStorage.tempUnit || 'k',
         year: localStorage.year || new Date().getFullYear()
@@ -117,7 +123,7 @@
             var select = node.querySelector.bind(node);
             var cat = node.getAttribute('c');
             var year = parseInt(node.getAttribute('y'));
-            var isActinideOrLanthanide = cat == 'l' || cat == 'a';
+            var isActinideOrLanthanide = cat === 'l' || cat === 'a';
             var nodeIndex = getElIndex(node);
             var temps = node.getAttribute('t').split(',');
             var el = elements[node.getAttribute('s')] = {
@@ -146,10 +152,14 @@
         model.elements = elements;
     };
     model.zoomWith = function(mod, point) {
-        if((mod < 0 && model.zoom > 1) || (mod > 0 && model.zoom < 4)) {
+        if((mod < 0 && model.zoom > 0) || (mod > 0 && model.zoom < 4)) {
             model.zoom = model.zoom + mod;
             view.zoomTo(mod, point);
         }
+    };
+    model.zoomTo = function(to, point) {
+        var mod = to - model.zoom;
+        model.zoomWith(mod, point)
     };
     model.addFieldsForElement = function(data) {
         var el = model.elements[data.symbol];
@@ -164,31 +174,58 @@
     view.origin = null;
     //init
     view.init = function() {
+
         var tables = nodes.tables;
         var windowWidth = window.innerWidth;
         var windowHeight = window.innerHeight;
 
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
-        nodes.wrap.style.width = '30000px';
-        nodes.wrap.style.height = '15000px';
-        tables.style.left = '14400px';
-        tables.style.top = '7500px';
+
+        var tableSize = {
+            width: rect(tables).width,
+            height: rect(tables).height,
+            offsetWidth: tables.offsetWidth,
+            offsetHeight: tables.offsetHeight
+        };
+        var wrapSize = {
+            width: 30000,
+            height: 15000
+        };
+        var initPosition = {
+            left: (wrapSize.width - tableSize.width) / 2,
+            top: (wrapSize.height - tableSize.height) / 2
+        };
+        var initScroll = (view.initScroll = {
+            left: (wrapSize.width - tableSize.width) / 2,
+            top: (wrapSize.height - tableSize.height) / 2
+        });
+
+        nodes.wrap.style.width = wrapSize.width + 'px';
+        nodes.wrap.style.height = wrapSize.height + 'px';
+
+        tables.style.left = initPosition.left + 'px';
+        tables.style.top = initPosition.top + 'px';
         tables.style.transformOrigin = '50% 50%';
 
         //enable filters
         nodes.filters.style.display = 'block';
 
         //this centers the table if it is smaller than the viewport
-        var dims = {
-            width: rect(tables).width,
-            height: rect(tables).height
-        };
+
         var scroll = {
-            x: windowWidth> dims.width ? initScroll.x - ((windowWidth- dims.width) / 2) : initScroll.x,
-            y: windowHeight> dims.height ? initScroll.y - ((windowHeight - dims.height) / 2) : initScroll.y,
+            left: windowWidth > tableSize.width ?
+                initScroll.left - ((windowWidth - tableSize.width) / 2) :
+                initPosition.left,
+
+            top: windowHeight > tableSize.height ?
+                initScroll.top - ((windowHeight - tableSize.height) / 2) : initPosition.top
         };
-        window.scrollTo(scroll.x, scroll.y);
+        window.scrollTo(scroll.left, scroll.top);
+        //window.scrollTo(initScroll.x, initScroll.y);
+
+        view.fitToScreen();
+        window.addEventListener('resize', view.fitToScreen);
 
         //add header titles
         var highlightText = ' (click to toggle highlight)';
@@ -210,14 +247,38 @@
         nodes.year.value = model.year;
     };
 
+    view.fitToScreen = function() {
+        var windowWidth = window.innerWidth;
+        var detailsWidth =
+            windowWidth < responsiveBreakpoints.COMPACT ?
+            (((window.innerWidth - 50) / (nodes.tables.querySelector('td').offsetWidth * 10)) * 100) + '%' :
+                '100%';
+
+        var cssRules = document.styleSheets[0].cssRules;
+        var cssRulesArray = Array.prototype.slice.call(cssRules);
+        var detailsRule = cssRulesArray.filter(function(rule) {
+            return rule.selectorText === '[zoom="4"] .details';
+        })[0];
+        var resourcesRule = cssRulesArray.filter(function(rule) {
+            return rule.selectorText === '[zoom="4"] .r';
+        })[0];
+        
+        if(detailsRule && resourcesRule) {
+            detailsRule.style.width = detailsWidth;
+            resourcesRule.style.width = detailsWidth;            
+        } else {
+            console.warn('Could not find rules to update for fit-to-screen');
+        }
+    };
+
     view.tempChanged = function () {
         var temp = parseInt(nodes.temp.value);
         if(isNaN(temp)) {
-            temp = model.temp
+            temp = model.temp;
         }
-        model.temp = model.tempUnit == 'c' ? temp + 273.15 : (model.tempUnit == 'f' ? (temp + 459.67) * 5/9 : temp);
+        model.temp = model.tempUnit === units.C ? temp + 273.15 : (model.tempUnit === units.F ? (temp + 459.67) * 5/9 : temp);
 
-        if(model.filter && model.filter.split('_')[0] == filters.STATE) {
+        if(model.filter && model.filter.split('_')[0] === filters.STATE) {
             view.applyFilter(filters.STATE, model.filter.split('_')[1], true);
         }
         localStorage.temp = model.temp;
@@ -225,7 +286,7 @@
 
     view.tempUnitChanged = function() {
         model.tempUnit = nodes.tempUnit.value;
-        var temp = model.tempUnit == 'c' ? model.temp - 273.15 : (model.tempUnit == 'f' ? model.temp * 9/5 - 459.67 : model.temp);
+        var temp = model.tempUnit === units.C ? model.temp - 273.15 : (model.tempUnit === units.F ? model.temp * 9/5 - 459.67 : model.temp);
         nodes.temp.value = Math.round(temp);
         localStorage.tempUnit = model.tempUnit;
     };
@@ -252,13 +313,11 @@
         nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
 
         //correct scroll position for transform origin
-        if(model.zoom > 1) {
-            var dx = (initScroll.x + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
-            var dy = (initScroll.y + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
-           window.scrollBy(dx, dy);
-        }
+        var dx = (view.initScroll.left + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
+        var dy = (view.initScroll.top + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
+        window.scrollBy(dx, dy);
 
-        nodes.zoom.setAttribute('z', model.zoom);
+        nodes.zoom.setAttribute('zoom', model.zoom);
         view.panTo(dir);
         history.replaceState(null, '', '?z=' + model.zoom);
     };
@@ -281,17 +340,11 @@
                 }
                 return toShow;
             }, []);
-        } else {
-            symbolsToShow = Object.keys(model.elements);
         }
-
         if(symbolsToFetch.length) {
             fetch('/fields?z=' + zoom + '&s=' + encodeURIComponent(JSON.stringify(symbolsToFetch)), function (data) {
                 data.forEach(model.addFieldsForElement);
-                symbolsToShow.forEach(view.updateVisibility);
             });
-        } else {
-            symbolsToShow.forEach(view.updateVisibility);
         }
     };
 
@@ -303,7 +356,6 @@
                     var wrapper = document.createElement('div');
                     wrapper.innerHTML = data[fieldNames[i]];
                     var inject = wrapper.firstChild;
-                    inject.classList.add('out');
                     node.firstElementChild.appendChild(inject);
                     model.elements[data.symbol][fieldNames[i]] = inject;
                     addTitle(model.elements[data.symbol], fieldNames[i]);
@@ -311,44 +363,24 @@
             }
         }
 
-        if(model.zoom == 2) {
+        if(model.zoom === 1) {
+            inject(data, ['an' ]);
+        }
+        if(model.zoom === 2) {
             inject(data, ['n', 'am']);
         }
-        if(model.zoom == 3) {
+        if(model.zoom === 3) {
             inject(data, ['n', 'am', 'd']);
         }
-        if(model.zoom == 4) {
+        if(model.zoom === 4) {
             inject(data, ['n', 'am', 'd', 'md', 'r']);
         }
     };
 
-    view.updateVisibility = function (symbol) {
-        var fields = [
-            { cn: 'n',  z: 2 },
-            { cn: 'am', z: 2 },
-            { cn: 'd',  z: 3 },
-            { cn: 'md', z: 4 },
-            { cn: 'r',  z: 4 }
-        ];
-        var fieldNode;
-        for(i = 0; i < fields.length; i++) {
-            fieldNode = model.elements[symbol][fields[i].cn];
-            if(fieldNode) {
-                if(fields[i].z <= model.zoom) {
-                    fieldNode.classList.add('in');
-                    fieldNode.classList.remove('out');
-                } else {
-                    fieldNode.classList.add('out');
-                    fieldNode.classList.remove('in');
-                }
-            }
-        }
-    };
+    view.applyFilter = function(type, value, amend) {
 
-    view.applyFilter = function(type, value, ammend) {
-
-        if(!ammend) {
-            if(!value || model.filter == type + '_' + value) {
+        if(!amend) {
+            if(!value || model.filter === type + '_' + value) {
                 delete model.filter;
                 nodes.tables.classList.remove(css.FILTERING);
                 setTimeout(uncheckAll, 0);
@@ -368,21 +400,25 @@
             match = false;
             for(j = 0; j < value.length && !match; j++) {
                 match = (
-                    type == filters.STATE &&
-                    (value[j] == 'G' &&  el.bp && el.bp < model.temp ) ||
-                    (value[j] == 'L' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
-                    (value[j] == 'S' && el.mp && el.mp > model.temp)
+                    type === filters.STATE &&
+                    (value[j] === 'gas' &&  el.bp && el.bp < model.temp ) ||
+                    (value[j] === 'liquid' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
+                    (value[j] === 'solid' && el.mp && el.mp > model.temp)
                 ) || (
-                    type == filters.YEAR && (isNaN(el.y) || el.y <= value[j])
+                    type === filters.YEAR && (isNaN(el.y) || el.y <= value[j])
                 ) || (
-                    type == filters.FIND &&
+                    type === filters.FIND &&
                     (el.s.textContent.toLowerCase().indexOf(value[j]) === 0 ||
                      el.s.getAttribute('title').toLowerCase().indexOf(value[j]) === 0)
                 ) || (
                     el[type] == value[j]
                 );
 
-                match ? (el.node.classList.add(css.FILTERED)) : el.node.classList.remove(css.FILTERED);
+                if(match) {
+                    el.node.classList.add(css.FILTERED);
+                } else {
+                    el.node.classList.remove(css.FILTERED);
+                }
             }
         }
     };
@@ -402,7 +438,7 @@
             var el = ev.target;
 
             //zoom buttons
-            if(el.tagName == 'A' && el.parentNode.id == 'z') {
+            if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
                 model.zoomWith(parseInt(el.getAttribute('value')), {
                     x: window.innerWidth / 2,
                     y: window.innerHeight / 2
@@ -411,27 +447,27 @@
             }
 
             //table headers, toggling group, period and block filtering
-            else if(el.tagName == 'TH') {
-                if(el.hasAttribute('g')) {
-                    view.applyFilter(filters.GROUP, el.getAttribute('g') || el.textContent);
-                } else if(el.hasAttribute('b')) {
+            else if(el.tagName === 'TH') {
+                if(el.hasAttribute('group')) {
+                    view.applyFilter(filters.GROUP, el.getAttribute('group') || el.textContent);
+                } else if(el.hasAttribute('block')) {
                     view.applyFilter(filters.BLOCK, el.textContent);
-                } else if(el.hasAttribute('p')) {
-                    view.applyFilter(filters.PERIOD, el.textContent)
+                } else if(el.hasAttribute('period')) {
+                    view.applyFilter(filters.PERIOD, el.textContent);
                 }
             }
 
             //resources tabs
-            else if(el.tagName == 'A' && el.parentNode.parentNode.classList.contains('tabs-nav')) {
+            else if(el.tagName === 'A' && el.parentNode.parentNode.classList.contains('tabs-nav')) {
                 var tabs =  el.parentNode.parentNode.children;
                 for(i = 0; i < tabs.length; i++) {
-                    tabs[i].style.display = tabs[i].firstElementChild == el ?
+                    tabs[i].style.display = tabs[i].firstElementChild === el ?
                         tabs[i].classList.add('active') : tabs[i].classList.remove('active');
                 }
                 var target = document.querySelector(el.getAttribute('href'));
                 var panes = target.parentNode.children;
                 for(i = 0; i < panes.length; i++) {
-                    panes[i].style.display = panes[i] == target ? 'block' : 'none';
+                    panes[i].style.display = panes[i] === target ? 'block' : 'none';
                     var div = target.querySelector('.iframe');
                     if(div) {
                         var iframe = document.createElement('iframe');
@@ -452,13 +488,13 @@
             var el = ev.target;
 
             //filter by category
-            if(el.tagName == 'INPUT' && el.parentNode.id == 'fc') {
+            if(el.tagName === 'INPUT' && el.parentNode.id === 'filter-category') {
                 uncheckAll(el.id);
                 view.applyFilter(filters.CATEGORY, el.value);
             }
 
             //filter by state
-            else if(el.tagName == 'INPUT' && el.parentNode.id == 'fs') {
+            else if(el.tagName === 'INPUT' && el.parentNode.id === 'filter-state') {
                 uncheckAll(el.id);
                 view.applyFilter(filters.STATE, el.value);
             }
@@ -470,7 +506,7 @@
             model.zoomWith(1, {
                 x: ev.clientX,
                 y: ev.clientY
-            })
+            });
         };
 
         var allowWheel = true;
@@ -493,10 +529,10 @@
         var start;
         var midpoint;
         document.ontouchstart = function(ev) {
-            if(ev.touches.length == 2) {
+            if(ev.touches.length === 2) {
                 t1 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
                 var t2 = {x: ev.touches[1].clientX, y: ev.touches[1].clientY };
-                start = (Math.abs(t2.x - t1.x) ^ 2) + (Math.abs(t2.y - t1.y) ^ 2);
+                start = Math.pow(Math.abs(t2.x - t1.x),2) + Math.pow(Math.abs(t2.y - t1.y), 2);
                 midpoint = { x: ((t1.x + t2.x) / 2), y: ((t2.y + t2.y) / 2) };
                 ev.preventDefault();
             }
@@ -504,7 +540,8 @@
         document.ontouchend = function(ev) {
             if(t1 && ev.touches.length) {
                 var t2 = { x: ev.touches[0].clientX, y: ev.touches[0].clientY };
-                var end = (Math.abs(t2.x - t1.x) ^ 2) + (Math.abs(t2.y - t1.y) ^ 2);
+                var end = Math.pow(Math.abs(t2.x - t1.x), 2) + Math.pow(Math.abs(t2.y - t1.y), 2);
+                console.log(end - start)
                 model.zoomWith(end - start > 0 ? 1 : -1, {
                     x: midpoint.x,
                     y: midpoint.y
@@ -524,7 +561,7 @@
         //find
         nodes.find.onkeyup = function(ev) {
             if(ev.keyCode != 16) {
-                view.findChanged()
+                view.findChanged();
             }
         };
 
@@ -543,9 +580,55 @@
         }, 100);
         //prevent space scrolling
         window.onkeydown = function(ev) {
-            if(ev.keyCode == 32 && ev.target == document.body) {
+            if(ev.keyCode === 32) {
                 ev.preventDefault();
             }
+        };
+        window.onkeypress = function(ev) {
+
+            var el = ev.target;
+            function getCenterPoint() {
+                return {
+                    x: window.innerWidth / 2,
+                    y: window.innerHeight / 2
+                };
+            }
+
+            if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
+                model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 45) { //-
+                model.zoomWith(-1, getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 61) { //=
+                model.zoomWith(1, getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 102) { //f
+                if(nodes.toggleFilters.checked) {
+                    nodes.toggleFilters.checked = false;
+                } else {
+                    nodes.toggleFilters.checked = true;
+                    nodes.temp.focus();
+                }
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 114) { //r
+                view.init();
+                model.zoomTo(1, getCenterPoint());
+                ev.preventDefault();
+            }
+            if(ev.keyCode === 13 && el.tagName === 'TH') {
+                var clickEvent = document.createEvent('Events');
+                clickEvent.initEvent('click', true, false);
+                el.dispatchEvent(clickEvent);
+            }
+        };
+
+        window.onorientationchange = function() {
+            view.init();
         };
     };
 
@@ -554,15 +637,19 @@
         view.init();
         controller.init();
     }
-    document.readyState == 'interactive' || document.readyState == 'complete' ?
-        init() : document.addEventListener('DOMContentLoaded', init);
+
+    if(document.readyState === 'interactive' || document.readyState === 'complete') {
+        init();
+    } else {
+        document.addEventListener('DOMContentLoaded', init);
+    }
 
     // misc ------------------------------------------------------------------------------------------------------------
 
     function fetch(path, cb) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {
-            if (xhr.readyState == 4) {
+            if (xhr.readyState === 4) {
                 cb(JSON.parse(xhr.responseText));
             }
         };
@@ -575,17 +662,20 @@
         return rect.bottom >= 0 && rect.right >= 0 && rect.top <= documentElement.clientHeight && rect.left <= documentElement.clientWidth;
     }
 
+    /* jshint ignore:start */
     function getElIndex(el) {
         for (var i = 0; el = el.previousElementSibling; i++) {}
         return i;
+
     }
+    /* jshint ignore:end */
 
     function rect(node) {
         return node.getBoundingClientRect();
     }
 
     function uncheckAll(except) {
-        (document.querySelector('#f input:checked:not(#'+ except +')') || {}).checked = false;
+        (document.querySelector('#filters input:checked:not(#'+ except +')') || {}).checked = false;
     }
 
     function addTitle(element, key) {
@@ -594,8 +684,10 @@
         }
     }
 
+    /* jshint ignore:start */
     //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
     function doubleTap(d,h,e){if(d.ondblclick === undefined){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
         a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
+    /* jshint ignore:end */
 
 })(window, document, window.localStorage);
