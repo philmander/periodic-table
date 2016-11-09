@@ -18,14 +18,14 @@ const inProduction = process.env.NODE_ENV === 'production';
 const elementList = require('./data/elements.json');
 const licenses = require('./data/licenses.json');
 
-const PARTIAL_DIR = 'views/partials';
+const PARTIAL_DIR = path.join(__dirname, 'views/partials');
 
 for(let helper in helpers) {
     hbs.registerHelper(helper, helpers[helper]);
 }
 
 function getTemplate(name) {
-    const source = fs.readFileSync(path.join(__dirname, PARTIAL_DIR, `fields/${name}.hbs`), 'utf-8');
+    const source = fs.readFileSync(path.join(PARTIAL_DIR, `fields/${name}.hbs`), 'utf-8');
     return handlebars.compile(source);
 }
 
@@ -63,8 +63,9 @@ app.locals.env = app.get('env');
 app.locals.version = require('./package.json').version;
 app.locals.css = fs.readFileSync(path.join(__dirname, 'static/build/main.css'), 'utf8');
 hbs.localsAsTemplateData(app);
-hbs.registerPartials(path.join(__dirname, PARTIAL_DIR));
+hbs.registerPartials(path.join(PARTIAL_DIR));
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 app.set('json spaces', 0);
 app.set('x-powered-by', false);
 
@@ -79,11 +80,11 @@ app.use(minifyHTML({
     }
 }));
 app.use(compression());
-app.use(favicon('./favicon.ico'));
+app.use(favicon(__dirname + '/favicon.ico'));
 
 const cacheOpts = inProduction ? { maxAge: 1000 * 60 * 60 * 24} : {};
-app.use('/static', express.static('static', cacheOpts));
-app.use('/images', express.static('data/images', cacheOpts));
+app.use('/static', express.static(__dirname + '/static', cacheOpts));
+app.use('/images', express.static(__dirname + '/data/images', cacheOpts));
 
 function getZoom(req) {
     const zoom = parseInt(req.query.z);
