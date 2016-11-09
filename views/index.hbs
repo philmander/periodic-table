@@ -36,9 +36,93 @@
 
 </script>
 <aside>
+    <!-- Center and zoom -->
+    <button id="center" title="Re-center (r)" type="button">Re-center</button>
+
+    <div id=zoom>
+        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
+        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out (-)" id=zoom-out>−<i> Zoom out</i></a>
+    </div>
+
+    <!-- Filters -->
+    <input type=checkbox id=toggle-filters>
+    <div id=filters>
+        <label for=toggle-filters title="Toggle filters (f)">Filters</label>
+        <div>
+            <fieldset id=filter-temp>
+                <label>State @ </label>
+                <input type=number min=-460 max=10340 id=temp>
+                <select>
+                    <option value=k selected>K</option>
+                    <option value=c>°C</option>
+                    <option value=f>°F</option>
+                </select>
+            </fieldset>
+            <fieldset id=filter-state class=radios>
+                <input id=input-state-gas type=checkbox name=state value=gas>
+                <label for=input-state-gas><i>✓</i> Gas</label>
+
+                <input id=input-state-liquid type=checkbox name=state value=liquid>
+                <label for=input-state-liquid><i>✓</i> Liquid</label>
+
+                <input id=input-state-solid type=checkbox name=state value=solid>
+                <label for=input-state-solid><i>✓</i> Solid</label>
+            </fieldset>
+            <fieldset id="filter-find">
+                <label>Find <input id=find placeholder="Antimony"></label>
+            </fieldset>
+            <fieldset id="filter-year">
+                <label>Year <input type=number min=1669 max={{year}} id=year></label>
+                <button type=button id=year-apply>Apply</button>
+            </fieldset>
+            <fieldset id="filter-category" class=radios>
+                <span>Categories:</span>
+
+                <input type=checkbox name=category id=input-cat-nonmetals value="n,h,ng">
+                <label for=input-cat-nonmetals><i>✓</i> Non-metals</label>
+
+                <input type=checkbox name=category id=filter-cat-metalloids value=m>
+                <label for=filter-cat-metalloids c=m><i>✓</i> Metalloids</label>
+
+                <input type=checkbox name=category id=filter-cat-n value=n>
+                <label for=filter-cat-n c=n><i>✓</i> Other non-metals</label>
+
+                <input type=checkbox name=category id=filter-cat-h value=h>
+                <label for=filter-cat-h c=h><i>✓</i> Halogens</label>
+
+                <input type=checkbox name=category id=filter-cat-ng value=ng>
+                <label for=filter-cat-ng c=ng><i>✓</i> Noble gases</label>
+
+                <input type=checkbox name=category id=filter-cat-metals value="am,aem,l,a,tm,ptm">
+                <label for=filter-cat-metals><i>✓</i> Metals</label>
+
+                <input type=checkbox name=category id=filter-cat-am value=am>
+                <label for=filter-cat-am c=am><i>✓</i> Alkali metals</label>
+
+                <input type=checkbox name=category id=filter-cat-aem value=aem>
+                <label for=filter-cat-aem c=aem><i>✓</i> Alkaline earth metals</label>
+
+                <input type=checkbox name=category id=filter-cat-l value=l>
+                <label for=filter-cat-l c=l><i>✓</i> Lanthanides</label>
+
+                <input type=checkbox name=category id=filter-cat-a value=a>
+                <label for=filter-cat-a c=a><i>✓</i> Actinides</label>
+
+                <input type=checkbox name=category id=filter-cat-tm value=tm>
+                <label for=filter-cat-tm c=tm><i>✓</i> Transition metals</label>
+
+                <input type=checkbox name=category id=filter-cat-ptm value=ptm>
+                <label for=filter-cat-ptm c=ptm><i>✓</i> Post-transition metals</label>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- About/help -->
+
+    <input type=checkbox id=toggle-help tabindex=0>
     <label id=help-link for=toggle-help title="About Periodic Table Map">?</label>
-    <input type=checkbox id=toggle-help>
     <div id=help>
+        <div>
         <button type=button id=close-help title="Close help">×</button>
         <h2>About Periodic Table Map</h2>
         <p><b>Periodic Table Map</b> is an interactive way to explore the chemical elements.
@@ -142,84 +226,6 @@
             <small>Elements descriptions are taken from <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a>
             </small>
         </p>
-    </div>
-
-    <button id="center" title="Re-center (r)" type="button">Re-center</button>
-
-    <div id=zoom>
-        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
-        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out (-)" id=zoom-out>−<i> Zoom out</i></a>
-    </div>
-
-    <input type=checkbox id=toggle-filters>
-    <div id=filters>
-        <label for=toggle-filters title="Toggle filters (f)">Filters</label>
-        <div>
-            <fieldset id=filter-temp>
-                <label>State @ </label>
-                <input type=number min=-460 max=10340 id=temp>
-                <select>
-                    <option value=k selected>K</option>
-                    <option value=c>°C</option>
-                    <option value=f>°F</option>
-                </select>
-            </fieldset>
-            <fieldset id=filter-state class=radios>
-                <input id=input-state-gas type=radio name=state value=gas>
-                <label for=input-state-gas><i>✓</i> Gas</label>
-
-                <input id=input-state-liquid type=radio name=state value=liquid>
-                <label for=input-state-liquid><i>✓</i> Liquid</label>
-
-                <input id=input-state-solid type=radio name=state value=solid>
-                <label for=input-state-solid><i>✓</i> Solid</label>
-            </fieldset>
-            <fieldset id="filter-find">
-                <label>Find <input id=find placeholder="Antimony"></label>
-            </fieldset>
-            <fieldset id="filter-year">
-                <label>Year <input type=number min=1669 max={{year}} id=year></label>
-                <button type=button id=year-apply>Apply</button>
-            </fieldset>
-            <fieldset id="filter-category" class=radios>
-                <span>Categories:</span>
-
-                <input type=radio name=category id=input-cat-nonmetals value="n,h,ng">
-                <label for=input-cat-nonmetals><i>✓</i> Non-metals</label>
-
-                <input type=radio name=category id=filter-cat-metalloids value=m>
-                <label for=filter-cat-metalloids c=m><i>✓</i> Metalloids</label>
-
-                <input type=radio name=category id=filter-cat-n value=n>
-                <label for=filter-cat-n c=n><i>✓</i> Other non-metals</label>
-
-                <input type=radio name=category id=filter-cat-h value=h>
-                <label for=filter-cat-h c=h><i>✓</i> Halogens</label>
-
-                <input type=radio name=category id=filter-cat-ng value=ng>
-                <label for=filter-cat-ng c=ng><i>✓</i> Noble gases</label>
-
-                <input type=radio name=category id=filter-cat-metals value="am,aem,l,a,tm,ptm">
-                <label for=filter-cat-metals><i>✓</i> Metals</label>
-
-                <input type=radio name=category id=filter-cat-am value=am>
-                <label for=filter-cat-am c=am><i>✓</i> Alkali metals</label>
-
-                <input type=radio name=category id=filter-cat-aem value=aem>
-                <label for=filter-cat-aem c=aem><i>✓</i> Alkaline earth metals</label>
-
-                <input type=radio name=category id=filter-cat-l value=l>
-                <label for=filter-cat-l c=l><i>✓</i> Lanthanides</label>
-
-                <input type=radio name=category id=filter-cat-a value=a>
-                <label for=filter-cat-a c=a><i>✓</i> Actinides</label>
-
-                <input type=radio name=category id=filter-cat-tm value=tm>
-                <label for=filter-cat-tm c=tm><i>✓</i> Transition metals</label>
-
-                <input type=radio name=category id=filter-cat-ptm value=ptm>
-                <label for=filter-cat-ptm c=ptm><i>✓</i> Post-transition metals</label>
-            </fieldset>
         </div>
     </div>
 </aside>

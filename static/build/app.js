@@ -589,7 +589,7 @@
         }, 100);
         //prevent space scrolling
         window.onkeydown = function(ev) {
-            if(ev.keyCode === 32) {
+            if(ev.keyCode === 32 && ev.target.tagName !== 'INPUT') {
                 ev.preventDefault();
             }
         };

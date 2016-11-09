@@ -132,6 +132,10 @@ td > div {
 .elements > tbody > tr > th:first-child {
   width: 2rem
 }
+.elements > tbody > tr > th:hover,
+.elements > tbody > tr > th:focus {
+  background: #d6d6d6;
+}
 
 [c="n"] {
   background: #f935ce !important;
