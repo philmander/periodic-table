@@ -27,6 +27,11 @@
         FILTERING: 'filtering'
     };
 
+    var wrapSize = {
+        width: 24000,
+        height: 15000
+    };
+
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
@@ -111,54 +116,24 @@
     //init
     view.init = function() {
 
-        var tables = nodes.tables;
-        var windowWidth = window.innerWidth;
-        var windowHeight = window.innerHeight;
-
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
 
-        var tableSize = {
-            width: rect(tables).width,
-            height: rect(tables).height,
-            offsetWidth: tables.offsetWidth,
-            offsetHeight: tables.offsetHeight
-        };
-        var wrapSize = {
-            width: 30000,
-            height: 15000
-        };
-        var initPosition = {
-            left: (wrapSize.width - tableSize.width) / 2,
-            top: (wrapSize.height - tableSize.height) / 2
-        };
-        var initScroll = (view.initScroll = {
-            left: (wrapSize.width - tableSize.width) / 2,
-            top: (wrapSize.height - tableSize.height) / 2
-        });
+        nodes.wrap.style.width = toPx(wrapSize.width);
+        nodes.wrap.style.height = toPx(wrapSize.height);
 
-        nodes.wrap.style.width = wrapSize.width + 'px';
-        nodes.wrap.style.height = wrapSize.height + 'px';
-
-        tables.style.left = initPosition.left + 'px';
-        tables.style.top = initPosition.top + 'px';
-        tables.style.transformOrigin = '50% 50%';
+        //nodes.tables.style.transformOrigin = 'center center';
 
         //enable filters
         nodes.filters.style.display = 'block';
 
-        //this centers the table if it is smaller than the viewport
-
-        var scroll = {
-            left: windowWidth > tableSize.width ?
-                initScroll.left - ((windowWidth - tableSize.width) / 2) :
-                initPosition.left,
-
-            top: windowHeight > tableSize.height ?
-                initScroll.top - ((windowHeight - tableSize.height) / 2) : initPosition.top
-        };
-        window.scrollTo(scroll.left, scroll.top);
-        //window.scrollTo(initScroll.x, initScroll.y);
+        view.center();
+        //nodes.tables.ontransitionend = view.realign;
+        nodes.tables.addEventListener("transitionend", function(ev) {
+            if(ev.propertyName === 'transform') {
+               // view.realign()
+            }
+        });
 
         view.fitToScreen();
         window.addEventListener('resize', view.fitToScreen);
@@ -182,6 +157,42 @@
         //initialize year
         nodes.year.value = model.year;
     };
+
+    view.center = function () {
+        var tl, tt, tw, th,
+            ww, wh,
+            vw, vh,
+            tables;
+
+        vw = window.innerWidth;
+        vh = window.innerHeight;
+
+        ww = wrapSize.width;
+        wh = wrapSize.height;
+
+        tables = rect(nodes.tables);
+        tw = tables.width;
+        th = tables.height;
+
+        tl = (ww - tw) / 2;
+        tt = (wh - th) / 2;
+
+        nodes.tables.style.left = toPx(tl);
+        nodes.tables.style.top = toPx(tt);
+
+        window.scrollTo(
+            tables.width > vw ? tl : (ww - vw) / 2,
+            tables.height > vh ? tt : (wh - vh) / 2
+        );
+    };
+
+    function toPx(value) {
+        return parseFloat(value) + 'px';
+    }
+
+    function toPc(value) {
+        return parseFloat(value) + '%';
+    }
 
     view.fitToScreen = function() {
         var windowWidth = window.innerWidth;
@@ -240,7 +251,9 @@
     };
 
     view.zoomTo = function (dir, point) {
+
         var tables = nodes.tables;
+
         view.origin = dir < 0 && view.origin ? view.origin : {
             x: (((rect(tables).left * -1) + point.x) / (rect(tables).width)),
             y: (((rect(tables).top * -1) + point.y) / (rect(tables).height))
@@ -249,8 +262,8 @@
         nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
 
         //correct scroll position for transform origin
-        var dx = (view.initScroll.left + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
-        var dy = (view.initScroll.top + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
+        var dx = (tables.offsetLeft + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
+        var dy = (tables.offsetTop + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
         window.scrollBy(dx, dy);
 
         nodes.zoom.setAttribute('zoom', model.zoom);
@@ -375,8 +388,7 @@
 
             //center button
             if(el.id === 'center') {
-                view.init();
-                model.zoomTo(1, getCenterPoint());
+                view.center();
                 ev.preventDefault();
             }
 
@@ -554,7 +566,7 @@
                 ev.preventDefault();
             }
             if(ev.keyCode === 114) { //r
-                view.init();
+                view.center();
                 model.zoomTo(1, getCenterPoint());
                 ev.preventDefault();
             }
@@ -565,9 +577,7 @@
             }
         };
 
-        window.onorientationchange = function() {
-            view.init();
-        };
+        window.addEventListener('orientationchange', view.center);
     };
 
     function init() {

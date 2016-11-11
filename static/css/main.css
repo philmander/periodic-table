@@ -25,9 +25,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-.wrap {
-  position: relative; }
-
 #center {
   position: fixed;
   top: 10px;
@@ -300,39 +297,29 @@ input[type="number"] {
 
 /* Titles ------------------------------------------------------------------------------------------------------------*/
 h1 {
-  position: absolute;
-  top: 47px;
-  z-index: 3;
-  left: 247px;
-  line-height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2px 4px;
   text-transform: uppercase;
-  font-family: monospace;
-  font-size: 2.1rem;
-  letter-spacing: 47px;
-  color: #999999;
-  transition: line-height 1s; }
-
-[zoom="0"] h1 {
-  line-height: 49px; }
-
-[zoom="1"] h1 {
-  line-height: 62px; }
-
-[zoom="2"] h1 {
-  line-height: 55px; }
-
-[zoom="3"] h1 {
-  line-height: 58px; }
-
-[zoom="4"] h1 {
-  line-height: 74px; }
-  @media (max-width: 690px) {
-    [zoom="4"] h1 {
-      line-height: 88px; } }
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  border-radius: 0 0 4px 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2; }
+  @media desktop {
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 6px; } }
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
 #tables {
   position: absolute;
+  top: 0;
+  left: 0;
   transition: transform 1s;
   transform-origin: 0 0;
   width: 1200px;
@@ -341,11 +328,13 @@ h1 {
 .elements {
   border-collapse: collapse;
   table-layout: fixed;
-  margin: 1rem 0;
   color: #393939;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 6px #717171; }
+
+.elements.group-f {
+  margin-top: 1rem; }
 
 [zoom="0"] #tables {
   transform: scale(0.6) translateZ(0); }
@@ -402,7 +391,7 @@ td > div {
   height: 1000%; }
 
 [zoom="0"] .elements > tbody > tr > td {
-  height: 49px; }
+  height: 59px; }
 
 [zoom="1"] .elements > tbody > tr > td {
   height: 62px; }
@@ -414,7 +403,7 @@ td > div {
   height: 58px; }
 
 [zoom="4"] .elements > tbody > tr > td {
-  height: 74px; }
+  height: 75px; }
   @media (max-width: 690px) {
     [zoom="4"] .elements > tbody > tr > td {
       height: 88px; } }
