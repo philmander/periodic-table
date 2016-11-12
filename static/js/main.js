@@ -155,6 +155,12 @@
         }
 
         view.applyFilter();
+
+        if(window.ga) {
+            window.ga(function(tracker) {
+                tracker.send('action', 'Filter', JSON.stringify(model.filter[type]));
+            });
+        }
     };
 
     model.resetPositionFilter = function() {
@@ -300,6 +306,12 @@
         nodes.zoom.setAttribute('zoom', model.zoom);
         view.panTo(dir);
         history.replaceState(null, '', '?z=' + model.zoom);
+
+        if(window.ga) {
+            window.ga(function(tracker) {
+                tracker.send('action', 'Zoom', dir);
+            });
+        }
     };
 
     view.panTo = function (dir) {
@@ -482,7 +494,12 @@
                     
                     
                 }
-
+                if(window.ga) {
+                    window.ga(function(tracker) {
+                        tracker.send('screenview', 'Tabs', 'open', target);
+                    });                    
+                }
+                
                 ev.preventDefault();
             }
 
