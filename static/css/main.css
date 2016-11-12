@@ -220,7 +220,8 @@ th > input:focus + label {
   z-index: 4; }
 
 #filters > .ctrl-label {
-  top: 118px; }
+  top: 116px;
+  padding: 4px; }
 
 fieldset {
   margin-top: 8px;

@@ -48,7 +48,11 @@
     <!-- Filters -->
     <div id=filters>
         <input type=checkbox id=toggle-filters class=ctrl-toggle tabindex=0>
-        <label class=ctrl-label for=toggle-filters title="Filters (f)">X</label>
+        <label class=ctrl-label for=toggle-filters title="Filters (f)">
+            <svg style="enable-background:new 0 0 139 139;" version="1.1" viewBox="0 0 139 139"><style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+</style><line class="st0" id="XMLID_7_" x1="39.1" x2="139" y1="32.4" y2="32.4"/><line class="st0" id="XMLID_8_" x1="0" x2="52.4" y1="106.6" y2="106.6"/><line class="st0" id="XMLID_1_" x1="89.1" x2="139" y1="106.6" y2="106.6"/><circle class="st0" cx="21" cy="32.4" id="XMLID_9_" r="18.1"/><circle class="st0" cx="70.5" cy="106.6" id="XMLID_11_" r="18.1"/></svg>
+        </label>
         <div class=ctrl-content>
             <div>
                 <button type=button class=close-content title="Close Filters" value="#toggle-filters">×</button>
@@ -205,7 +209,7 @@
 
                 <p>Periodic Table Map is by <a href="http://versatile.nl">Versatile Internet</a></p>
 
-                <p><a href="mailto:philip@@versatile.nl?subject=Request for Periodic Table Map">Report an issue or request a feature</a></p>
+                <p><a href="mailto:philip.mander@gmail.com?subject=Request for Periodic Table Map">Report an issue or request a feature</a></p>
 
                 <hr>
 
@@ -218,9 +222,6 @@
     </div>
 </aside>
 <main id="wrap">
-    {{!-- Center point --}}
-    {{!-- <div style="position: absolute; left: 15000px; top: 7500px; z-index: 10; background: red; width: 20px; height: 20px"></div> --}}
-
     {{#*inline "checkbox"}}
         <input type=checkbox name={{name}} value={{value}} id={{name}}-{{value}}>
         <label for={{name}}-{{value}}>{{label}}</label>
