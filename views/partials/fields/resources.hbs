@@ -3,7 +3,8 @@
         <ul class=tabs-nav>
             <li class=active><a href=#history-{{element.symbol}}>Info</a></li>
             <li><a href=#video-{{element.symbol}}>Video</a></li>
-            <li><a href=#wiki-{{element.symbol}}>Wikipedia</a></li>
+            <li><a href=#wiki-{{element.symbol}}>Wiki</a></li>
+            <li><a href=#shop-{{element.symbol}}>Shop</a></li>
             <li><a href=#other-{{element.symbol}}>More</a></li>
         </ul>
         <div class=tabs-content>
@@ -20,31 +21,40 @@
                                     [ {{#with (getLicense element.images.0.license)}}<a href="{{url}}" target="_blank">{{shortName}}</a>{{/with}} ]
                                 {{/if}}
                             </small></p>
-                            <p>{{element.images.0.description}}</p>
+                            <p>{{{element.images.0.description}}}</p>
                         </figcaption>
                     </figure>
                 {{/if}}
                 <p>{{element.info}}</p>
-                {{!--<p><small>Information courtesy of <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a></small></p>--}}
             </div>
             <div id=video-{{element.symbol}} class=tabs-content-pane>
                 <div class=video>
                     <div class=iframe width=560 height=315 src="{{resource element "Youtube"}}" frameborder=0 allowfullscreen>
-                        <p><a href={{resource element "Youtube"}} target=_blank>Video for {{element.name}}</p>
+                        <p><a href={{resource element "Youtube"}} target=_blank>Video for {{element.name}}</a></p>
                     </div>
                 </div>
             </div>
             <div id=wiki-{{element.symbol}} class="tabs-content-pane wiki-pane">
                 <div class=iframe src="{{resource element "Wikipedia"}}?printable=yes">
-                    <p><a href={{resource element "Wikipedia"}} target=_blank>Wikipedia entry for {{element.name}}</p>
+                    <p><a href={{resource element "Wikipedia"}} target=_blank>Wikipedia entry for {{element.name}}</a></p>
+                </div>
+            </div>
+            <div id=shop-{{element.symbol}} class="tabs-content-pane shop-pane">
+                <div class=ads term="{{element.name}} element">
+                    <div class=spinner></div>
                 </div>
             </div>
             <div id=other-{{element.symbol}} class=tabs-content-pane>
+                <p>Web</p>
                 <ul class=bullets>
                     {{#each (otherResources element)}}
                         <li><a href="{{url}}" target=_blank>{{name}}</a></li>
                     {{/each}}
                 </ul>
+                <p>Books</p>
+                <div class=ads term="{{element.name}} element" category="KindleStore" design="text_links">
+                    <div class=spinner></div>
+                </div>
             </div>
         </div>
     </div>

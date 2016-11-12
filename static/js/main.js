@@ -435,15 +435,52 @@
                 var panes = target.parentNode.children;
                 for(i = 0; i < panes.length; i++) {
                     panes[i].style.display = panes[i] === target ? 'block' : 'none';
-                    var div = target.querySelector('.iframe');
-                    if(div) {
+                    var iframePlaceholder = target.querySelector('.iframe');
+                    if(iframePlaceholder) {
                         var iframe = document.createElement('iframe');
-                        div.parentNode.appendChild(iframe);
-                        for(j = 0; j < div.attributes.length; j++) {
-                            iframe.setAttribute(div.attributes[j].name, div.attributes[j].value);
+                        iframePlaceholder.parentNode.appendChild(iframe);
+                        for(j = 0; j < iframePlaceholder.attributes.length; j++) {
+                            iframe.setAttribute(iframePlaceholder.attributes[j].name, iframePlaceholder.attributes[j].value);
                         }
-                        div.parentNode.removeChild(div);
+                        iframePlaceholder.parentNode.removeChild(iframePlaceholder);
+                        continue;
                     }
+                    var adsPlaceholder = target.querySelector('.ads');
+                    if(adsPlaceholder && !adsPlaceholder.getAttribute('initialized')) {
+                        var searchTerm = adsPlaceholder.getAttribute('term'),
+                            searchCategory = adsPlaceholder.getAttribute('category') || 'All',
+                            design = adsPlaceholder.getAttribute('design');
+                        window.amzn_assoc_placement = 'adunit';
+                        window.amzn_assoc_search_bar = 'false';
+                        window.amzn_assoc_tracking_id = 'periodictab05-20';
+                        window.amzn_assoc_ad_mode = 'search';
+                        window.amzn_assoc_ad_type = 'smart';
+                        window.amzn_assoc_marketplace = 'amazon';
+                        window.amzn_assoc_region = 'US';
+                        window.amzn_assoc_title = '';
+                        window.amzn_assoc_default_search_phrase = searchTerm;
+                        window.amzn_assoc_default_category = searchCategory;
+                        window.amzn_assoc_linkid = '37694af719272b63fc4a6d8c15ffe65d';
+                        window.amzn_assoc_rows = '4';
+                        
+                        if(design === 'text_links') {
+                            window.amzn_assoc_design = 'text_links';    
+                        } else {
+                            delete window.amzn_assoc_design;
+                        }
+
+                        document.write = function(html) {
+                            adsPlaceholder.innerHTML = html;
+                        };
+
+                        var adsScript = document.createElement('script');
+                        adsScript.src = '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US';
+                        target.appendChild(adsScript);
+
+                        adsPlaceholder.setAttribute('initialized', 'initialized');
+                    }
+                    
+                    
                 }
 
                 ev.preventDefault();
@@ -504,9 +541,13 @@
             }
         };
 
-        var allowWheel = true;
+       /* var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
-            if(allowWheel) {
+            var nope = ev.path.some(function(el) {
+                return el.tagName === 'DIV' && el.scrollHeight > el.clientHeight;
+            });
+
+            if(allowWheel && !nope) {
                 model.zoomWith(ev.deltaY > 0 ? -1 : 1, {
                     x: ev.clientX,
                     y: ev.clientY
@@ -517,7 +558,7 @@
                     allowWheel = true;
                 }, 1000);
             }
-        };
+        };*/
 
         //pinch to zoom
         var t1;
@@ -599,8 +640,6 @@
             }
         };
         window.onkeypress = function(ev) {
-
-            var el = ev.target;
 
             if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
                 model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());

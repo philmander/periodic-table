@@ -24,7 +24,7 @@
                 
                 //mouse down
                 container.addEventListener('mousedown', container.md = function(ev) {
-                    if (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container) {
+                    if (ev.button === 0 && (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container)) {
                         pushed = 1;
                         lastClientX = ev.clientX;
                         lastClientY = ev.clientY;

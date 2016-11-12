@@ -1,24 +1,24 @@
 // Table header filters
 
-th > label {
+.elements > tbody > tr > th > label {
   display: block;
   cursor: pointer;
 }
-th > input[type=checkbox] {
+.elements > tbody > tr > th > input[type=checkbox] {
   position: absolute;
   left: -20px;
 }
 
-th.active,
-th > label:hover,
-th > input:checked + label {
+.elements > tbody > tr > th.active,
+.elements > tbody > tr > th:hover,
+.elements > tbody > tr > th > input:checked + label {
   background: #d6d6d6 !important;
 }
-th > input:focus + label {
+.elements > tbody > tr > th > input:focus + label {
   outline: 2px solid Highlight;
 }
 @media (-webkit-min-device-pixel-ratio:0) {
-  th > input:focus + label {
+  .elements > tbody > tr > th > input:focus + label {
     outline: 2px auto -webkit-focus-ring-color;
   }
 }

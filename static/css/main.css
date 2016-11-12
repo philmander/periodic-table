@@ -25,24 +25,54 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-th > label {
+@keyframes spinner {
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+.spinner {
+  min-width: 48px;
+  min-height: 48px; }
+
+.spinner:before {
+  content: 'Loading store';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -10px;
+  margin-left: -10px; }
+
+.spinner:not(:required):before {
+  content: '';
+  border-radius: 50%;
+  border-top: 6px solid #393939;
+  border-right: 6px solid transparent;
+  animation: spinner .8s linear infinite;
+  -webkit-animation: spinner .8s linear infinite; }
+
+.elements > tbody > tr > th > label {
   display: block;
   cursor: pointer; }
 
-th > input[type=checkbox] {
+.elements > tbody > tr > th > input[type=checkbox] {
   position: absolute;
   left: -20px; }
 
-th.active,
-th > label:hover,
-th > input:checked + label {
+.elements > tbody > tr > th.active,
+.elements > tbody > tr > th:hover,
+.elements > tbody > tr > th > input:checked + label {
   background: #d6d6d6 !important; }
 
-th > input:focus + label {
+.elements > tbody > tr > th > input:focus + label {
   outline: 2px solid Highlight; }
 
 @media (-webkit-min-device-pixel-ratio: 0) {
-  th > input:focus + label {
+  .elements > tbody > tr > th > input:focus + label {
     outline: 2px auto -webkit-focus-ring-color; } }
 
 #center {
@@ -644,6 +674,14 @@ figcaption p {
 
 figcaption p:first-child {
   margin-top: 0; }
+
+.ads {
+  position: relative;
+  min-height: 200px; }
+
+a.amzn-native-product-title {
+  color: blue !important;
+  font-size: 1rem !important; }
 
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
