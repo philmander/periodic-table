@@ -1,5 +1,5 @@
 .wrap {
-  //position: relative;
+  position: relative;
 }
 
 /* Titles ------------------------------------------------------------------------------------------------------------*/
@@ -24,6 +24,13 @@ h1 {
 }
 
 /* Tables ------------------------------------------------------------------------------------------------------------*/
+
+#reset-position-filters {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
 #tables {
   position: absolute;
   top: 0;
@@ -41,7 +48,7 @@ h1 {
   width: 100%;
   box-shadow: 0 0 6px #717171;
 }
-.elements.group-f {
+.elements.block-f {
   margin-top: 1rem;
 }
 [zoom="0"] #tables {
@@ -123,14 +130,10 @@ td > div {
   text-align: center;
   font-weight: bold;
   line-height: 2em;
-  cursor: pointer;
+  overflow: hidden;
 }
 .elements > tbody > tr > th:first-child {
   width: 2rem
-}
-.elements > tbody > tr > th:hover,
-.elements > tbody > tr > th:focus {
-  background: #d6d6d6;
 }
 
 [c="n"] {
@@ -364,12 +367,13 @@ iframe {
 /* Util --------------------------------------------------------------------------------------------------------------*/
 
 
-.filtering .elements > tbody > tr > td {
+//.filtering .elements > tbody > tr > td,
+.unfiltered {
   opacity: 0.3;
 }
-.filtered {
+/*.filtered {
   opacity: 1 !important;
-}
+}*/
 .video {
   position: relative;
   padding-bottom: 56.25%;

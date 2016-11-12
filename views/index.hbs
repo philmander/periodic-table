@@ -46,204 +46,197 @@
     </div>
 
     <!-- Filters -->
-    <input type=checkbox id=toggle-filters>
     <div id=filters>
-        <label for=toggle-filters title="Toggle filters (f)">Filters</label>
-        <div>
-            <fieldset id=filter-temp>
-                <label>State @ </label>
-                <input type=number min=-460 max=10340 id=temp>
-                <select>
-                    <option value=k selected>K</option>
-                    <option value=c>°C</option>
-                    <option value=f>°F</option>
-                </select>
-            </fieldset>
-            <fieldset id=filter-state class=radios>
-                <input id=input-state-gas type=checkbox name=state value=gas>
-                <label for=input-state-gas><i>✓</i> Gas</label>
+        <input type=checkbox id=toggle-filters class=ctrl-toggle tabindex=0>
+        <label class=ctrl-label for=toggle-filters title="Filters (f)">X</label>
+        <div class=ctrl-content>
+            <div>
+                <button type=button class=close-content title="Close Filters" value="#toggle-filters">×</button>
+                <h2>Filters</h2>
+                <h3>Find elements</h3>
+                <div id="filter-find">
+                    <label for="find">Name or symbol</label>
+                    <input id=find placeholder="Antimony">
+                    <button type=button id=find-reset>Clear</button>
+                </div>
+                <h3>Year discovered</h3>
+                <div id="filter-year">
+                    <label for="year">Show before</label>
+                    <input type=number min=1669 max={{year}} id=year>
+                    <button type=button id=year-reset>Reset</button>
+                </div>
+                <h3>State at temperature</h3>
+                <div id=filter-temp>
+                    <label for="temp">Temperature </label>
+                    <input type=number value=298 min=-460 max=10340 id=temp>
+                    <select>
+                        <option value=k selected>K</option>
+                        <option value=c>°C</option>
+                        <option value=f>°F</option>
+                    </select>
+                </div>
+                <fieldset id=filter-state class=radios>
+                    <label><input type=checkbox name=state value=gas> Gas</label>
 
-                <input id=input-state-liquid type=checkbox name=state value=liquid>
-                <label for=input-state-liquid><i>✓</i> Liquid</label>
+                    <label><input type=checkbox name=state value=liquid> Liquid</label>
 
-                <input id=input-state-solid type=checkbox name=state value=solid>
-                <label for=input-state-solid><i>✓</i> Solid</label>
-            </fieldset>
-            <fieldset id="filter-find">
-                <label>Find <input id=find placeholder="Antimony"></label>
-            </fieldset>
-            <fieldset id="filter-year">
-                <label>Year <input type=number min=1669 max={{year}} id=year></label>
-                <button type=button id=year-apply>Apply</button>
-            </fieldset>
-            <fieldset id="filter-category" class=radios>
-                <span>Categories:</span>
-
-                <input type=checkbox name=category id=input-cat-nonmetals value="n,h,ng">
-                <label for=input-cat-nonmetals><i>✓</i> Non-metals</label>
-
-                <input type=checkbox name=category id=filter-cat-metalloids value=m>
-                <label for=filter-cat-metalloids c=m><i>✓</i> Metalloids</label>
-
-                <input type=checkbox name=category id=filter-cat-n value=n>
-                <label for=filter-cat-n c=n><i>✓</i> Other non-metals</label>
-
-                <input type=checkbox name=category id=filter-cat-h value=h>
-                <label for=filter-cat-h c=h><i>✓</i> Halogens</label>
-
-                <input type=checkbox name=category id=filter-cat-ng value=ng>
-                <label for=filter-cat-ng c=ng><i>✓</i> Noble gases</label>
-
-                <input type=checkbox name=category id=filter-cat-metals value="am,aem,l,a,tm,ptm">
-                <label for=filter-cat-metals><i>✓</i> Metals</label>
-
-                <input type=checkbox name=category id=filter-cat-am value=am>
-                <label for=filter-cat-am c=am><i>✓</i> Alkali metals</label>
-
-                <input type=checkbox name=category id=filter-cat-aem value=aem>
-                <label for=filter-cat-aem c=aem><i>✓</i> Alkaline earth metals</label>
-
-                <input type=checkbox name=category id=filter-cat-l value=l>
-                <label for=filter-cat-l c=l><i>✓</i> Lanthanides</label>
-
-                <input type=checkbox name=category id=filter-cat-a value=a>
-                <label for=filter-cat-a c=a><i>✓</i> Actinides</label>
-
-                <input type=checkbox name=category id=filter-cat-tm value=tm>
-                <label for=filter-cat-tm c=tm><i>✓</i> Transition metals</label>
-
-                <input type=checkbox name=category id=filter-cat-ptm value=ptm>
-                <label for=filter-cat-ptm c=ptm><i>✓</i> Post-transition metals</label>
-            </fieldset>
+                    <label><input type=checkbox name=state value=solid> Solid</label>
+                </fieldset>
+                <h3>Categories:</h3>
+                <h4>Non-Metals</h4>
+                <fieldset class="radios filter-category">
+                    <label c=m><input type=checkbox name=category value=m> Metalloids</label>
+                    <label c=n><input type=checkbox name=category value=n> Other non-metals</label>
+                    <label c=h><input type=checkbox name=category value=h> Halogens</label>
+                    <label c=ng><input type=checkbox name=category value=ng> Noble gases</label>
+                </fieldset>
+                <h4>Metals</h4>
+                <fieldset class="radios filter-category">
+                    <label c=am><input type=checkbox name=category value=am> Alkali metals</label>
+                    <label c=aem><input type=checkbox name=category value=aem> Alkaline earth metals</label>
+                    <label c=l><input type=checkbox name=category value=l> Lanthanides</label>
+                    <label c=a><input type=checkbox name=category value=a> Actinides</label>
+                    <label c=tm><input type=checkbox name=category value=tm> Transition metals</label>
+                    <label c=ptm><input type=checkbox name=category value=ptm> Post-transition metals</label>
+                </fieldset>
+            </div>
         </div>
     </div>
-
     <!-- About/help -->
 
-    <input type=checkbox id=toggle-help tabindex=0>
-    <label id=help-link for=toggle-help title="About Periodic Table Map">?</label>
-    <div id=help>
-        <div>
-        <button type=button id=close-help title="Close help">×</button>
-        <h2>About Periodic Table Map</h2>
-        <p><b>Periodic Table Map</b> is an interactive way to explore the chemical elements.
-            Use the controls on the right to zoom in/out and drag to move around.</p>
+    <div id=about>
+        <input type=checkbox id=toggle-about class=ctrl-toggle tabindex=0>
+        <label class=ctrl-label for=toggle-about title="About Periodic Table Map (h)">?</label>
+        <div class=ctrl-content>
+            <div>
+                <button type=button class=close-content title="Close help" value="#toggle-about">×</button>
+                <h2>Welcome to Periodic Table Map</h2>
+                <p><b>Periodic Table Map</b> is an interactive way to explore the chemical elements.
+                    Use the controls on the right to zoom in/out and drag to move around.</p>
 
-        <hr>
+                <hr>
 
-        <h3>Share</h3>
+                <h3>Share</h3>
 
-        <!-- Sharingbutton Facebook -->
-        <a class="resp-sharing-button__link"
-           href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fperiodictablemap.com" target="_blank"
-           aria-label="Facebook">
-            <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium">
-                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.595,11.5H13.5c0,3.013,0,7,0,7h-3 c0,0,0-3.951,0-7h-2v-2h2V8.336c0-1.1,0.352-2.819,2.649-2.819L15.5,5.524V7.83c0,0-1.163,0-1.408,0 c-0.244,0-0.592,0.124-0.592,0.647V9.5h2.339L15.595,11.5z"/>
-    </svg>
-                </div>
-                Facebook
+                <!-- Sharingbutton Facebook -->
+                <a class="resp-sharing-button__link"
+                   href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fperiodictablemap.com" target="_blank"
+                   aria-label="Facebook">
+                    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                            <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.595,11.5H13.5c0,3.013,0,7,0,7h-3 c0,0,0-3.951,0-7h-2v-2h2V8.336c0-1.1,0.352-2.819,2.649-2.819L15.5,5.524V7.83c0,0-1.163,0-1.408,0 c-0.244,0-0.592,0.124-0.592,0.647V9.5h2.339L15.595,11.5z"/>
+            </svg>
+                        </div>
+                        &nbsp;Facebook
+                    </div>
+                </a>
+
+                <!-- Sharingbutton Twitter -->
+                <a class="resp-sharing-button__link"
+                   href="https://twitter.com/intent/tweet/?text=A%20fun%20and%20interactive%20way%20to%20explore%20the%20chemical%20elements.&amp;url=http%3A%2F%2Fperiodictablemap.com"
+                   target="_blank" aria-label="Twitter">
+                    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                            <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M17.262,9.385 c0.006,0.113,0.008,0.226,0.008,0.34c0,3.478-2.647,7.489-7.488,7.489c-1.486,0-2.87-0.437-4.035-1.184 c1.374,0.161,2.771-0.207,3.896-1.089c-1.151-0.022-2.123-0.783-2.458-1.829c0.396,0.075,0.803,0.061,1.188-0.046 c-1.204-0.24-2.111-1.305-2.111-2.579c0-0.011,0-0.023,0-0.035c0.355,0.197,0.762,0.315,1.192,0.33 c-0.706-0.473-1.171-1.277-1.171-2.19c0-0.482,0.13-0.934,0.356-1.324c1.298,1.593,3.237,2.642,5.425,2.75 c-0.045-0.191-0.068-0.394-0.068-0.599c0-1.454,1.179-2.632,2.633-2.632c0.757,0,1.44,0.319,1.921,0.832 c0.6-0.119,1.95-0.266,1.95-0.266C18.147,7.882,17.776,9.013,17.262,9.385z"/>
+            </svg>
+                        </div>
+                        &nbsp;Twitter
+                    </div>
+                </a>
+
+                <!-- Sharingbutton Reddit -->
+                <a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=http%3A%2F%2Fperiodictablemap.com"
+                   target="_blank" aria-label="Reddit">
+                    <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--medium">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+                            <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                <g>
+                    <circle cx="9.391" cy="13.392" r="0.978"/>
+                    <path d="M14.057,15.814c-1.141,0.659-2.987,0.655-4.122-0.004c-0.238-0.138-0.545-0.058-0.684,0.182 c-0.139,0.239-0.058,0.545,0.182,0.685c0.72,0.417,1.631,0.646,2.567,0.646c0.931,0,1.838-0.228,2.557-0.642 c0.239-0.139,0.321-0.444,0.184-0.684C14.602,15.758,14.295,15.677,14.057,15.814z"/>
+                    <path d="M5,12.086c0,0.411,0.229,0.78,0.568,0.978c0.27-0.662,0.735-1.264,1.353-1.774c-0.209-0.207-0.489-0.334-0.79-0.334 C5.507,10.956,5,11.463,5,12.086z"/>
+                    <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M18.673,14.055 c0.01,0.104,0.022,0.208,0.022,0.314c0,2.613-3.004,4.739-6.695,4.739s-6.695-2.126-6.695-4.739c0-0.106,0.013-0.21,0.022-0.314 C4.538,13.735,4,12.975,4,12.086c0-1.175,0.956-2.131,2.131-2.131c0.629,0,1.217,0.288,1.617,0.756 c1.04-0.607,2.345-0.991,3.769-1.063c0.058-0.803,0.309-2.33,1.389-2.951c0.633-0.365,1.417-0.322,2.322,0.086 c0.302-0.811,1.076-1.392,1.989-1.392c1.175,0,2.131,0.957,2.131,2.13c0,1.175-0.956,2.131-2.131,2.131 c-1.064,0-1.941-0.789-2.097-1.812c-0.734-0.402-1.315-0.506-1.716-0.276c-0.601,0.345-0.818,1.394-0.881,2.086 c1.408,0.078,2.698,0.46,3.729,1.062c0.399-0.468,0.987-0.756,1.617-0.756c1.175,0,2.131,0.956,2.131,2.131 C20,12.975,19.462,13.735,18.673,14.055z"/>
+                    <circle cx="14.609" cy="13.391" r="0.978"/>
+                    <path d="M17.869,10.956c-0.301,0-0.582,0.128-0.79,0.334c0.617,0.51,1.083,1.112,1.353,1.774C18.771,12.867,19,12.498,19,12.086 C19,11.463,18.493,10.956,17.869,10.956z"/>
+                </g>
+            </svg>
+                        </div>
+                        &nbsp;Reddit
+                    </div>
+                </a>
+
+                <hr>
+
+                <h3>Keyboard shortcuts</h3>
+                <dl>
+                    <dt>Show/hide filters</dt>
+                    <dd><kbd>f</kbd></dd>
+
+                    <dt>Show/hide help</dt>
+                    <dd><kbd>h</kbd></dd>
+
+                    <dt>Return to center</dt>
+                    <dd><kbd>r</kbd></dd>
+
+                    <dt>Zoom in</dt>
+                    <dd><kbd>=</kbd></dd>
+
+                    <dt>Zoom out</dt>
+                    <dd><kbd>-</kbd></dd>
+
+                    <dt>Zoom to level</dt>
+                    <dd><kbd>[0 - 4]</kbd></dd>
+
+                    <dt>Move north</dt>
+                    <dd><kbd>Up arrow</kbd></dd>
+
+                    <dt>Move east</dt>
+                    <dd><kbd>Left arrow</kbd></dd>
+
+                    <dt>Move south</dt>
+                    <dd><kbd>Down arrow</kbd></dd>
+
+                    <dt>Move west</dt>
+                    <dd><kbd>Right arrow</kbd></dd>
+                </dl>
+
+                <hr>
+
+                <p>Periodic Table Map is by <a href="http://versatile.nl">Versatile Internet</a></p>
+
+                <p><a href="mailto:philip@@versatile.nl?subject=Request for Periodic Table Map">Report an issue or request a feature</a></p>
+
+                <hr>
+
+                <p>
+                    <small>Elements descriptions are taken from <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a>
+                    </small>
+                </p>
             </div>
-        </a>
-
-        <!-- Sharingbutton Twitter -->
-        <a class="resp-sharing-button__link"
-           href="https://twitter.com/intent/tweet/?text=A%20fun%20and%20interactive%20way%20to%20explore%20the%20chemical%20elements.&amp;url=http%3A%2F%2Fperiodictablemap.com"
-           target="_blank" aria-label="Twitter">
-            <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium">
-                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M17.262,9.385 c0.006,0.113,0.008,0.226,0.008,0.34c0,3.478-2.647,7.489-7.488,7.489c-1.486,0-2.87-0.437-4.035-1.184 c1.374,0.161,2.771-0.207,3.896-1.089c-1.151-0.022-2.123-0.783-2.458-1.829c0.396,0.075,0.803,0.061,1.188-0.046 c-1.204-0.24-2.111-1.305-2.111-2.579c0-0.011,0-0.023,0-0.035c0.355,0.197,0.762,0.315,1.192,0.33 c-0.706-0.473-1.171-1.277-1.171-2.19c0-0.482,0.13-0.934,0.356-1.324c1.298,1.593,3.237,2.642,5.425,2.75 c-0.045-0.191-0.068-0.394-0.068-0.599c0-1.454,1.179-2.632,2.633-2.632c0.757,0,1.44,0.319,1.921,0.832 c0.6-0.119,1.95-0.266,1.95-0.266C18.147,7.882,17.776,9.013,17.262,9.385z"/>
-    </svg>
-                </div>
-                Twitter
-            </div>
-        </a>
-
-        <!-- Sharingbutton Reddit -->
-        <a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=http%3A%2F%2Fperiodictablemap.com"
-           target="_blank" aria-label="Reddit">
-            <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--medium">
-                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-        <g>
-            <circle cx="9.391" cy="13.392" r="0.978"/>
-            <path d="M14.057,15.814c-1.141,0.659-2.987,0.655-4.122-0.004c-0.238-0.138-0.545-0.058-0.684,0.182 c-0.139,0.239-0.058,0.545,0.182,0.685c0.72,0.417,1.631,0.646,2.567,0.646c0.931,0,1.838-0.228,2.557-0.642 c0.239-0.139,0.321-0.444,0.184-0.684C14.602,15.758,14.295,15.677,14.057,15.814z"/>
-            <path d="M5,12.086c0,0.411,0.229,0.78,0.568,0.978c0.27-0.662,0.735-1.264,1.353-1.774c-0.209-0.207-0.489-0.334-0.79-0.334 C5.507,10.956,5,11.463,5,12.086z"/>
-            <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M18.673,14.055 c0.01,0.104,0.022,0.208,0.022,0.314c0,2.613-3.004,4.739-6.695,4.739s-6.695-2.126-6.695-4.739c0-0.106,0.013-0.21,0.022-0.314 C4.538,13.735,4,12.975,4,12.086c0-1.175,0.956-2.131,2.131-2.131c0.629,0,1.217,0.288,1.617,0.756 c1.04-0.607,2.345-0.991,3.769-1.063c0.058-0.803,0.309-2.33,1.389-2.951c0.633-0.365,1.417-0.322,2.322,0.086 c0.302-0.811,1.076-1.392,1.989-1.392c1.175,0,2.131,0.957,2.131,2.13c0,1.175-0.956,2.131-2.131,2.131 c-1.064,0-1.941-0.789-2.097-1.812c-0.734-0.402-1.315-0.506-1.716-0.276c-0.601,0.345-0.818,1.394-0.881,2.086 c1.408,0.078,2.698,0.46,3.729,1.062c0.399-0.468,0.987-0.756,1.617-0.756c1.175,0,2.131,0.956,2.131,2.131 C20,12.975,19.462,13.735,18.673,14.055z"/>
-            <circle cx="14.609" cy="13.391" r="0.978"/>
-            <path d="M17.869,10.956c-0.301,0-0.582,0.128-0.79,0.334c0.617,0.51,1.083,1.112,1.353,1.774C18.771,12.867,19,12.498,19,12.086 C19,11.463,18.493,10.956,17.869,10.956z"/>
-        </g>
-    </svg>
-                </div>
-                Reddit
-            </div>
-        </a>
-
-        <hr>
-
-        <h3>Keyboard shortcuts</h3>
-        <dl>
-            <dt>Show/hide filters</dt>
-            <dd><kbd>f</kbd></dd>
-
-            <dt>Return to center</dt>
-            <dd><kbd>r</kbd></dd>
-
-            <dt>Zoom in</dt>
-            <dd><kbd>=</kbd></dd>
-
-            <dt>Zoom out</dt>
-            <dd><kbd>-</kbd></dd>
-
-            <dt>Zoom to level</dt>
-            <dd><kbd>[0 - 4]</kbd></dd>
-
-            <dt>Move north</dt>
-            <dd><kbd>Up arrow</kbd></dd>
-
-            <dt>Move east</dt>
-            <dd><kbd>Left arrow</kbd></dd>
-
-            <dt>Move south</dt>
-            <dd><kbd>Down arrow</kbd></dd>
-
-            <dt>Move west</dt>
-            <dd><kbd>Right arrow</kbd></dd>
-        </dl>
-
-        <hr>
-
-        <p>Periodic Table Map is by <a href="http://versatile.nl">Versatile Internet</a></p>
-
-        <p><a href="mailto:philip@@versatile.nl?subject=Issue report for Periodic Table Map">Report an issue</a></p>
-        <p><a href="mailto:philip@@versatile.nl?subject=Request a feature for Periodic Table Map">Request a feature</a>
-        </p>
-
-        <hr>
-
-        <p>
-            <small>Elements descriptions are taken from <a href="http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm">http://php.scripts.psu.edu/djh300/cmpsc221/p3s11-pt-data.htm</a>
-            </small>
-        </p>
         </div>
     </div>
 </aside>
 <main id="wrap">
     {{!-- Center point --}}
     {{!-- <div style="position: absolute; left: 15000px; top: 7500px; z-index: 10; background: red; width: 20px; height: 20px"></div> --}}
+
+    {{#*inline "checkbox"}}
+        <input type=checkbox name={{name}} value={{value}} id={{name}}-{{value}}>
+        <label for={{name}}-{{value}}>{{label}}</label>
+    {{/inline}}
+
     <div id="tables">
         <table class=elements>
             <tr>
-                <th></th>
+                <th><button id="reset-position-filters" title="Reset group, period and block filters">×</button></th>
                 {{#range 1 19}}
-                    <th group tabindex=0>{{#if index}}{{index}}{{/if}}</th>
+                    <th>{{> checkbox name="group" value=index label=index }}</th>
                 {{/range}}
             </tr>
             {{#range 1 8}}
                 <tr>
-                    <th period tabindex=0>{{index}}</th>
+                    <th>{{> checkbox name="period" value=index label=index}}</th>
                     {{#range 1 19}}
                         {{#with (getElementAtPosition ../index index)}}
                             <td s={{symbol}} c={{toInitialism groupBlock}} t={{meltingPoint}},{{boilingPoint}}
@@ -276,16 +269,26 @@
             {{/range}}
             <tr>
                 <th></th>
-                <th block tabindex=0 colspan=2>s</th>
-                <th block tabindex=0 colspan=10>d</th>
-                <th block tabindex=0 colspan=6>p</th>
+                <th colspan=2>
+                    {{> checkbox name="block" value="s" label="s"}}
+                </th>
+                <th colspan=10>
+                    {{> checkbox name="block" value="d" label="d"}}
+                </th>
+                <th b=p tabindex=0 colspan=6>
+                    {{> checkbox name="block" value="p"  label="p"}}
+                </th>
             </tr>
         </table>
 
-        <table class="elements group-f">
+        <table class="elements block-f">
             <tr>
-                <th block tabindex=0 rowspan=2>f</th>
-                <th group=l tabindex=0 colspan=2>* Lanthanides</th>
+                <th rowspan=2>
+                    {{> checkbox name="block" value="f" label="f"}}
+                </th>
+                <th colspan=2>
+                    {{> checkbox name="group" value="l" label="* Lanthanides"}}
+                </th>
                 {{#each (lanthanides)}}
                     <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}"
                         y={{yearDiscovered}}>
@@ -295,7 +298,9 @@
                 <th></th>
             </tr>
             <tr>
-                <th group=a tabindex=0 colspan=2>** Actinides</th>
+                <th colspan=2>
+                    {{> checkbox name="group" value="a" label="** Actinides"}}
+                </th>
                 {{#each (actinides)}}
                     <td s={{symbol}} c={{toInitialism groupBlock}} t="{{meltingPoint}},{{boilingPoint}}"
                         y={{yearDiscovered}}>

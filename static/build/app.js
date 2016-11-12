@@ -95,7 +95,7 @@
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
-        toggleHelp: document.querySelector('#toggle-help'),
+        toggleAbout: document.querySelector('#toggle-help'),
         toggleFilters: document.querySelector('#toggle-filters'),
         filters: document.querySelector('#filters'),
         zoom: document.querySelector('[zoom]'),
@@ -489,7 +489,7 @@
 
             //close help
             else if(el.id === 'close-help') {
-                nodes.toggleHelp.checked = false;
+                nodes.toggleAbout.checked = false;
             }
          };
 
