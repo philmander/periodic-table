@@ -1431,10 +1431,6 @@
       }
     ],
     "shop" : {
-      "search" : "",
-      "category" : "All"
-    },
-    "shop" : {
       "search" : "vanadium element",
       "category" : "All"
     },
@@ -4818,7 +4814,7 @@
     ],
     "shop" : {
       "search" : "gold",
-      "category" : "KindleStore"
+      "category" : "Industrial"
     },
     "info": "Gold has been known from prehistoric times and was possibly the first metal used by humans. It was valued for ornaments and magical efficacy was attributed to it. In the Middle Ages alchemists sought to transmute baser metals into gold. The quest for gold stimulated European explorations and conquests, and its discovery has led to many a gold rush."
   },
@@ -5168,6 +5164,10 @@
       }
     ],
     "images" : [],
+    "shop" : {
+      "search" : "astatine",
+      "category" : "All"
+    },
     "info": "Astatine was synthesized in 1940 by Dale Corson and others at the University of California, USA, by bombarding bismuth (209Bi) with ?-particles."
   },
   {
@@ -5205,7 +5205,7 @@
     "resources": [
       {
         "name": "Youtube",
-        "url": "https://www.youtube.com/embed/mTuC_LrEfbU"
+        "url": "https://www.youtube_t.com/embed/mTuC_LrEfbU"
       },
       {
         "name": "Wikipedia",
