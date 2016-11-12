@@ -24,7 +24,7 @@
                 
                 //mouse down
                 container.addEventListener('mousedown', container.md = function(ev) {
-                    if (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container) {
+                    if (ev.button === 0 && (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container)) {
                         pushed = 1;
                         lastClientX = ev.clientX;
                         lastClientY = ev.clientY;
@@ -74,7 +74,9 @@
 
     var documentElement = document.documentElement;
 
-    var filters = { PERIOD: 'p', GROUP: 'g', BLOCK: 'b', CATEGORY: 'c', STATE: 's', YEAR: 'y', FIND: 'f'};
+    var filterTypes = {
+        PERIOD: 'period', GROUP: 'group', BLOCK: 'block', CATEGORY: 'category', STATE: 'state', YEAR: 'year', FIND: 'find'
+    };
 
     var units = {
         C: 'c',
@@ -89,13 +91,19 @@
 
     var css = {
         FILTERED: 'filtered',
-        FILTERING: 'filtering'
+        FILTERING: 'filtering',
+        UNFILTERED: 'unfiltered'
+    };
+
+    var wrapSize = {
+        width: 25000,
+        height: 15000
     };
 
     var nodes = {
         header: document.querySelector('header'),
         wrap: document.querySelector('#wrap'),
-        toggleAbout: document.querySelector('#toggle-help'),
+        toggleAbout: document.querySelector('#toggle-about'),
         toggleFilters: document.querySelector('#toggle-filters'),
         filters: document.querySelector('#filters'),
         zoom: document.querySelector('[zoom]'),
@@ -104,16 +112,26 @@
         temp: document.querySelector('#temp'),
         find: document.querySelector('#find'),
         year: document.querySelector('#year'),
-        yearApply: document.querySelector('#year-apply')
+        findReset: document.querySelector('#find-reset'),
+        yearReset: document.querySelector('#year-reset')
     };
     nodes.tempUnit = nodes.temp.nextElementSibling;
 
     var model = {
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
         zoom: parseInt(nodes.zoom.getAttribute('zoom')),
-        temp: localStorage.temp ? parseInt(localStorage.temp) : 298.15,
+        temp: 298,
         tempUnit: localStorage.tempUnit || 'k',
-        year: localStorage.year || new Date().getFullYear()
+
+        filter: {
+            year: new Date().getFullYear(),
+            find: '',
+            group: [],
+            block: [],
+            period: [],
+            category: [],
+            state: []
+        }
     };
     model.init = function() {
 
@@ -169,6 +187,55 @@
     };
 
 
+    function addOrRemoveFromArray(arr, value) {
+        var index = arr.indexOf(value);
+        if(index > -1) {
+            arr.splice(index, 1);
+        } else {
+            arr.push(value);
+        }
+    }
+
+    model.updateFilter = function(type, value) {
+
+        //group
+        if(type === filterTypes.GROUP ||
+            type === filterTypes.PERIOD ||
+            type === filterTypes.CATEGORY ||
+            type === filterTypes.BLOCK ||
+            type === filterTypes.STATE) {
+            addOrRemoveFromArray(model.filter[type], value);
+        }
+
+        //find
+        else if(type === filterTypes.FIND) {
+            model.filter.find = (value && value.toLowerCase().trim()) || '';
+        }
+
+        //year
+        else if(type === filterTypes.YEAR) {
+            if(!isNaN(parseInt(value))) {
+                model.filter.year = parseInt(value);
+            }
+        }
+
+        view.applyFilter();
+
+        if(window.ga) {
+            window.ga(function(tracker) {
+                tracker.send('action', 'Filter', JSON.stringify(model.filter[type]));
+            });
+        }
+    };
+
+    model.resetPositionFilter = function() {
+        model.filter.group = [];
+        model.filter.period = [];
+        model.filter.block = [];
+        view.applyFilter();
+    };
+
+
     // view ------------------------------------------------------------------------------------------------------------
 
     var view = {};
@@ -176,64 +243,26 @@
     //init
     view.init = function() {
 
-        var tables = nodes.tables;
-        var windowWidth = window.innerWidth;
-        var windowHeight = window.innerHeight;
-
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
 
-        var tableSize = {
-            width: rect(tables).width,
-            height: rect(tables).height,
-            offsetWidth: tables.offsetWidth,
-            offsetHeight: tables.offsetHeight
-        };
-        var wrapSize = {
-            width: 30000,
-            height: 15000
-        };
-        var initPosition = {
-            left: (wrapSize.width - tableSize.width) / 2,
-            top: (wrapSize.height - tableSize.height) / 2
-        };
-        var initScroll = (view.initScroll = {
-            left: (wrapSize.width - tableSize.width) / 2,
-            top: (wrapSize.height - tableSize.height) / 2
-        });
-
-        nodes.wrap.style.width = wrapSize.width + 'px';
-        nodes.wrap.style.height = wrapSize.height + 'px';
-
-        tables.style.left = initPosition.left + 'px';
-        tables.style.top = initPosition.top + 'px';
-        tables.style.transformOrigin = '50% 50%';
+        nodes.wrap.style.width = toPx(wrapSize.width);
+        nodes.wrap.style.height = toPx(wrapSize.height);
 
         //enable filters
         nodes.filters.style.display = 'block';
 
-        //this centers the table if it is smaller than the viewport
-
-        var scroll = {
-            left: windowWidth > tableSize.width ?
-                initScroll.left - ((windowWidth - tableSize.width) / 2) :
-                initPosition.left,
-
-            top: windowHeight > tableSize.height ?
-                initScroll.top - ((windowHeight - tableSize.height) / 2) : initPosition.top
-        };
-        window.scrollTo(scroll.left, scroll.top);
-        //window.scrollTo(initScroll.x, initScroll.y);
+        view.center();
 
         view.fitToScreen();
         window.addEventListener('resize', view.fitToScreen);
 
         //add header titles
-        var highlightText = ' (click to toggle highlight)';
-        function addCellHeaderTitle(title) {
-            var cellHeaders = document.querySelectorAll('th[' + title.charAt(0).toLowerCase() + ']');
-            for(i = 0; i < cellHeaders.length; i++) {
-                cellHeaders[i].setAttribute('title', title + ' ' + cellHeaders[i].textContent.replace(/\*+\s/, '') + highlightText);
+        function addCellHeaderTitle(name) {
+            var title, inputs = document.querySelectorAll('input[name="' + name.toLowerCase() + '"]');
+            for(i = 0; i < inputs.length; i++) {
+                title = name + ' ' + inputs[i].value;
+                inputs[i].nextElementSibling.setAttribute('title', title);
             }
         }
         addCellHeaderTitle('Group');
@@ -245,7 +274,42 @@
         view.tempUnitChanged();
 
         //initialize year
-        nodes.year.value = model.year;
+        nodes.year.value = model.filter.year;
+
+        //initial help display
+        if(!localStorage.skipAbout) {
+            nodes.toggleAbout.checked = true;
+            localStorage.skipAbout = 'y'
+        }
+    };
+
+    view.center = function () {
+        var tl, tt, tw, th,
+            ww, wh,
+            vw, vh,
+            tables;
+
+        vw = window.innerWidth;
+        vh = window.innerHeight;
+
+        ww = wrapSize.width;
+        wh = wrapSize.height;
+
+        tables = rect(nodes.tables);
+        tw = tables.width;
+        th = tables.height;
+
+        tl = (ww - tw) / 2;
+        tt = (wh - th) / 2;
+
+        nodes.tables.style.transformOrigin = '0 0';
+        nodes.tables.style.left = toPx(tl);
+        nodes.tables.style.top = toPx(tt);
+
+        window.scrollTo(
+            tables.width > vw ? tl : (ww - vw) / 2,
+            tables.height > vh ? tt : (wh - vh) / 2
+        );
     };
 
     view.fitToScreen = function() {
@@ -278,11 +342,7 @@
             temp = model.temp;
         }
         model.temp = model.tempUnit === units.C ? temp + 273.15 : (model.tempUnit === units.F ? (temp + 459.67) * 5/9 : temp);
-
-        if(model.filter && model.filter.split('_')[0] === filters.STATE) {
-            view.applyFilter(filters.STATE, model.filter.split('_')[1], true);
-        }
-        localStorage.temp = model.temp;
+        view.applyFilter();
     };
 
     view.tempUnitChanged = function() {
@@ -292,20 +352,10 @@
         localStorage.tempUnit = model.tempUnit;
     };
 
-    view.yearChanged = function() {
-        var year = parseInt(nodes.year.value);
-        view.applyFilter(filters.YEAR, isNaN(year) ? new Date().getFullYear() : year);
-        localStorage.year = isNaN(year) ? null : year;
-    };
-
-    view.findChanged = function() {
-        var value = nodes.find.value;
-        value = (value && value.toLowerCase().trim()) || '';
-        view.applyFilter(filters.FIND, value);
-    };
-
     view.zoomTo = function (dir, point) {
+
         var tables = nodes.tables;
+
         view.origin = dir < 0 && view.origin ? view.origin : {
             x: (((rect(tables).left * -1) + point.x) / (rect(tables).width)),
             y: (((rect(tables).top * -1) + point.y) / (rect(tables).height))
@@ -314,13 +364,19 @@
         nodes.tables.style.transformOrigin = (view.origin.x * 100) + '% ' + (view.origin.y * 100) + '%';
 
         //correct scroll position for transform origin
-        var dx = (view.initScroll.left + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
-        var dy = (view.initScroll.top + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
+        var dx = (tables.offsetLeft + view.origin.x * tables.offsetWidth) - (window.pageXOffset + point.x);
+        var dy = (tables.offsetTop + view.origin.y * tables.offsetHeight) - (window.pageYOffset + point.y);
         window.scrollBy(dx, dy);
 
         nodes.zoom.setAttribute('zoom', model.zoom);
         view.panTo(dir);
         history.replaceState(null, '', '?z=' + model.zoom);
+
+        if(window.ga) {
+            window.ga(function(tracker) {
+                tracker.send('action', 'Zoom', dir);
+            });
+        }
     };
 
     view.panTo = function (dir) {
@@ -378,52 +434,47 @@
         }
     };
 
-    view.applyFilter = function(type, value, amend) {
+    view.applyFilter = function() {
 
-        if(!amend) {
-            if(!value || model.filter === type + '_' + value) {
-                delete model.filter;
-                nodes.tables.classList.remove(css.FILTERING);
-                setTimeout(uncheckAll, 0);
-                return;
-            }
-        }
-
-        model.filter = type + '_' + value;
         nodes.tables.classList.add(css.FILTERING);
 
-        var match;
+        var match, matchGroup, matchPeriod, matchBlock, matchPosition, matchCategory, matchFind, matchYear, matchState;
+        var positionFilterOn;
+        var filter = model.filter;
         var elements = model.elements;
         var symbols = Object.keys(elements);
-        value = (value.split && value.split(',')) || [ value ];
         for(i = 0; i < symbols.length; i++) {
             var el = elements[symbols[i]];
-            match = false;
-            for(j = 0; j < value.length && !match; j++) {
-                match = (
-                    type === filters.STATE &&
-                    (value[j] === 'gas' &&  el.bp && el.bp < model.temp ) ||
-                    (value[j] === 'liquid' &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
-                    (value[j] === 'solid' && el.mp && el.mp > model.temp)
-                ) || (
-                    type === filters.YEAR && (isNaN(el.y) || el.y <= value[j])
-                ) || (
-                    type === filters.FIND &&
-                    (el.s.textContent.toLowerCase().indexOf(value[j]) === 0 ||
-                     el.s.getAttribute('title').toLowerCase().indexOf(value[j]) === 0)
-                ) || (
-                    el[type] == value[j]
-                );
 
-                if(match) {
-                    el.node.classList.add(css.FILTERED);
-                } else {
-                    el.node.classList.remove(css.FILTERED);
-                }
-            }
+            //checkbox groups
+            positionFilterOn = filter.group.length || filter.period.length || filter.block.length;
+            matchGroup = positionFilterOn && filter.group.indexOf(el.g + '') > -1;
+            matchPeriod = positionFilterOn && filter.period.indexOf(el.p + '') > -1;
+            matchBlock = positionFilterOn && filter.block.indexOf(el.b) > -1;
+            matchPosition = !positionFilterOn || (matchGroup || matchPeriod || matchBlock);
+
+            matchCategory = !filter.category.length || filter.category.indexOf(el.c) > -1;
+
+            //find
+            matchFind =
+                !filter.find ||
+                ((el.s.textContent.toLowerCase().indexOf(filter.find) === 0 ||
+                el.s.getAttribute('title').toLowerCase().indexOf(filter.find) === 0));
+
+            //year
+            matchYear = !filter.year || ((isNaN(el.y) || el.y <= filter.year));
+
+            //state
+            matchState = !filter.state.length ||
+                ((filter.state.indexOf('gas') > -1 &&  el.bp && el.bp < model.temp ) ||
+                (filter.state.indexOf('liquid') > -1 &&  el.mp && el.bp && el.mp < model.temp && el.bp > model.temp) ||
+                (filter.state.indexOf('solid') > -1 && el.mp && el.mp > model.temp));
+
+            //overall
+            match = matchPosition && matchCategory && matchFind && matchYear && matchState;
+            el.node.classList.toggle(css.UNFILTERED, !match);
         }
     };
-
 
     // controller ------------------------------------------------------------------------------------------------------
 
@@ -440,8 +491,7 @@
 
             //center button
             if(el.id === 'center') {
-                view.init();
-                model.zoomTo(1, getCenterPoint());
+                view.center();
                 ev.preventDefault();
             }
 
@@ -449,17 +499,6 @@
             else if(el.tagName === 'A' && el.parentNode.id === 'zoom') {
                 model.zoomWith(parseInt(el.getAttribute('value')), getCenterPoint());
                 ev.preventDefault();
-            }
-
-            //table headers, toggling group, period and block filtering
-            else if(el.tagName === 'TH') {
-                if(el.hasAttribute('group')) {
-                    view.applyFilter(filters.GROUP, el.getAttribute('group') || el.textContent);
-                } else if(el.hasAttribute('block')) {
-                    view.applyFilter(filters.BLOCK, el.textContent);
-                } else if(el.hasAttribute('period')) {
-                    view.applyFilter(filters.PERIOD, el.textContent);
-                }
             }
 
             //resources tabs
@@ -473,23 +512,75 @@
                 var panes = target.parentNode.children;
                 for(i = 0; i < panes.length; i++) {
                     panes[i].style.display = panes[i] === target ? 'block' : 'none';
-                    var div = target.querySelector('.iframe');
-                    if(div) {
+                    var iframePlaceholder = target.querySelector('.iframe');
+                    if(iframePlaceholder) {
                         var iframe = document.createElement('iframe');
-                        div.parentNode.appendChild(iframe);
-                        for(j = 0; j < div.attributes.length; j++) {
-                            iframe.setAttribute(div.attributes[j].name, div.attributes[j].value);
+                        iframePlaceholder.parentNode.appendChild(iframe);
+                        for(j = 0; j < iframePlaceholder.attributes.length; j++) {
+                            iframe.setAttribute(iframePlaceholder.attributes[j].name, iframePlaceholder.attributes[j].value);
                         }
-                        div.parentNode.removeChild(div);
+                        iframePlaceholder.parentNode.removeChild(iframePlaceholder);
+                        continue;
                     }
-                }
+                    var adsPlaceholder = target.querySelector('.ads');
+                    if(adsPlaceholder && !adsPlaceholder.getAttribute('initialized')) {
+                        var searchTerm = adsPlaceholder.getAttribute('term'),
+                            searchCategory = adsPlaceholder.getAttribute('category') || 'All',
+                            design = adsPlaceholder.getAttribute('design');
+                        window.amzn_assoc_placement = 'adunit';
+                        window.amzn_assoc_search_bar = 'false';
+                        window.amzn_assoc_tracking_id = 'periodictab05-20';
+                        window.amzn_assoc_ad_mode = 'search';
+                        window.amzn_assoc_ad_type = 'smart';
+                        window.amzn_assoc_marketplace = 'amazon';
+                        window.amzn_assoc_region = 'US';
+                        window.amzn_assoc_title = '';
+                        window.amzn_assoc_default_search_phrase = searchTerm;
+                        window.amzn_assoc_default_category = searchCategory;
+                        window.amzn_assoc_linkid = '37694af719272b63fc4a6d8c15ffe65d';
+                        window.amzn_assoc_rows = '4';
+                        
+                        if(design === 'text_links') {
+                            window.amzn_assoc_design = 'text_links';    
+                        } else {
+                            delete window.amzn_assoc_design;
+                        }
 
+                        document.write = function(html) {
+                            adsPlaceholder.innerHTML = html;
+                        };
+
+                        var adsScript = document.createElement('script');
+                        adsScript.src = '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US';
+                        target.appendChild(adsScript);
+
+                        adsPlaceholder.setAttribute('initialized', 'initialized');
+                    }
+                    
+                    
+                }
+                if(window.ga) {
+                    window.ga(function(tracker) {
+                        tracker.send('screenview', 'Tabs', 'open', target);
+                    });                    
+                }
+                
                 ev.preventDefault();
             }
 
+            //reset filters
+            else if(el.id === 'reset-position-filters') {
+                var inputs = document.querySelectorAll('th > input[type="checkbox"]');
+                for(i = 0; i < inputs.length; i++) {
+                    inputs[i].checked = false;
+                    inputs[i].parentNode.classList.remove('active');
+                }
+                model.resetPositionFilter();
+            }
+
             //close help
-            else if(el.id === 'close-help') {
-                nodes.toggleAbout.checked = false;
+            else if(el.classList.contains('close-content')) {
+                document.querySelector(el.value).checked = false;
             }
          };
 
@@ -497,31 +588,48 @@
 
             var el = ev.target;
 
-            //filter by category
-            if(el.tagName === 'INPUT' && el.parentNode.id === 'filter-category') {
-                uncheckAll(el.id);
-                view.applyFilter(filters.CATEGORY, el.value);
+            if(el.tagName === 'INPUT' && el.name === 'group') {
+                model.updateFilter(filterTypes.GROUP, el.value);
+            }
+            else if(el.tagName === 'INPUT' && el.name === 'period') {
+                model.updateFilter(filterTypes.PERIOD, el.value);
+            }
+            else if(el.tagName === 'INPUT' && el.name === 'block') {
+                model.updateFilter(filterTypes.BLOCK, el.value);
+            }
+            else if(el.tagName === 'INPUT' && el.name === 'category') {
+                model.updateFilter(filterTypes.CATEGORY, el.value);
+            }
+            else if(el.id === 'year') {
+                model.updateFilter(filterTypes.YEAR, el.value);
+            }
+            else if(el.tagName === 'INPUT' && el.name === 'state') {
+                model.updateFilter(filterTypes.STATE, el.value);
             }
 
-            //filter by state
-            else if(el.tagName === 'INPUT' && el.parentNode.id === 'filter-state') {
-                uncheckAll(el.id);
-                view.applyFilter(filters.STATE, el.value);
+            if(el.tagName === 'INPUT' && el.parentNode.tagName === 'TH') {
+                el.parentNode.classList.toggle('active', el.checked);
             }
         };
 
         //zoom events
         doubleTap(nodes.tables);
         nodes.tables.ondblclick = function(ev) {
-            model.zoomWith(1, {
-                x: ev.clientX,
-                y: ev.clientY
-            });
+            if(ev.path[0].tagName !== 'LABEL') {
+                model.zoomWith(1, {
+                    x: ev.clientX,
+                    y: ev.clientY
+                });
+            }
         };
 
-        var allowWheel = true;
+       /* var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
-            if(allowWheel) {
+            var nope = ev.path.some(function(el) {
+                return el.tagName === 'DIV' && el.scrollHeight > el.clientHeight;
+            });
+
+            if(allowWheel && !nope) {
                 model.zoomWith(ev.deltaY > 0 ? -1 : 1, {
                     x: ev.clientX,
                     y: ev.clientY
@@ -532,7 +640,7 @@
                     allowWheel = true;
                 }, 1000);
             }
-        };
+        };*/
 
         //pinch to zoom
         var t1;
@@ -563,15 +671,35 @@
         //temperature and state updates
         nodes.tempUnit.onchange = view.tempUnitChanged;
         nodes.temp.onchange = view.tempChanged;
+        nodes.temp.onkeypress = function(ev) {
+            ev.stopPropagation();
+        };
 
         //year
-        nodes.yearApply.onclick = view.yearChanged;
+        nodes.year.onkeypress = function(ev) {
+            ev.stopPropagation();
+        };
+        nodes.year.onkeyup = function(ev) {
+            model.updateFilter(filterTypes.YEAR, nodes.year.value);
+            ev.stopPropagation();
+        };
+        nodes.yearReset.onclick = function () {
+            var now = new Date().getFullYear();
+            nodes.year.value = now;
+            model.updateFilter(filterTypes.YEAR, now);
+        };
 
         //find
+        nodes.find.onkeypress = function(ev) {
+            ev.stopPropagation();
+        };
         nodes.find.onkeyup = function(ev) {
-            if(ev.keyCode != 16) {
-                view.findChanged();
-            }
+            model.updateFilter(filterTypes.FIND, nodes.find.value);
+            ev.stopPropagation();
+        };
+        nodes.findReset.onclick = function() {
+            nodes.find.value = '';
+            model.updateFilter(filterTypes.FIND, '');
         };
 
         //scrolling
@@ -595,44 +723,39 @@
         };
         window.onkeypress = function(ev) {
 
-            var el = ev.target;
-
             if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
                 model.zoomTo(parseInt(String.fromCharCode(ev.keyCode)), getCenterPoint());
                 ev.preventDefault();
             }
-            if(ev.keyCode === 45) { //-
+            else if(ev.keyCode === 45) { //-
                 model.zoomWith(-1, getCenterPoint());
                 ev.preventDefault();
             }
-            if(ev.keyCode === 61) { //=
+            else if(ev.keyCode === 61) { //=
                 model.zoomWith(1, getCenterPoint());
                 ev.preventDefault();
             }
-            if(ev.keyCode === 102) { //f
+            else if(ev.keyCode === 102) { //f
                 if(nodes.toggleFilters.checked) {
                     nodes.toggleFilters.checked = false;
                 } else {
                     nodes.toggleFilters.checked = true;
-                    nodes.temp.focus();
+                    nodes.find.focus();
                 }
                 ev.preventDefault();
             }
-            if(ev.keyCode === 114) { //r
-                view.init();
+            else if(ev.keyCode === 104) { //h
+                nodes.toggleAbout.checked = !nodes.toggleAbout.checked;
+                ev.preventDefault();
+            }
+            else if(ev.keyCode === 114) { //r
+                view.center();
                 model.zoomTo(1, getCenterPoint());
                 ev.preventDefault();
             }
-            if(ev.keyCode === 13 && el.tagName === 'TH') {
-                var clickEvent = document.createEvent('Events');
-                clickEvent.initEvent('click', true, false);
-                el.dispatchEvent(clickEvent);
-            }
         };
 
-        window.onorientationchange = function() {
-            view.init();
-        };
+        window.addEventListener('orientationchange', view.center);
     };
 
     function init() {
@@ -672,6 +795,10 @@
 
     }
     /* jshint ignore:end */
+
+    function toPx(value) {
+        return parseFloat(value) + 'px';
+    }
 
     function rect(node) {
         return node.getBoundingClientRect();
