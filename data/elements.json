@@ -40,6 +40,9 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/1/hydrogen"
+      }, {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/hydrogen.php"
       }
     ],
     "images" : [
@@ -95,6 +98,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/2/helium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/helium.php"
       }
     ],
     "images" : [
@@ -150,6 +157,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/3/lithium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/lithium.php"
       }
     ],
     "images" : [
@@ -205,6 +216,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/4/beryllium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/beryllium.php"
       }
     ],
     "images" : [
@@ -257,6 +272,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/5/boron"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/boron.php"
       }
     ],
     "images" : [
@@ -314,6 +333,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/6/carbon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/carbon.php"
       }
     ],
     "images" : [
@@ -369,6 +392,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/7/nitrogen"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/nitrogen.php"
       }
     ],
     "images" : [
@@ -424,6 +451,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/8/oxygen"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/oxygen.php"
       }
     ],
     "images" : [
@@ -479,6 +510,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/9/fluorine"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/fluorine.php"
       }
     ],
     "images" : [
@@ -534,6 +569,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/10/neon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/neon.php"
       }
     ],
     "images" : [
@@ -591,8 +630,12 @@
         "url": "http://www.rsc.org/periodic-table/element/11/sodium"
       },
       {
-        "name": "Nile Red",
+        "name": "Nile Red: Sodium",
         "url": "https://www.youtube.com/watch?v=LMlXhJevCV0"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/sodium.php"
       }
     ],
     "images" : [
@@ -648,6 +691,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/12/magnesium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/magnesium"
       }
     ],
     "images" : [
@@ -703,6 +750,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/13/aluminium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/aluminium.php"
       }
     ],
     "images" : [
@@ -759,6 +810,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/14/silicon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/silicon.php"
       }
     ],
     "images" : [
@@ -815,6 +870,10 @@
       {
         "name": "Nile Red",
         "url": "https://www.youtube.com/watch?v=LMlXhJevCV0"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/phosphorus.php"
       }
     ],
     "images" : [
@@ -867,6 +926,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/16/sulfur"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/sulfur.php"
       }
     ],
     "images" : [
@@ -923,6 +986,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/17/chlorine"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/chlorine.php"
       }
     ],
     "images" : [
@@ -978,6 +1045,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/18/argon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/argon.php"
       }
     ],
     "images" : [
@@ -1030,6 +1101,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/19/potassium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/potassium.php"
       }
     ],
     "images" : [
@@ -1085,6 +1160,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/20/calcium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/calcium.php"
       }
     ],
     "images" : [
@@ -1137,6 +1216,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/21/scandium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/scandium.php"
       }
     ],
     "images" : [
@@ -1189,6 +1272,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/22/titanium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/titanium.php"
       }
     ],
     "images" : [
@@ -1241,6 +1328,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/23/vanadium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/vanadium.php"
       }
     ],
     "images" : [
@@ -1293,6 +1384,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/24/chromium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/chromium.php"
       }
     ],
     "images" : [
@@ -1345,6 +1440,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/25/manganese"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/manganese.php"
       }
     ],
     "images" : [
@@ -1397,6 +1496,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/26/iron"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/iron.php"
       }
     ],
     "images" : [
@@ -1449,6 +1552,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/27/cobalt"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/cobalt.php"
       }
     ],
     "images" : [
@@ -1501,6 +1608,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/28/nickel"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/nickel.php"
       }
     ],
     "images" : [
@@ -1553,6 +1664,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/29/copper"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/copper.php"
       }
     ],
     "images" : [
@@ -1605,6 +1720,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/30/zinc"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/zinc"
       }
     ],
     "images" : [
@@ -1657,6 +1776,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/31/gallium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/gallium.php"
       }
     ],
     "images" : [
@@ -1710,6 +1833,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/32/germanium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/germanium.php"
       }
     ],
     "images" : [
@@ -1762,6 +1889,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/33/arsenic"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/arsenic.php"
       }
     ],
     "images" : [
@@ -1814,6 +1945,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/34/selenium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/selenium.php"
       }
     ],
     "images" : [
@@ -1870,6 +2005,10 @@
       {
         "name": "Nile Red",
         "url": "https://www.youtube.com/watch?v=nuW_VbKdvMI"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/bromine.php"
       }
     ],
     "images" : [
@@ -1922,6 +2061,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/36/krypton"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/krypton.php"
       }
     ],
     "images" : [
@@ -1975,6 +2118,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/37/rubidium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/rubidium.php"
       }
     ],
     "images" : [
@@ -2032,6 +2179,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/38/strontium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/strontium.php"
       }
     ],
     "images" : [
@@ -2084,6 +2235,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/39/yttrium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/yttrium.php"
       }
     ],
     "images" : [
@@ -2138,6 +2293,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/40/zirconium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/zirconium.php"
       }
     ],
     "images" : [
@@ -2190,6 +2349,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/41/niobium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/niobium.php"
       }
     ],
     "images" : [
@@ -2244,6 +2407,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/42/molybdenum"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/molybdenum.php"
       }
     ],
     "images" : [
@@ -2296,6 +2463,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/43/technetium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/technetium.php"
       }
     ],
     "images" : [
@@ -2350,6 +2521,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/44/ruthenium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ruthenium.php"
       }
     ],
     "images" : [
@@ -2402,6 +2577,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/45/rhodium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/rhodium.php"
       }
     ],
     "images" : [
@@ -2454,6 +2633,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/46/palladium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/palladium.php"
       }
     ],
     "images" : [
@@ -2506,6 +2689,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/47/silver"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/silver.php"
       }
     ],
     "images" : [
@@ -2558,6 +2745,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/48/cadmium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/cadmium.php"
       }
     ],
     "images" : [
@@ -2610,6 +2801,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/49/indium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/indium.php"
       }
     ],
     "images" : [
@@ -2662,6 +2857,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/50/tin"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/tin.php"
       }
     ],
     "images" : [
@@ -2714,6 +2913,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/51/antimony"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/antimony.php"
       }
     ],
     "images" : [
@@ -2766,6 +2969,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/52/tellurium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/tellerium.php"
       }
     ],
     "images" : [
@@ -2818,6 +3025,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/53/iodine"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/iodine.php"
       }
     ],
     "images" : [
@@ -2870,6 +3081,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/54/xenon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/xenon.php"
       }
     ],
     "images" : [
@@ -2922,6 +3137,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/55/caesium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/caesium.php"
       }
     ],
     "images" : [
@@ -2977,6 +3196,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/56/barium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/barium.php"
       }
     ],
     "images" : [
@@ -3029,6 +3252,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/57/lanthanum"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/lanthanum.php"
       }
     ],
   "images" : [
@@ -3079,6 +3306,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/58/cerium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/cerium.php"
       }
     ],
     "images" : [
@@ -3131,6 +3362,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/59/praseodymium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/praseodymium.php"
       }
     ],
     "images" : [
@@ -3183,6 +3418,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/60/neodymium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/neodymium.php"
       }
     ],
     "images" : [
@@ -3238,6 +3477,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/61/promethium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/promethium.php"
       }
     ],
     "images" : [ ],
@@ -3283,6 +3526,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/62/samarium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/samarium.php"
       }
     ],
     "images" : [
@@ -3335,6 +3582,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/63/europium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/europium.php"
       }
     ],
     "images" : [
@@ -3387,6 +3638,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/64/gadolinium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/gadolinium.php"
       }
     ],
     "images" : [
@@ -3439,6 +3694,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/65/terbium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/terbium.php"
       }
     ],
     "images" : [
@@ -3491,6 +3750,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/66/dysprosium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/dysprosium.php"
       }
     ],
     "images" : [
@@ -3543,6 +3806,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/67/holmium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/holmium.php"
       }
     ],
     "images" : [
@@ -3595,6 +3862,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/68/erbium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/erbium.php"
       }
     ],
     "images" : [
@@ -3647,6 +3918,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/69/thulium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/thulium.php"
       }
     ],
     "images" : [
@@ -3701,6 +3976,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/70/ytterbium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ytterbium.php"
       }
     ],
     "images" : [
@@ -3753,6 +4032,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/71/lutetium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/lutetium.php"
       }
     ],
     "images" : [
@@ -3807,6 +4090,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/72/hafnium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/hafnium.php"
       }
     ],
     "images" : [
@@ -3860,6 +4147,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/73/tantalum"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/tantalum.php"
       }
     ],
     "images" : [
@@ -3914,6 +4205,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/74/tungsten"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/tungsten.php"
       }
     ],
     "images" : [
@@ -3966,6 +4261,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/75/rhenium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/rhenium.php"
       }
     ],
     "images" : [
@@ -4018,6 +4317,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/76/osmium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/osmium.php"
       }
     ],
     "images" : [
@@ -4070,6 +4373,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/77/iridium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/iridium.php"
       }
     ],
     "images" : [
@@ -4122,6 +4429,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/78/platinum"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/platinum.php"
       }
     ],
     "images" : [
@@ -4174,6 +4485,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/79/gold"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/gold.php"
       }
     ],
     "images" : [
@@ -4226,6 +4541,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/80/mercury"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/mercury.php"
       }
     ],
     "images" : [
@@ -4278,6 +4597,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/81/thallium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/thallium.php"
       }
     ],
     "images" : [
@@ -4330,6 +4653,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/82/lead"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/lead.php"
       }
     ],
     "images" : [
@@ -4382,6 +4709,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/83/bismuth"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/bismuth.php"
       }
     ],
     "images" : [
@@ -4437,6 +4768,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/84/polonium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/polonium.php"
       }
     ],
     "images" : [],
@@ -4484,6 +4819,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/85/astatine"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/astatine.php"
       }
     ],
     "images" : [],
@@ -4533,6 +4872,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/86/radon"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/radon.php"
       }
     ],
     "images" : [],
@@ -4580,6 +4923,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/87/francium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/francium.php"
       }
     ],
     "images" : [ ],
@@ -4627,6 +4974,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/88/radium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/radium.php"
       }
     ],
     "images" : [],
@@ -4674,6 +5025,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/89/actinium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/actinium.php"
       }
     ],
     "images" : [
@@ -4727,6 +5082,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/90/thorium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/thorium.php"
       }
     ],
     "images" : [],
@@ -4772,6 +5131,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/91/protactinium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/protactinium.php"
       }
     ],
     "images" : [ ],
@@ -4819,6 +5182,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/92/uranium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/uranium.php"
       }
     ],
     "images" : [
@@ -4873,6 +5240,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/93/neptunium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/neptunium.php"
       }
     ],
     "images" : [
@@ -4929,6 +5300,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/94/plutonium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/plutonium.php"
       }
     ],
     "images" : [
@@ -4984,6 +5359,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/95/americium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/americium.php"
       }
     ],
     "images" : [
@@ -5039,6 +5418,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/96/curium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/curium.php"
       }
     ],
     "images" : [],
@@ -5087,6 +5470,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/97/berkelium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/berkelium.php"
       }
     ],
     "images" : [
@@ -5142,6 +5529,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/98/californium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/californium.php"
       }
     ],
     "images" : [
@@ -5196,6 +5587,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/99/einsteinium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/einsteinium.php"
       }
     ],
     "images" : [
@@ -5250,6 +5645,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/100/fermium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/fermium.php"
       }
     ],
     "images" : [ ],
@@ -5298,6 +5697,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/101/mendelevium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/mendelevium.php"
       }
     ],
     "images" : [  ],
@@ -5345,6 +5748,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/102/nobelium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/nobelium.php"
       }
     ],
     "images" : [ ],
@@ -5392,6 +5799,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/103/lawrencium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/lawrencium.php"
       }
     ],
     "images" : [],
@@ -5439,6 +5850,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/104/rutherfordium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/rutherfordium.php"
       }
     ],
     "images" : [ ],
@@ -5486,6 +5901,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/105/dubnium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/dubnium.php"
       }
     ],
     "images" : [],
@@ -5533,6 +5952,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/106/seaborgium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/seaborgium.php"
       }
     ],
     "images" : [ ],
@@ -5580,6 +6003,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/107/bohrium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/bohrium.php"
       }
     ],
     "images" : [ ],
@@ -5627,6 +6054,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/108/hassium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/hassium.php"
       }
     ],
     "images" : [ ],
@@ -5674,6 +6105,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/109/meitnerium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/meitnerium.php"
       }
     ],
     "images" : [  ],
@@ -5721,6 +6156,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/110/darmstadtium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/darmstadtium.php"
       }
     ],
     "images" : [ ],
@@ -5768,6 +6207,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/111/roentgenium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/roentgenium.php"
       }
     ],
     "images" : [ ],
@@ -5815,6 +6258,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/112/copernicium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/copernicium.php"
       }
     ],
     "images" : [ ],
@@ -5862,6 +6309,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/113/ununtrium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ununtrium.php"
       }
     ],
     "images" : [  ],
@@ -5909,6 +6360,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/114/flerovium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/flerovium.php"
       }
     ],
     "images" : []
@@ -5955,6 +6410,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/115/ununpentium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ununpentium.php"
       }
     ],
     "images" : [ ],
@@ -6002,6 +6461,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/116/livermorium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/livermorium.php"
       }
     ],
     "images" : []
@@ -6048,6 +6511,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/117/ununseptium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ununseptium.php"
       }
     ],
     "images" : [ ],
@@ -6095,6 +6562,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/118/ununoctium"
+      },
+      {
+        "name" : "Images of Elements",
+        "url" : "http://images-of-elements.com/ununoctium.php"
       }
     ],
     "images" : [ ],
