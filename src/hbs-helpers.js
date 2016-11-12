@@ -85,6 +85,17 @@ module.exports = {
         return new Handlebars.SafeString(formatted);
     },
 
+    formatAtomicMass: function(mass) {
+        
+        if(typeof mass === 'string') {
+            mass = mass.replace(/(.+)\(.+\)/, (match, p1) => {
+                return p1;
+            });    
+        }
+        
+        return parseFloat(parseFloat(mass).toFixed(3));
+    },
+
     formatIsotopes: function (isotopesArr, symbol) {
         const formatted = isotopesArr.map(mass => `<sup>${esc(mass)}</sup>${esc(symbol)}`).join(', ');
         return new Handlebars.SafeString(formatted);
@@ -99,7 +110,7 @@ module.exports = {
     },
 
     otherResources: function(element) {
-        return element.resources.filter(resource => resource.name !== 'Wikipedia' && resource.name !== 'Youtube');
+        return element.resources.filter(resource => resource.name !== 'Youtube');
     },
     
     getLicense: function (licenseId, opts) {
