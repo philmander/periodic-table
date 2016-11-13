@@ -3,13 +3,13 @@
 host="philip@139.162.158.136"
 site="periodic-table"
 
-rm $site-1.1.1.tgz
+rm $site-1.2.0.tgz
 npm pack
 
 #copy and unpack
-scp /home/philip/Me/$site/$site-1.1.1.tgz $host:/home/philip/deploy
+scp /home/philip/Me/$site/$site-1.2.0.tgz $host:/home/philip/deploy
 ssh $host rm /home/philip/deploy/$site/package -r
-ssh $host tar -zxf /home/philip/deploy/$site-1.1.1.tgz  -C /home/philip/deploy/$site
+ssh $host tar -zxf /home/philip/deploy/$site-1.2.0.tgz  -C /home/philip/deploy/$site
 
 #move to new
 ssh $host -t "rm /home/philip/www/\"$site\"_new -r"
@@ -23,4 +23,4 @@ ssh $host mv /home/philip/www/"$site" /home/philip/www/"$site"_old
 
 #deploy new and start
 ssh $host mv /home/philip/www/"$site"_new /home/philip/www/"$site"
-ssh $host pm2 start /home/philip/www/"$site"/server.js --name="$site"
+ssh $host NODE_ENV=production pm2 start /home/philip/www/"$site"/server.js --name="$site"

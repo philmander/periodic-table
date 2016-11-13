@@ -181,6 +181,9 @@
         //set up viewport
         document.body.style.overflow = 'ontouchstart' in window || navigator.maxTouchPoints ? 'auto' : 'hidden';
 
+
+        document.body.style.width = toPx(wrapSize.width);
+        document.body.style.height = toPx(wrapSize.height);
         nodes.wrap.style.width = toPx(wrapSize.width);
         nodes.wrap.style.height = toPx(wrapSize.height);
 
@@ -257,10 +260,10 @@
         var cssRules = document.styleSheets[0].cssRules;
         var cssRulesArray = Array.prototype.slice.call(cssRules);
         var detailsRule = cssRulesArray.filter(function(rule) {
-            return rule.selectorText === '[zoom="4"] .details';
+            return rule.selectorText === '[zoom="4"] .details' || rule.selectorText === '[zoom=\'4\'] .details';
         })[0];
         var resourcesRule = cssRulesArray.filter(function(rule) {
-            return rule.selectorText === '[zoom="4"] .r';
+            return rule.selectorText === '[zoom="4"] .r' || rule.selectorText === '[zoom=\'4\'] .r';
         })[0];
         
         if(detailsRule && resourcesRule) {
@@ -550,7 +553,7 @@
         //zoom events
         doubleTap(nodes.tables);
         nodes.tables.ondblclick = function(ev) {
-            if(ev.path[0].tagName !== 'LABEL') {
+            if(!ev.path || (ev.path && ev.path[0].tagName !== 'LABEL')) {
                 model.zoomWith(1, {
                     x: ev.clientX,
                     y: ev.clientY

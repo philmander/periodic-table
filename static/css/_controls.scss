@@ -151,6 +151,22 @@
     display: none;
   }
 
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding-right: 40px;
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
 
   h3,
   h4,
@@ -258,7 +274,7 @@ input[type="number"] {
   margin-right: 2px;
 }
 #filter-find input {
-  width: 120px;
+  width: 95px;
 }
 .filter-category label {
   color: #fff;
