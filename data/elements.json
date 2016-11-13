@@ -6770,7 +6770,7 @@
       "search" : "ununtrium element",
       "category" : "All"
     },
-    "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115"
+    "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115. Ununtrium is set to be renamed to Nihonium (Nh) before the end of 2016."
   },
   {
     "group": 14,
@@ -6824,7 +6824,8 @@
       "search" : "flerovium element",
       "category" : "All"
     },
-    "images" : []
+    "images" : [],
+    "info" : "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115."
   },
   {
     "group": 15,
@@ -6879,7 +6880,7 @@
       "search" : "ununpentium element",
       "category" : "All"
     },
-    "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115"
+    "info": "In experiments conducted at the JINR U400 cyclotron with the Dubna gas-filled separator between July 14 and Aug. 10, 2003, atomic decay patterns were observed said to confirm the existence of element 115 and element 113. In these decay chains, element 113 is produced via the ?-decay of element 115. Ununpentium is set to be renamed to Moscovium (Mc) before the end of 2016."
   },
   {
     "group": 16,
@@ -6933,7 +6934,8 @@
     "shop" : {
       "search" : "livermorium element",
       "category" : "All"
-    }
+    },
+    "info": "Results published on the 6th December 2000 concerning recent experiments at Dubna in Russia  describe the decay of the isotope 292Uuh (produced in the reaction of 248Cm with 48Ca) to 292Uuq. This decayed 47 milliseconds later as follows to a previously identified isotope of elements 114, Uuq."
   },
   {
     "group": 17,
@@ -6988,7 +6990,7 @@
       "search" : "Ununseptium element",
       "category" : "All"
     },
-    "info": "Claims for the formation of element 117 (ununseptium, Uus) were first publsihed in April 2010."
+    "info": "Claims for the formation of element 117 (ununseptium, Uus) were first publsihed in April 2010. Ununseptium is set to be renamed to renamed to Tennessine (Ts) before the end of 2016"
   },
   {
     "group": 18,
@@ -7043,6 +7045,6 @@
       "search" : "ununoctium element",
       "category" : "All"
     },
-    "info": "Experiments conducted at Dubna in Russia at the Flerov Laboratory of Nuclear Reactions (by workers from the Joint Institute for Nuclear Research in Russia and the Lawrence Livermore National Laboratory in the USA) indicate that element 118 (ununoctium, Uuo) was produced. Not too much though, one atom in the spring of 2002 and two more in 2005."
+    "info": "Experiments conducted at Dubna in Russia at the Flerov Laboratory of Nuclear Reactions (by workers from the Joint Institute for Nuclear Research in Russia and the Lawrence Livermore National Laboratory in the USA) indicate that element 118 (ununoctium, Uuo) was produced. Not too much though, one atom in the spring of 2002 and two more in 2005. Ununoctium is set to be renamed to Oganesson (Og) before the end of 2016"
   }
 ]
