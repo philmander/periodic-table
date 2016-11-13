@@ -71,6 +71,7 @@
         COMPACT: 690
     };
 
+    var topPanelIndex = 5;
 
     var documentElement = document.documentElement;
 
@@ -251,9 +252,6 @@
         document.body.style.height = toPx(wrapSize.height);
         nodes.wrap.style.width = toPx(wrapSize.width);
         nodes.wrap.style.height = toPx(wrapSize.height);
-
-        //enable filters
-        nodes.filters.style.display = 'block';
 
         view.center();
 
@@ -494,7 +492,10 @@
 
             //center button
             if(el.id === 'center') {
-                view.center();
+                model.zoomTo(1, getCenterPoint());
+                setTimeout(function() {
+                    view.center();
+                }, 1050);
                 ev.preventDefault();
             }
 
@@ -609,6 +610,9 @@
             else if(el.tagName === 'INPUT' && el.name === 'state') {
                 model.updateFilter(filterTypes.STATE, el.value);
             }
+            else if(el.tagName === 'INPUT' && el.classList.contains('ctrl-toggle')) {
+                el.parentNode.style.zIndex = topPanelIndex++;
+            }
 
             if(el.tagName === 'INPUT' && el.parentNode.tagName === 'TH') {
                 el.parentNode.classList.toggle('active', el.checked);
@@ -626,12 +630,12 @@
             }
         };
 
-       /* var allowWheel = true;
+        var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
             var nope = ev.path.some(function(el) {
                 return el.tagName === 'DIV' && el.scrollHeight > el.clientHeight;
             });
-
+       
             if(allowWheel && !nope) {
                 model.zoomWith(ev.deltaY > 0 ? -1 : 1, {
                     x: ev.clientX,
@@ -643,7 +647,7 @@
                     allowWheel = true;
                 }, 1000);
             }
-        };*/
+        };
 
         //pinch to zoom
         var t1;
@@ -752,8 +756,11 @@
                 ev.preventDefault();
             }
             else if(ev.keyCode === 114) { //r
-                view.center();
                 model.zoomTo(1, getCenterPoint());
+                setTimeout(function() {
+                    view.center();
+                }, 1050);
+    
                 ev.preventDefault();
             }
         };
