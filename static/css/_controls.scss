@@ -176,7 +176,8 @@
     line-height: 1.5;
     @include clearfix();
   }
-  h3 + h4 {
+  h3 + h4,
+  h3 + p {
     margin-top: 0;
   }
 
@@ -222,14 +223,20 @@
 
 /* Help -----------------------------------------------------------------------------------------------------------*/
 
+#about {
+  position: relative;
+}
 #about .ctrl-toggle:checked ~ .ctrl-content {
   z-index: 3;
 }
 #about > .ctrl-label {
-  bottom: 10px;
+  top: 154px;
 }
 
 /* Filters -----------------------------------------------------------------------------------------------------------*/
+#filters {
+  position: relative;
+}
 #filters .ctrl-toggle:checked ~ .ctrl-content {
   z-index: 4;
 }
