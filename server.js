@@ -91,15 +91,18 @@ function getZoom(req) {
     return isNaN(zoom) || zoom < 0 || zoom > 4 ? 1 : zoom
 }
 
-app.get('/', (req, res, next) => {
-    if(req.path !== '/') {
+function index(req, res, next) {
+    if(req.path !== '/' && req.path !== '/_') {
         return next();
     }
 
     res.render('index', {
         zoom: getZoom(req)
-    });
-});
+    });    
+}
+app.get('/_', index); //for ga exlusion
+app.get('/', index);
+
 
 app.get('/fields', (req, res, next) => {
 
