@@ -60,7 +60,7 @@
       "search" : "hydrogen element",
       "category" : "All"
     },
-    "info": "Although hydrogen was prepared many years earlier, it was first recognized as a substance distinct from other flammable gases in 1766 by Henry Cavendish, who is credited with its discovery; it was named by A. L. Lavoisier in 1783."
+    "info": "Although hydrogen was prepared many years earlier, it was first recognized as a substance distinct from other flammable gases in 1766 by [Henry Cavendish](https://en.wikipedia.org/wiki/Henry_Cavendish), who is credited with its discovery; it was named by [Antoine Lavoisier](https://en.wikipedia.org/wiki/Antoine_Lavoisier) in 1783."
   },
   {
     "group": 18,
@@ -123,7 +123,7 @@
       "search" : "helium",
       "category" : "All"
     },
-    "info": "A French astronomer, Pierre-Jules-César Janssen, first discovered helium during the solar eclipse of 1868 in India when he detected a yellow line (587.49 nm) in the solar spectrum very close to the yellow sodium D-line. For many years helium was regarded as an element that might exist on the sun although it was unknown on the Earth."
+    "info": "A French astronomer, [Pierre-Jules-César Janssen](https://en.wikipedia.org/wiki/Pierre_Janssen), first discovered helium during the solar eclipse of 1868 in India when he detected a yellow line (587.49 nm) in the solar spectrum very close to the yellow sodium D-line. For many years helium was regarded as an element that might exist on the sun although it was unknown on the Earth."
   },
   {
     "group": 1,
@@ -186,13 +186,13 @@
       "search" : "lithium metal",
       "category" : "All"
     },
-    "info": "Lithium was discovered by Johan August Arfvedson in 1817 during an analysis of petalite ore, an ore now recognised to be LiAl(Si2O5)2, taken from the Swedish island of Utö. Arfvedson subsequently discovered lithium in the minerals spodumene and lepidolite. C.G. Gmelin observed in 1818 that lithium salts colour flames bright red."
+    "info": "Lithium was discovered by [Johan August Arfvedson](https://en.wikipedia.org/wiki/Johan_August_Arfwedson) in 1817 during an analysis of petalite ore, an ore now recognised to be LiAl(Si2O5)2, taken from the Swedish island of Utö. Arfvedson subsequently discovered lithium in the minerals spodumene and lepidolite. [C.G. Gmelin](https://en.wikipedia.org/wiki/Christian_Gmelin) observed in 1818 that lithium salts colour flames bright red."
   },
   {
     "group": 2,
     "period": 2,
     "block": "s",
-    "discoveredBy": "Nicholas Louis Vauquelin",
+    "discoveredBy": "Louis Nicolas Vauquelin",
     "keyIsotopes": [
       9
     ],
@@ -246,13 +246,13 @@
       "search" : "beryllium",
       "category" : "All"
     },
-    "info": "The element was recognised by M.-L. Vauquelin in 1798 in beryl and emeralds. The metal was isolated much later on in 1828 by Friederich Wöhler (and independently by A.-A.B. Bussy) by the action of potassium on BeCl2 in a platinum crucible. Beryl were both known to early Egyptians but it was not realised until the end of the 18th century"
+    "info": "The element was recognised by [Louis Nicolas Vauquelin](https://en.wikipedia.org/wiki/Louis_Nicolas_Vauquelin) in 1798 in beryl and emeralds. The metal was isolated much later on in 1828 by [Friedrich_Wöhler](https://en.wikipedia.org/wiki/Friedrich_W%C3%B6hler) (and independently by [Antoine Bussy](https://en.wikipedia.org/wiki/Antoine_Bussy)) by the action of potassium on BeCl2 in a platinum crucible. Beryl were both known to early Egyptians but it was not realised until the end of the 18th century"
   },
   {
     "group": 13,
     "period": 2,
     "block": "p",
-    "discoveredBy": "Louis-Josef Gay-Lussac and Louis-Jacques Thénard in Paris, France, and Humphry Davy in London, UK ",
+    "discoveredBy": "Louis-Josef Gay-Lussac and Louis-Jacques Thénard in Paris, France, and [Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy) in London, UK ",
     "keyIsotopes": [
       11
     ],
@@ -309,7 +309,7 @@
       "search" : "boron element",
       "category" : "All"
     },
-    "info": "Boron was first isolated in England in 1807 by Sir Humphry Davy and then in France in 1808 by Joseph Louis Gay-Lussac and Louis Jacques Thénard. It occurs also in the mineral. Boron does not occur free in nature. Large deposits of borax, kermite, colemanite, and other boron minerals are found in the arid regions of the W United States"
+    "info": "Boron was first isolated in England in 1807 by [Sir Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy) and then in France in 1808 by [Joseph Louis Gay-Lussac](https://en.wikipedia.org/wiki/Joseph_Louis_Gay-Lussac) and [Louis Jacques Thénard](https://en.wikipedia.org/wiki/Louis_Jacques_Th%C3%A9nard). It occurs also in the mineral. Boron does not occur free in nature. Large deposits of borax, kermite, colemanite, and other boron minerals are found in the arid regions of the W United States"
   },
   {
     "group": 14,
@@ -437,13 +437,13 @@
       "search" : "nitrogen element",
       "category" : "All"
     },
-    "info": "It was known during the 18th century that air contains at least two gases, one of which is oxygen which supports combustion and life, and the other was nitrogen which does not. Nitrogen was discovered by Daniel Rutherford in 1772, who called it noxious air."
+    "info": "It was known during the 18th century that air contains at least two gases, one of which is oxygen which supports combustion and life, and the other was nitrogen which does not. Nitrogen was discovered by [Daniel Rutherford](https://en.wikipedia.org/wiki/Daniel_Rutherford) in 1772, who called it noxious air."
   },
   {
     "group": 16,
     "period": 2,
     "block": "p",
-    "discoveredBy": "Joseph Priestley in Wiltshire, England and independently by Carl Wilhelm Scheele in Uppsala, Sweden",
+    "discoveredBy": "[Joseph Priestley](https://en.wikipedia.org/wiki/Joseph_Priestley) in Wiltshire, England and independently by [Carl Wilhelm Scheele](https://en.wikipedia.org/wiki/Carl_Wilhelm_Scheele) in Uppsala, Sweden",
     "keyIsotopes": [
       16
     ],
@@ -500,7 +500,7 @@
       "search" : "oxygen",
       "category" : "All"
     },
-    "info": "Leonardo da Vinci suggested that air consists of at least two different gases and of these one of the gas supported flames and life. Oxygen was prepared by several workers before 1772 but these workers did not recognize it as an element. Joseph Priestley is generally credited with its discovery (who made oxygen by heating lead or mercury oxides)."
+    "info": "Leonardo da Vinci suggested that air consists of at least two different gases and of these one of the gas supported flames and life. Oxygen was prepared by several workers before 1772 but these workers did not recognize it as an element. [Joseph Priestley](https://en.wikipedia.org/wiki/Joseph_Priestley) is generally credited with its discovery (who made oxygen by heating lead or mercury oxides)."
   },
   {
     "group": 17,
@@ -563,7 +563,7 @@
       "search" : "fluorine element",
       "category" : "All"
     },
-    "info": "In 1670 a recipe containing calcium fluoride, CaF2 was used to etch glass. It seems that George Gore made a little fluorine through an electrolytic process but his apparatus exploded when the fluorine produced reacted with hydrogen from the other electrode. The element finally was isolated in 1886 by Ferdinand Frederic Henri Moisson."
+    "info": "In 1670 a recipe containing calcium fluoride, CaF2 was used to etch glass. It seems that George Gore made a little fluorine through an electrolytic process but his apparatus exploded when the fluorine produced reacted with hydrogen from the other electrode. The element finally was isolated in 1886 by [Ferdinand Frederic Henri Moisson](https://en.wikipedia.org/wiki/Henri_Moissan)."
   },
   {
     "group": 18,
@@ -626,7 +626,7 @@
       "search" : "neon element",
       "category" : "All"
     },
-    "info": "Neon was discovered by Sir William Ramsay and Morris Travers in 1898 very shortly after their discovery of the element krypton. Both elements were discovered through work on liquid air"
+    "info": "Neon was discovered by [Sir William Ramsay](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/William_Ramsay) and [Morris Travers](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Morris_Travers) in 1898 very shortly after their discovery of the element krypton. Both elements were discovered through work on liquid air"
   },
   {
     "group": 1,
@@ -693,13 +693,13 @@
       "search" : "sodium metal",
       "category" : "All"
     },
-    "info": "Until the 18th century no distinction was made between potassium and sodium. Sodium was first isolated in 1807 by Sir Humphry Davy, who made it by the electrolysis of very dry molten sodium hydroxide, NaOH. Sodium was collected at the cathode. Shortly after Gay-Lussac isolated sodium by reducing caustic soda with iron metal at high temperatures."
+    "info": "Until the 18th century no distinction was made between potassium and sodium. Sodium was first isolated in 1807 by [Sir Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy), who made it by the electrolysis of very dry molten sodium hydroxide, NaOH. Sodium was collected at the cathode. Shortly after [Gay-Lussac](https://en.wikipedia.org/wiki/Joseph_Louis_Gay-Lussac) isolated sodium by reducing caustic soda with iron metal at high temperatures."
   },
   {
     "group": 2,
     "period": 3,
     "block": "s",
-    "discoveredBy": "Joseph Black ",
+    "discoveredBy": "Joseph Black",
     "keyIsotopes": [
       24
     ],
@@ -756,13 +756,13 @@
       "search" : "magnesium element",
       "category" : "All"
     },
-    "info": "In 1808, Sir Humphry Davy discovered magnesium in its oxide, although it is not certain that he isolated the metal. Pure magnesium was isolated substantially by A. A. B. Bussy in 1828 by chemical reduction of the chloride. Magnesium was first isolated electrolytically by Michael Faraday in 1833."
+    "info": "In 1808, [Sir Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy) discovered magnesium in its oxide, although it is not certain that he isolated the metal. Pure magnesium was isolated substantially by [Antoine Bussy](https://en.wikipedia.org/wiki/Antoine_Bussy) in 1828 by chemical reduction of the chloride. Magnesium was first isolated electrolytically by Michael Faraday in 1833."
   },
   {
     "group": 13,
     "period": 3,
     "block": "p",
-    "discoveredBy": "Hans Oersted",
+    "discoveredBy": "Hans Christian Ørsted",
     "keyIsotopes": [
       27
     ],
@@ -819,13 +819,13 @@
       "search" : "aluminum",
       "category" : "Industrial"
     },
-    "info": "The ancient Greeks and Romans used alum in medicine as an astringent, and in dyeing processes. In 1761 de Morveau proposed the name \"alumine\" for the base in alum. In 1807, Davy proposed the name alumium for the metal, undiscovered at that time, and later agreed to change it to aluminum."
+    "info": "The ancient Greeks and Romans used alum in medicine as an astringent, and in dyeing processes. In 1761 [de Morveau](https://en.wikipedia.org/wiki/Louis-Bernard_Guyton_de_Morveau) proposed the name \"alumine\" for the base in alum. In 1807, Davy proposed the name alumium for the metal, undiscovered at that time, and later agreed to change it to aluminum."
   },
   {
     "group": 14,
     "period": 3,
     "block": "p",
-    "discoveredBy": "Jöns Jacob Berzelius ",
+    "discoveredBy": "Jöns Jacob Berzelius",
     "keyIsotopes": [
       28,
       30
@@ -880,13 +880,13 @@
       "search" : "silicon element",
       "category" : "All"
     },
-    "info": "Jöns Jacob Berzelius is generally credited with the discovery of silicon in 1824. Deville prepared crystalline silicon in 1854, a second allotropic form of the element."
+    "info": "[Jöns Jacob Berzelius](https://en.wikipedia.org/wiki/J%C3%B6ns_Jacob_Berzelius) is generally credited with the discovery of silicon in 1824. [Deville](https://en.wikipedia.org/wiki/Henri_%C3%89tienne_Sainte-Claire_Deville) prepared crystalline silicon in 1854, a second allotropic form of the element."
   },
   {
     "group": 15,
     "period": 3,
     "block": "p",
-    "discoveredBy": "Hennig Brandt ",
+    "discoveredBy": "Hennig Brand",
     "keyIsotopes": [
       31
     ],
@@ -944,7 +944,7 @@
       "search" : "phosphorus element",
       "category" : "All"
     },
-    "info": "Phosphorus was discovered in 1669 by Hennig Brand, who prepared it from urine. Not less than 50-60 buckets per experiment in fact, each of which required more than a fortnight to complete."
+    "info": "Phosphorus was discovered in 1669 by [Hennig Brand](https://en.wikipedia.org/wiki/Hennig_Brand), who prepared it from urine. Not less than 50-60 buckets per experiment in fact, each of which required more than a fortnight to complete."
   },
   {
     "group": 16,
@@ -1071,7 +1071,7 @@
       "search" : "chlorine element",
       "category" : "All"
     },
-    "info": "Chlorine was discovered in 1774 by K. W. Scheele, who thought it was a compound of oxygen; it was named and identified as an element by Sir Humphry Davy in 1810.Chlorine is a greenish-yellow poisonous gas with a disagreeable, suffocating odor; it is about two and one-half times as dense as air"
+    "info": "Chlorine was discovered in 1774 by [Carl Wilhelm Scheele](https://en.wikipedia.org/wiki/Carl_Wilhelm_Scheele), who thought it was a compound of oxygen; it was named and identified as an element by [Sir Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy) in 1810.Chlorine is a greenish-yellow poisonous gas with a disagreeable, suffocating odor; it is about two and one-half times as dense as air"
   },
   {
     "group": 18,
@@ -1131,7 +1131,7 @@
       "search" : "argon element",
       "category" : "All"
     },
-    "info": "Argon was first obtained by Lord Rayleigh and Sir William Ramsay in 1894. Previously Lord Rayleigh had noticed that a liter of supposedly pure nitrogen drawn from the air weighed more than a liter prepared from a nitrogen compound. This difference in weight led him to conclude that another gas was present in the supposedly pure nitrogen"
+    "info": "Argon was first obtained by [Lord Rayleigh](https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh) and [Sir William Ramsay](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/William_Ramsay) in 1894. Previously [Lord Rayleigh](https://en.wikipedia.org/wiki/John_William_Strutt,_3rd_Baron_Rayleigh) had noticed that a liter of supposedly pure nitrogen drawn from the air weighed more than a liter prepared from a nitrogen compound. This difference in weight led him to conclude that another gas was present in the supposedly pure nitrogen"
   },
   {
     "group": 1,
@@ -1194,7 +1194,7 @@
       "search" : "potassium",
       "category" : "Industrial"
     },
-    "info": "Potassium was discovered in 1807 by Humphry Davy, who decomposed potash with an electric current. Potassium was the first metal so discovered; Davy discovered sodium a few days later by a similar experiment."
+    "info": "Potassium was discovered in 1807 by [Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy), who decomposed potash with an electric current. Potassium was the first metal so discovered; Davy discovered sodium a few days later by a similar experiment."
   },
   {
     "group": 2,
@@ -1314,7 +1314,7 @@
       "search" : "scandium",
       "category" : "All"
     },
-    "info": "Scandium was discovered by Lars Frederick Nilson in the minerals euxenite and gadolinite, which had not yet been found anywhere except in Scandinavia. He was actually looking for rare earth metals. By processing 10 kg of euxenite and other residues of rare-earth minerals, he was able to prepare about 2 g of scandium oxide of high purity."
+    "info": "Scandium was discovered by [Lars Frederick Nilson](https://en.wikipedia.org/wiki/Lars_Fredrik_Nilson) in the minerals euxenite and gadolinite, which had not yet been found anywhere except in Scandinavia. He was actually looking for rare earth metals. By processing 10 kg of euxenite and other residues of rare-earth minerals, he was able to prepare about 2 g of scandium oxide of high purity."
   },
   {
     "group": 4,
@@ -1374,7 +1374,7 @@
       "search" : "titanium element",
       "category" : "All"
     },
-    "info": "Titanium was discovered by the Reverend William Gregor in 1791, who was interested in minerals. He recognized the presence of a new element, now known as titanium, in menachanite, a mineral named after Menaccan in Cornwall (England). Several years later, the element was rediscovered in the ore rutile by a German chemist, Klaproth."
+    "info": "Titanium was discovered by the [Reverend William Gregor](William_Gregor) in 1791, who was interested in minerals. He recognized the presence of a new element, now known as titanium, in menachanite, a mineral named after Menaccan in Cornwall (England). Several years later, the element was rediscovered in the ore rutile by a German chemist, [Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth)."
   },
   {
     "group": 5,
@@ -1434,7 +1434,7 @@
       "search" : "vanadium element",
       "category" : "All"
     },
-    "info": "The discovery of vanadium happened \"twice.\" The discovery of vanadium was claimed first by Andres Manuel del Rio (a Spanish mineralogist) at Mexico City in 1803. Iin 1831, Nils Gabriel Sefström  was working with some iron ores and was able to isolate a new oxide. This lead to the element being named in honour of the Germanic tribes' goddess Vanadis"
+    "info": "The discovery of vanadium happened \"twice.\" The discovery of vanadium was claimed first by [Andres Manuel del Rio](https://en.wikipedia.org/wiki/Andr%C3%A9s_Manuel_del_R%C3%ADo) (a Spanish mineralogist) at Mexico City in 1803. In 1831, [Nils Gabriel Sefström](https://en.wikipedia.org/wiki/Nils_Gabriel_Sefstr%C3%B6m) was working with some iron ores and was able to isolate a new oxide. This lead to the element being named in honour of the Germanic tribes' goddess Vanadis"
   },
   {
     "group": 6,
@@ -1494,7 +1494,7 @@
       "search" : "chromium element",
       "category" : "All"
     },
-    "info": "In the mid 18th century analysis of Siberian \"red lead\" (PbCrO4, crocoite) from Siberia showed that it contained quite a lot of lead, but also a further material. This was eventually identified as chromium oxide. Chromium oxide was discovered in 1797 by Louis-Nicholas Vauquelin, who prepared the metal itself in the following year."
+    "info": "In the mid 18th century analysis of Siberian \"red lead\" (PbCrO4, crocoite) from Siberia showed that it contained quite a lot of lead, but also a further material. This was eventually identified as chromium oxide. Chromium oxide was discovered in 1797 by [Louis-Nicholas Vauquelin](https://en.wikipedia.org/wiki/Louis_Nicolas_Vauquelin), who prepared the metal itself in the following year."
   },
   {
     "group": 7,
@@ -1554,7 +1554,7 @@
       "search" : "manganese element",
       "category" : "All"
     },
-    "info": "Manganese metal was isolated by Gahn in 1774. He reduced the dioxide (MnO2, as the mineral pyrolusite) with charcoal (essentially carbon) by heating and the result was a sample of the metal manganese."
+    "info": "Manganese metal was isolated by [Johan Gottlieb Gahn](https://en.wikipedia.org/wiki/Johan_Gottlieb_Gahn) in 1774. He reduced the dioxide (MnO2, as the mineral pyrolusite) with charcoal (essentially carbon) by heating and the result was a sample of the metal manganese."
   },
   {
     "group": 8,
@@ -1674,7 +1674,7 @@
       "search" : "cobalt element",
       "category" : "All"
     },
-    "info": "Minerals containing cobalt were of value to the early civilisations of Egypt and Mesopotamia for colouring glass deep blue.Cobalt was announced to be an element by Georg Brandt about 1739 (or possibly 1735). He had been trying to demonstrate that the blue colour of glass was because of a new element, cobalt"
+    "info": "Minerals containing cobalt were of value to the early civilisations of Egypt and Mesopotamia for colouring glass deep blue. Cobalt was announced to be an element by [Georg Brandt](https://en.wikipedia.org/wiki/Georg_Brandt) about 1739 (or possibly 1735). He had been trying to demonstrate that the blue colour of glass was because of a new element, cobalt"
   },
   {
     "group": 10,
@@ -1734,7 +1734,7 @@
       "search" : "nickel element",
       "category" : "All"
     },
-    "info": "Nickel was discovered in 1751 by A. F. Cronstedt in kupfernickel (niccolite), a copper-colored nickel arsenide mineral. Nickel is present in most meteorites. It is also found in trace amounts in plants and animals."
+    "info": "Nickel was discovered in 1751 by [A. F. Cronstedt](https://en.wikipedia.org/wiki/Axel_Fredrik_Cronstedt) in kupfernickel (niccolite), a copper-colored nickel arsenide mineral. Nickel is present in most meteorites. It is also found in trace amounts in plants and animals."
   },
   {
     "group": 11,
@@ -1854,7 +1854,7 @@
       "search" : "zinc element",
       "category" : "All"
     },
-    "info": "The element was probably named by the alchemist Paracelsus after the German word Zinke. German chemist Andreas Sigismund Marggraf is normally given credit for discovering pure metallic zinc in 1746. Work by Luigi Galvani and Alessandro Volta uncovered the electrochemical properties of zinc by 1800"
+    "info": "The element was probably named by the alchemist Paracelsus after the German word Zinke. German chemist [Andreas Sigismund Marggraf](https://en.wikipedia.org/wiki/Andreas_Sigismund_Marggraf) is normally given credit for discovering pure metallic zinc in 1746. Work by [Luigi Galvani](https://en.wikipedia.org/wiki/Luigi_Galvani) and [Alessandro Volta](https://en.wikipedia.org/wiki/Alessandro_Volta) uncovered the electrochemical properties of zinc by 1800"
   },
   {
     "group": 13,
@@ -1914,7 +1914,7 @@
       "search" : "gallium",
       "category" : "All"
     },
-    "info": "Gallium was an element whose existence was predicted by Mendeleev in 1871. He predicted that the then unknown element gallium should resemble aluminium in its properties. Gallium was discovered spectroscopically by Paul-Emile Lecoq de Boisbaudran in 1875, who in the same year obtained the free metal by electrolysis of a solution of the hydroxide"
+    "info": "Gallium was an element whose existence was predicted by Mendeleev in 1871. He predicted that the then unknown element gallium should resemble aluminium in its properties. Gallium was discovered spectroscopically by [Paul-Emile Lecoq de Boisbaudran ](https://en.wikipedia.org/wiki/Paul-Émile_Lecoq_de_Boisbaudran)in 1875, who in the same year obtained the free metal by electrolysis of a solution of the hydroxide"
   },
   {
     "group": 14,
@@ -1976,7 +1976,7 @@
       "search" : "germanium",
       "category" : "All"
     },
-    "info": "Germanium was an element whose existence was predicted by Mendeleev . He predicted that the then unknown element germanium should resemble silicon in its properties. His predictions for the properties of germanium are remarkably close to the reality. Germanium was discovered in a mineral called argyrodite by Clemens Alexander Winkler in 1886."
+    "info": "Germanium was an element whose existence was predicted by Mendeleev. He predicted that the then unknown element germanium should resemble silicon in its properties. His predictions for the properties of germanium are remarkably close to the reality. Germanium was discovered in a mineral called argyrodite by [Clemens Alexander Winkler](https://en.wikipedia.org/wiki/Clemens_Winkler) in 1886."
   },
   {
     "group": 15,
@@ -2036,7 +2036,7 @@
       "search" : "arsenic",
       "category" : "KindleStore"
     },
-    "info": "Arsenic compounds were mined by the early Chinese, Greek and Egyptian civilisations. No doubt they discovered its toxic properties early on.It is believed that Albertus Magnus obtained the element in 1250 A.D. who obtained it by heating soap together with orpiment (arsenic trisulphide, As2S3)."
+    "info": "Arsenic compounds were mined by the early Chinese, Greek and Egyptian civilisations. No doubt they discovered its toxic properties early on. It is believed that [Albertus Magnus](https://en.wikipedia.org/wiki/Albertus_Magnus) obtained the element in 1250 A.D. who obtained it by heating soap together with orpiment (arsenic trisulphide, As2S3)."
   },
   {
     "group": 16,
@@ -2096,7 +2096,7 @@
       "search" : "selenium element",
       "category" : "All"
     },
-    "info": "Selenium (Gr. Selen, moon) was discovered by Jöns Jacob Berzelius in 1817. He reported that tellurium was present in sulphuric acid from a Swedish factory, but in the following year decided that the impurity was not tellurium but another closely related element that he subsequently identified as selenium."
+    "info": "Selenium (Gr. Selen, moon) was discovered by [Jöns Jacob Berzelius](https://en.wikipedia.org/wiki/J%C3%B6ns_Jacob_Berzelius) in 1817. He reported that tellurium was present in sulphuric acid from a Swedish factory, but in the following year decided that the impurity was not tellurium but another closely related element that he subsequently identified as selenium."
   },
   {
     "group": 17,
@@ -2160,7 +2160,7 @@
       "search" : "bromine element",
       "category" : "All"
     },
-    "info": "Bromine was not prepared in quantity until 1860 but compounds of bromine were of some considerable importance well before it was recognised as an element. Long ago an excretion from a particular kind of mussel was used to make a purple dye called \"Tyrian purple.\" It is now known that a key compound in this process is an organobromine compund."
+    "info": "Bromine was discovered independently by two chemists, [Carl Jacob Löwig](https://en.wikipedia.org/wiki/Carl_Jacob_L%C3%B6wig) and [Antoine Jérôme Balard](https://en.wikipedia.org/wiki/Antoine_J%C3%A9r%C3%B4me_Balard), in 1825 and 1826, respectively. Bromine was not prepared in quantity until 1860 but compounds of bromine were of some considerable importance well before it was recognised as an element. Long ago an excretion from a particular kind of mussel was used to make a purple dye called \"Tyrian purple.\" It is now known that a key compound in this process is an organobromine compund."
   },
   {
     "group": 18,
@@ -2220,7 +2220,7 @@
       "search" : "krypton element",
       "category" : "All"
     },
-    "info": "Krypton was discovered in 1898 by Sir William Ramsay and his student Morris Travers in the residue left after liquid air had nearly boiled away. Krypton was left in the residue after boiling away water, oxygen, nitrogen, helium, and argon from the sample of air. Krypton is present in the air at about 1 ppm."
+    "info": "Krypton was discovered in 1898 by [Sir William Ramsay](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/William_Ramsay) and his student [Morris Travers](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Morris_Travers) in the residue left after liquid air had nearly boiled away. Krypton was left in the residue after boiling away water, oxygen, nitrogen, helium, and argon from the sample of air. Krypton is present in the air at about 1 ppm."
   },
   {
     "group": 1,
@@ -2284,7 +2284,7 @@
       "search" : "rubidium element",
       "category" : "All"
     },
-    "info": "Rubidium was discovered with caesium in 1861 by R. W. Bunsen and G. R. Kirchhoff; these were the first elements discovered by spectroscopic analysis. Although rubidium is much more abundant in the earth's crust than chromium, copper, lithium, nickel it did not become available commercially early 1960s "
+    "info": "Rubidium was discovered with caesium in 1861 by [Robert Bunsen](https://en.wikipedia.org/wiki/Robert_Bunsen) and [Gustav Kirchhoff](https://en.wikipedia.org/wiki/Gustav_Kirchhoff); these were the first elements discovered by spectroscopic analysis. Although rubidium is much more abundant in the earth's crust than chromium, copper, lithium, nickel it did not become available commercially early 1960s "
   },
   {
     "group": 2,
@@ -2346,7 +2346,7 @@
       "search" : "strontium element",
       "category" : "All"
     },
-    "info": "Adair Crawford in 1790 recognized a new mineral (strontianite) in samples of witherite (barium carbonate, BaCO3) from Scotland. It was some time before it was recognized that strontianite contained a new element. The element itself was not isolated for a number of years after this when strontium metal was isolated by Davy by electrolysis."
+    "info": "[Adair Crawford](https://en.wikipedia.org/wiki/Adair_Crawford) in 1790 recognized a new mineral (strontianite) in samples of witherite (barium carbonate, BaCO3) from Scotland. It was some time before it was recognized that strontianite contained a new element. The element itself was not isolated for a number of years after this when strontium metal was isolated by Davy by electrolysis."
   },
   {
     "group": 3,
@@ -2406,7 +2406,7 @@
       "search" : "yttrium",
       "category" : "All"
     },
-    "info": "Yttria (yttrium oxide, Y2O3), was discovered by Johann Gadolin in 1794 in a mineral called gadolinite from Ytterby, a town in Finland. Friedrich Wohler obtained the impure element in 1828 by reduction of the anhydrous chloride (YCl3) with potassium."
+    "info": "Yttria (yttrium oxide, Y2O3), was discovered by [Johann Gadolin](https://en.wikipedia.org/wiki/Johan_Gadolin) in 1794 in a mineral called gadolinite from Ytterby, a town in Finland. [Friedrich Wohler](https://en.wikipedia.org/wiki/Friedrich_W%C3%B6hler) obtained the impure element in 1828 by reduction of the anhydrous chloride (YCl3) with potassium."
   },
   {
     "group": 4,
@@ -2468,7 +2468,7 @@
       "search" : "zirconium metal",
       "category" : "All"
     },
-    "info": "The name zircon probably originated from the arabic \"zargun,\" which describes the colour of the gemstone now known as zircon. Zirconium was discovered by Martin Heinrich Klaproth at 1789 in Berlin, Germany. The minerals jargon, hyacinth, and jacinth also contain zircon and these have been known since biblical times and are mentioned in the bible."
+    "info": "The name zircon probably originated from the arabic \"zargun,\" which describes the colour of the gemstone now known as zircon. Zirconium was discovered by [Martin Heinrich Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth) at 1789 in Berlin, Germany. The minerals jargon, hyacinth, and jacinth also contain zircon and these have been known since biblical times and are mentioned in the bible."
   },
   {
     "group": 5,
@@ -2528,7 +2528,7 @@
       "search" : "niobium element",
       "category" : "All"
     },
-    "info": "Niobium was discovered in 1801 by Charles Hatchett in an ore called columbite. He was not able to isolate the free element. There was then considerable confusion concerning the distinction between niobium and tantalum as they are so closely related. This confusion was resolved by Heinrich Rose, who named niobium."
+    "info": "Niobium was discovered in 1801 by [Charles Hatchett](https://en.wikipedia.org/wiki/Charles_Hatchett) in an ore called columbite. He was not able to isolate the free element. There was then considerable confusion concerning the distinction between niobium and tantalum as they are so closely related. This confusion was resolved by [Heinrich Rose](https://en.wikipedia.org/wiki/Heinrich_Rose), who named niobium."
   },
   {
     "group": 6,
@@ -2590,7 +2590,7 @@
       "search" : "molybdenum element",
       "category" : "All"
     },
-    "info": "Molybdenum was recognized as a distinct element in 1778 by K. W. Scheele; its ore had earlier been confused with lead ore, hence its name. The element was isolated by P. J. Hjelm in 1782. Molybdenum do not occur uncombined in nature. It is widely but sparingly distributed throughout the world"
+    "info": "Molybdenum was recognized as a distinct element in 1778 by [Carl Wilhelm Scheele](https://en.wikipedia.org/wiki/Carl_Wilhelm_Scheele); its ore had earlier been confused with lead ore, hence its name. The element was isolated by [P. J. Hjelm](https://en.wikipedia.org/wiki/Peter_Jacob_Hjelm) in 1782. Molybdenum do not occur uncombined in nature. It is widely but sparingly distributed throughout the world"
   },
   {
     "group": 7,
@@ -2712,7 +2712,7 @@
       "search" : "ruthenium element",
       "category" : "All"
     },
-    "info": "Ruthenium was discovered in 1827 in an impure form by G. W. Osann in residues of crude platinum ores from the Ural Mts. of Russia. Pure ruthenium was first prepared by K. K. Klaus in 1845; he showed that Osann's sample contained at least one other metal."
+    "info": "Ruthenium was discovered in 1827 in an impure form by [G. W. Osann](https://en.wikipedia.org/wiki/Gottfried_Osann) in residues of crude platinum ores from the Ural Mts. of Russia. Pure ruthenium was first prepared by [K. K. Klaus](https://en.wikipedia.org/wiki/Karl_Ernst_Claus) in 1845; he showed that Osann's sample contained at least one other metal."
   },
   {
     "group": 9,
@@ -2772,7 +2772,7 @@
       "search" : "rhodium element",
       "category" : "All"
     },
-    "info": "William Hyde Wollaston discovered rhodium in 1803 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum & Palladium. The left material was a red material containing rhodium chloride salt from which rhodium metal was obtained by reduction with hydrogen gas."
+    "info": "[William Hyde Wollaston](https://en.wikipedia.org/wiki/William_Hyde_Wollaston) discovered rhodium in 1803 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum & Palladium. The left material was a red material containing rhodium chloride salt from which rhodium metal was obtained by reduction with hydrogen gas."
   },
   {
     "group": 10,
@@ -2832,7 +2832,7 @@
       "search" : "palladium element",
       "category" : "All"
     },
-    "info": "William Hyde Wollaston discovered palladium in 1803-4 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum .Palladium was then removed as palladium cyanide by treatment with mercuric cyanide. The metal was produced from this cyanide by heating."
+    "info": "[William Hyde Wollaston](https://en.wikipedia.org/wiki/William_Hyde_Wollaston) discovered palladium in 1803-4 in crude platinum ore from South America. He dissolved the ore in aqua regia, neutralised the acid with caustic soda, and precipitated the platinum .Palladium was then removed as palladium cyanide by treatment with mercuric cyanide. The metal was produced from this cyanide by heating."
   },
   {
     "group": 11,
@@ -2952,7 +2952,7 @@
       "search" : "cadmium element",
       "category" : "All"
     },
-    "info": "Cadmium was discovered by Friedrich Stromeyer in 1817 from an impurity in some samples of zinc carbonate. He noted that these particular samples changed colour on heating, which pure zinc carbonate does not. He was persistent to follow this observation through and he eventually isolated some cadmium metal by roasting and reduction of the sulphide."
+    "info": "Cadmium was discovered by [Friedrich Stromeyer](https://en.wikipedia.org/wiki/Friedrich_Stromeyer in 1817 from an impurity in some samples of zinc carbonate. He noted that these particular samples changed colour on heating, which pure zinc carbonate does not. He was persistent to follow this observation through and he eventually isolated some cadmium metal by roasting and reduction of the sulphide."
   },
   {
     "group": 13,
@@ -3012,7 +3012,7 @@
       "search" : "indium element",
       "category" : "All"
     },
-    "info": "Indium was discovered by Ferdinand Reich and Theodore Richter, who later isolated the metal. It was found and spectroscopically identified as a minor component in zincores. Until 1924, a gram or so constituted the world's supply of this element in isolated form. In fact, it is probably about as abundant as silver."
+    "info": "Indium was discovered by [Ferdinand Reich](https://en.wikipedia.org/wiki/Ferdinand_Reich) and [Theodore Richter](https://en.wikipedia.org/wiki/Hieronymous_Theodor_Richter), who later isolated the metal. It was found and spectroscopically identified as a minor component in zincores. Until 1924, a gram or so constituted the world's supply of this element in isolated form. In fact, it is probably about as abundant as silver."
   },
   {
     "group": 14,
@@ -3132,7 +3132,7 @@
       "search" : "antimony element",
       "category" : "All"
     },
-    "info": "Antimony was recognized in compounds by the ancients and was known as a metal at the beginning of the 17th century and possibly much earlier. It seems not to be clear who first recognised antimony as an element but the French chemist Nicolas Lémery conducted much of the earlier studies on antimony chemistry."
+    "info": "Antimony was recognized in compounds by the ancients and was known as a metal at the beginning of the 17th century and possibly much earlier. It seems not to be clear who first recognised antimony as an element but the French chemist [Nicolas Lémery](https://en.wikipedia.org/wiki/Nicolas_Lemery) conducted much of the earlier studies on antimony chemistry."
   },
   {
     "group": 16,
@@ -3192,7 +3192,7 @@
       "search" : "tellerium",
       "category" : "All"
     },
-    "info": "Tellurium was discovered in gold ores by Franz Joseph Muller von Reichenstein, the chief inspector of mines in Trannsylvania in 1782. However tellurium was named by M. Klaproth, who isolated it in 1798, after he continued Muller von Reichenstein's work."
+    "info": "Tellurium was discovered in gold ores by [Franz Joseph Muller von Reichenstein](https://en.wikipedia.org/wiki/Franz-Joseph_M%C3%BCller_von_Reichenstein), the chief inspector of mines in Trannsylvania in 1782. However tellurium was named by [M. Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth), who isolated it in 1798, after he continued Muller von Reichenstein's work."
   },
   {
     "group": 17,
@@ -3252,7 +3252,7 @@
       "search" : "iodine element",
       "category" : "All"
     },
-    "info": "Iodine was discovered by Barnard Courtois in 1811. He isolated iodine from treating seaweed ash with sulphuric acid (H2SO4) while recovering sodium and potassium compounds."
+    "info": "Iodine was discovered by [Barnard Courtois](https://en.wikipedia.org/wiki/Bernard_Courtois) in 1811. He isolated iodine from treating seaweed ash with sulphuric acid (H2SO4) while recovering sodium and potassium compounds."
   },
   {
     "group": 18,
@@ -3312,7 +3312,7 @@
       "search" : "xenon",
       "category" : "KindleStore"
     },
-    "info": "Xenon was discovered by Sir William Ramsay and Morris Travers in 1898 in the residue left after evaporating liquid air components. They had to work with huge volumes of air to produce just a little xenon since it turned out that xenon is only present to the extent of about 0.087 ppm in the atmosphere"
+    "info": "Xenon was discovered by [Sir William Ramsay](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/William_Ramsay) and [Morris Travers](https://en.wikipedia.org/wiki/https://en.wikipedia.org/wiki/Morris_Travers) in 1898 in the residue left after evaporating liquid air components. They had to work with huge volumes of air to produce just a little xenon since it turned out that xenon is only present to the extent of about 0.087 ppm in the atmosphere"
   },
   {
     "group": 1,
@@ -3375,7 +3375,7 @@
       "search" : "cesium element",
       "category" : "All"
     },
-    "info": "Caesium (cesium in USA) was discovered spectroscopically by Robert Wilhelm Bunsen and Gustav Robert Kirchhoff in 1860 in samples of mineral water from Durkheim. Their identification was based upon two bright blue lines in the spectrum. The name caesium (from the Latin \"caesius\" - heavenly blue) was coined for its bright blue spectroscopic lines."
+    "info": "Caesium (cesium in USA) was discovered spectroscopically by [Robert Wilhelm Bunsen](https://en.wikipedia.org/wiki/Robert_Bunsen_ and [Gustav Robert Kirchhoff](https://en.wikipedia.org/wiki/Gustav_Kirchhoff) in 1860 in samples of mineral water from Durkheim. Their identification was based upon two bright blue lines in the spectrum. The name caesium (from the Latin \"caesius\" - heavenly blue) was coined for its bright blue spectroscopic lines."
   },
   {
     "group": 2,
@@ -3435,7 +3435,7 @@
       "search" : "barium metal",
       "category" : "All"
     },
-    "info": "Barium metal was first isolated in 1808 by Sir Humphry Davy by electrolysis. Its principal ore is barite (barium sulfate); it also occurs in the mineral witherite (barium carbonate). The pure metal is obtained by the electrolysis of fused barium salts or, industrially, by the reduction of barium oxide with aluminum"
+    "info": "Barium metal was first isolated in 1808 by [Sir Humphry Davy](https://en.wikipedia.org/wiki/Humphry_Davy) by electrolysis. Its principal ore is barite (barium sulfate); it also occurs in the mineral witherite (barium carbonate). The pure metal is obtained by the electrolysis of fused barium salts or, industrially, by the reduction of barium oxide with aluminum"
   },
   {
     "group": "l",
@@ -3495,7 +3495,7 @@
       "search" : "lanthanum element",
       "category" : "All"
     },
-    "info": "Carl Gustav Mosander recognized the element lanthanum in impure cerium nitrate in 1839. His extraction resulted in the oxide lanthana (La2O3). A number of other lanthanides (rare-earths) were later discovered by identification of the impurities in yttrium and cerium compounds."
+    "info": "[Carl Gustav Mosander](https://en.wikipedia.org/wiki/Carl_Gustaf_Mosander) recognized the element lanthanum in impure cerium nitrate in 1839. His extraction resulted in the oxide lanthana (La2O3). A number of other lanthanides (rare-earths) were later discovered by identification of the impurities in yttrium and cerium compounds."
   },
   {
     "group": "l",
@@ -3553,7 +3553,7 @@
       "search" : "cerium element",
       "category" : "All"
     },
-    "info": "Cerium was discovered in 1803 by Jöns Jacob Berzelius and Wilhelm Hisinger and independently by Martin Klaproth. It was isolated from a mineral from an iron mine at Bastn°s"
+    "info": "Cerium was discovered in 1803 by [Jöns Jacob Berzelius](https://en.wikipedia.org/wiki/J%C3%B6ns_Jacob_Berzelius)f and [Wilhelm Hisinger](https://en.wikipedia.org/wiki/Wilhelm_Hisinger) and independently by [Martin Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth). It was isolated from a mineral from an iron mine at Bastn°s"
   },
   {
     "group": "l",
@@ -3613,7 +3613,7 @@
       "search" : "praseodymium",
       "category" : "All"
     },
-    "info": "In 1885, Carl Auer von Welsbach separated an \"earth\" called didymia obtained from the mineral samarskite into two earths, praseodymia and neodymia, which gave salts of different colours. The separation required the repeated fractionation of ammonium didymium nitrate."
+    "info": "In 1885, [Carl Auer von Welsbach](https://en.wikipedia.org/wiki/Carl_Auer_von_Welsbach) separated an \"earth\" called didymia obtained from the mineral samarskite into two earths, praseodymia and neodymia, which gave salts of different colours. The separation required the repeated fractionation of ammonium didymium nitrate."
   },
   {
     "group": "l",
@@ -3673,7 +3673,7 @@
       "search" : "neodymium",
       "category" : "All"
     },
-    "info": "In 1885 von Welsbach separated didymium, an extract of cerite, into two new elemental components, neodymia and praseodymia, by repeated fractionation of ammonium didymium nitrate. While the free metal is a component of misch metal, (a pyrophoric alloy for lighter flints), the element was not isolated in relatively pure form until 1925."
+    "info": "In 1885 [von Welsbach](https://en.wikipedia.org/wiki/Carl_Auer_von_Welsbach) separated didymium, an extract of cerite, into two new elemental components, neodymia and praseodymia, by repeated fractionation of ammonium didymium nitrate. While the free metal is a component of misch metal, (a pyrophoric alloy for lighter flints), the element was not isolated in relatively pure form until 1925."
   },
   {
     "group": "l",
@@ -3729,7 +3729,7 @@
       "search" : "promethium element",
       "category" : "All"
     },
-    "info": "Marinsky, Glendenin, and Coryell \",\"Earlt claims to the discovery of promethium date back to 1924 but these appear have been substantiated. A group at Ohio State University claimed element 61 in experiments involving its synthesis in a cyclotron. Marinsky, Glendenin, and Coryell at Tennessee made the first chemical identification of promethium by use of ion-exchange chromatography"
+    "info": "Early claims to the discovery of promethium date back to 1924 but these appear have been substantiated. A group at Ohio State University claimed element 61 in experiments involving its synthesis in a cyclotron. [Marinsky](https://en.wikipedia.org/wiki/Jacob_A._Marinsky), [Glendenin](https://en.wikipedia.org/wiki/Lawrence_E._Glendenin), and [Coryell](https://en.wikipedia.org/wiki/Charles_D._Coryell)'s  at Tennessee made the first chemical identification of promethium by use of ion-exchange chromatography"
   },
   {
     "group": "l",
@@ -3789,7 +3789,7 @@
       "search" : "samarium element",
       "category" : "All"
     },
-    "info": "Samarium was discovered spectroscopically by its sharp absorption lines in 1853 by Jean Charles Galissard de Marignac in an \"earth\" called didymia. The element was isolated in 1879 by Lecoq de Boisbaudran from the mineral samarskite, named in honour of a Russian mine official, Colonel Samarski, and which therefore gave samarium its name."
+    "info": "Samarium was discovered spectroscopically by its sharp absorption lines in 1853 by [Jean Charles Galissard de Marignac](https://en.wikipedia.org/wiki/Jean_Charles_Galissard_de_Marignac) in an \"earth\" called didymia. The element was isolated in 1879 by [Lecoq de Boisbaudran](https://en.wikipedia.org/wiki/Paul-%C3%89mile_Lecoq_de_Boisbaudran) from the mineral samarskite, named in honour of a Russian mine official, Colonel Samarski, and which therefore gave samarium its name."
   },
   {
     "group": "l",
@@ -3849,7 +3849,7 @@
       "search" : "europium element",
       "category" : "All"
     },
-    "info": "The discovery of europium is generally credited to Eug/ne-Antole Demarcay, who separated the earth in reasonably pure form in 1901 from a material containing largely samarium. Pure europium metal was not isolated until much more recently."
+    "info": "The discovery of europium is generally credited to [Eugène-Antole Demarçay](https://en.wikipedia.org/wiki/Eug%C3%A8ne-Anatole_Demar%C3%A7ay), who separated the earth in reasonably pure form in 1901 from a material containing largely samarium. Pure europium metal was not isolated until much more recently."
   },
   {
     "group": "l",
@@ -3909,7 +3909,7 @@
       "search" : "gadolinium element",
       "category" : "All"
     },
-    "info": "Spectroscopic lines due to gadolinium were observed by Jean Charles Galissard de Marignac in 1880 in samples of didymia and gadolinite. Gadolinia, the oxide of gadolinium, was separated by Paul-Emile Loq de Biosbaudran in 1886. The element was named for the mineral gadolinite from which this rare earth was originally obtained."
+    "info": "Spectroscopic lines due to gadolinium were observed by [Jean Charles Galissard de Marignac](https://en.wikipedia.org/wiki/Jean_Charles_Galissard_de_Marignac) in 1880 in samples of didymia and gadolinite. Gadolinia, the oxide of gadolinium, was separated by [Paul-Emile Loq de Biosbaudran](https://en.wikipedia.org/wiki/Paul-%C3%89mile_Lecoq_de_Boisbaudran) in 1886. The element was named for the mineral gadolinite from which this rare earth was originally obtained."
   },
   {
     "group": "l",
@@ -3969,7 +3969,7 @@
       "search" : "terbium element",
       "category" : "All"
     },
-    "info": "Terbium was discovered by Gustav Mosander in 1843. He detected it is as an impurity in yttria which is yttrium oxide, Y2O3."
+    "info": "Terbium was discovered by [Gustav Mosander](https://en.wikipedia.org/wiki/Carl_Gustaf_Mosander) in 1843. He detected it is as an impurity in yttria which is yttrium oxide, Y2O3."
   },
   {
     "group": "l",
@@ -4029,7 +4029,7 @@
       "search" : "dysprosium element",
       "category" : "All"
     },
-    "info": "A lttle dysprosium oxide was identified in 1886 by Paul-Emile Lecoq de Boisbaudran as an impurity in erbia (erbium oxide), but the element itself not isolated at that time. Neither the oxide nor the metal was available in relatively pure form following the development of ion-exchange separation and metallographic reduction techniques."
+    "info": "A little dysprosium oxide was identified in 1886 by [Paul-Emile Lecoq de Boisbaudran ](https://en.wikipedia.org/wiki/Paul-Émile_Lecoq_de_Boisbaudran)as an impurity in erbia (erbium oxide), but the element itself not isolated at that time. Neither the oxide nor the metal was available in relatively pure form following the development of ion-exchange separation and metallographic reduction techniques."
   },
   {
     "group": "l",
@@ -4089,7 +4089,7 @@
       "search" : "holmium element",
       "category" : "All"
     },
-    "info": "Per Theodor Cleve of Sweden discovered holmium while working on erbia earth (erbium oxide). Holmium oxide (holmia) was present as an impurity in the erbia. The element is named after Cleve's native city. Pure holmia, the yellow oxide, was prepared by Homberg in 1911."
+    "info": "[Per Theodor Cleve](https://en.wikipedia.org/wiki/Per_Teodor_Cleve) of Sweden discovered holmium while working on erbia earth (erbium oxide). Holmium oxide (holmia) was present as an impurity in the erbia. The element is named after Cleve's native city. Pure holmia, the yellow oxide, was prepared at Homberg in 1911."
   },
   {
     "group": "l",
@@ -4149,7 +4149,7 @@
       "search" : "erbium element",
       "category" : "All"
     },
-    "info": "In 1842 Gustav Mosander separated \"yttria\", found in the mineral gadolinite, into three fractions which he called yttria, erbia, and terbia. The names erbia and terbia became confused in this early period. After 1860, Mosander's terbia was known as erbia, and after 1877, the earlier known erbia became terbia."
+    "info": "In 1842 [Gustav Mosander](https://en.wikipedia.org/wiki/Carl_Gustaf_Mosander) separated \"yttria\", found in the mineral gadolinite, into three fractions which he called yttria, erbia, and terbia. The names erbia and terbia became confused in this early period. After 1860, Mosander's terbia was known as erbia, and after 1877, the earlier known erbia became terbia."
   },
   {
     "group": "l",
@@ -4209,7 +4209,7 @@
       "search" : "thulium element",
       "category" : "All"
     },
-    "info": "Per Theodor Cleve of Sweden discovered holmium in 1879 while working on erbia earth (erbium oxide). Thulium oxide (holmia) was present as an impurity in the erbia. The element is named after Thule, the ancient name for Scandinavia."
+    "info": "[Per Theodor Cleve](https://en.wikipedia.org/wiki/Per_Teodor_Cleve) of Sweden discovered holmium in 1879 while working on erbia earth (erbium oxide). Thulium oxide (holmia) was present as an impurity in the erbia. The element is named after Thule, the ancient name for Scandinavia."
   },
   {
     "group": "l",
@@ -4271,7 +4271,7 @@
       "search" : "ytterbium element",
       "category" : "All"
     },
-    "info": "In 1878 Marignac discovered a component, which he called ytterbia, in the earth then known as erbia. In 1907, Urbain separated ytterbia into two components, which he called neoytterbia and lutecia. The elements in these earths are now known as ytterbium and lutetium, respectively."
+    "info": "In 1878 [Jean Charles Galissard de Marignac](https://en.wikipedia.org/wiki/Jean_Charles_Galissard_de_Marignac) discovered a component, which he called ytterbia, in the earth then known as erbia. In 1907, Urbain separated ytterbia into two components, which he called neoytterbia and lutecia. The elements in these earths are now known as ytterbium and lutetium, respectively."
   },
   {
     "group": "l",
@@ -4331,7 +4331,7 @@
       "search" : "lutetium element",
       "category" : "All"
     },
-    "info": "In 1907, Georges Urbain described a process by which Marignac's ytterbium (1879) could be separated into the two elements, ytterbium (neoytterbium) and lutetium. These elements were identical with \"aldebaranium\" and \"cassiopeium\", independently discovered by von Welsbach at about the same time."
+    "info": "In 1907, [Georges Urbain](https://en.wikipedia.org/wiki/Georges_Urbain) described a process by which Marignac's ytterbium (1879) could be separated into the two elements, ytterbium (neoytterbium) and lutetium. These elements were identical with \"aldebaranium\" and \"cassiopeium\", independently discovered by von Welsbach at about the same time."
   },
   {
     "group": 4,
@@ -4393,7 +4393,7 @@
       "search" : "hafnium element",
       "category" : "All"
     },
-    "info": "Hafnium was thought to be present in various zirconium minerals many years prior to its discovery, in 1923, which was credited to Dirk Coster and George Charles von Hevesey. It was finally identified in zircon from Norway, by means of X-ray spectroscopic analysis. It was named in honour of the city in which the discovery was made."
+    "info": "Hafnium was thought to be present in various zirconium minerals many years prior to its discovery, in 1923, which was credited to [Dirk Coster](https://en.wikipedia.org/wiki/Dirk_Coster) and [George Charles von Hevesey](https://en.wikipedia.org/wiki/George_de_Hevesy). It was finally identified in zircon from Norway, by means of X-ray spectroscopic analysis. It was named in honour of the city in which the discovery was made."
   },
   {
     "group": 5,
@@ -4454,7 +4454,7 @@
       "search" : "niobium element",
       "category" : "All"
     },
-    "info": "Niobium was discovered in by Anders Ekeberg, but many chemists thought niobium and tantalum were the same. Some felt that perhaps tantalum was an allotrope of niobium. Later, Rose, in 1844, and Marignac, in 1866, showed that niobic and tantalic acids were two different acids.The first relatively pure tantalum was produced by von Bolton in 1907."
+    "info": "Niobium was discovered in by [Anders Ekeberg](https://en.wikipedia.org/wiki/Anders_Gustaf_Ekeberg), but many chemists thought niobium and tantalum were the same. Some felt that perhaps tantalum was an allotrope of niobium. Later, Rose, in 1844, and Marignac, in 1866, showed that niobic and tantalic acids were two different acids.The first relatively pure tantalum was produced by von Bolton in 1907."
   },
   {
     "group": 6,
@@ -4516,7 +4516,7 @@
       "search" : "tungsten element",
       "category" : "All"
     },
-    "info": "Tungsten used to be known as wolfram (from wolframite, said to be named from wolf rahm or spumi lupi, because the ore interfered with the smelting of tin and was supposed to devour the tin). The de Elhuyar brothers found an acid in wolframite in 1783 that they succeeded in reducing to the elemental metal with charcoal."
+    "info": "Tungsten used to be known as wolfram (from wolframite, said to be named from wolf rahm or spumi lupi, because the ore interfered with the smelting of tin and was supposed to devour the tin). The [de Elhuyar](https://en.wikipedia.org/wiki/Fausto_Elhuyar) [brothers](https://en.wikipedia.org/wiki/Juan_Jos%C3%A9_Elhuyar) found an acid in wolframite in 1783 that they succeeded in reducing to the elemental metal with charcoal."
   },
   {
     "group": 7,
@@ -4576,7 +4576,7 @@
       "search" : "rhenium element",
       "category" : "All"
     },
-    "info": "Discovery of rhenium is generally attributed to Walter Noddack, Ida Tacke-Noddack, and Otto Berg, who announced in 1925 they had detected the element in platinum ores and columbite."
+    "info": "Discovery of rhenium is generally attributed to [Walter Noddack](https://en.wikipedia.org/wiki/Walter_Noddack), [Ida Tacke-Noddack](https://en.wikipedia.org/wiki/Ida_Noddack), and [Otto Berg](https://en.wikipedia.org/wiki/Otto_Berg_(scientist)), who announced in 1925 they had detected the element in platinum ores and columbite."
   },
   {
     "group": 8,
@@ -4696,7 +4696,7 @@
       "search" : "iridium element",
       "category" : "All"
     },
-    "info": "Osmium was discovered in 1803 by Smithson Tennant in the dark coloured residue left when crude platinum is dissolved by aqua regia (a mixture of hydrochloric and nitric acid). This dark residue contains both osmium and iridium (named after the Latin word iris meaning rainbow because of the colourful nature of iridium compounds)."
+    "info": "Osmium was discovered in 1803 by [Smithson Tennant](https://en.wikipedia.org/wiki/Smithson_Tennant) in the dark coloured residue left when crude platinum is dissolved by aqua regia (a mixture of hydrochloric and nitric acid). This dark residue contains both osmium and iridium (named after the Latin word iris meaning rainbow because of the colourful nature of iridium compounds)."
   },
   {
     "group": 10,
@@ -4882,7 +4882,7 @@
     "group": 13,
     "period": 6,
     "block": "p",
-    "discoveredBy": "William Crookes ",
+    "discoveredBy": "William Crookes",
     "keyIsotopes": [
       205
     ],
@@ -4936,7 +4936,7 @@
       "search" : "thallium element",
       "category" : "All"
     },
-    "info": "Thallium was discovered spectroscopically in 1861 by Crookes. The element was named after the green spectral line, which identified the element (Greek \"thallos\", green twig). They had been expecting to isolate tellurium after removing selenium from the byproducts from a commercial sulphuric acid factory but instead found the new element thallium."
+    "info": "Thallium was discovered spectroscopically in 1861 by [William Crookes](https://en.wikipedia.org/wiki/William_Crookes). The element was named after the green spectral line, which identified the element (Greek \"thallos\", green twig). They had been expecting to isolate tellurium after removing selenium from the byproducts from a commercial sulphuric acid factory but instead found the new element thallium."
   },
   {
     "group": 14,
@@ -5056,7 +5056,7 @@
       "search" : "bismuth element",
       "category" : "All"
     },
-    "info": "In early times bismuth was confused with tin and lead. So although bismuth had been discussed many times before, Claude Geoffroy the Younger showed it to be distinct from lead in 1753."
+    "info": "In early times bismuth was confused with tin and lead. So although bismuth had been discussed many times before, [Claude Geoffroy the Younger](https://en.wikipedia.org/wiki/Claude_Fran%C3%A7ois_Geoffroy) showed it to be distinct from lead in 1753."
   },
   {
     "group": 16,
@@ -5113,7 +5113,7 @@
       "search" : "polonium element",
       "category" : "All"
     },
-    "info": "Polonium was the first element discovered by Marie Sklodowska Curie in 1898, while seeking the cause of radioactivity of pitchblende from Joachimsthal, Bohemia. It required several tonnes of pitchblende to produce very small amounts of polonium."
+    "info": "Polonium was the first element discovered by [Marie Sklodowska Curie](https://en.wikipedia.org/wiki/Marie_Curie) in 1898, while seeking the cause of radioactivity of pitchblende from Joachimsthal, Bohemia. It required several tonnes of pitchblende to produce very small amounts of polonium."
   },
   {
     "group": 17,
@@ -5168,7 +5168,7 @@
       "search" : "astatine",
       "category" : "All"
     },
-    "info": "Astatine was synthesized in 1940 by Dale Corson and others at the University of California, USA, by bombarding bismuth (209Bi) with ?-particles."
+    "info": "Astatine was synthesized in 1940 by [Dale Corson](https://en.wikipedia.org/wiki/Dale_R._Corson), [Kenneth Ross MacKenzie](https://en.wikipedia.org/wiki/Kenneth_Ross_MacKenzie) and [Emilio Segrèand](https://en.wikipedia.org/wiki/Emilio_Segr%C3%A8) others at the University of California, USA, by bombarding bismuth (209Bi) with ?-particles."
   },
   {
     "group": 18,
@@ -5225,7 +5225,7 @@
       "search" : "radon",
       "category" : "KindleStore"
     },
-    "info": "Radon was discovered in 1900 by Friedrich Ernst Dorn, who called it niton. It is essentially inert. It has been called radon since 1923, before which it was called niton."
+    "info": "Radon was discovered in 1900 by [Friedrich Ernst Dorn](https://en.wikipedia.org/wiki/Friedrich_Ernst_Dorn), who called it niton. It is essentially inert. It has been called radon since 1923, before which it was called niton."
   },
   {
     "group": 1,
@@ -5280,7 +5280,7 @@
       "search" : "francium element",
       "category" : "All"
     },
-    "info": "Francium was discovered in 1939 by Marguerite Perey of the Curie Institute in Paris, (France) but its existence was predicted by Mendeleev during the 1870's. Since its properties should track those of caesium rather closely, he called it eka-caesium."
+    "info": "Francium was discovered in 1939 by [Marguerite Perey](https://en.wikipedia.org/wiki/Marguerite_Perey) of the Curie Institute in Paris, (France) but its existence was predicted by Mendeleev during the 1870's. Since its properties should track those of caesium rather closely, he called it eka-caesium."
   },
   {
     "group": 2,
@@ -5335,7 +5335,7 @@
       "search" : "radium",
       "category" : "KindleStore"
     },
-    "info": "Radium was discovered in 1898 by Marie and Pierre Curie in pitchblende (or uraninite) from North Bohemia. The element was isolated in 1911 by Mme. Curie and Debierne by the electrolysis of a solution of pure radium chloride, employing a mercury cathode. On distillation in an atmosphere of hydrogen this amalgam yielded the pure metal."
+    "info": "Radium was discovered in 1898 by [Marie](https://en.wikipedia.org/wiki/Marie_Curie) and [Pierre Curie](https://en.wikipedia.org/wiki/Pierre_Curie) in pitchblende (or uraninite) from North Bohemia. The element was isolated in 1911 by Mme. Curie and [Debierne](https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Debierne) by the electrolysis of a solution of pure radium chloride, employing a mercury cathode. On distillation in an atmosphere of hydrogen this amalgam yielded the pure metal."
   },
   {
     "group": "a",
@@ -5397,13 +5397,13 @@
       "search" : "actinium element",
       "category" : "All"
     },
-    "info": "Actinium was discovered by Andre Debierne in 1899 and independently by F. Giesel in 1902, both of whom obtained it while working on separation techniques for rare earth oxides."
+    "info": "Actinium was discovered by [Andre Debierne](https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Debierne) in 1899 and independently by [F. Giesel](https://en.wikipedia.org/wiki/Friedrich_Oskar_Giesel) in 1902, both of whom obtained it while working on separation techniques for rare earth oxides."
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
-    "discoveredBy": "Jöns Jacob Berzelius ",
+    "discoveredBy": "Jöns Jacob Berzelius",
     "keyIsotopes": [
       230,
       232
@@ -5451,13 +5451,13 @@
       "search" : "thorium",
       "category" : "KindleStore"
     },
-    "info": "Thorium was discovered by Berzelius in 1828 in a mineral given to him by the Reverend Has Morten Thrane Esmark."
+    "info": "Thorium was discovered by [Jöns Jacob Berzelius](https://en.wikipedia.org/wiki/J%C3%B6ns_Jacob_Berzelius) in 1828 in a mineral given to him by the [Reverend Has Morten Thrane Esmark](https://en.wikipedia.org/wiki/Morten_Thrane_Esmark)."
   },
   {
     "group": "a",
     "period": 7,
     "block": "f",
-    "discoveredBy": "Kasimir Fajans and Otto Göhring",
+    "discoveredBy": "Kasimir Fajans and Otto Hahn",
     "keyIsotopes": [
       231
     ],
@@ -5504,7 +5504,7 @@
       "search" : "protactinium element",
       "category" : "All"
     },
-    "info": "Protactinium is found in pitchblende and ores form Zaire and is one of the rarest and most expensive naturally occurring elements. Protactinium was identified by Fajans and G?hring in 1913 who named the new element brevium (\"brief\")."
+    "info": "Protactinium is found in pitchblende and ores from DR Congo and is one of the rarest and most expensive naturally occurring elements. Protactinium was identified by [Kasimir Fajans](https://en.wikipedia.org/wiki/Kazimierz_Fajans) and [Otto Hahn](https://en.wikipedia.org/wiki/Otto_Hahn) in 1913 who named the new element brevium."
   },
   {
     "group": "a",
@@ -5566,7 +5566,7 @@
       "search" : "uranium",
       "category" : "All"
     },
-    "info": "Klaproth recognized an unknown element in pitchblende and attempted to isolate the metal in 1789. He named the element for the planet uranus which had just been discovered. The radioactive nature of uranium was not appreciated for another 55 years when in 1896 Henri Becquerel detected its radioactivity."
+    "info": "[Martin Heinrich Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth) recognized an unknown element in pitchblende and attempted to isolate the metal in 1789. He named the element for the planet uranus which had just been discovered. The radioactive nature of uranium was not appreciated for another 55 years when in 1896 [Henri Becquerel](https://en.wikipedia.org/wiki/Henri_Becquerel) detected its radioactivity."
   },
   {
     "group": "a",
@@ -5628,7 +5628,7 @@
       "search" : "neptuinium element",
       "category" : "All"
     },
-    "info": "Neptunium was the first synthetic transuranium element of the actinide series. It was discovered by McMillan and Abelson in 1940 at Berkeley, California, USA, who bombarded uranium with neutrons produced from a cyclotron. It was the first synthetic transuranium (elements after uranium) element discovered."
+    "info": "Neptunium was the first synthetic transuranium element of the actinide series. It was discovered by [Edwin McMillan](https://en.wikipedia.org/wiki/Edwin_McMillan) and [Philip Abelson](https://en.wikipedia.org/wiki/Philip_Abelson) in 1940 at Berkeley, California, USA, who bombarded uranium with neutrons produced from a cyclotron. It was the first synthetic transuranium (elements after uranium) element discovered."
   },
   {
     "group": "a",
@@ -5692,7 +5692,7 @@
       "search" : "plutonium element",
       "category" : "All"
     },
-    "info": "Plutonium was synthesized by Seaborg, McMillan, Kennedy and Wahl in 1940 by deuteron bombardment of uranium in a cyclotron (a device used to accelerate atomic particles) at Berkeley, USA. Plutonium was the second transuranium element of the actinide series to be discovered."
+    "info": "Plutonium was synthesized by [Seaborg](https://en.wikipedia.org/wiki/Glenn_T._Seaborg), [McMillan](https://en.wikipedia.org/wiki/Edwin_McMillan), [Kennedy](https://en.wikipedia.org/wiki/Joseph_W._Kennedy) and [Wahl](https://en.wikipedia.org/wiki/Arthur_Wahl) in 1940 by deuteron bombardment of uranium in a cyclotron (a device used to accelerate atomic particles) at Berkeley, USA. Plutonium was the second transuranium element of the actinide series to be discovered."
   },
   {
     "group": "a",
@@ -5755,7 +5755,7 @@
       "search" : "americium",
       "category" : "All"
     },
-    "info": "Americium was was identified by Seaborg and others in 1944 as the result of successive neutron capture reactions by plutonium isotopes in a nuclear reactor."
+    "info": "Americium was was identified by [Seaborg](https://en.wikipedia.org/wiki/Glenn_T._Seaborg) and others in 1944 as the result of successive neutron capture reactions by plutonium isotopes in a nuclear reactor."
   },
   {
     "group": "a",
@@ -5811,7 +5811,7 @@
       "search" : "curium element",
       "category" : "All"
     },
-    "info": "Curium was identified by Seaborg and others in 1944 as a result of helium ion bombardment of the plutonium isotope 239Pu. Three years later visible amounts of the hydroxide were isolated by Werner and Perlman. In 1951, the same workers prepared curium in its elemental form for the first time."
+    "info": "Curium was identified by [Seaborg](https://en.wikipedia.org/wiki/Glenn_T._Seaborg) and others in 1944 as a result of helium ion bombardment of the plutonium isotope 239Pu. Three years later visible amounts of the hydroxide were isolated by Werner and [Perlman](https://en.wikipedia.org/wiki/Isadore_Perlman). In 1951, the same workers prepared curium in its elemental form for the first time."
   },
   {
     "group": "a",
@@ -5874,7 +5874,7 @@
       "search" : "berkelium element",
       "category" : "All"
     },
-    "info": "Berkelium was discovered in December 1949 at Berkeley, Californi, USA, by Ghiorso and others by cyclotron bombardment of milligram amounts of americium with helium ions. Perhaps the first visible amounts of a pure berkelium compound, berkelium chloride, was produced in 1962. It weighed just 3 billionth of a gram."
+    "info": "Berkelium was discovered in December 1949 at Berkeley, Californi, USA, by [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and others by cyclotron bombardment of milligram amounts of americium with helium ions. Perhaps the first visible amounts of a pure berkelium compound, berkelium chloride, was produced in 1962. It weighed just 3 billionth of a gram."
   },
   {
     "group": "a",
@@ -5937,7 +5937,7 @@
       "search" : "californium element",
       "category" : "All"
     },
-    "info": "Californium was produced by Ghiorso and others at the University of California, Berkeley, USA in 1950 who bombarded 242Cm with helium ions."
+    "info": "Californium was produced by [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and others at the University of California, Berkeley, USA in 1950 who bombarded 242Cm with helium ions."
   },
   {
     "group": "a",
@@ -5999,7 +5999,7 @@
       "search" : "einsteinium element",
       "category" : "All"
     },
-    "info": "Einsteinium was identified by Ghiorso and others (Berkeley, California, USA) in 1952 in radioactive debris from the first large thermonuclear bomb explosion, which took place in the Pacific in November 1952. In 1961, a sufficient amount of einsteinium was produced to permit separation of a macroscopic amount of 253Es."
+    "info": "Einsteinium was identified by [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and others (Berkeley, California, USA) in 1952 in radioactive debris from the first large thermonuclear bomb explosion, which took place in the Pacific in November 1952. In 1961, a sufficient amount of einsteinium was produced to permit separation of a macroscopic amount of 253Es."
   },
   {
     "group": "a",
@@ -6054,7 +6054,7 @@
       "search" : "fermium element",
       "category" : "All"
     },
-    "info": "Fermium was identified by Ghiorso and coworkers (Berkeley, California, USA) in 1952 in the radioactive debris from a thermonuclear explosion in the Pacific. Somewhat remarkably, the fermium isotope discovered was made through the combination of 238U with 17 neutrons. Today, many isotopes are known spanning the mass range 243-258."
+    "info": "Fermium was identified by [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and coworkers (Berkeley, California, USA) in 1952 in the radioactive debris from a thermonuclear explosion in the Pacific. Somewhat remarkably, the fermium isotope discovered was made through the combination of 238U with 17 neutrons. Today, many isotopes are known spanning the mass range 243-258."
   },
   {
     "group": "a",
@@ -6110,7 +6110,7 @@
       "search" : "mendelevium element",
       "category" : "All"
     },
-    "info": "Mendelevium, the ninth transuranium element of the actinide series to be discovered, was first identified by Seaborg and others in 1955 as a product of the bombardment of the einsteinium isotope 253Es with helium ions. The isotope produced was 256Md, which has a half-life of about 11/4 hours."
+    "info": "Mendelevium, the ninth transuranium element of the actinide series to be discovered, was first identified by [Seaborg](https://en.wikipedia.org/wiki/Glenn_T._Seaborg) and others in 1955 as a product of the bombardment of the einsteinium isotope 253Es with helium ions. The isotope produced was 256Md, which has a half-life of about 11/4 hours."
   },
   {
     "group": "a",
@@ -6220,7 +6220,7 @@
       "search" : "lawrencium element",
       "category" : "All"
     },
-    "info": "Element 103, lawrencium, was discovered in 1961 by Ghiorso and others in Berkeley, California, USA, who bombarded a californium target with boron ions. They obtained perhaps two micrograms. Several lawrencium isotopes including those with masses 253, 254, 255, 256, 257, 258, 259, and 260 are known now."
+    "info": "Element 103, lawrencium, was discovered in 1961 by [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and others in Berkeley, California, USA, who bombarded a californium target with boron ions. They obtained perhaps two micrograms. Several lawrencium isotopes including those with masses 253, 254, 255, 256, 257, 258, 259, and 260 are known now."
   },
   {
     "group": 4,
@@ -6330,7 +6330,7 @@
       "search" : "dubnium element",
       "category" : "All"
     },
-    "info": "In 1967, Flerov reported element 105 after experiments at the Joint Research Institute in Russia involving reactions between 243Am ions with 22Ne ions. In 1970, Ghiorso and others announced their synthesis of dubnium at Berkeley (California) in the USA. This method involved the collsion of 249Cf ions with 15N ions."
+    "info": "In 1967, [Flerov](https://en.wikipedia.org/wiki/Georgy_Flyorov) reported element 105 after experiments at the Joint Research Institute in Russia involving reactions between 243Am ions with 22Ne ions. In 1970, [Ghiorso](https://en.wikipedia.org/wiki/Albert_Ghiorso) and others announced their synthesis of dubnium at Berkeley (California) in the USA. This method involved the collsion of 249Cf ions with 15N ions."
   },
   {
     "group": 6,
@@ -6495,7 +6495,7 @@
       "search" : "hassium element",
       "category" : "All"
     },
-    "info": "Hassium was discovered by Peter Armbruster, Gottfried Münzenber and their co-workers. at 1984 in Gesellschaft für Schwerionenforschung (GSI) in Darmstadt, Germany.The origin of the name is the Latin word \"Hassias\" meaning \"Hess\", the German state."
+    "info": "Hassium was discovered by [Peter Armbruster](https://en.wikipedia.org/wiki/Peter_Armbruster), [Gottfried Münzenber](https://en.wikipedia.org/wiki/Gottfried_M%C3%BCnzenberg) and their co-workers. at 1984 in Gesellschaft für Schwerionenforschung (GSI) in Darmstadt, Germany. The origin of the name is the Latin word \"Hassias\" meaning \"Hess\", the German state."
   },
   {
     "group": 9,
