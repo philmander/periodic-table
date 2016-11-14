@@ -67,11 +67,11 @@
 
     var i, j, scrolled;
 
+    var ga = window.ga;
+
     var responsiveBreakpoints = {
         COMPACT: 690
     };
-
-    var topPanelIndex = 5;
 
     var documentElement = document.documentElement;
 
@@ -223,8 +223,8 @@
         view.applyFilter();
 
         if(window.ga) {
-            window.ga(function(tracker) {
-                tracker.send('action', 'Filter', JSON.stringify(model.filter[type]));
+            window.ga(function() {
+                window.ga('send', 'event', 'Filter', type);
             });
         }
     };
@@ -374,8 +374,8 @@
         history.replaceState(null, '', '?z=' + model.zoom);
 
         if(window.ga) {
-            window.ga(function(tracker) {
-                tracker.send('action', 'Zoom', dir);
+            window.ga(function() {
+                window.ga('send', 'event', 'Zoom', dir + '');
             });
         }
     };
@@ -549,7 +549,7 @@
                         } else {
                             delete window.amzn_assoc_design;
                         }
-
+                        
                         document.write = function(html) {
                             adsPlaceholder.innerHTML = html;
                         };
@@ -564,8 +564,10 @@
                     
                 }
                 if(window.ga) {
-                    window.ga(function(tracker) {
-                        tracker.send('screenview', 'Tabs', 'open', target);
+                    window.ga(function() {
+                        ga('send', 'screenview', {
+                            'screenName': target
+                        });
                     });                    
                 }
                 
@@ -611,7 +613,12 @@
                 model.updateFilter(filterTypes.STATE, el.value);
             }
             else if(el.tagName === 'INPUT' && el.classList.contains('ctrl-toggle')) {
-                el.parentNode.style.zIndex = topPanelIndex++;
+                var toggles = document.querySelectorAll('.ctrl-toggle');
+                for(i = 0; i < toggles.length; i++) {
+                    if(toggles[i] !== el) {
+                        toggles[i].checked = false;
+                    }
+                }
             }
 
             if(el.tagName === 'INPUT' && el.parentNode.tagName === 'TH') {
@@ -814,10 +821,6 @@
         return node.getBoundingClientRect();
     }
 
-    function uncheckAll(except) {
-        (document.querySelector('#filters input:checked:not(#'+ except +')') || {}).checked = false;
-    }
-
     function addTitle(element, key) {
         if(element[key] && titles[key]) {
             element[key].setAttribute('title', titles[key]);
@@ -836,5 +839,26 @@
     function doubleTap(d,h,e){if(d.ondblclick === undefined){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
         a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
     /* jshint ignore:end */
+
+    //path property in events
+    if (!('path' in Event.prototype)) {
+        Object.defineProperty(Event.prototype, 'path', {
+            get: function () {
+                var path = [];
+                var currentElem = this.target;
+                while (currentElem) {
+                    path.push(currentElem);
+                    currentElem = currentElem.parentElement;
+                }
+                if (path.indexOf(window) === -1 && path.indexOf(document) === -1) {
+                    path.push(document);
+                }
+                if (path.indexOf(window) === -1) {
+                    path.push(window);
+                }
+                return path;
+            }
+        });
+    }
 
 })(window, document, window.localStorage);
