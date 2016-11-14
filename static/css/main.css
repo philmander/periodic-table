@@ -679,10 +679,6 @@ figcaption p {
 figcaption p:first-child {
   margin-top: 0; }
 
-.ads {
-  position: relative;
-  min-height: 80px; }
-
 li.amzn-native-product {
   font-size: 1rem; }
 
@@ -711,6 +707,10 @@ a.amzn-native-product-title {
   top: 77px;
   left: 209px;
   transform: scale(0.56); }
+
+.ads {
+  position: relative;
+  min-height: 80px; }
 
 .resp-sharing-button__link,
 .resp-sharing-button__icon {

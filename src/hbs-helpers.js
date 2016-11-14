@@ -1,8 +1,14 @@
 'use strict';
 
 const
+    marked = require('marked'),
     Handlebars = require('handlebars'),
     esc = Handlebars.Utils.escapeExpression;
+
+marked.setOptions({
+    gfm: true,
+    tables: false
+});
 
 const zoomLevels = {
     MIN: 1,
@@ -116,6 +122,10 @@ module.exports = {
     getLicense: function (licenseId, opts) {
         const licenses = opts.data.licenses;
         return licenses ? licenses.find(license => license.id === licenseId) : {};
+    },
+
+    marked: function(markdown) {
+        return new Handlebars.SafeString(marked(markdown));
     }
 };
 

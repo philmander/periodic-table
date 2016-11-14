@@ -27,6 +27,7 @@
     "express-minify-html": "^0.6.0",
     "handlebars": "^4.0.5",
     "hbs": "^4.0.0",
+    "marked": "^0.3.6",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
@@ -44,6 +45,7 @@
     "express-minify-html",
     "handlebars",
     "hbs",
-    "serve-favicon"
+    "serve-favicon",
+    "marked"
   ]
 }
