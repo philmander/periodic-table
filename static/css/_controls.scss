@@ -223,9 +223,6 @@
 
 /* Help -----------------------------------------------------------------------------------------------------------*/
 
-#about {
-  position: relative;
-}
 #about .ctrl-toggle:checked ~ .ctrl-content {
   z-index: 3;
 }
@@ -234,9 +231,6 @@
 }
 
 /* Filters -----------------------------------------------------------------------------------------------------------*/
-#filters {
-  position: relative;
-}
 #filters .ctrl-toggle:checked ~ .ctrl-content {
   z-index: 4;
 }
