@@ -10,31 +10,6 @@ a.amzn-native-product-title {
   font-size: 1rem !important;
 }
 
-// Main Ad -------------------------------------------------------------------------------------------------------------
-
-#main-ad-1 {
-  opacity: 0;
-  position: absolute;
-  width: 320px;
-  height: 50px;
-  transition: top 1s, left 1s, transform 1s, opacity 1s;
-}
-
-[zoom="1"] .main-ad,
-[zoom="2"] .main-ad {
-  opacity: 1 !important;
-}
-[zoom="1"] .main-ad {;
-  top: 87px;
-  left: 204px;
-  transform: scale(0.6);
-}
-[zoom="2"] .main-ad {
-  top: 77px;
-  left: 209px;
-  transform: scale(0.56);
-}
-
 .ads {
   position: relative;
   min-height: 80px;
