@@ -126,6 +126,10 @@ module.exports = {
 
     marked: function(markdown) {
         return new Handlebars.SafeString(marked(markdown));
+    },
+    
+    toLowerCase: function(str) {
+        return typeof str === 'string' ? str.toLowerCase() : str;
     }
 };
 

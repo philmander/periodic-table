@@ -116,7 +116,7 @@
         findReset: document.querySelector('#find-reset'),
         yearReset: document.querySelector('#year-reset')
     };
-    nodes.tempUnit = nodes.temp.nextElementSibling;
+    nodes.tempUnit = nodes.temp ? nodes.temp.nextElementSibling : units.K;
 
     var model = {
         loadedArea: { y: documentElement.clientHeight, x: documentElement.clientWidth },
@@ -487,7 +487,7 @@
         };
 
         //filters
-        document.onclick = function(ev) {
+        document.addEventListener('click', function(ev) {
             var el = ev.target;
 
             //center button
@@ -505,75 +505,6 @@
                 ev.preventDefault();
             }
 
-            //resources tabs
-            else if(el.tagName === 'A' && el.parentNode.parentNode.classList.contains('tabs-nav')) {
-                var tabs =  el.parentNode.parentNode.children;
-                for(i = 0; i < tabs.length; i++) {
-                    tabs[i].style.display = tabs[i].firstElementChild === el ?
-                        tabs[i].classList.add('active') : tabs[i].classList.remove('active');
-                }
-                var target = document.querySelector(el.getAttribute('href'));
-                var panes = target.parentNode.children;
-                for(i = 0; i < panes.length; i++) {
-                    panes[i].style.display = panes[i] === target ? 'block' : 'none';
-                    var iframePlaceholder = target.querySelector('.iframe');
-                    if(iframePlaceholder) {
-                        var iframe = document.createElement('iframe');
-                        iframePlaceholder.parentNode.appendChild(iframe);
-                        for(j = 0; j < iframePlaceholder.attributes.length; j++) {
-                            iframe.setAttribute(iframePlaceholder.attributes[j].name, iframePlaceholder.attributes[j].value);
-                        }
-                        iframePlaceholder.parentNode.removeChild(iframePlaceholder);
-                        continue;
-                    }
-                    var adsPlaceholder = target.querySelector('.ads');
-                    if(adsPlaceholder && !adsPlaceholder.getAttribute('initialized')) {
-                        var searchTerm = adsPlaceholder.getAttribute('term'),
-                            searchCategory = adsPlaceholder.getAttribute('category') || 'All',
-                            design = adsPlaceholder.getAttribute('design');
-                        window.amzn_assoc_placement = 'adunit';
-                        window.amzn_assoc_search_bar = 'false';
-                        window.amzn_assoc_tracking_id = 'periodictab05-20';
-                        window.amzn_assoc_ad_mode = 'search';
-                        window.amzn_assoc_ad_type = 'smart';
-                        window.amzn_assoc_marketplace = 'amazon';
-                        window.amzn_assoc_region = 'US';
-                        window.amzn_assoc_title = '';
-                        window.amzn_assoc_default_search_phrase = searchTerm;
-                        window.amzn_assoc_default_category = searchCategory;
-                        window.amzn_assoc_linkid = '37694af719272b63fc4a6d8c15ffe65d';
-                        window.amzn_assoc_rows = '4';
-                        
-                        if(design === 'text_links') {
-                            window.amzn_assoc_design = 'text_links';    
-                        } else {
-                            delete window.amzn_assoc_design;
-                        }
-                        
-                        document.write = function(html) {
-                            adsPlaceholder.innerHTML = html;
-                        };
-
-                        var adsScript = document.createElement('script');
-                        adsScript.src = '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US';
-                        target.appendChild(adsScript);
-
-                        adsPlaceholder.setAttribute('initialized', 'initialized');
-                    }
-                    
-                    
-                }
-                if(window.ga) {
-                    window.ga(function() {
-                        ga('send', 'screenview', {
-                            'screenName': target
-                        });
-                    });                    
-                }
-                
-                ev.preventDefault();
-            }
-
             //reset filters
             else if(el.id === 'reset-position-filters') {
                 var inputs = document.querySelectorAll('th > input[type="checkbox"]');
@@ -588,7 +519,9 @@
             else if(el.classList.contains('close-content')) {
                 document.querySelector(el.value).checked = false;
             }
-         };
+        });
+
+        controller.setupResourceTabs();
 
         document.onchange = function(ev) {
 
@@ -775,6 +708,78 @@
         window.addEventListener('orientationchange', view.center);
     };
 
+    controller.setupResourceTabs = function() {
+        //resources tabs
+        document.addEventListener('click', function(ev) {
+            var el = ev.target;
+            if (el.tagName === 'A' && el.parentNode.parentNode.classList.contains('tabs-nav')) {
+
+                var tabs = el.parentNode.parentNode.children;
+                for (i = 0; i < tabs.length; i++) {
+                    tabs[i].style.display = tabs[i].firstElementChild === el ?
+                        tabs[i].classList.add('active') : tabs[i].classList.remove('active');
+                }
+                var target = document.querySelector(el.getAttribute('href'));
+                var panes = target.parentNode.children;
+                for (i = 0; i < panes.length; i++) {
+                    panes[i].style.display = panes[i] === target ? 'block' : 'none';
+                    var iframePlaceholder = target.querySelector('.iframe');
+                    if (iframePlaceholder) {
+                        var iframe = document.createElement('iframe');
+                        iframePlaceholder.parentNode.appendChild(iframe);
+                        for (j = 0; j < iframePlaceholder.attributes.length; j++) {
+                            iframe.setAttribute(iframePlaceholder.attributes[j].name, iframePlaceholder.attributes[j].value);
+                        }
+                        iframePlaceholder.parentNode.removeChild(iframePlaceholder);
+                        continue;
+                    }
+                    var adsPlaceholder = target.querySelector('.ads');
+                    if (adsPlaceholder && !adsPlaceholder.getAttribute('initialized')) {
+                        var searchTerm = adsPlaceholder.getAttribute('term'),
+                            searchCategory = adsPlaceholder.getAttribute('category') || 'All',
+                            design = adsPlaceholder.getAttribute('design');
+                        window.amzn_assoc_placement = 'adunit';
+                        window.amzn_assoc_search_bar = 'false';
+                        window.amzn_assoc_tracking_id = 'periodictab05-20';
+                        window.amzn_assoc_ad_mode = 'search';
+                        window.amzn_assoc_ad_type = 'smart';
+                        window.amzn_assoc_marketplace = 'amazon';
+                        window.amzn_assoc_region = 'US';
+                        window.amzn_assoc_title = '';
+                        window.amzn_assoc_default_search_phrase = searchTerm;
+                        window.amzn_assoc_default_category = searchCategory;
+                        window.amzn_assoc_linkid = '37694af719272b63fc4a6d8c15ffe65d';
+                        window.amzn_assoc_rows = '4';
+
+                        if (design === 'text_links') {
+                            window.amzn_assoc_design = 'text_links';
+                        } else {
+                            delete window.amzn_assoc_design;
+                        }
+
+                        document.write = function (html) {
+                            adsPlaceholder.innerHTML = html;
+                        };
+
+                        var adsScript = document.createElement('script');
+                        adsScript.src = '//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US';
+                        target.appendChild(adsScript);
+
+                        adsPlaceholder.setAttribute('initialized', 'initialized');
+                    }
+                }
+                if (window.ga) {
+                    window.ga(function () {
+                        ga('send', 'screenview', {
+                            'screenName': target
+                        });
+                    });
+                }
+                ev.preventDefault();
+            }
+        });
+    };
+
     function init() {
         model.init();
         view.init();
@@ -782,7 +787,11 @@
     }
 
     if(document.readyState === 'interactive' || document.readyState === 'complete') {
-        init();
+        if(document.body.hasAttribute('permalink')) {
+            controller.setupResourceTabs();
+        } else {
+            init();
+        }
     } else {
         document.addEventListener('DOMContentLoaded', init);
     }

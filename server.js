@@ -76,7 +76,8 @@ app.use(minifyHTML({
         collapseWhitespace:        true,
         collapseBooleanAttributes: true,
         removeAttributeQuotes:     true,
-        removeEmptyAttributes:     true
+        removeEmptyAttributes:     true,
+        ignoreCustomComments: [ /^\sPeriodic\sTable\sMap/]
     }
 }));
 app.use(compression());
@@ -85,6 +86,7 @@ app.use(favicon(__dirname + '/favicon.ico'));
 const cacheOpts = inProduction ? { maxAge: 1000 * 60 * 60 * 24} : {};
 app.use('/static', express.static(__dirname + '/static', cacheOpts));
 app.use('/images', express.static(__dirname + '/data/images', cacheOpts));
+app.use('/sitemap.xml', express.static(__dirname + '/sitemap.xml'));
 
 function getZoom(req) {
     const zoom = parseInt(req.query.z);
@@ -92,17 +94,19 @@ function getZoom(req) {
 }
 
 function index(req, res, next) {
-    if(req.path !== '/' && req.path !== '/_') {
-        return next();
+
+    const zoom = getZoom(req);
+
+    if(zoom === 1 && req.query.z) {
+        res.set('Link', '<http://periodictablemap.com/>; rel="canonical"')
     }
 
     res.render('index', {
         zoom: getZoom(req)
-    });    
+    });
 }
 app.get('/_', index); //for ga exlusion
 app.get('/', index);
-
 
 app.get('/fields', (req, res, next) => {
 
@@ -138,10 +142,26 @@ app.get('/fields', (req, res, next) => {
     res.json(responseData);
 });
 
-// error handlers
-app.use(function(err, req, res) {
-    if(err instanceof Error) {
-        console.error(err);
+app.use(function (req, res, next) {
+    
+    const urlPath = req.path.substr(1);
+    let element = elementList.find(
+        el => el.name.toLowerCase() === urlPath.toLowerCase() || el.symbol.toLowerCase() === urlPath.toLowerCase());
+    if(element) {
+        //if its a symbol or it contains a name with an uppercase letter
+        if(urlPath.length < 3 || !/^[a-z]+$/.test(urlPath)) {
+            //redirect to lowercase name
+            res.status(301);
+            return res.redirect('/' + element.name.toLowerCase());            
+        } else {
+            res.render('element', {
+                element: element    
+            });  
+        }
+    } else {
+        const err = new Error('Not found');
+        err.status = 404;
+        next();
     }
 });
 
