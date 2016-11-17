@@ -1,3 +1,9 @@
+body.dragging {
+  cursor: -moz-grabbing !important;;
+  cursor: -webkit-grabbing !important;;
+  cursor: grabbing !important;
+}
+
 @mixin clearfix {
   &:after {
     content: "";

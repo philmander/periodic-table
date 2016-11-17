@@ -28,6 +28,8 @@
                         pushed = 1;
                         lastClientX = ev.clientX;
                         lastClientY = ev.clientY;
+                        
+                        document.body.classList.add('dragging');
 
                         ev.preventDefault();
                     }
@@ -36,6 +38,7 @@
                 //mouse up
                 window.addEventListener('mouseup', container.mu = function() {
                     pushed = 0;
+                    document.body.classList.remove('dragging');
                 });
 
                 //mouse move
