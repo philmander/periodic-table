@@ -1,15 +1,19 @@
-body.dragging {
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
 @mixin clearfix {
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+@mixin grabbing {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+body.dragging {
+  @include grabbing();
 }
 
 // loading spinner -----------------------------------------------------------------------------------------------------

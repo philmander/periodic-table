@@ -129,35 +129,57 @@ td > div {
   width: 2rem
 }
 
+.elements > tbody > tr > td {
+  cursor: zoom-in;
+}
+body.dragging .elements > tbody > tr > td {
+  @include grabbing();
+}
+[zoom="4"] .elements > tbody > tr > td  {
+  cursor: default;
+}
+
+
+$n-color: #f935ce;
+$am-color: #ff2626;
+$aem-color: #ff910c;
+$tm-color: #5272e4;
+$ptm-color: #1ab373;
+$m-color: #ecb720;
+$h-color: #279da9;
+$ng-color: #00bfff;
+$a-color: #9932cc;
+$l-color: #4B0082;
+
 [c="n"] {
-  background: #f935ce !important;
+  background: $n-color !important;
 }
 [c="am"] {
-  background: #ff2626  !important;
+  background: $am-color  !important;
 }
 [c="aem"] {
-  background: #ff910c !important;
+  background: $aem-color !important;
 }
 [c="tm"] {
-  background: #5272e4 !important;
+  background: $tm-color !important;
 }
 [c="ptm"] {
-  background: #1ab373 !important;
+  background: $ptm-color !important;
 }
 [c="m"] {
-  background: #ecb720 !important;
+  background: $m-color !important;
 }
 [c="h"] {
-  background: #279da9 !important;
+  background: $h-color !important;
 }
 [c="ng"] {
-  background: #00bfff !important;
+  background: $ng-color !important;
 }
 [c="a"] {
-  background: indigo !important;
+  background: $a-color !important;
 }
 [c="l"] {
-  background: darkorchid !important;
+  background: $l-color !important;
 }
 
 /* Cell contents -----------------------------------------------------------------------------------------------------*/

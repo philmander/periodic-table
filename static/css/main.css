@@ -26,9 +26,9 @@ html {
   box-sizing: inherit; }
 
 body.dragging {
+  cursor: grabbing;
   cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
+  cursor: -webkit-grabbing; }
 
 @keyframes spinner {
   to {
@@ -434,11 +434,22 @@ td > div {
 .elements > tbody > tr > th:first-child {
   width: 2rem; }
 
+.elements > tbody > tr > td {
+  cursor: zoom-in; }
+
+body.dragging .elements > tbody > tr > td {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing; }
+
+[zoom="4"] .elements > tbody > tr > td {
+  cursor: default; }
+
 [c="n"] {
   background: #f935ce !important; }
 
 [c="am"] {
-  background: #ff2626  !important; }
+  background: #ff2626 !important; }
 
 [c="aem"] {
   background: #ff910c !important; }
@@ -459,10 +470,10 @@ td > div {
   background: #00bfff !important; }
 
 [c="a"] {
-  background: indigo !important; }
+  background: #9932cc !important; }
 
 [c="l"] {
-  background: darkorchid !important; }
+  background: #4B0082 !important; }
 
 /* Cell contents -----------------------------------------------------------------------------------------------------*/
 .s {
@@ -709,7 +720,7 @@ figcaption p:first-child {
   text-indent: -999px; }
   @media (max-width: 690px) {
     .permalink-link {
-      display: none; } }
+      display: none !important; } }
   .permalink-link a {
     display: block;
     width: 24px;
