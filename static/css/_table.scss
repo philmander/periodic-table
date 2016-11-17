@@ -34,7 +34,8 @@ h1 {
   backface-visibility: hidden;
 }
 .elements {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
   color: $text-color;
   background: #fff;
@@ -62,7 +63,7 @@ h1 {
 .elements > tbody > tr > td,
 .elements > tbody > tr > th {
   position: relative;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   font-weight: normal;
   vertical-align: top;
@@ -129,7 +130,7 @@ td > div {
   width: 2rem
 }
 
-.elements > tbody > tr > td {
+.elements > tbody > tr > td  {
   cursor: zoom-in;
 }
 body.dragging .elements > tbody > tr > td {
@@ -181,6 +182,49 @@ $l-color: #4B0082;
 [c="l"] {
   background: $l-color !important;
 }
+
+@mixin highlight($base-color) {
+  border-color: darken($base-color, 20%);
+}
+@media #{$desktop} {
+  [c="am"]:hover {
+    @include highlight($am-color);
+  }
+  [c="aem"]:hover {
+    @include highlight($aem-color);
+  }
+  [c="tm"]:hover {
+    @include highlight($tm-color);
+  }
+  [c="ptm"]:hover {
+    @include highlight($ptm-color);
+  }
+  [c="m"]:hover {
+    @include highlight($m-color);
+  }
+  [c="n"]:hover {
+    @include highlight($n-color);
+  }
+  [c="h"]:hover {
+    @include highlight($h-color);
+  }
+  [c="ng"]:hover {
+    @include highlight($ng-color);
+  }
+  [c="a"]:hover {
+    @include highlight($a-color);
+  }
+  [c="l"]:hover {
+    @include highlight($l-color);
+  }
+
+  [zoom="3"] td:hover,
+  [zoom="4"] td:hover,
+  body.dragging td:hover {
+    border-color: #fff !important;
+  }
+}
+
 
 /* Cell contents -----------------------------------------------------------------------------------------------------*/
 .s {
