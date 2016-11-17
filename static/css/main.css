@@ -25,6 +25,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body.dragging {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing; }
+
 @keyframes spinner {
   to {
     transform: rotate(360deg); } }

@@ -1,7 +1,7 @@
 body.dragging {
-  cursor: -moz-grabbing !important;;
-  cursor: -webkit-grabbing !important;;
-  cursor: grabbing !important;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 @mixin clearfix {
