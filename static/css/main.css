@@ -447,7 +447,7 @@ body.dragging .elements > tbody > tr > td {
   cursor: default; }
 
 [c="n"] {
-  background: #f935ce !important; }
+  background: #f759e0 !important; }
 
 [c="am"] {
   background: #ff2626 !important; }
@@ -488,7 +488,7 @@ body.dragging .elements > tbody > tr > td {
   [c="m"]:hover {
     border-color: #99750d; }
   [c="n"]:hover {
-    border-color: #c20699; }
+    border-color: #df0bc0; }
   [c="h"]:hover {
     border-color: #145056; }
   [c="ng"]:hover {
