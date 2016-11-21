@@ -717,13 +717,15 @@
                         adsPlaceholder.setAttribute('initialized', 'initialized');
                     }
                 }
-                if (window.ga) {
-                    window.ga(function () {
-                        ga('send', 'screenview', {
-                            'screenName': target
-                        });
+                if(window.ga) {
+                    window.ga(function() {
+                        var sepPos = target.id.indexOf('-');
+                        var eventType = target.id.substring(0, sepPos);
+                        var eventEl = target.id.substr(sepPos + 1);
+                        window.ga('send', 'event', 'Tab', 'tab-' + eventType, eventType + '-' + eventEl);
                     });
                 }
+            
                 ev.preventDefault();
             }
         });

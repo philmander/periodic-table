@@ -27,6 +27,7 @@
 {{/if}}
 </head>
 <body zoom={{zoom}}>
+{{#if (isProduction)}}
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -37,6 +38,18 @@
     ga('send', 'pageview');
 
 </script>
+{{else}}
+<script>
+   window.ga = function(cb) {
+       if(cb) {
+           cb();
+       }
+   };
+    window.ga.send = function() {
+        console.log('GA send: ' + [].slice(arguments).join(', '));
+    };
+</script>
+{{/if}}
 <aside>
     <!-- About/help -->
     <div id=about>
