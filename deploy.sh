@@ -3,7 +3,7 @@
 host="philip@139.162.158.136"
 site="periodic-table"
 
-rm $site-1.4.1.tgz
+rm $site-*.tgz
 npm pack
 
 #copy and unpack
