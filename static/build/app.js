@@ -1,72 +1,6 @@
-//https://github.com/asvd/dragscroll
-(function (window, document) {
-
-    var dragged = [];
-    var reset = function() {
-        var i = 0, el;
-
-        //var tables = document.querySelector('#tables');
-
-        while (i < dragged.length) {
-            el = dragged[i++];
-            el = el.container || el;
-            el.removeEventListener('mousedown', el.md);
-            window.removeEventListener('mouseup', el.mu);
-            window.removeEventListener('mousemove', el.mm);
-        }
-
-        // cloning into array since HTMLCollection is updated dynamically
-        dragged = [ document.documentElement, document.body ];
-        for (i = 0; i < dragged.length;) {
-            (function(el) {
-                var lastClientX, lastClientY, pushed, scroller;
-                var container = el.container || el;
-                
-                //mouse down
-                container.addEventListener('mousedown', container.md = function(ev) {
-                    if (ev.button === 0 && (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container)) {
-                        pushed = 1;
-                        lastClientX = ev.clientX;
-                        lastClientY = ev.clientY;
-                        
-                        document.body.classList.add('dragging');
-
-                        ev.preventDefault();
-                    }
-                });
-
-                //mouse up
-                window.addEventListener('mouseup', container.mu = function() {
-                    pushed = 0;
-                    document.body.classList.remove('dragging');
-                });
-
-                //mouse move
-                window.addEventListener('mousemove', container.mm = function(ev) {
-                    if (pushed) {
-                        scroller = el.scroller || el;
-
-                        var newLeft = scroller.scrollLeft - ((lastClientX * -1) + (ev.clientX));
-                        var newTop = scroller.scrollTop - ((lastClientY * -1) + ( ev.clientY));
-
-                        scroller.scrollLeft = newLeft;
-                        lastClientX = ev.clientX;
-
-                        scroller.scrollTop = newTop;
-                        lastClientY = ev.clientY;
-                    }
-                });
-            })(dragged[i++]);
-        }
-    };
-
-    if (document.readyState == 'complete') {
-        reset();
-    } else {
-        window.addEventListener('load', reset, 0);
-    }
-})(window, document);
 (function(window, document, localStorage) {
+
+    console.log('Periodic Table Map by http://versatile.nl');
 
     var i, j, scrolled;
 
@@ -378,7 +312,7 @@
 
         if(window.ga) {
             window.ga(function() {
-                window.ga('send', 'event', 'Zoom', dir + '');
+                window.ga('send', 'event', 'Zoom', dir > 0 ? 'zoom-in' : 'zoom-out');
             });
         }
     };
@@ -530,48 +464,56 @@
 
             var el = ev.target;
 
-            if(el.tagName === 'INPUT' && el.name === 'group') {
-                model.updateFilter(filterTypes.GROUP, el.value);
-            }
-            else if(el.tagName === 'INPUT' && el.name === 'period') {
-                model.updateFilter(filterTypes.PERIOD, el.value);
-            }
-            else if(el.tagName === 'INPUT' && el.name === 'block') {
-                model.updateFilter(filterTypes.BLOCK, el.value);
-            }
-            else if(el.tagName === 'INPUT' && el.name === 'category') {
-                model.updateFilter(filterTypes.CATEGORY, el.value);
-            }
-            else if(el.id === 'year') {
-                model.updateFilter(filterTypes.YEAR, el.value);
-            }
-            else if(el.tagName === 'INPUT' && el.name === 'state') {
-                model.updateFilter(filterTypes.STATE, el.value);
-            }
-            else if(el.tagName === 'INPUT' && el.classList.contains('ctrl-toggle')) {
-                var toggles = document.querySelectorAll('.ctrl-toggle');
-                for(i = 0; i < toggles.length; i++) {
-                    if(toggles[i] !== el) {
-                        toggles[i].checked = false;
+            if(el.tagName === 'INPUT'){
+                if(el.name === 'group') {
+                    model.updateFilter(filterTypes.GROUP, el.value);
+                }
+                else if(el.name === 'period') {
+                    model.updateFilter(filterTypes.PERIOD, el.value);
+                }
+                else if(el.name === 'block') {
+                    model.updateFilter(filterTypes.BLOCK, el.value);
+                }
+                else if(el.name === 'category') {
+                    model.updateFilter(filterTypes.CATEGORY, el.value);
+                }
+                else if(el.name === 'state') {
+                    model.updateFilter(filterTypes.STATE, el.value);
+                }
+                else if(el.classList.contains('ctrl-toggle')) {
+                    var toggles = document.querySelectorAll('.ctrl-toggle');
+                    for(i = 0; i < toggles.length; i++) {
+                        if(toggles[i] !== el) {
+                            toggles[i].checked = false;
+                        }
                     }
                 }
-            }
 
-            if(el.tagName === 'INPUT' && el.parentNode.tagName === 'TH') {
-                el.parentNode.classList.toggle('active', el.checked);
+                if(el.parentNode.tagName === 'TH') {
+                    el.parentNode.classList.toggle('active', el.checked);
+                }
+            } else if(el.id === 'year') {
+                model.updateFilter(filterTypes.YEAR, el.value);
             }
         };
-
-        //zoom events
-        doubleTap(nodes.tables);
-        nodes.tables.ondblclick = function(ev) {
-            if(!ev.path || (ev.path && ev.path[0].tagName !== 'LABEL')) {
+        
+        var preventMouseUpZoom = false;
+        nodes.tables.addEventListener('mouseup', function(ev) {
+            var onCell = ev.path.filter(function(el) {
+                return el.tagName === 'TD';
+            }).length > 0;
+            if(!dragging && !preventMouseUpZoom && onCell) {
                 model.zoomWith(1, {
                     x: ev.clientX,
                     y: ev.clientY
                 });
+                //prevents double clicks zooming twice
+                preventMouseUpZoom = true;
+                setTimeout(function() {
+                    preventMouseUpZoom = false;
+                }, 500);
             }
-        };
+        });
 
         var allowWheel = true;
         nodes.tables.onwheel = function(ev) {
@@ -665,12 +607,15 @@
                 }
             }
         }, 100);
+
         //prevent space scrolling
         window.onkeydown = function(ev) {
             if(ev.keyCode === 32 && ev.target.tagName !== 'INPUT') {
                 ev.preventDefault();
             }
         };
+
+        //keyboard shortcuts
         window.onkeypress = function(ev) {
 
             if(ev.keyCode >= 48 && ev.keyCode <= 52) { //1, 2, 3, 4
@@ -708,6 +653,7 @@
             }
         };
 
+        //orientation change
         window.addEventListener('orientationchange', view.center);
     };
 
@@ -771,13 +717,15 @@
                         adsPlaceholder.setAttribute('initialized', 'initialized');
                     }
                 }
-                if (window.ga) {
-                    window.ga(function () {
-                        ga('send', 'screenview', {
-                            'screenName': target
-                        });
+                if(window.ga) {
+                    window.ga(function() {
+                        var sepPos = target.id.indexOf('-');
+                        var eventType = target.id.substring(0, sepPos);
+                        var eventEl = target.id.substr(sepPos + 1);
+                        window.ga('send', 'event', 'Tab', 'tab-' + eventType, eventType + '-' + eventEl);
                     });
                 }
+            
                 ev.preventDefault();
             }
         });
@@ -787,16 +735,6 @@
         model.init();
         view.init();
         controller.init();
-    }
-
-    if(document.readyState === 'interactive' || document.readyState === 'complete') {
-        if(document.body.hasAttribute('permalink')) {
-            controller.setupResourceTabs();
-        } else {
-            init();
-        }
-    } else {
-        document.addEventListener('DOMContentLoaded', init);
     }
 
     // misc ------------------------------------------------------------------------------------------------------------
@@ -845,13 +783,7 @@
             y: window.innerHeight / 2
         };
     }
-
-    /* jshint ignore:start */
-    //src: https://gist.github.com/mckamey/2927073/92f041d72b0792fed544601916318bf221b09baf
-    function doubleTap(d,h,e){if(d.ondblclick === undefined){var h=Math.abs(+h)||500,e=Math.abs(+e)||40,i,f,g,j=function(){i=0;g=f=NaN};j();d.addEventListener("touchstart",function(b){var a=b.changedTouches[0]||{},c=f,k=g;i++;f=+a.pageX||+a.clientX||+a.screenX;g=+a.pageY||+a.clientY||+a.screenY;Math.abs(c-f)<e&&Math.abs(k-g)<e&&(c=document.createEvent("MouseEvents"),c.initMouseEvent&&c.initMouseEvent("dblclick",!0,!0,b.view,i,a.screenX,a.screenY,a.clientX,a.clientY,b.ctrlKey,b.altKey,b.shiftKey,b.metaKey,b.button,
-        a.target),d.dispatchEvent(c));setTimeout(j,h)},!1);d.addEventListener("touchmove",function(){j()},!1)}};
-    /* jshint ignore:end */
-
+    
     //path property in events
     if (!('path' in Event.prototype)) {
         Object.defineProperty(Event.prototype, 'path', {
@@ -871,6 +803,92 @@
                 return path;
             }
         });
+    }
+    
+    // Dragscroll ------------------------------------------------------------------------------------------------------
+
+    var dragging = false;
+    var dragged = [];
+    function dragScroll() {
+        var i = 0, el;
+
+        //var tables = document.querySelector('#tables');
+
+        while (i < dragged.length) {
+            el = dragged[i++];
+            el = el.container || el;
+            el.removeEventListener('mousedown', el.md);
+            window.removeEventListener('mouseup', el.mu);
+            window.removeEventListener('mousemove', el.mm);
+        }
+
+        // cloning into array since HTMLCollection is updated dynamically
+        dragged = [ document.documentElement, document.body ];
+        for (i = 0; i < dragged.length;) {
+            (function(el) {
+                var lastClientX, lastClientY, pushed, scroller, totalLeft = 0, totalTop = 0;;
+                var container = el.container || el;
+
+                //mouse down
+                container.addEventListener('mousedown', container.md = function(ev) {
+                    if (ev.button === 0 && (!el.hasAttribute('nochilddrag') || document.elementFromPoint(ev.pageX, ev.pageY) == container)) {
+                        pushed = 1;
+                        lastClientX = ev.clientX;
+                        lastClientY = ev.clientY;
+
+                        ev.preventDefault();
+                    }
+                });
+
+                //mouse up
+                window.addEventListener('mouseup', container.mu = function() {
+                    pushed = 0;
+                    dragging = false;
+                    totalLeft = 0;
+                    totalTop = 0;
+                    document.body.classList.remove('dragging');
+                });
+
+                //mouse move
+                window.addEventListener('mousemove', container.mm = function(ev) {
+                    if (pushed) {
+                        scroller = el.scroller || el;
+
+                        var newLeft = scroller.scrollLeft - ((lastClientX * -1) + (ev.clientX));
+                        var newTop = scroller.scrollTop - ((lastClientY * -1) + (ev.clientY));
+
+                        scroller.scrollLeft = newLeft;
+                        lastClientX = ev.clientX;
+
+                        scroller.scrollTop = newTop;
+                        lastClientY = ev.clientY;
+
+                        //prevent minor drags from stopping zoom clicks
+                        if(newLeft > 100) {
+                            totalLeft += Math.abs(newLeft);
+                        }
+                        if(newTop > 100) {
+                            totalTop += Math.abs(newTop);
+                        }
+                        if(!dragging && (totalLeft > 3 || totalTop > 3)) {
+                            dragging = true;
+                            document.body.classList.add('dragging');
+                        }
+                    }
+                });
+            })(dragged[i++]);
+        }
+    }
+
+    if(document.readyState === 'interactive' || document.readyState === 'complete') {
+        if(document.body.hasAttribute('permalink')) {
+            controller.setupResourceTabs();
+        } else {
+            init();
+            dragScroll();
+        }
+    } else {
+        document.addEventListener('DOMContentLoaded', init);
     }
 
 })(window, document, window.localStorage);

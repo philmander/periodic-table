@@ -26,9 +26,9 @@ html {
   box-sizing: inherit; }
 
 body.dragging {
+  cursor: grabbing;
   cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-  cursor: grabbing; }
+  cursor: -webkit-grabbing; }
 
 @keyframes spinner {
   to {
@@ -341,7 +341,8 @@ h1 {
   backface-visibility: hidden; }
 
 .elements {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
   color: #393939;
   background: #fff;
@@ -369,7 +370,7 @@ h1 {
 .elements > tbody > tr > td,
 .elements > tbody > tr > th {
   position: relative;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   font-weight: normal;
   vertical-align: top;
@@ -434,11 +435,22 @@ td > div {
 .elements > tbody > tr > th:first-child {
   width: 2rem; }
 
+.elements > tbody > tr > td {
+  cursor: zoom-in; }
+
+body.dragging .elements > tbody > tr > td {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing; }
+
+[zoom="4"] .elements > tbody > tr > td {
+  cursor: default; }
+
 [c="n"] {
-  background: #f935ce !important; }
+  background: #f759e0 !important; }
 
 [c="am"] {
-  background: #ff2626  !important; }
+  background: #ff2626 !important; }
 
 [c="aem"] {
   background: #ff910c !important; }
@@ -459,10 +471,36 @@ td > div {
   background: #00bfff !important; }
 
 [c="a"] {
-  background: indigo !important; }
+  background: #9932cc !important; }
 
 [c="l"] {
-  background: darkorchid !important; }
+  background: #4B0082 !important; }
+
+@media (min-width: 690px) {
+  [c="am"]:hover {
+    border-color: #bf0000; }
+  [c="aem"]:hover {
+    border-color: #a55a00; }
+  [c="tm"]:hover {
+    border-color: #1c3db4; }
+  [c="ptm"]:hover {
+    border-color: #0d5a3a; }
+  [c="m"]:hover {
+    border-color: #99750d; }
+  [c="n"]:hover {
+    border-color: #df0bc0; }
+  [c="h"]:hover {
+    border-color: #145056; }
+  [c="ng"]:hover {
+    border-color: #007399; }
+  [c="a"]:hover {
+    border-color: #5c1e7a; }
+  [c="l"]:hover {
+    border-color: #10001c; }
+  [zoom="3"] td:hover,
+  [zoom="4"] td:hover,
+  body.dragging td:hover {
+    border-color: #fff !important; } }
 
 /* Cell contents -----------------------------------------------------------------------------------------------------*/
 .s {
@@ -709,7 +747,7 @@ figcaption p:first-child {
   text-indent: -999px; }
   @media (max-width: 690px) {
     .permalink-link {
-      display: none; } }
+      display: none !important; } }
   .permalink-link a {
     display: block;
     width: 24px;

@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-<title>Periodic Table Map</title>
+<title>Periodic Table Map - An interactive way to explore the chemical elements</title>
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="description" content="A fun and interactive way to explore the chemical elements"/>
+<meta name="description" content="A fun and interactive way to explore the periodic table of elements. Use the table like it's a map: drag to move around and zoom in to reveal more information and media about each chemical element.">
 
 {{!-- Facebook --}}
 <meta property="og:url" content="http://periodictablemap.com">
@@ -24,10 +24,10 @@
 {{else}}
     <link rel=stylesheet href="/static/css/main.css">
     <script defer src="/static/js/main.js"></script>
-    <script defer src="/static/js/dragscroll.js"></script>
 {{/if}}
 </head>
 <body zoom={{zoom}}>
+{{#if (isProduction)}}
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -38,79 +38,20 @@
     ga('send', 'pageview');
 
 </script>
+{{else}}
+<script>
+   window.ga = function(cb) {
+       if(cb) {
+           cb();
+       }
+   };
+    window.ga.send = function() {
+        console.log('GA send: ' + [].slice(arguments).join(', '));
+    };
+</script>
+{{/if}}
 <aside>
-    <!-- Center and zoom -->
-    <button id="center" title="Re-center (r)" type="button">Re-center</button>
-
-    <div id=zoom>
-        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
-        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out (-)" id=zoom-out>−<i> Zoom out</i></a>
-    </div>
-
-    <!-- Filters -->
-    <div id=filters>
-        <input type=checkbox id=toggle-filters class=ctrl-toggle tabindex=0>
-        <label class=ctrl-label for=toggle-filters title="Filters (f)">
-            <svg style="enable-background:new 0 0 139 139;" version="1.1" viewBox="0 0 139 139"><style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
-</style><line class="st0" id="XMLID_7_" x1="39.1" x2="139" y1="32.4" y2="32.4"/><line class="st0" id="XMLID_8_" x1="0" x2="52.4" y1="106.6" y2="106.6"/><line class="st0" id="XMLID_1_" x1="89.1" x2="139" y1="106.6" y2="106.6"/><circle class="st0" cx="21" cy="32.4" id="XMLID_9_" r="18.1"/><circle class="st0" cx="70.5" cy="106.6" id="XMLID_11_" r="18.1"/></svg>
-        </label>
-        <div class=ctrl-content>
-            <div>
-                <button type=button class=close-content title="Close Filters" value="#toggle-filters">×</button>
-                <h2>Filters</h2>
-                <h3>Find elements</h3>
-                <div id="filter-find">
-                    <label for="find">Name or symbol</label>
-                    <input id=find placeholder="Antimony">
-                    <button type=button id=find-reset>Clear</button>
-                </div>
-                <h3>Year discovered</h3>
-                <div id="filter-year">
-                    <label for="year">Show up to</label>
-                    <input type=number min=1669 max={{year}} id=year>
-                    <button type=button id=year-reset>Reset</button>
-                </div>
-                <h3>State at temperature</h3>
-                <p>Filter by state of matter</p>
-                <fieldset id=filter-state class=radios>
-                    <label><input type=checkbox name=state value=gas> Gas</label>
-
-                    <label><input type=checkbox name=state value=liquid> Liquid</label>
-
-                    <label><input type=checkbox name=state value=solid> Solid</label>
-                </fieldset>
-                <div id=filter-temp style="margin-top: 8px">
-                    <label for="temp">...at this temperature&nbsp;</label>
-                    <input type=number value=298 min=-460 max=10340 id=temp>
-                    <select>
-                        <option value=k selected>K</option>
-                        <option value=c>°C</option>
-                        <option value=f>°F</option>
-                    </select>
-                </div>
-                <h3>Categories:</h3>
-                <h4>Non-Metals</h4>
-                <fieldset class="radios filter-category">
-                    <label c=m><input type=checkbox name=category value=m> Metalloids</label>
-                    <label c=n><input type=checkbox name=category value=n> Other non-metals</label>
-                    <label c=h><input type=checkbox name=category value=h> Halogens</label>
-                    <label c=ng><input type=checkbox name=category value=ng> Noble gases</label>
-                </fieldset>
-                <h4>Metals</h4>
-                <fieldset class="radios filter-category">
-                    <label c=am><input type=checkbox name=category value=am> Alkali metals</label>
-                    <label c=aem><input type=checkbox name=category value=aem> Alkaline earth metals</label>
-                    <label c=l><input type=checkbox name=category value=l> Lanthanides</label>
-                    <label c=a><input type=checkbox name=category value=a> Actinides</label>
-                    <label c=tm><input type=checkbox name=category value=tm> Transition metals</label>
-                    <label c=ptm><input type=checkbox name=category value=ptm> Post-transition metals</label>
-                </fieldset>
-            </div>
-        </div>
-    </div>
     <!-- About/help -->
-
     <div id=about>
         <input type=checkbox id=toggle-about class=ctrl-toggle tabindex=0>
         <label class=ctrl-label for=toggle-about title="About Periodic Table Map (h)">?</label>
@@ -119,10 +60,10 @@
                 <button type=button class=close-content title="Close help" value="#toggle-about">×</button>
                 <h2>Welcome to <span>Periodic Table Map</span></h2>
                 <p><b>Periodic Table Map</b> is an interactive way to explore the chemical elements.</p>
-                <p>Use the table like it's a map by moving around and zooming in and out. As you zoom in, more
-                information and media are revealed.</p>
+                <p>Use the table like it's a map. Drag to move around and zoom by pressing elements or using the controls on the right of the screen. As you zoom in, more
+                    information and media are revealed.</p>
                 <p>A set of filters also lets you refine what elements are displayed; by name, year discovered,
-                state of matter at any given temperature and category.</p>
+                    state of matter at any given temperature and category.</p>
 
                 <hr>
 
@@ -228,6 +169,78 @@
             </div>
         </div>
     </div>
+
+    <!-- Center and zoom -->
+    <button id="center" title="Re-center (r)" type="button">Re-center</button>
+
+    <div id=zoom>
+        <a href="?z={{incrementZoom zoom}}" value=1 title="Zoom in" (+) id=zoom-in>+<i> Zoom in</i></a>
+        <a href="?z={{decrementZoom zoom}}" value=-1 title="Zoom out (-)" id=zoom-out>−<i> Zoom out</i></a>
+    </div>
+
+    <!-- Filters -->
+    <div id=filters>
+        <input type=checkbox id=toggle-filters class=ctrl-toggle tabindex=0>
+        <label class=ctrl-label for=toggle-filters title="Filters (f)">
+            <svg style="enable-background:new 0 0 139 139;" version="1.1" viewBox="0 0 139 139"><style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+</style><line class="st0" id="XMLID_7_" x1="39.1" x2="139" y1="32.4" y2="32.4"/><line class="st0" id="XMLID_8_" x1="0" x2="52.4" y1="106.6" y2="106.6"/><line class="st0" id="XMLID_1_" x1="89.1" x2="139" y1="106.6" y2="106.6"/><circle class="st0" cx="21" cy="32.4" id="XMLID_9_" r="18.1"/><circle class="st0" cx="70.5" cy="106.6" id="XMLID_11_" r="18.1"/></svg>
+        </label>
+        <div class=ctrl-content>
+            <div>
+                <button type=button class=close-content title="Close Filters" value="#toggle-filters">×</button>
+                <h2>Filters</h2>
+                <h3>Find elements</h3>
+                <div id="filter-find">
+                    <label for="find">Name or symbol</label>
+                    <input id=find placeholder="Antimony">
+                    <button type=button id=find-reset>Clear</button>
+                </div>
+                <h3>Year discovered</h3>
+                <div id="filter-year">
+                    <label for="year">Show up to</label>
+                    <input type=number min=1669 max={{year}} id=year>
+                    <button type=button id=year-reset>Reset</button>
+                </div>
+                <h3>State at temperature</h3>
+                <p>Filter by state of matter</p>
+                <fieldset id=filter-state class=radios>
+                    <label><input type=checkbox name=state value=gas> Gas</label>
+
+                    <label><input type=checkbox name=state value=liquid> Liquid</label>
+
+                    <label><input type=checkbox name=state value=solid> Solid</label>
+                </fieldset>
+                <div id=filter-temp style="margin-top: 8px">
+                    <label for="temp">...at this temperature&nbsp;</label>
+                    <input type=number value=298 min=-460 max=10340 id=temp>
+                    <select>
+                        <option value=k selected>K</option>
+                        <option value=c>°C</option>
+                        <option value=f>°F</option>
+                    </select>
+                </div>
+                <h3>Categories:</h3>
+                <h4>Non-Metals</h4>
+                <fieldset class="radios filter-category">
+                    <label c=m><input type=checkbox name=category value=m> Metalloids</label>
+                    <label c=n><input type=checkbox name=category value=n> Other non-metals</label>
+                    <label c=h><input type=checkbox name=category value=h> Halogens</label>
+                    <label c=ng><input type=checkbox name=category value=ng> Noble gases</label>
+                </fieldset>
+                <h4>Metals</h4>
+                <fieldset class="radios filter-category">
+                    <label c=am><input type=checkbox name=category value=am> Alkali metals</label>
+                    <label c=aem><input type=checkbox name=category value=aem> Alkaline earth metals</label>
+                    <label c=l><input type=checkbox name=category value=l> Lanthanides</label>
+                    <label c=a><input type=checkbox name=category value=a> Actinides</label>
+                    <label c=tm><input type=checkbox name=category value=tm> Transition metals</label>
+                    <label c=ptm><input type=checkbox name=category value=ptm> Post-transition metals</label>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
 </aside>
 <main id="wrap">
     {{#*inline "checkbox"}}

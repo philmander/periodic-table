@@ -1374,7 +1374,7 @@
       "search" : "titanium element",
       "category" : "All"
     },
-    "info": "Titanium was discovered by the [Reverend William Gregor](William_Gregor) in 1791, who was interested in minerals. He recognized the presence of a new element, now known as titanium, in menachanite, a mineral named after Menaccan in Cornwall (England). Several years later, the element was rediscovered in the ore rutile by a German chemist, [Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth)."
+    "info": "Titanium was discovered by the [Reverend William Gregor](https://en.wikipedia.org/wiki/William_Gregor) in 1791, who was interested in minerals. He recognized the presence of a new element, now known as titanium, in menachanite, a mineral named after Menaccan in Cornwall (England). Several years later, the element was rediscovered in the ore rutile by a German chemist, [Klaproth](https://en.wikipedia.org/wiki/Martin_Heinrich_Klaproth)."
   },
   {
     "group": 5,
@@ -2650,7 +2650,7 @@
       "search" : "technetium element",
       "category" : "All"
     },
-    "info": "Technetium was predicted on the basis of the periodic table by Mendeleev. The element was actually discovered by C. Perrier and Emilio Gino Segre in Italy in 1937. It was found in a sample of molybdenum bombarded by deuterons. Technetium was the first element to be produced artificially and all its isotopes are radioactive"
+    "info": "Technetium was predicted on the basis of the periodic table by Mendeleev. The element was actually discovered by [C. Perrier](https://en.wikipedia.org/wiki/Carlo_Perrier) and [Emilio Gino Segre](https://en.wikipedia.org/wiki/Emilio_Segr%C3%A8) in Italy in 1937. It was found in a sample of molybdenum bombarded by deuterons. Technetium was the first element to be produced artificially and all its isotopes are radioactive"
   },
   {
     "group": 8,
@@ -2952,7 +2952,7 @@
       "search" : "cadmium element",
       "category" : "All"
     },
-    "info": "Cadmium was discovered by [Friedrich Stromeyer](https://en.wikipedia.org/wiki/Friedrich_Stromeyer in 1817 from an impurity in some samples of zinc carbonate. He noted that these particular samples changed colour on heating, which pure zinc carbonate does not. He was persistent to follow this observation through and he eventually isolated some cadmium metal by roasting and reduction of the sulphide."
+    "info": "Cadmium was discovered by [Friedrich Stromeyer](https://en.wikipedia.org/wiki/Friedrich_Stromeyer) in 1817 from an impurity in some samples of zinc carbonate. He noted that these particular samples changed colour on heating, which pure zinc carbonate does not. He was persistent to follow this observation through and he eventually isolated some cadmium metal by roasting and reduction of the sulphide."
   },
   {
     "group": 13,
@@ -5168,7 +5168,7 @@
       "search" : "astatine",
       "category" : "All"
     },
-    "info": "Astatine was synthesized in 1940 by [Dale Corson](https://en.wikipedia.org/wiki/Dale_R._Corson), [Kenneth Ross MacKenzie](https://en.wikipedia.org/wiki/Kenneth_Ross_MacKenzie) and [Emilio Segrèand](https://en.wikipedia.org/wiki/Emilio_Segr%C3%A8) others at the University of California, USA, by bombarding bismuth (209Bi) with ?-particles."
+    "info": "Astatine was synthesized in 1940 by [Dale Corson](https://en.wikipedia.org/wiki/Dale_R._Corson), [Kenneth Ross MacKenzie](https://en.wikipedia.org/wiki/Kenneth_Ross_MacKenzie) and [Emilio Segrèand](https://en.wikipedia.org/wiki/Emilio_Segr%C3%A8) others at the University of California, USA, by bombarding bismuth (209Bi) with alpha particles."
   },
   {
     "group": 18,
@@ -6869,6 +6869,10 @@
       {
         "name": "Royal Society of Chemistry",
         "url": "http://www.rsc.org/periodic-table/element/115/ununpentium"
+      },
+      {
+        "name": "RSC: How Moscovium is made",
+        "url" : "https://www.youtube.com/watch?v=RDvOOVH0AX4"
       },
       {
         "name" : "Images of Elements",

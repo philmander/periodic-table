@@ -34,7 +34,8 @@ h1 {
   backface-visibility: hidden;
 }
 .elements {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   table-layout: fixed;
   color: $text-color;
   background: #fff;
@@ -62,7 +63,7 @@ h1 {
 .elements > tbody > tr > td,
 .elements > tbody > tr > th {
   position: relative;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   font-weight: normal;
   vertical-align: top;
@@ -129,36 +130,100 @@ td > div {
   width: 2rem
 }
 
+.elements > tbody > tr > td  {
+  cursor: zoom-in;
+}
+body.dragging .elements > tbody > tr > td {
+  @include grabbing();
+}
+[zoom="4"] .elements > tbody > tr > td  {
+  cursor: default;
+}
+
+$n-color: #f759e0;
+$am-color: #ff2626;
+$aem-color: #ff910c;
+$tm-color: #5272e4;
+$ptm-color: #1ab373;
+$m-color: #ecb720;
+$h-color: #279da9;
+$ng-color: #00bfff;
+$a-color: #9932cc;
+$l-color: #4B0082;
+
 [c="n"] {
-  background: #f935ce !important;
+  background: $n-color !important;
 }
 [c="am"] {
-  background: #ff2626  !important;
+  background: $am-color  !important;
 }
 [c="aem"] {
-  background: #ff910c !important;
+  background: $aem-color !important;
 }
 [c="tm"] {
-  background: #5272e4 !important;
+  background: $tm-color !important;
 }
 [c="ptm"] {
-  background: #1ab373 !important;
+  background: $ptm-color !important;
 }
 [c="m"] {
-  background: #ecb720 !important;
+  background: $m-color !important;
 }
 [c="h"] {
-  background: #279da9 !important;
+  background: $h-color !important;
 }
 [c="ng"] {
-  background: #00bfff !important;
+  background: $ng-color !important;
 }
 [c="a"] {
-  background: indigo !important;
+  background: $a-color !important;
 }
 [c="l"] {
-  background: darkorchid !important;
+  background: $l-color !important;
 }
+
+@mixin highlight($base-color) {
+  border-color: darken($base-color, 20%);
+}
+@media #{$desktop} {
+  [c="am"]:hover {
+    @include highlight($am-color);
+  }
+  [c="aem"]:hover {
+    @include highlight($aem-color);
+  }
+  [c="tm"]:hover {
+    @include highlight($tm-color);
+  }
+  [c="ptm"]:hover {
+    @include highlight($ptm-color);
+  }
+  [c="m"]:hover {
+    @include highlight($m-color);
+  }
+  [c="n"]:hover {
+    @include highlight($n-color);
+  }
+  [c="h"]:hover {
+    @include highlight($h-color);
+  }
+  [c="ng"]:hover {
+    @include highlight($ng-color);
+  }
+  [c="a"]:hover {
+    @include highlight($a-color);
+  }
+  [c="l"]:hover {
+    @include highlight($l-color);
+  }
+
+  [zoom="3"] td:hover,
+  [zoom="4"] td:hover,
+  body.dragging td:hover {
+    border-color: #fff !important;
+  }
+}
+
 
 /* Cell contents -----------------------------------------------------------------------------------------------------*/
 .s {
