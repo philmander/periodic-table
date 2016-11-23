@@ -38,17 +38,6 @@
     ga('send', 'pageview');
 
 </script>
-{{else}}
-<script>
-   window.ga = function(cb) {
-       if(cb) {
-           cb();
-       }
-   };
-    window.ga.send = function() {
-        console.log('GA send: ' + [].slice(arguments).join(', '));
-    };
-</script>
 {{/if}}
 <aside>
     <!-- About/help -->

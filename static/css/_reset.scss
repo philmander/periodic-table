@@ -12,7 +12,10 @@ button {
 sup, sub {
   vertical-align: top;
   position: relative;
-  top: -0.4em;
+  font-size: 0.85em;
+}
+sup {
+  top: -0.2em;
 }
 html {
   box-sizing: border-box;

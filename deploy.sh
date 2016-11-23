@@ -7,9 +7,9 @@ rm $site-*.tgz
 npm pack
 
 #copy and unpack
-scp /home/philip/Me/$site/$site-1.4.1.tgz $host:/home/philip/deploy
+scp /home/philip/Me/$site/$site-1.5.0.tgz $host:/home/philip/deploy
 ssh $host rm /home/philip/deploy/$site/package -r
-ssh $host tar -zxf /home/philip/deploy/$site-1.4.1.tgz  -C /home/philip/deploy/$site
+ssh $host tar -zxf /home/philip/deploy/$site-1.5.0.tgz  -C /home/philip/deploy/$site
 
 #move to new
 ssh $host -t "rm /home/philip/www/\"$site\"_new -r"

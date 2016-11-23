@@ -34,9 +34,10 @@ const fieldTemplates = {
     symbol: getTemplate('symbol'),
     name: getTemplate('name'),
     mass: getTemplate('mass'),
+    ec: getTemplate('ec'),
     details: getTemplate('details'),
     moreDetails: getTemplate('more-details'),
-    resources: getTemplate('resources')
+    resources: getTemplate('resources'),
 };
 
 //populate a cache of compiled partial templates for dynamic responses
@@ -63,7 +64,7 @@ app.locals.env = app.get('env');
 app.locals.version = require('./package.json').version;
 app.locals.css = fs.readFileSync(path.join(__dirname, 'static/build/main.css'), 'utf8');
 hbs.localsAsTemplateData(app);
-hbs.registerPartials(path.join(PARTIAL_DIR));
+hbs.registerPartials(PARTIAL_DIR);
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.set('json spaces', 0);
@@ -133,6 +134,7 @@ app.get('/fields', (req, res, next) => {
             case 2:
                 datum.n = fields.name;
                 datum.am = fields.mass;
+                datum.ec = fields.ec;
             case 1: 
                 datum.an = fields.number;
         }

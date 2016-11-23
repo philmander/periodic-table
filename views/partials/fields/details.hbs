@@ -1,20 +1,24 @@
 <div class="d details-wrap">
     <table class=details>
         <tr>
-            <th>Electron configuration</th>
-            <td>{{formatElectronConfig element.electronConfiguration}}</td>
-        </tr>
-        <tr>
-            <th>Key isotopes</th>
-            <td>{{formatIsotopes element.keyIsotopes element.symbol}}</td>
-        </tr>
-        <tr>
             <th>Year discovered</th>
             <td>{{element.yearDiscovered}}</td>
         </tr>
         <tr>
             <th>Standard state</th>
             <td>{{element.standardState}}</td>
+        </tr>
+        <tr>
+            <th>Melting point (K)</th>
+            <td>{{element.meltingPoint}}</td>
+        </tr>
+        <tr>
+            <th>Boiling point (K)</th>
+            <td>{{element.boilingPoint}}</td>
+        </tr>
+        <tr>
+            <th>Density (g/cm<sup>3</sup>)</th>
+            <td>{{element.density}}</td>
         </tr>
     </table>
 </div>

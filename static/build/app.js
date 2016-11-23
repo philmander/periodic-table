@@ -4,8 +4,6 @@
 
     var i, j, scrolled;
 
-    var ga = window.ga;
-
     var responsiveBreakpoints = {
         COMPACT: 690
     };
@@ -24,7 +22,8 @@
 
     var titles = {
         am: 'Relative atmoic mass',
-        an: 'Atomic number'
+        an: 'Atomic number',
+        ec: 'Electron Configuration'
     };
 
     var css = {
@@ -92,6 +91,7 @@
                 n: select('.n'),
                 an: select('.an'),
                 am: select('.am'),
+                ec: select('.ec'),
                 d: select('.d'),
                 md: select('.md'),
                 r: select('.r'),
@@ -105,6 +105,7 @@
             //add title
             addTitle(el, 'an');
             addTitle(el, 'am');
+            addTitle(el, 'ec');
         }
         model.elements = elements;
     };
@@ -362,13 +363,13 @@
             inject(data, ['an' ]);
         }
         if(model.zoom === 2) {
-            inject(data, ['n', 'am']);
+            inject(data, ['am', 'ec', 'n']);
         }
         if(model.zoom === 3) {
-            inject(data, ['n', 'am', 'd']);
+            inject(data, ['am', 'ec', 'n', 'd']);
         }
         if(model.zoom === 4) {
-            inject(data, ['n', 'am', 'd', 'md', 'r']);
+            inject(data, ['am', 'ec', 'n', 'd', 'md', 'r']);
         }
     };
 

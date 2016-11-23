@@ -1,19 +1,23 @@
 <div class="md details-wrap">
     <table class="details more-details">
         <tr>
-            <th>Melting point (K)</th>
-            <td>{{element.meltingPoint}}</td>
+            <th>Key Isotopes</th>
+            <td>{{formatIsotopes element.keyIsotopes element.symbol}}</td>
         </tr>
         <tr>
-            <th>Boiling point (K)</th>
-            <td>{{element.boilingPoint}}</td>
+            <th>Oxidization States</th>
+            <td>{{element.oxidationStates}}</td>
         </tr>
         <tr>
-            <th>Density (g/mL)</th>
-            <td>{{element.density}}</td>
+            <th>Electronegativity</th>
+            <td>{{element.electronegativity}}</td>
         </tr>
         <tr>
-            <th>Ionisation energy (kJ/mol)</th>
+            <th>Atomic Radius (pm)</th>
+            <td>{{element.atomicRadius}}</td>
+        </tr>
+        <tr>
+            <th>Ionization Energy (kJ/mol)</th>
             <td>{{element.ionizationEnergy}}</td>
         </tr>
     </table>
